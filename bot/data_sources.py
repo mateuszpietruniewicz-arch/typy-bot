@@ -385,6 +385,21 @@ def tm_fixtures(slug, code, tz="Europe/Warsaw"):
 # ---------------------------------------------------------------------------
 # The Odds API (darmowy klucz, 500 kredytów/mies.) – kursy wielu bukmacherów
 # ---------------------------------------------------------------------------
+def odds_events(league):
+    """Terminarz z The Odds API (/events – nie zużywa kredytów). Zapas, gdy Transfermarkt blokuje
+    (np. z serwerów GitHub Actions) – jedyne źródło godzin Ekstraklasy poza Transfermarkt."""
+    sport = C.LEAGUES[league].get("odds")
+    if not C.ODDS_API_KEY or not sport:
+        return []
+    try:
+        js = json.loads(get(f"https://api.the-odds-api.com/v4/sports/{sport}/events",
+                            params=dict(apiKey=C.ODDS_API_KEY), cache_h=6, tries=2))
+    except Exception as e:  # noqa: BLE001
+        log.warning("odds-api events %s: %s", league, str(e).replace(C.ODDS_API_KEY, "***"))
+        return []
+    return [dict(kickoff=pd.Timestamp(e["commence_time"]), home=e["home_team"], away=e["away_team"]) for e in js]
+
+
 ODDS_STATE = "odds_api.json"   # w state/: ostatnie pobranie per liga + pozostałe kredyty
 
 

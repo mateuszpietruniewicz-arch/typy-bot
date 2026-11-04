@@ -11,7 +11,7 @@ from . import injuries as I
 from . import news as N
 from . import picks as P
 from . import tracker as T
-from .model import fit_elo_bridge, fit_league, markets, score_matrix
+from .model import EloBridge, fit_elo_bridge, fit_league, markets, score_matrix
 from .names import Matcher, norm
 
 log = logging.getLogger("pipeline")
@@ -144,6 +144,21 @@ def gather_fixtures(hist, models, now):
             if (lg, norm(h)) in have:
                 continue
             rows.append(dict(league=lg, kickoff=r.kickoff, home=h, away=a, time_unknown=r.time_unknown))
+    # The Odds API /events (darmowe) – ostatni zapas terminarza, gdy Transfermarkt nie odpowiada
+    have = {(r["league"], norm(r["home"])) for r in rows}
+    for lg in models:
+        evs = [e for e in D.odds_events(lg) if now - timedelta(hours=1) <= e["kickoff"] <= horizon]
+        if not evs:
+            continue
+        mt = Matcher(models[lg].teams)
+        for e in evs:
+            h, a = mt.match(e["home"]), mt.match(e["away"])
+            if not h or not a:
+                log.warning("terminarz odds-api %s: nie dopasowano %s – %s", lg, e["home"], e["away"])
+                continue
+            if (lg, norm(h)) not in have:
+                rows.append(dict(league=lg, kickoff=e["kickoff"], home=h, away=a))
+                have.add((lg, norm(h)))
     # kursy z The Odds API (nadpisują średnie z pliku, bo są świeższe)
     for lg in {r["league"] for r in rows}:
         evs = D.odds_api(lg)
@@ -179,8 +194,11 @@ def analyse(now=None):
     if any(f["league"] == "UCL" for f in fixtures):
         team_cc = {t["id"]: t["country"] for t in D.fdorg_teams("CL")}
     ucl_ids = {f[k] for f in fixtures if f["league"] == "UCL" for k in ("home_id", "away_id")}
-    elo_map, elo_df = elo_lookup(models, {team_cc[i] for i in ucl_ids if team_cc.get(i)})
-    bridge = fit_elo_bridge(models, elo_map, D.ELO_PROBS if any(f["league"] == "UCL" for f in fixtures) else None)
+    if ucl_ids:  # Elo potrzebne tylko do meczów LM
+        elo_map, elo_df = elo_lookup(models, {team_cc[i] for i in ucl_ids if team_cc.get(i)})
+        bridge = fit_elo_bridge(models, elo_map, D.ELO_PROBS)
+    else:
+        elo_map, elo_df, bridge = {}, pd.DataFrame(columns=D.ELO_COLS), EloBridge(k=0.0, hadv=0.0, total=2.95)
     ucl_strength = UclStrength(models, elo_map, elo_df, team_cc)
     news_items = N.fetch_all()
 

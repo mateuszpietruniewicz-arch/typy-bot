@@ -25,6 +25,9 @@ Komunikacja z użytkownikiem i teksty w bocie: po polsku.
   Transfermarkt OK (kontuzje, wartości kadr, terminarz `gesamtspielplan` – zapasowy dla wszystkich lig, jedyny dla
   Ekstraklasy; godziny w CET), RSS OK. ClubElo: API Fixtures wyłączone na stałe, ranking zwraca 502 -> elofootball.
   Understat w przerwie technicznej („We will come back soon”) -> model bez xG (nieprzetestowany format getLeagueData).
+  UWAGA: Transfermarkt zwraca HTTP 202 (ochrona anty-bot) z serwerów GitHub Actions – tam brak kontuzji i terminarza TM;
+  terminarz w Actions: football-data.org (top 5, LM) + The Odds API `/events` (darmowe, 0 kredytów; Ekstraklasa).
+  Kontuzje w Actions wymagałyby API-Football (API_FOOTBALL_KEY). Lokalnie TM działa. Elo pobierane tylko gdy jest LM.
   Kody krajów ujednolicone do ISO-3 (`country_code`: GER->DEU, POR->PRT...).
 - `names.py` + `aliases.json` – ujednolicanie nazw drużyn między źródłami (kanoniczne = nazwy football-data.co.uk),
   fuzzy match rapidfuzz. Nowe niedopasowania -> dopisać alias.
