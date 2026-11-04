@@ -3,7 +3,7 @@
  "combos": [],
  "long": [],
  "matches": [],
- "generated": "2026-11-04T20:09:20.686088+00:00",
+ "generated": "2026-11-04T20:27:29.594359+00:00",
  "models": {
   "EPL": {
    "n": 850,
@@ -584,7 +584,7 @@
    ]
   }
  },
- "bridge_k": 0.0028,
+ "bridge_k": 0.0044,
  "day": "2026-11-04",
  "message": "🎯 <b>Typy · śr 04.11</b>\nMecze w analizie: 0\nBrak meczów w najbliższych godzinach."
 }
