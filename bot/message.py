@@ -23,12 +23,13 @@ def leg_line(l):
             f"<b>{esc(l['label'])}</b> ({pct(l['p'])}, ~{l['odds']:.2f})")
 
 
-def daily(result):
+def daily(result, title="Typy"):
     now = pd.Timestamp(result["generated"]).tz_convert(C.TZ)
-    out = [f"🎯 <b>Typy · {DAYS[now.weekday()]} {now.strftime('%d.%m')}</b>",
+    icon = "📅" if title != "Typy" else "🎯"
+    out = [f"{icon} <b>{title} · {DAYS[now.weekday()]} {now.strftime('%d.%m')}</b>",
            f"Mecze w analizie: {len(result['matches'])}"]
     if not result["matches"]:
-        return "\n".join(out + ["Brak meczów w najbliższych godzinach."])
+        return "\n".join(out + ["Brak meczów w tym okresie."])
     if result["singles"]:
         out.append("\n<b>SINGLE</b> (graj tylko, gdy kurs STS ≥ „opłaca się od”)")
         for c in result["singles"]:

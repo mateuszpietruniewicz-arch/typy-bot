@@ -88,6 +88,9 @@ def evaluate_match(match):
             ev_after_tax=round(p * odds_sts * (1 - C.STS_TAX) - 1, 4),
             disagreement=round(p_mod - p_mkt, 4) if p_mkt is not None else None,
             verified=p_mkt is not None))
+    for o in opts:
+        o["pickable"] = o["key"] in C.PICK_MARKETS
+        o["calibrating"] = not o["pickable"]
     match["options"] = opts
     return match
 
@@ -109,10 +112,11 @@ def coupon_stats(legs, stake=1.0, bonus=0.0):
                 one_in=round(1 / p, 1) if p > 0 else None)
 
 
-def build(matches):
+def build(matches, prefix=""):
     """-> dict(singles, combos, long, matches)"""
     for m in matches:
         evaluate_match(m)
+    allowed = {id(m): [o for o in m["options"] if o["pickable"]] for m in matches}
 
     def score(o):  # przewaga z małą premią za zweryfikowany kurs rynkowy
         return o["edge"] + (0.01 if o["verified"] and not o["odds_estimated"] else -0.02)
@@ -120,21 +124,21 @@ def build(matches):
     # --- single: tylko rynki z prawdziwym kursem, max 1 na mecz ---------------
     cands = []
     for m in matches:
-        best = max((o for o in m["options"] if o["verified"] and not o["odds_estimated"]
+        best = max((o for o in allowed[id(m)] if o["verified"] and not o["odds_estimated"]
                     and o["p"] >= C.MIN_PROB_SINGLE), key=lambda o: o["edge"], default=None)
         if best:
             cands.append((m, best))
     cands.sort(key=lambda x: -x[1]["edge"])
     value = [c for c in cands if c[1]["edge"] >= C.MIN_EDGE][:6]
     chosen = value or cands[:3]          # brak przewagi -> 3 typy "najbliżej wartości"
-    singles = [dict(id=f"S{i + 1}", type="single" if value else "single (bez przewagi)",
+    singles = [dict(id=f"{prefix}S{i + 1}", type="single" if value else "single (bez przewagi)",
                     value=bool(value), legs=[_leg(m, o)], **coupon_stats([_leg(m, o)], 10))
                for i, (m, o) in enumerate(chosen)]
 
     # --- kupony 2–3 z różnych meczów, legi z p >= 50% -------------------------
     pool = []
     for m in matches:
-        good = [o for o in m["options"] if o["verified"] and o["p"] >= 0.5]
+        good = [o for o in allowed[id(m)] if o["verified"] and o["p"] >= 0.5]
         if good:
             pool.append((m, max(good, key=score)))
     pool.sort(key=lambda x: -score(x[1]))
@@ -153,14 +157,14 @@ def build(matches):
                 best = (st["ev_pct"], legs, st, comb)
         if best:
             used |= {m["id"] for m, _ in best[3]}
-            combos.append(dict(id=f"K{len(combos) + 1}", type=f"kupon {n}", legs=best[1], **best[2]))
+            combos.append(dict(id=f"{prefix}K{len(combos) + 1}", type=f"kupon {n}", legs=best[1], **best[2]))
 
     # --- długie kupony za 2 zł: dwa warianty ---------------------------------
     def long_coupon(name, kind, odds_lo, odds_hi, p_min, n_min, n_max):
         pool = []
         for m in matches:
             # tylko rynki z kursem rynkowym – bez niego "kurs" byłby wzięty z samego modelu
-            opts = [o for o in m["options"] if o["verified"]
+            opts = [o for o in allowed[id(m)] if o["verified"]
                     and odds_lo <= o["odds_sts_est"] <= odds_hi and o["p"] >= p_min]
             if opts:
                 pool.append((m, max(opts, key=score)))
@@ -168,7 +172,7 @@ def build(matches):
         if len(pool) < n_min:
             return None
         legs = [_leg(m, o) for m, o in pool[:n_max]]
-        return dict(id=name, type=f"{kind} · {len(legs)} zdarzeń", legs=legs,
+        return dict(id=prefix + name, type=f"{kind} · {len(legs)} zdarzeń", legs=legs,
                     **coupon_stats(legs, C.LONG_COUPON_STAKE))
 
     lo, hi = C.LONG_COUPON_LEGS

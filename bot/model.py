@@ -46,7 +46,8 @@ class LeagueModel:
         return float(np.exp(self.mu + hadv + ah + da)), float(np.exp(self.mu + aa + dh))
 
 
-def fit_league(df, league, ref_date=None, xi=C.XI, xg_weight=C.XG_WEIGHT, ridge=2.0):
+def fit_league(df, league, ref_date=None, xi=C.XI, xg_weight=C.XG_WEIGHT, ridge=2.0,
+               level_xi=None, level_prior=None, level_season=None):
     """df: kolumny date, home, away, hg, ag (+ opcjonalnie hxg, axg)."""
     df = df.dropna(subset=["hg", "ag"]).copy()
     ref_date = pd.Timestamp(ref_date) if ref_date is not None else df.date.max()
@@ -116,9 +117,24 @@ def fit_league(df, league, ref_date=None, xi=C.XI, xg_weight=C.XG_WEIGHT, ridge=
         return -np.sum(w * np.log(t))
 
     rho = minimize_scalar(rho_nll, bounds=(-0.25, 0.15), method="bounded").x
+
+    # Poziom goli w lidze z krótszą pamięcią niż siły drużyn (bramkostrzelność zmienia się
+    # między sezonami szybciej, niż pozwala XI). level_xi: zanik dla mu; level_season: tylko mecze
+    # bieżącego sezonu (od tej daty). Korekta ściągana do 0 przy małej liczbie meczów (level_prior).
+    level_xi = C.LEVEL_XI if level_xi is None else level_xi
+    level_prior = C.LEVEL_PRIOR if level_prior is None else level_prior
+    level_adj = 0.0
+    if level_xi or level_season is not None:
+        w2 = np.exp(-level_xi * age) if level_xi else np.ones_like(age, dtype=float)
+        if level_season is not None:
+            w2 = w2 * (df.date.values >= np.datetime64(pd.Timestamp(level_season)))
+        if w2.sum() > 0:
+            ratio = np.sum(w2 * (yh + ya)) / np.sum(w2 * (lh + la))
+            level_adj = float(np.log(ratio) * w2.sum() / (w2.sum() + level_prior))
+            mu += level_adj
     model = LeagueModel(league, teams, dict(zip(teams, att)), dict(zip(teams, dfn)),
                         float(mu), float(home), float(rho), len(df), ref_date,
-                        avg_goals=float(np.average(gh + ga, weights=w)))
+                        avg_goals=float(np.average(gh + ga, weights=w)), meta=dict(level_adj=round(level_adj, 4)))
     log.info("%s: %d meczów, %d drużyn, przewaga gosp. %.2f, rho %.3f", league, len(df), n, home, rho)
     return model
 

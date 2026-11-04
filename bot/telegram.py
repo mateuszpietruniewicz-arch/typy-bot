@@ -14,6 +14,7 @@ API = "https://api.telegram.org/bot{}/{}"
 
 HELP = """<b>Komendy</b>
 /typy – dzisiejsze typy
+/weekend – zapowiedź weekendu (czw/pt), typy WS1, WK1, WD1…
 /zagrane S1 10 2.05 – zagrałem typ S1 za 10 zł po kursie 2.05 (ID z wiadomości z typami)
 /zagrane D1 2 87.3 – to samo dla kuponu/długiego kuponu
 /zagrane wlasny 5 3.40 opis – własny kupon spoza bota
@@ -79,8 +80,16 @@ def poll_updates():
 
 
 def _find_pick(ref):
-    """'S1' (dzisiejszy/ostatni) albo '2026-11-05:S1'."""
+    """'S1' (dzisiejszy/ostatni), 'WS1' (zapowiedź weekendu) albo '2026-11-05:S1'."""
     day, _, pid = ref.rpartition(":")
+    if pid.upper().startswith("W"):  # zapowiedź weekendu
+        latest = tracker.load("picks_preview.json", {})
+        src = latest if not day or latest.get("day") == day else tracker.load(f"picks/{day}-weekend.json", {})
+        for group in ("singles", "combos", "long"):
+            for c in src.get(group, []):
+                if c["id"].upper() == pid.upper():
+                    return src.get("day"), c
+        return day or latest.get("day"), None
     latest = tracker.load("picks_latest.json", {})
     if not day:
         day = latest.get("day")
@@ -151,6 +160,8 @@ def handle(text):
                 f"Postawione: {s['stake']:.2f} zł\nWypłacone: {s['returned']:.2f} zł\n"
                 f"<b>Wynik: {s['profit']:+.2f} zł</b> (ROI {roi})\n"
                 + (f"\n<b>W grze:</b>\n{pend}" if pend else ""))
+    if cmd == "/weekend":
+        return tracker.load("picks_preview.json", {}).get("message", "Zapowiedź weekendu pojawia się w czwartek i piątek rano.")
     if cmd == "/model":
         st = tracker.model_stats()
         lines = ["<b>Skuteczność modelu</b> (stawki wg typów, po podatku)"]

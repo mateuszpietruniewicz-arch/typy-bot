@@ -20,11 +20,21 @@ def local_now():
     return pd.Timestamp.now(tz=C.TZ)
 
 
+def end_of_day(days_ahead=0):
+    """Koniec dnia (23:59 czasu polskiego) za `days_ahead` dni, w UTC."""
+    t = local_now().normalize() + pd.Timedelta(days=days_ahead + 1) - pd.Timedelta(minutes=1)
+    return t.tz_convert("UTC").to_pydatetime()
+
+
 def run_daily(send=True):
+    """Typy na dziś (mecze do 23:59). HORIZON_HOURS w env nadpisuje zakres (testy)."""
+    import os
     from .pipeline import analyse
-    result, hist = analyse()
+    until = None if os.getenv("HORIZON_HOURS") else end_of_day()
+    result, hist = analyse(until=until)
     day = local_now().date().isoformat()
     result["day"] = day
+    result["kind"] = "daily"
     result["message"] = M.daily(result)
     T.save(f"picks/{day}.json", result)
     T.save("picks_latest.json", result)
@@ -89,6 +99,23 @@ def run_prematch():
     T.save("run.json", st)
 
 
+def run_preview(send=True):
+    """Zapowiedź weekendu (czw/pt): mecze do niedzieli 23:59, ID z prefiksem W (WS1, WK1, WD1)."""
+    from .pipeline import analyse
+    now = local_now()
+    result, hist = analyse(until=end_of_day((6 - now.weekday()) % 7), prefix="W")
+    day = now.date().isoformat()
+    result["day"] = day
+    result["kind"] = "preview"
+    result["message"] = M.daily(result, title="Zapowiedź weekendu")
+    T.save(f"picks/{day}-weekend.json", result)
+    T.save("picks_preview.json", result)
+    T.record_day(day, result, result["matches"])
+    if send:
+        TG.send(result["message"])
+    return result, hist
+
+
 def run_auto():
     st = T.load("run.json", {})
     for text in TG.poll_updates():
@@ -104,6 +131,15 @@ def run_auto():
         st = T.load("run.json", {})
         st["daily_done"] = now.date().isoformat()
         T.save("run.json", st)
+    if (now.weekday() in C.PREVIEW_DAYS and now.hour >= C.DAILY_HOUR
+            and st.get("preview_done") != now.date().isoformat()):
+        try:
+            _, hist = run_preview()
+        except Exception:  # noqa: BLE001
+            log.exception("zapowiedź weekendu")
+        st = T.load("run.json", {})
+        st["preview_done"] = now.date().isoformat()
+        T.save("run.json", st)
     try:
         run_settle(hist)
     except Exception:  # noqa: BLE001
@@ -118,13 +154,16 @@ def run_auto():
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s", stream=sys.stdout)
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["auto", "daily", "settle", "site", "commands"])
+    ap.add_argument("mode", choices=["auto", "daily", "preview", "settle", "site", "commands"])
     ap.add_argument("--no-send", action="store_true")
     a = ap.parse_args()
     if a.mode == "auto":
         run_auto()
     elif a.mode == "daily":
         run_daily(send=not a.no_send)
+        build_site()
+    elif a.mode == "preview":
+        run_preview(send=not a.no_send)
         build_site()
     elif a.mode == "settle":
         run_settle()

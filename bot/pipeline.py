@@ -91,8 +91,8 @@ class UclStrength:
         return None, None
 
 
-def gather_fixtures(hist, models, now):
-    horizon = now + timedelta(hours=C.HORIZON_HOURS)
+def gather_fixtures(hist, models, now, until=None):
+    horizon = until or now + timedelta(hours=C.HORIZON_HOURS)
     fx = D.fdcuk_fixtures()
     rows = []
     if not fx.empty:
@@ -186,10 +186,10 @@ def rest_days(hist, lg, team, kickoff):
     return int((pd.Timestamp(kickoff).tz_localize(None) - prev.date.max()).days) if len(prev) else None
 
 
-def analyse(now=None):
+def analyse(now=None, until=None, prefix=""):
     now = now or datetime.now(timezone.utc)
     hist, models = load_history()
-    fixtures = gather_fixtures(hist, models, now)
+    fixtures = gather_fixtures(hist, models, now, until)
     team_cc = {}
     if any(f["league"] == "UCL" for f in fixtures):
         team_cc = {t["id"]: t["country"] for t in D.fdorg_teams("CL")}
@@ -250,7 +250,7 @@ def analyse(now=None):
             rest=dict(home=rest_days(hist, lg, home, f["kickoff"]), away=rest_days(hist, lg, away, f["kickoff"])),
             **info))
     matches.sort(key=lambda m: m["kickoff"])
-    result = P.build(matches)
+    result = P.build(matches, prefix)
     result["generated"] = now.isoformat()
     result["models"] = {lg: dict(n=m.n_matches, home_adv=round(m.home, 3), rho=round(m.rho, 3),
                                  avg_goals=round(m.avg_goals, 2), last=str(m.last_date.date()),

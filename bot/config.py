@@ -47,13 +47,18 @@ DOMESTIC = [k for k, v in LEAGUES.items() if not v.get("cup")]
 
 SEASONS_BACK = 3          # ile sezonów historii do modelu
 XI = 0.0022               # zanikanie wagi meczów w czasie (na dzień; półokres ~10 mies.)
+LEVEL_XI = 0.02           # zanik wagi dla poziomu goli ligi (mu), półokres ~35 dni; backtest: lepszy log-loss O2.5
+LEVEL_PRIOR = 40.0        # ściąganie korekty poziomu do 0 przy małej liczbie świeżych meczów
 XG_WEIGHT = 0.5           # udział xG w ocenie siły (0 = tylko gole, 1 = tylko xG)
 
 # --- Typy -------------------------------------------------------------------
-MARKET_WEIGHT = 0.65      # ile ufamy rynkowi vs modelowi przy łączeniu prawdopodobieństw
+MARKET_WEIGHT = 0.9       # backtest 2022–27 (kursy zamknięcia): optimum log-loss 0.9–1.0 dla 1X2 i O/U
 ODDS_MIN_INTERVAL_H = 11  # The Odds API: liga odświeżana max ~2x dziennie (budżet 500 kredytów/mies.)
 ODDS_RESERVE = 25         # poniżej tylu kredytów nie pytamy (zostają zapisane kursy)
 HORIZON_HOURS = int(os.getenv("HORIZON_HOURS", "40"))  # jak daleko w przód szukamy meczów
+# Rynki, na których bot daje typy (single, kupony, długie). O/U i BTTS wyłączone do czasu,
+# aż przejdą backtest z kursami zamknięcia (model zaniżał gole) – na stronie "model w kalibracji".
+PICK_MARKETS = {"1", "X", "2", "1X", "X2", "12"}
 MIN_EDGE = 0.03           # minimalna przewaga dla singla (3%)
 MIN_PROB_SINGLE = 0.28
 STS_MARGIN_DISCOUNT = 0.03  # kursy STS są zwykle ~3% niższe od średniej rynkowej
@@ -76,6 +81,7 @@ TG_CHAT = os.getenv("TELEGRAM_CHAT_ID", "")
 BETS_KEY = os.getenv("BETS_ENCRYPTION_KEY", "")
 SITE_URL = os.getenv("SITE_URL", "")
 
+PREVIEW_DAYS = (3, 4)     # czwartek, piątek: dodatkowa zapowiedź weekendu (do niedzieli 23:59)
 DAILY_HOUR = 9            # godzina porannych typów (czas polski)
 PREMATCH_MIN = (60, 150)  # okno aktualizacji przed meczem (minuty)
 

@@ -130,10 +130,10 @@ function matchCard(m){
    <div class="row small muted"><span>${m.flag} ${esc(m.league_name)}</span><span>${tfmt(m.kickoff, m.time_unknown)}</span></div>
    <h3 style="font-size:16px;margin:4px 0 8px">${esc(m.home)} – ${esc(m.away)}</h3>
    ${bar(p['1'],p['X'],p['2'],'model')}${mk&&mk['1']?bar(mk['1'],mk['X'],mk['2'],'rynek'):''}
-   <div style="margin:8px 0"><span class="pill" title="oczekiwane gole wg modelu">gole ${m.lambdas[0].toFixed(2)} : ${m.lambdas[1].toFixed(2)}</span><span class="pill">O2.5 ${pct(p['O2.5'])}</span><span class="pill">BTTS ${pct(p.BTTS)}</span>
+   <div style="margin:8px 0"><span class="pill" title="oczekiwane gole wg modelu">gole ${m.lambdas[0].toFixed(2)} : ${m.lambdas[1].toFixed(2)}</span><span class="pill" title="model w kalibracji – bez typów na tym rynku">O2.5 ${pct(p['O2.5'])} (w kalibracji)</span><span class="pill">BTTS ${pct(p.BTTS)}</span>
    <span class="pill">wynik: ${m.top_scores.slice(0,3).map(s=>s[1]+' '+pct(s[0])).join(', ')}</span>${adj}</div>
    <details><summary>Rynki, kursy fair i „opłaca się od”</summary><table><tr><th>Typ</th><th>Szansa</th><th>Model</th><th>Rynek</th><th>Fair</th><th>Opłaca się od</th></tr>
-   ${opts.map(o=>`<tr><td>${esc(o.label)}</td><td class="num"><b>${pct(o.p)}</b></td><td class="num">${pct(o.p_model)}</td><td class="num">${o.p_market!=null?pct(o.p_market):'–'}</td><td class="num">${o.fair}</td><td class="num">${o.min_sts}</td></tr>`).join('')}</table></details>
+   ${opts.map(o=>`<tr><td>${esc(o.label)}${o.calibrating?' <span class="small muted" title="Ten rynek nie przeszedł jeszcze backtestu – bot nie daje na nim typów">(model w kalibracji)</span>':''}</td><td class="num"><b>${pct(o.p)}</b></td><td class="num">${pct(o.p_model)}</td><td class="num">${o.p_market!=null?pct(o.p_market):'–'}</td><td class="num">${o.fair}</td><td class="num">${o.min_sts}</td></tr>`).join('')}</table></details>
    <details><summary>Kadra i newsy</summary>
      <div class="small" style="margin-top:6px"><b>${esc(m.home)}</b> ${m.rest.home!=null?'<span class="muted">· odpoczynek '+m.rest.home+' dni</span>':''}</div>${ab('home')}${nw('home')}
      <div class="small" style="margin-top:8px"><b>${esc(m.away)}</b> ${m.rest.away!=null?'<span class="muted">· odpoczynek '+m.rest.away+' dni</span>':''}</div>${ab('away')}${nw('away')}
@@ -182,6 +182,7 @@ function how(){
   <li><b>Liga Mistrzów</b>: ratingi ClubElo przeliczone na gole przez regresję na ligach krajowych.</li>
   <li><b>Kontuzje</b>: Transfermarkt; brakujący udział wartości kadry obniża atak i osłabia obronę (świeże absencje ważą więcej niż długie, bo te model już widzi w wynikach).</li>
   <li><b>Rynek</b>: kursy średnie bez marży. Finalna szansa to ${Math.round((1-CFG.market_weight)*100)}% model + ${Math.round(CFG.market_weight*100)}% rynek – model musi mocno się nie zgadzać z rynkiem, żeby wskazać przewagę.</li>
+  <li><b>Backtest</b> (≈8 900 meczów 2022–2026, kursy zamknięcia): rynek przewiduje lepiej niż sam model, a single „z przewagą” miały ujemny zwrot poza próbą. Dlatego model ma małą wagę, a rynki Powyżej/Poniżej są „w kalibracji” (bez typów). Typy to analiza, nie przewaga nad bukmacherem.</li>
   <li><b>Podatek</b>: w Polsce 12% od stawki, więc zakład opłaca się dopiero przy kursie ≥ 1/(0,88·szansa). Dlatego „opłaca się od” jest wyższe niż „fair”.</li></ul>
   <h3>Długie kupony – matematyka</h3>
   <p>Przy marży ~5% na zdarzenie: 1 zdarzenie oddaje średnio ~95% stawki, 5 zdarzeń ~77%, 10 zdarzeń ~60%, a po podatku jeszcze ×0,88. Bot wybiera do długich kuponów zdarzenia z najmniejszą stratą wartości, ale nie zmieni tej matematyki – to rozrywka za 2 zł, nie strategia.</p>

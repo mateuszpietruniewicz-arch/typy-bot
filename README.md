@@ -23,7 +23,7 @@ waga czasowa (nowsze mecze ważą więcej), w top 5 ligach cel to 50% gole + 50%
 Backtest na ~1700 meczach: log-loss 1X2 0,974 vs 1,048 dla częstości bazowych.
 Liga Mistrzów: Elo → gole przez regresję na ligach krajowych.
 
-**Typy:** finalna szansa = 35% model + 65% rynek (bez marży). Przy każdym typie:
+**Typy:** finalna szansa = 10% model + 90% rynek (bez marży) – waga z backtestu na kursach zamknięcia (`tests/backtest_closing.py`), w którym rynek był lepszy od modelu. Typy tylko na 1X2 i podwójnej szansie; Powyżej/Poniżej „w kalibracji”. Przy każdym typie:
 - **fair** – kurs uczciwy (1/szansa),
 - **opłaca się od** – kurs, od którego zakład ma wartość po 12% podatku,
 - przewaga względem szacowanego kursu STS (średnia rynkowa − 3%).
