@@ -1,0 +1,590 @@
+{
+ "singles": [],
+ "combos": [],
+ "long": [],
+ "matches": [],
+ "generated": "2026-11-04T20:09:20.686088+00:00",
+ "models": {
+  "EPL": {
+   "n": 850,
+   "home_adv": 0.178,
+   "rho": -0.079,
+   "avg_goals": 2.78,
+   "last": "2026-11-02",
+   "table": [
+    [
+     "Arsenal",
+     0.855
+    ],
+    [
+     "Man City",
+     0.681
+    ],
+    [
+     "Brighton",
+     0.444
+    ],
+    [
+     "Liverpool",
+     0.383
+    ],
+    [
+     "Brentford",
+     0.254
+    ],
+    [
+     "Chelsea",
+     0.249
+    ],
+    [
+     "Bournemouth",
+     0.22
+    ],
+    [
+     "Aston Villa",
+     0.167
+    ],
+    [
+     "Man United",
+     0.145
+    ],
+    [
+     "Newcastle",
+     0.085
+    ],
+    [
+     "Leeds",
+     0.067
+    ],
+    [
+     "Hull",
+     0.052
+    ],
+    [
+     "Everton",
+     0.044
+    ],
+    [
+     "Nott'm Forest",
+     0.037
+    ],
+    [
+     "Fulham",
+     -0.011
+    ],
+    [
+     "Tottenham",
+     -0.056
+    ],
+    [
+     "West Ham",
+     -0.173
+    ],
+    [
+     "Sunderland",
+     -0.202
+    ],
+    [
+     "Crystal Palace",
+     -0.226
+    ],
+    [
+     "Coventry",
+     -0.256
+    ],
+    [
+     "Ipswich",
+     -0.381
+    ],
+    [
+     "Wolves",
+     -0.466
+    ],
+    [
+     "Burnley",
+     -0.491
+    ]
+   ]
+  },
+  "LALIGA": {
+   "n": 869,
+   "home_adv": 0.295,
+   "rho": -0.025,
+   "avg_goals": 2.77,
+   "last": "2026-11-02",
+   "table": [
+    [
+     "Barcelona",
+     1.07
+    ],
+    [
+     "Real Madrid",
+     0.874
+    ],
+    [
+     "Ath Madrid",
+     0.618
+    ],
+    [
+     "Villarreal",
+     0.386
+    ],
+    [
+     "Betis",
+     0.288
+    ],
+    [
+     "Ath Bilbao",
+     0.145
+    ],
+    [
+     "Celta",
+     0.126
+    ],
+    [
+     "Sociedad",
+     0.065
+    ],
+    [
+     "La Coruna",
+     0.052
+    ],
+    [
+     "Vallecano",
+     0.003
+    ],
+    [
+     "Elche",
+     -0.014
+    ],
+    [
+     "Mallorca",
+     -0.051
+    ],
+    [
+     "Sevilla",
+     -0.064
+    ],
+    [
+     "Levante",
+     -0.073
+    ],
+    [
+     "Alaves",
+     -0.074
+    ],
+    [
+     "Espanol",
+     -0.079
+    ],
+    [
+     "Valencia",
+     -0.114
+    ],
+    [
+     "Osasuna",
+     -0.15
+    ],
+    [
+     "Girona",
+     -0.154
+    ],
+    [
+     "Getafe",
+     -0.162
+    ],
+    [
+     "Santander",
+     -0.429
+    ],
+    [
+     "Oviedo",
+     -0.518
+    ],
+    [
+     "Malaga",
+     -0.533
+    ]
+   ]
+  },
+  "SERIEA": {
+   "n": 860,
+   "home_adv": 0.075,
+   "rho": 0.007,
+   "avg_goals": 2.64,
+   "last": "2026-11-02",
+   "table": [
+    [
+     "Inter",
+     0.8
+    ],
+    [
+     "Roma",
+     0.735
+    ],
+    [
+     "Como",
+     0.601
+    ],
+    [
+     "Napoli",
+     0.515
+    ],
+    [
+     "Frosinone",
+     0.493
+    ],
+    [
+     "Juventus",
+     0.481
+    ],
+    [
+     "Milan",
+     0.426
+    ],
+    [
+     "Lazio",
+     0.343
+    ],
+    [
+     "Atalanta",
+     0.303
+    ],
+    [
+     "Bologna",
+     0.145
+    ],
+    [
+     "Fiorentina",
+     -0.002
+    ],
+    [
+     "Genoa",
+     -0.118
+    ],
+    [
+     "Sassuolo",
+     -0.138
+    ],
+    [
+     "Torino",
+     -0.147
+    ],
+    [
+     "Udinese",
+     -0.203
+    ],
+    [
+     "Cagliari",
+     -0.228
+    ],
+    [
+     "Parma",
+     -0.31
+    ],
+    [
+     "Monza",
+     -0.439
+    ],
+    [
+     "Cremonese",
+     -0.448
+    ],
+    [
+     "Lecce",
+     -0.474
+    ],
+    [
+     "Venezia",
+     -0.536
+    ],
+    [
+     "Verona",
+     -0.623
+    ],
+    [
+     "Pisa",
+     -0.793
+    ]
+   ]
+  },
+  "BUNDES": {
+   "n": 684,
+   "home_adv": 0.227,
+   "rho": -0.047,
+   "avg_goals": 3.27,
+   "last": "2026-11-01",
+   "table": [
+    [
+     "Bayern Munich",
+     1.128
+    ],
+    [
+     "Dortmund",
+     0.661
+    ],
+    [
+     "RB Leipzig",
+     0.417
+    ],
+    [
+     "Leverkusen",
+     0.375
+    ],
+    [
+     "Stuttgart",
+     0.338
+    ],
+    [
+     "Freiburg",
+     0.142
+    ],
+    [
+     "Elversberg",
+     0.133
+    ],
+    [
+     "Hoffenheim",
+     0.054
+    ],
+    [
+     "Ein Frankfurt",
+     0.038
+    ],
+    [
+     "Mainz",
+     0.038
+    ],
+    [
+     "Augsburg",
+     -0.064
+    ],
+    [
+     "Werder Bremen",
+     -0.081
+    ],
+    [
+     "Paderborn",
+     -0.167
+    ],
+    [
+     "M'gladbach",
+     -0.174
+    ],
+    [
+     "Wolfsburg",
+     -0.183
+    ],
+    [
+     "FC Koln",
+     -0.208
+    ],
+    [
+     "Schalke 04",
+     -0.293
+    ],
+    [
+     "Union Berlin",
+     -0.294
+    ],
+    [
+     "Hamburg",
+     -0.31
+    ],
+    [
+     "Heidenheim",
+     -0.369
+    ],
+    [
+     "St Pauli",
+     -0.466
+    ]
+   ]
+  },
+  "LIGUE1": {
+   "n": 693,
+   "home_adv": 0.22,
+   "rho": -0.053,
+   "avg_goals": 2.91,
+   "last": "2026-11-02",
+   "table": [
+    [
+     "Paris SG",
+     0.922
+    ],
+    [
+     "Lens",
+     0.459
+    ],
+    [
+     "Lille",
+     0.449
+    ],
+    [
+     "Lyon",
+     0.443
+    ],
+    [
+     "Marseille",
+     0.415
+    ],
+    [
+     "Monaco",
+     0.323
+    ],
+    [
+     "Paris FC",
+     0.265
+    ],
+    [
+     "Strasbourg",
+     0.246
+    ],
+    [
+     "Rennes",
+     0.214
+    ],
+    [
+     "Toulouse",
+     0.099
+    ],
+    [
+     "Lorient",
+     0.048
+    ],
+    [
+     "Brest",
+     0.017
+    ],
+    [
+     "Nice",
+     0.015
+    ],
+    [
+     "Auxerre",
+     -0.139
+    ],
+    [
+     "Le Mans",
+     -0.269
+    ],
+    [
+     "Nantes",
+     -0.288
+    ],
+    [
+     "Le Havre",
+     -0.311
+    ],
+    [
+     "Angers",
+     -0.405
+    ],
+    [
+     "Troyes",
+     -0.481
+    ],
+    [
+     "Metz",
+     -0.597
+    ]
+   ]
+  },
+  "EKSTRA": {
+   "n": 727,
+   "home_adv": 0.266,
+   "rho": -0.108,
+   "avg_goals": 2.82,
+   "last": "2026-11-02",
+   "table": [
+    [
+     "Lech Poznan",
+     0.636
+    ],
+    [
+     "Legia",
+     0.378
+    ],
+    [
+     "Gornik Zabrze",
+     0.369
+    ],
+    [
+     "Pogon Szczecin",
+     0.236
+    ],
+    [
+     "Jagiellonia",
+     0.233
+    ],
+    [
+     "GKS Katowice",
+     0.22
+    ],
+    [
+     "Wisla",
+     0.184
+    ],
+    [
+     "Rakow",
+     0.129
+    ],
+    [
+     "Piast Gliwice",
+     0.089
+    ],
+    [
+     "Zaglebie",
+     0.022
+    ],
+    [
+     "Widzew Lodz",
+     -0.038
+    ],
+    [
+     "Lechia Gdansk",
+     -0.047
+    ],
+    [
+     "Korona Kielce",
+     -0.054
+    ],
+    [
+     "Motor Lublin",
+     -0.082
+    ],
+    [
+     "Cracovia",
+     -0.097
+    ],
+    [
+     "Radomiak Radom",
+     -0.18
+    ],
+    [
+     "Wisla Plock",
+     -0.201
+    ],
+    [
+     "Slask Wroclaw",
+     -0.231
+    ],
+    [
+     "Wieczysta Krakow",
+     -0.245
+    ],
+    [
+     "Termalica B-B.",
+     -0.315
+    ],
+    [
+     "Arka Gdynia",
+     -0.42
+    ]
+   ]
+  }
+ },
+ "bridge_k": 0.0028,
+ "day": "2026-11-04",
+ "message": "🎯 <b>Typy · śr 04.11</b>\nMecze w analizie: 0\nBrak meczów w najbliższych godzinach."
+}

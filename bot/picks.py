@@ -159,7 +159,9 @@ def build(matches):
     def long_coupon(name, kind, odds_lo, odds_hi, p_min, n_min, n_max):
         pool = []
         for m in matches:
-            opts = [o for o in m["options"] if odds_lo <= o["odds_sts_est"] <= odds_hi and o["p"] >= p_min]
+            # tylko rynki z kursem rynkowym – bez niego "kurs" byłby wzięty z samego modelu
+            opts = [o for o in m["options"] if o["verified"]
+                    and odds_lo <= o["odds_sts_est"] <= odds_hi and o["p"] >= p_min]
             if opts:
                 pool.append((m, max(opts, key=score)))
         pool.sort(key=lambda x: -score(x[1]))

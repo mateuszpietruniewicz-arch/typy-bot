@@ -25,7 +25,7 @@ def get(url, *, headers=None, params=None, cache_h=0, tries=3, binary=False):
     key = re.sub(r"[^A-Za-z0-9]+", "_", url + json.dumps(params or {}, sort_keys=True))[-180:]
     path = C.CACHE / key
     if cache_h and path.exists() and time.time() - path.stat().st_mtime < cache_h * 3600:
-        return path.read_bytes() if binary else path.read_text(encoding="utf-8", errors="replace")
+        return path.read_bytes() if binary else path.read_bytes().decode("utf-8-sig", errors="replace")
     last = None
     for i in range(tries):
         try:
@@ -33,7 +33,7 @@ def get(url, *, headers=None, params=None, cache_h=0, tries=3, binary=False):
             if r.status_code == 200:
                 if cache_h:
                     path.write_bytes(r.content)
-                return r.content if binary else r.content.decode(r.encoding or "utf-8", errors="replace")
+                return r.content if binary else _decode(r)
             last = f"HTTP {r.status_code}"
             if r.status_code in (401, 403, 404):
                 break
@@ -41,6 +41,14 @@ def get(url, *, headers=None, params=None, cache_h=0, tries=3, binary=False):
             last = str(e)
         time.sleep(2 * (i + 1))
     raise RuntimeError(f"{url}: {last}")
+
+
+def _decode(r):
+    """UTF-8 (z BOM lub bez), a jak się nie da – kodowanie z nagłówka / latin-1."""
+    try:
+        return r.content.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        return r.content.decode(r.encoding or "latin-1", errors="replace")
 
 
 def season_codes(n=C.SEASONS_BACK, today=None):
@@ -187,24 +195,71 @@ def ucl_history():
 # ---------------------------------------------------------------------------
 # ClubElo (bez klucza) – ranking siły wszystkich klubów w Europie
 # ---------------------------------------------------------------------------
+ELO_SNAPSHOT = C.STATE / "clubelo.csv"   # ostatni udany ranking (fallback, gdy API leży)
+
+
 def clubelo_ratings(day=None):
-    day = day or datetime.now(timezone.utc).date().isoformat()
-    try:
-        df = pd.read_csv(io.StringIO(get(f"http://api.clubelo.com/{day}", cache_h=12)))
-        return df[["Club", "Country", "Level", "Elo"]]
-    except Exception as e:  # noqa: BLE001
-        log.warning("clubelo: %s", e)
-        return pd.DataFrame(columns=["Club", "Country", "Level", "Elo"])
+    """Ranking ClubElo. API bywa niedostępne -> próbujemy kilku ostatnich dni,
+    a na końcu bierzemy ostatni zapisany snapshot z state/clubelo.csv."""
+    cols = ["Club", "Country", "Level", "Elo"]
+    d0 = datetime.fromisoformat(day).date() if day else datetime.now(timezone.utc).date()
+    for back in range(3):
+        d = (d0 - timedelta(days=back)).isoformat()
+        try:
+            df = pd.read_csv(io.StringIO(get(f"http://api.clubelo.com/{d}", cache_h=12, tries=2)))
+            if "Elo" in df and len(df) > 100:
+                df = df[cols]
+                C.STATE.mkdir(exist_ok=True)
+                df.to_csv(ELO_SNAPSHOT, index=False)
+                return df
+        except Exception as e:  # noqa: BLE001
+            log.warning("clubelo %s: %s", d, e)
+            if "HTTP 5" in str(e) or "timed out" in str(e):
+                break  # serwer leży – nie ma sensu pytać o inne dni
+    if ELO_SNAPSHOT.exists():
+        age = (time.time() - ELO_SNAPSHOT.stat().st_mtime) / 86400
+        log.warning("clubelo: używam zapisanego rankingu (%.0f dni)", age)
+        return pd.read_csv(ELO_SNAPSHOT)[cols]
+    return pd.DataFrame(columns=cols)
 
 
-def clubelo_fixtures():
-    """Nadchodzące mecze z rozkładem wyników wg ClubElo (zawiera też puchary)."""
-    try:
-        df = pd.read_csv(io.StringIO(get("http://api.clubelo.com/Fixtures", cache_h=6)))
-    except Exception as e:  # noqa: BLE001
-        log.warning("clubelo fixtures: %s", e)
-        return pd.DataFrame()
-    return df
+# ---------------------------------------------------------------------------
+# Transfermarkt – terminarz ligi (Ekstraklasa nie ma go w darmowym football-data.org,
+# a ClubElo wyłączyło swoje API Fixtures)
+# ---------------------------------------------------------------------------
+def tm_fixtures(slug, code, tz="Europe/Warsaw"):
+    """Mecze sezonu z Transfermarkt: kickoff (UTC), home, away, hg, ag (NaN gdy nierozegrany)."""
+    from bs4 import BeautifulSoup
+    now = datetime.now(timezone.utc)
+    season = now.year if now.month >= 7 else now.year - 1
+    html = get(f"https://www.transfermarkt.com/{slug}/gesamtspielplan/wettbewerb/{code}/saison_id/{season}",
+               cache_h=6)
+    soup = BeautifulSoup(html, "lxml")
+    rows, day, hour = [], None, None
+    for tr in soup.select("div.box table tbody tr"):
+        tds = tr.find_all("td", recursive=False)
+        teams = tr.select("td.hauptlink a[href*='/verein/']")
+        if len(tds) < 5 or len(teams) < 2:
+            continue
+        txt = tds[0].get_text(" ", strip=True)
+        m = re.search(r"(\d{1,2})/(\d{1,2})/(\d{2,4})", txt)
+        if m:
+            y = int(m.group(3))
+            day = (y + 2000 if y < 100 else y, int(m.group(2)), int(m.group(1)))
+        t = re.search(r"(\d{1,2}):(\d{2})\s*([AP]M)?", tds[1].get_text(" ", strip=True))
+        if t:
+            h = int(t.group(1)) % 12 + (12 if t.group(3) == "PM" else 0) if t.group(3) else int(t.group(1))
+            hour = (h, int(t.group(2)))
+        if not day:
+            continue
+        res = tr.select_one("a.ergebnis-link")
+        sc = re.match(r"\s*(\d+):(\d+)\s*$", res.get_text(strip=True)) if res else None
+        ko = pd.Timestamp(*day, *(hour or (18, 0))).tz_localize(tz).tz_convert("UTC")
+        rows.append(dict(kickoff=ko, home=teams[0].get("title") or teams[0].get_text(strip=True),
+                         away=teams[-1].get("title") or teams[-1].get_text(strip=True),
+                         hg=int(sc.group(1)) if sc else np.nan, ag=int(sc.group(2)) if sc else np.nan,
+                         time_unknown=not hour))
+    return pd.DataFrame(rows)
 
 
 # ---------------------------------------------------------------------------
@@ -256,6 +311,8 @@ def understat_xg(league):
     if not us:
         return pd.DataFrame()
     rows = []
+    if not _understat_alive():
+        return pd.DataFrame()
     for sc in season_codes():
         year = 2000 + int(sc[:2])
         try:
@@ -270,6 +327,23 @@ def understat_xg(league):
                              us_home=m["h"]["title"], us_away=m["a"]["title"],
                              hxg=float(m["xG"]["h"]), axg=float(m["xG"]["a"])))
     return pd.DataFrame(rows)
+
+
+_US_ALIVE = None
+
+
+def _understat_alive():
+    """Understat czasem jest w przerwie technicznej ('We will come back soon')."""
+    global _US_ALIVE
+    if _US_ALIVE is None:
+        try:
+            html = get("https://understat.com/", cache_h=1)
+            _US_ALIVE = "come back soon" not in html
+        except Exception:  # noqa: BLE001
+            _US_ALIVE = False
+        if not _US_ALIVE:
+            log.warning("understat: serwis niedostępny (przerwa techniczna) – model bez xG")
+    return _US_ALIVE
 
 
 def _understat_season(us, year):

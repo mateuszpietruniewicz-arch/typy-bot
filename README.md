@@ -15,7 +15,7 @@ a w kuponach łączonych marża mnoży się z każdym zdarzeniem. Bot mówi to w
 | Terminarz, wyniki na bieżąco, Liga Mistrzów | football-data.org (klucz) | mecze i rozliczenia |
 | Siła klubów między ligami | ClubElo | model meczów LM, terminarz Ekstraklasy |
 | Kontuzje + wartości kadr | Transfermarkt (+ API-Football opcjonalnie) | korekta oczekiwanych goli |
-| Newsy | RSS (BBC, Sky, Guardian, ESPN, Sport.pl, Meczyki, Weszło, Marca, Gazzetta, Kicker, L'Équipe) | kontekst + alert przed meczem |
+| Newsy | RSS (BBC, Sky, Guardian, Sportowe Fakty, Weszło, Marca, Gazzetta, Kicker, RMC Sport) | kontekst + alert przed meczem |
 | Kursy wielu bukmacherów | The Odds API (klucz, opcjonalnie) | świeższe kursy, Pinnacle |
 
 **Model:** Dixon-Coles per liga (siła ataku/obrony, przewaga gospodarzy, korekta niskich wyników),

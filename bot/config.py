@@ -3,6 +3,19 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def _load_dotenv():
+    """Lokalnie: wczytuje klucze z pliku .env (w GitHub Actions są w Secrets)."""
+    f = ROOT / ".env"
+    if f.exists():
+        for line in f.read_text().splitlines():
+            k, sep, v = line.partition("=")
+            if sep and k.strip() and not k.startswith("#") and v.strip():
+                os.environ.setdefault(k.strip(), v.strip())
+
+
+_load_dotenv()
 STATE = ROOT / "state"
 DOCS = ROOT / "docs"
 CACHE = ROOT / ".cache"
@@ -38,7 +51,7 @@ XG_WEIGHT = 0.5           # udział xG w ocenie siły (0 = tylko gole, 1 = tylko
 
 # --- Typy -------------------------------------------------------------------
 MARKET_WEIGHT = 0.65      # ile ufamy rynkowi vs modelowi przy łączeniu prawdopodobieństw
-HORIZON_HOURS = 40        # jak daleko w przód szukamy meczów
+HORIZON_HOURS = int(os.getenv("HORIZON_HOURS", "40"))  # jak daleko w przód szukamy meczów
 MIN_EDGE = 0.03           # minimalna przewaga dla singla (3%)
 MIN_PROB_SINGLE = 0.28
 STS_MARGIN_DISCOUNT = 0.03  # kursy STS są zwykle ~3% niższe od średniej rynkowej
@@ -71,14 +84,12 @@ NEWS_FEEDS = [
     "https://feeds.bbci.co.uk/sport/football/rss.xml",
     "https://www.skysports.com/rss/12040",
     "https://www.theguardian.com/football/rss",
-    "https://www.espn.com/espn/rss/soccer/news",
-    "https://www.sport.pl/rss/sport.xml",
-    "https://www.meczyki.pl/rss",
+    "https://sportowefakty.wp.pl/pilka-nozna/rss.xml",
     "https://weszlo.com/feed/",
     "https://www.marca.com/rss/futbol/primera-division.xml",
     "https://www.gazzetta.it/rss/calcio.xml",
-    "https://www.kicker.de/news/fussball/bundesliga/startseite/rss.xml",
-    "https://www.lequipe.fr/rss/actu_rss_Football.xml",
+    "https://newsfeed.kicker.de/news/bundesliga",
+    "https://rmcsport.bfmtv.com/rss/football/",
 ]
 INJURY_WORDS = [
     "injur", "injured", "ruled out", "doubt", "hamstring", "knee", "ankle", "suspend",

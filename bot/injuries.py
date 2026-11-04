@@ -22,14 +22,14 @@ TM = "https://www.transfermarkt.com"
 def _money(txt):
     """'€45.00m' / '€800k' / '45,00 mln €' -> euro."""
     t = (txt or "").lower().replace(",", ".")
-    m = re.search(r"([\d.]+)\s*(bn|m|k|th|mln|tys)?", t)
+    m = re.search(r"([\d.]+)\s*(bn|b|mln|m|k|th|tys)?", t)
     if not m:
         return 0.0
     try:
         v = float(m.group(1))
     except ValueError:
         return 0.0
-    mult = {"bn": 1e9, "m": 1e6, "mln": 1e6, "k": 1e3, "th": 1e3, "tys": 1e3}.get(m.group(2) or "", 1)
+    mult = {"bn": 1e9, "b": 1e9, "m": 1e6, "mln": 1e6, "k": 1e3, "th": 1e3, "tys": 1e3}.get(m.group(2) or "", 1)
     return v * mult
 
 
@@ -64,23 +64,21 @@ def tm_injuries(slug, code):
     if not tab:
         raise RuntimeError("brak tabeli kontuzji")
     rows = []
+    # kolumny: Zawodnik/pozycja | Klub | Uraz | until (przewidywany powrót) | Wartość
     for tr in tab.select("tbody > tr"):
-        if "odd" not in (tr.get("class") or []) and "even" not in (tr.get("class") or []):
+        if not {"odd", "even"} & set(tr.get("class") or []):
             continue
         name = tr.select_one("td.hauptlink a")
-        club = tr.select_one("a[href*='/startseite/verein/'] img, a[href*='/verein/'] img")
-        tds = [td.get_text(" ", strip=True) for td in tr.find_all("td", recursive=False)]
-        texts = [t for t in tds if t]
-        dates = [d for d in (_date(t) for t in texts) if d]
-        value = next((_money(t) for t in reversed(texts) if "€" in t), 0.0)
-        reason = next((t for t in texts if re.search(r"[a-z]{4,}", t.lower())
-                       and name and t != name.get_text(strip=True)
-                       and not re.search(r"^(goalkeeper|defender|midfield|attack|centre|left|right|second|defensive|attacking)", t.lower())), "")
+        club = tr.select_one("a[href*='/verein/']")
+        reason = tr.select_one("td.links")
+        tds = tr.find_all("td", recursive=False)
+        until = _date(tds[-2].get_text(" ", strip=True)) if len(tds) >= 2 else None
+        value = _money(tds[-1].get_text(" ", strip=True)) if tds else 0.0
         rows.append(dict(
             player=name.get_text(strip=True) if name else "?",
-            club=(club.get("title") or club.get("alt")) if club else None,
-            reason=reason, since=dates[0] if dates else None,
-            until=dates[1] if len(dates) > 1 else None, value=value, src="Transfermarkt"))
+            club=(club.get("title") or club.get_text(strip=True)) if club else None,
+            reason=reason.get_text(" ", strip=True) if reason else "",
+            since=None, until=until, value=value, src="Transfermarkt"))
     return [r for r in rows if r["club"]]
 
 
@@ -134,8 +132,11 @@ def league_absences(league, canonical_teams):
         if key in seen:
             continue
         seen.add(key)
-        days_out = (today - r["since"]).days if r.get("since") else 14
-        weight = 1.0 if days_out <= 45 else 0.4  # długie absencje model już częściowo uwzględnia
+        days_out = (today - r["since"]).days if r.get("since") else None
+        days_left = (r["until"] - today).days if r.get("until") else None
+        # długie absencje model już częściowo „widzi” w wynikach -> mniejsza waga
+        long_out = (days_out is not None and days_out > 45) or (days_left is not None and days_left > 45)
+        weight = 0.4 if long_out else 1.0
         r = {**r, "days_out": days_out, "weight": weight,
              "since": r["since"].isoformat() if r.get("since") else None,
              "until": r["until"].isoformat() if r.get("until") else None}

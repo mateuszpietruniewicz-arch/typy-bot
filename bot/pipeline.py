@@ -83,19 +83,30 @@ def gather_fixtures(hist, models, now):
             else:
                 rows.append(dict(league="UCL", kickoff=m["kickoff"], home=m["home_full"], away=m["away_full"],
                                  short_home=m["home"], short_away=m["away"]))
-    # Ekstraklasa bez football-data.org -> terminarz z ClubElo
-    if "EKSTRA" in models and not any(r["league"] == "EKSTRA" for r in rows):
-        ce = D.clubelo_fixtures()
-        if not ce.empty and "Country" in ce:
-            ce = ce[ce.Country == "POL"]
-            mt = Matcher(models["EKSTRA"].teams)
-            for r in ce.itertuples():
-                ko = pd.Timestamp(r.Date).tz_localize("Europe/Warsaw").tz_convert("UTC") + pd.Timedelta(hours=18)
-                if not (now.date() <= ko.date() <= horizon.date()):
-                    continue
-                h, a = mt.match(r.Home), mt.match(r.Away)
-                if h and a:
-                    rows.append(dict(league="EKSTRA", kickoff=ko, home=h, away=a, time_unknown=True))
+    # Transfermarkt jako terminarz zapasowy dla wszystkich lig krajowych (jedyny dla Ekstraklasy,
+    # której nie ma w darmowym football-data.org; ClubElo wyłączyło API Fixtures)
+    have = {(r["league"], norm(r["home"])) for r in rows}
+    for lg in models:
+        cfg = C.LEAGUES[lg]
+        if not cfg.get("tm"):
+            continue
+        try:
+            tf = D.tm_fixtures(*cfg["tm"])
+        except Exception as e:  # noqa: BLE001
+            log.warning("terminarz Transfermarkt %s: %s", lg, e)
+            continue
+        if tf.empty:
+            continue
+        tf = tf[tf.hg.isna() & (tf.kickoff >= now - timedelta(hours=1)) & (tf.kickoff <= horizon)]
+        mt = Matcher(models[lg].teams)
+        for r in tf.itertuples():
+            h, a = mt.match(r.home), mt.match(r.away)
+            if not h or not a:
+                log.warning("terminarz %s: nie dopasowano %s – %s", lg, r.home, r.away)
+                continue
+            if (lg, norm(h)) in have:
+                continue
+            rows.append(dict(league=lg, kickoff=r.kickoff, home=h, away=a, time_unknown=r.time_unknown))
     # kursy z The Odds API (nadpisują średnie z pliku, bo są świeższe)
     for lg in {r["league"] for r in rows}:
         evs = D.odds_api(lg)

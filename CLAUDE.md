@@ -16,6 +16,10 @@ Komunikacja z użytkownikiem i teksty w bocie: po polsku.
   CSV `mmz4281/{sezon}/{E0..}` i `new/POL.csv`, terminarz `fixtures.csv`/`new_league_fixtures.csv`),
   football-data.org v4 (klucz; terminarz, wyniki, jedyne źródło LM; limit 10/min), ClubElo (`api.clubelo.com`),
   The Odds API (opcjonalny klucz), Understat xG (dwie metody: getLeagueData JSON i stary HTML).
+  Stan źródeł na 2026-11-04 (pierwszy przebieg na żywo): football-data.co.uk OK (CSV z BOM -> dekodowanie utf-8-sig),
+  Transfermarkt OK (kontuzje, wartości kadr, terminarz `gesamtspielplan` – zapasowy dla wszystkich lig, jedyny dla
+  Ekstraklasy; godziny w CET), RSS OK. ClubElo API Fixtures WYŁĄCZONE na stałe; ranking ClubElo bywa 502 ->
+  fallback `state/clubelo.csv`. Understat był w przerwie technicznej (nieprzetestowany format getLeagueData).
 - `names.py` + `aliases.json` – ujednolicanie nazw drużyn między źródłami (kanoniczne = nazwy football-data.co.uk),
   fuzzy match rapidfuzz. Nowe niedopasowania -> dopisać alias.
 - `model.py` – Dixon-Coles per liga: atak/obrona, przewaga gospodarzy, rho, waga czasowa XI=0.0022,
@@ -52,7 +56,7 @@ Pages: main /docs. Workflow permissions: read/write.
 - `python -m bot.main daily --no-send` – prawdziwy przebieg.
 
 ## Do zrobienia (priorytety)
-1. Uruchomić na prawdziwych danych i naprawić źródła (format CSV, selektory Transfermarkt, Understat, ClubElo Fixtures).
+1. Sprawdzić Understat i ranking ClubElo, gdy wrócą (LM wymaga Elo + klucza football-data.org).
 2. Sprawdzić dopasowanie nazw (log ostrzeżeń, aliases.json), szczególnie Ekstraklasa i LM.
 3. Założyć repo, Pages, sekrety; przeprowadzić użytkownika przez BotFather i klucz football-data.org.
 4. Potem: kalibracja MARKET_WEIGHT na danych z kursami zamknięcia (backtest z kursami z football-data.co.uk),
