@@ -116,6 +116,49 @@ def run_preview(send=True):
     return result, hist
 
 
+def run_lineups(send=True):
+    """Potwierdzone składy ~60 min przed meczem: porównanie ze zwykłą XI, przeliczenie meczu,
+    alert, gdy szansa 1/X/2 zmieniła się o ≥ LINEUP_ALERT_PP (lub gdy brakuje kogoś ze zwykłej XI)."""
+    from . import team_news as TN
+    st = T.load("run.json", {})
+    done = set(st.get("lineups_done", []))
+    now = datetime.now(timezone.utc)
+    lo, hi = C.LINEUP_WINDOW_MIN
+    srcs = [T.load("picks_latest.json", {}), T.load("picks_preview.json", {})]
+    seen, sent = set(), 0
+    for src in srcs:
+        for m in src.get("matches", []):
+            mins = (pd.Timestamp(m["kickoff"]) - now).total_seconds() / 60
+            lu0 = m.get("lineup") or {}
+            if m["id"] in done or m["id"] in seen or not lu0.get("fm_id") or not (lo <= mins <= hi):
+                continue
+            seen.add(m["id"])
+            try:
+                hid, aid = lu0["team_ids"]
+                ctx = TN.team_context(dict(id=lu0["fm_id"], kickoff=pd.Timestamp(m["kickoff"]),
+                                           home_id=hid, away_id=aid), m["league"])
+            except Exception as e:  # noqa: BLE001
+                log.warning("składy %s: %s", m["id"], e)
+                continue
+            if not ctx.get("confirmed"):
+                continue  # jeszcze przewidywane – spróbujemy w następnym przebiegu
+            done.add(m["id"])
+            d_new = (ctx["home"].get("d"), ctx["away"].get("d"))
+            d_old = tuple(lu0.get("d") or (None, None))
+            ch = TN.reprice(m, d_new, d_old)
+            if not ch:
+                continue
+            move = max(abs(b - a) for a, b in ch.values())
+            log.info("składy %s: zmiana %.1f pkt proc.", m["id"], 100 * move)
+            if move >= C.LINEUP_ALERT_PP and send:
+                TG.send(M.lineup_alert(m, ctx, ch))
+                sent += 1
+    st = T.load("run.json", {})
+    st["lineups_done"] = sorted(done)[-300:]
+    T.save("run.json", st)
+    return sent
+
+
 def run_auto():
     st = T.load("run.json", {})
     for text in TG.poll_updates():
@@ -148,13 +191,17 @@ def run_auto():
         run_prematch()
     except Exception:  # noqa: BLE001
         log.exception("przed meczem")
+    try:
+        run_lineups()
+    except Exception:  # noqa: BLE001
+        log.exception("składy")
     build_site()
 
 
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s", stream=sys.stdout)
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["auto", "daily", "preview", "settle", "site", "commands"])
+    ap.add_argument("mode", choices=["auto", "daily", "preview", "lineups", "settle", "site", "commands"])
     ap.add_argument("--no-send", action="store_true")
     a = ap.parse_args()
     if a.mode == "auto":
@@ -165,6 +212,8 @@ def main():
     elif a.mode == "preview":
         run_preview(send=not a.no_send)
         build_site()
+    elif a.mode == "lineups":
+        run_lineups(send=not a.no_send)
     elif a.mode == "settle":
         run_settle()
         build_site()

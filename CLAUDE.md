@@ -39,15 +39,22 @@ Komunikacja z użytkownikiem i teksty w bocie: po polsku.
   drużyny z jednego rankingu Elo (dopasowanie w obrębie kraju z football-data.org); klub naszej ligi bez Elo ->
   Elo z regresji Elo~siła w lidze; brak danych -> mecz pominięty z ostrzeżeniem.
   Backtest (tests/backtest_openfootball.py, ~1700 meczów): log-loss 1X2 0.974 vs 1.048 bazowo.
-- `injuries.py` – Transfermarkt (scraping tabel `verletztespieler` + wartości kadr) i opcjonalnie API-Football.
-  Brakujący udział wartości kadry -> korekta lambd (INJURY_K_ATT/DEF, cap 25%). Absencje >45 dni ważą 0.4.
-  Selektory HTML Transfermarkt są zgadywane – najpewniej do poprawy.
+- `fotmob.py` – FotMob `api/data/*` (bez klucza, działa z GitHub Actions): `day_matches`, `matchDetails` (skład
+  przewidywany `predicted` / zastępczy `lastStarting11` / oficjalny `standard`, niedostępni z typem i powrotem,
+  wartości rynkowe), `teams` (terminarz drużyny ze wszystkich rozgrywek), `leagues` (sezon – backtest).
+  „Zwykła jedenastka” = najwięcej minut w 8 ostatnich meczach LIGOWYCH; minuty w `.cache/fm_minutes/` (zwięźle).
+- `team_news.py` – kontekst kadrowy meczu, lista „dlaczego” (czynnik, opis, wpływ w pkt proc. lub None = info),
+  efekt składu λ·exp(a·d_własne + b·d_rywala), d = −braki_ze_zwykłej_XI/11, LINEUP_A=0.179, LINEUP_B=−0.220
+  (z backtestu), `reprice` – przeliczenie finalnych szans po potwierdzonych składach (zmiana względem rana).
+- `injuries.py` – STARE: Transfermarkt (blokuje GitHub Actions – HTTP 202) i API-Football; nieużywane w pipeline.
+  API-Football: klucz w Secrets, ALE darmowy plan nie ma bieżącego sezonu („try from 2022 to 2024”) – bezużyteczny.
 - `news.py` – RSS (lista w config), dopasowanie newsów do drużyn, flaga "injury" po słowach kluczowych.
 - `picks.py` – zdjęcie marży (metoda potęgowa), p = 0.1*model + 0.9*rynek (MARKET_WEIGHT=0.9 z backtestu),
   typy tylko na rynkach `PICK_MARKETS` (1X2, DC); O/U i BTTS „w kalibracji” (pole `calibrating`, bez typów),
   kurs STS szacowany jako rynek -3%, podatek 12% od stawki, "opłaca się od" = 1/(0.88*p).
   Typy: single (S1..), kupony 2–3 (K1..), długie za 2 zł: D1 "dużo zdarzeń" (6–12, kursy 1.18–1.6),
-  D2 "duży przelicznik" (5–8, kursy 1.7–2.8). Gdy brak przewagi – single "najbliżej wartości" z oznaczeniem.
+  D2 "duży przelicznik" (5–8, kursy 1.7–2.8), D3 „szalona” (15–20 zdarzeń tylko z prawdziwym kursem, max 1 na mecz,
+  ligi przeplatane, wg najmniejszej straty wartości; gdy za mało – `long_skipped` z powodem). Gdy brak przewagi – single "najbliżej wartości" z oznaczeniem.
 - `pipeline.py` – analyse(): historia -> modele -> Elo -> terminarz (horyzont 40 h) -> kontuzje/newsy ->
   prawdopodobieństwa -> typy. `match_id` = `LIGA:data:home-away` (znormalizowane). collect_results() do rozliczeń.
 - `tracker.py` – `state/record.json` (publiczny rejestr typów + kalibracja vs rynek),
@@ -58,11 +65,13 @@ Komunikacja z użytkownikiem i teksty w bocie: po polsku.
   (zakładki Typy/Mecze/Skuteczność/Jak to działa, pole "Twój kurs w STS" liczy wartość po podatku).
 - `main.py` – tryby: auto (co godzinę: komendy, typy o 9:00 PL raz dziennie NA DZIŚ (do 23:59), w czw/pt dodatkowo
   `preview` – zapowiedź weekendu do niedzieli, ID z prefiksem W: WS1/WK1/WD1, plik `picks_preview.json`,
-  komenda /weekend; rozliczenia, alert przed meczem
+  komenda /weekend; `lineups` – potwierdzone składy 35–80 min przed meczem (FotMob), alert ≥3 pkt proc.
+  (LINEUP_ALERT_PP) z listą braków i powodem; rozliczenia, alert przed meczem
   60–150 min jeśli nowy news o kontuzji, strona), daily, settle, site, commands. `--no-send` = bez Telegrama.
 
 ## GitHub Actions (`.github/workflows/bot.yml`)
-Cron co godzinę (:17), commituje `state/` i `docs/`. Sekrety: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID,
+Cron co 15 min (:02/:17/:32/:47 – składy przed meczem), commituje `state/` i `docs/`; cache `.cache` z kluczem
+godzinowym. Sekrety: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID,
 FOOTBALL_DATA_ORG_KEY, BETS_ENCRYPTION_KEY, opcjonalnie ODDS_API_KEY, API_FOOTBALL_KEY.
 Pages: main /docs. Workflow permissions: read/write.
 
@@ -82,6 +91,12 @@ Pages: main /docs. Workflow permissions: read/write.
      korekta tylko z bieżącego sezonu – bez poprawy. Kalibracja Platta O2.5 poprawia test (0.6848 -> 0.6806),
      izotoniczna 0.6823 – nie wdrożone (wciąż daleko od rynku 0.668). Bias O2.5 głównie w sezonie 2026/27.
    Każda zmiana z Etapu 2 musi poprawić ten backtest (log-loss 1X2 i O2.5).
+   ETAP 2 (2026-11-04, `tests/backtest_lineups.py`, 4080 meczów 2024/25–2026/27 ze składami FotMob, poza próbą
+   leave-one-season-out): liczba braków ze „zwykłej XI” poprawia log-loss 1X2 0.9994 -> 0.9982 i O2.5
+   0.6836 -> 0.6830 (w każdym sezonie) – WDROŻONE. Zmiana WARTOŚCI XI pogarszała (1.0011) – odrzucona.
+   Kontuzji samych nie da się zbacktestować (FotMob nie trzyma listy niedostępnych dla rozegranych meczów) –
+   ich wpływ wchodzi przez przewidywaną XI. Zmęczenie: tylko informacja w „dlaczego” (bez backtestu wpływu).
+   Pominięte decyzją użytkownika: model zawodników/FBref, tabela/derby/trener, ruch kursów, rynki poboczne.
    Historyczny opis problemu: model zaniżał O2.5 względem rynku o 5–11 pkt proc. w każdej lidze (w tym sezonie
    pada więcej goli niż w poprzednim, a XI ma półokres ~10 mies.) -> fałszywe „przewagi” na Poniżej 2.5 w singlach.
    Próba z szybszą wagą dla poziomu goli (półokres ~2 mies.) dała niespójny efekt na 40–70 meczach – cofnięta.

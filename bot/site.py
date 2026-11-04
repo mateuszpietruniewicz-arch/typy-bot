@@ -12,6 +12,7 @@ def build_site():
     latest = T.load("picks_latest.json", {})
     data = dict(latest=latest, stats=T.model_stats(),
                 record=T.load("record.json", {"coupons": []})["coupons"][-150:],
+                backtest=T.load("backtest.json", {}).get("summary"), preview=T.load("picks_preview.json", {}),
                 cfg=dict(tax=C.STS_TAX, market_weight=C.MARKET_WEIGHT, sts_disc=C.STS_MARGIN_DISCOUNT,
                          leagues={k: dict(name=v["name"], flag=v["flag"]) for k, v in C.LEAGUES.items()}))
     for m in data["latest"].get("matches", []):  # strona nie potrzebuje wszystkiego

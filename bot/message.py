@@ -55,6 +55,14 @@ def daily(result, title="Typy"):
             out += [f"   • {leg_line(l)}" for l in c["legs"]]
     for cid, why in (result.get("long_skipped") or {}).items():
         out.append(f"<code>{cid}</code> szalona: dziś nie ma – {esc(why)}.")
+    # „dlaczego” skrótowo: składy i zmęczenie przy meczach z typów
+    ids = {l["match_id"] for g in ("singles", "combos", "long") for c in result.get(g, []) for l in c["legs"]}
+    whys = [(m, w) for m in result["matches"] if m["id"] in ids for w in m.get("why", [])
+            if w["factor"] in ("skład", "zmęczenie")]
+    if whys:
+        out.append("\n🔎 <b>Dlaczego (składy, zmęczenie):</b>")
+        out += [f"• {esc(w['text'])}" + (f" ({w['impact']:+.1f} pkt proc.)" if w.get("impact") else "")
+                for _, w in whys[:6]]
     big = []
     for m in result["matches"]:
         for side in ("home", "away"):
@@ -66,6 +74,51 @@ def daily(result, title="Typy"):
     out.append("\nZapisz zagrany: /zagrane ID stawka kurs")
     if C.SITE_URL:
         out.append(f'📊 <a href="{C.SITE_URL}">Pełna analiza meczów</a>')
+    return "\n".join(out)
+
+
+def why_hard():
+    """Prosto: dlaczego w Polsce trudno wyjść na plus."""
+    t = C.STS_TAX
+    be = 1 / ((1 - t) * 2.0)
+    return ("<b>Dlaczego w Polsce trudno wyjść na plus</b>\n"
+            f"• Podatek {t * 100:.0f}% od stawki: z 10 zł w grze jest tylko {10 * (1 - t):.2f} zł.\n"
+            "• Marża bukmachera: kursy są zaniżone o kilka procent (na 1X2 zwykle 5–8%).\n"
+            f"• Razem: przy kursie 2.00 musisz trafiać {be * 100:.0f}% zakładów, żeby wyjść na zero "
+            "(bez podatku i marży wystarczyłoby 50%).\n"
+            "• Kupony: marża mnoży się z każdym zdarzeniem – 10 zdarzeń oddaje średnio ok. 50–60% stawki.")
+
+
+def model_vs_market(bt):
+    """Wynik backtestu modelu vs rynek (state/backtest.json -> summary)."""
+    s = (bt or {}).get("summary")
+    if not s:
+        return ""
+    return ("<b>Model vs rynek</b> (backtest {seasons}, {n} meczów, kursy zamknięcia; log-loss – niżej = lepiej)\n"
+            "• 1X2: model {ll_model_1x2} vs rynek {ll_market_1x2}\n"
+            "• Powyżej/Poniżej 2.5: model {ll_model_o25} vs rynek {ll_market_o25}\n"
+            "• Single „z przewagą” poza próbą: zwrot {r:+.0f}% przed podatkiem, {r2:+.0f}% po kursie STS i podatku.\n"
+            "Rynek przewiduje lepiej niż model – dlatego bot nie obiecuje zysku.").format(
+        r=100 * s["single_roi_test_1x2"], r2=100 * s["single_roi_test_1x2_sts"], **s)
+
+
+def lineup_alert(m, ctx, ch):
+    """Alert po potwierdzonych składach: kto wypadł ze zwykłej XI, dlaczego i jak zmieniły się szanse."""
+    from .team_news import _reason
+    out = [f"📋 <b>Składy</b> {hhmm(m['kickoff'])} {m['flag']} {esc(m['home'])} – {esc(m['away'])}"]
+    for side in ("home", "away"):
+        t = ctx[side]
+        if t.get("d") is None:
+            continue
+        line = f"<b>{esc(m[side])}</b>: bez {len(t['out'])} z „zwykłej jedenastki”"
+        if t["out"]:
+            line += "\n   brak: " + ", ".join(f"{esc(p['name'])} ({esc(_reason(p, t['unavailable']))})" for p in t["out"][:5])
+        if t["into"]:
+            line += "\n   w składzie: " + ", ".join(esc(p["name"]) for p in t["into"][:5])
+        out.append(line)
+    names = {"1": "1", "X": "X", "2": "2"}
+    out.append("Szanse: " + " · ".join(f"{names[k]} {a * 100:.0f}% → <b>{b * 100:.0f}%</b>" for k, (a, b) in ch.items()))
+    out.append("<i>Kursy STS mogły już zareagować – sprawdź przed grą.</i>")
     return "\n".join(out)
 
 

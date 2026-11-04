@@ -29,19 +29,19 @@ TZ = "Europe/Warsaw"
 # us     = nazwa ligi na Understat (xG)
 LEAGUES = {
     "EPL": dict(name="Premier League", flag="🏴", fdcuk="E0", fdorg="PL",
-                odds="soccer_epl", tm=("premier-league", "GB1"), us="EPL", elo_country="ENG"),
+                odds="soccer_epl", tm=("premier-league", "GB1"), us="EPL", elo_country="ENG", fotmob=47),
     "LALIGA": dict(name="LaLiga", flag="🇪🇸", fdcuk="SP1", fdorg="PD",
-                   odds="soccer_spain_la_liga", tm=("laliga", "ES1"), us="La_liga", elo_country="ESP"),
+                   odds="soccer_spain_la_liga", tm=("laliga", "ES1"), us="La_liga", elo_country="ESP", fotmob=87),
     "SERIEA": dict(name="Serie A", flag="🇮🇹", fdcuk="I1", fdorg="SA",
-                   odds="soccer_italy_serie_a", tm=("serie-a", "IT1"), us="Serie_A", elo_country="ITA"),
+                   odds="soccer_italy_serie_a", tm=("serie-a", "IT1"), us="Serie_A", elo_country="ITA", fotmob=55),
     "BUNDES": dict(name="Bundesliga", flag="🇩🇪", fdcuk="D1", fdorg="BL1",
-                   odds="soccer_germany_bundesliga", tm=("bundesliga", "L1"), us="Bundesliga", elo_country="DEU"),
+                   odds="soccer_germany_bundesliga", tm=("bundesliga", "L1"), us="Bundesliga", elo_country="DEU", fotmob=54),
     "LIGUE1": dict(name="Ligue 1", flag="🇫🇷", fdcuk="F1", fdorg="FL1",
-                   odds="soccer_france_ligue_one", tm=("ligue-1", "FR1"), us="Ligue_1", elo_country="FRA"),
+                   odds="soccer_france_ligue_one", tm=("ligue-1", "FR1"), us="Ligue_1", elo_country="FRA", fotmob=53),
     "EKSTRA": dict(name="Ekstraklasa", flag="🇵🇱", fdcuk_extra="POL", fdorg=None,
-                   odds="soccer_poland_ekstraklasa", tm=("pko-bp-ekstraklasa", "PL1"), us=None, elo_country="POL"),
+                   odds="soccer_poland_ekstraklasa", tm=("pko-bp-ekstraklasa", "PL1"), us=None, elo_country="POL", fotmob=196),
     "UCL": dict(name="Liga Mistrzów", flag="⭐", cup=True, fdorg="CL",
-                odds="soccer_uefa_champs_league", tm=None, us=None, elo_country=None),
+                odds="soccer_uefa_champs_league", tm=None, us=None, elo_country=None, fotmob=42),
 }
 DOMESTIC = [k for k, v in LEAGUES.items() if not v.get("cup")]
 
@@ -70,7 +70,16 @@ CRAZY_LEGS = (15, 20)     # D3 „szalona”: liczba zdarzeń
 CRAZY_MIN_P = 0.25        # pomijamy skrajne outsiderów (kurs > ~4)
 CRAZY_MIN_LEAGUES = 3     # zdarzenia z różnych lig
 
-# Korekta za kontuzje
+# Skład (FotMob): λ·exp(a·d_własne + b·d_rywala), d = −(zawodnicy „zwykłej jedenastki” poza składem)/11.
+# Współczynniki z tests/backtest_lineups.py (4080 meczów 2024–26, poza próbą: log-loss 1X2 0.9994 -> 0.9982,
+# O2.5 0.6836 -> 0.6830, poprawa w każdym sezonie). Wartość XI zamiast liczby braków pogarszała wynik.
+# Każdy brak: własne gole ×0.984, gole rywala ×1.020.
+LINEUP_A = 0.179
+LINEUP_B = -0.220
+LINEUP_ALERT_PP = 0.03    # alert, gdy potwierdzone składy zmieniają szansę o ≥ 3 pkt proc.
+LINEUP_WINDOW_MIN = (35, 80)  # kiedy sprawdzać potwierdzone składy (minuty przed meczem)
+
+# Korekta za kontuzje (stara, Transfermarkt – nieużywana w pipeline)
 INJURY_K_ATT = 0.45       # spadek ataku na 100% brakującej wartości kadry
 INJURY_K_DEF = 0.35       # wzrost goli traconych
 INJURY_CAP = 0.25         # maks. korekta lambdy

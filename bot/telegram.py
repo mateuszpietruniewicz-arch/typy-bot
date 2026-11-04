@@ -174,7 +174,11 @@ def handle(text):
         if cal:
             lines.append(f"Log-loss 1X2: model {cal['logloss_1x2']} vs rynek {cal['logloss_market']} "
                          f"(niżej = lepiej, {cal['n']} meczów)")
-        return "\n".join(lines) if len(lines) > 1 else "Jeszcze nic nie rozliczono."
+        from .message import model_vs_market, why_hard
+        if len(lines) == 1:
+            lines.append("Typy bota: jeszcze nic nie rozliczono.")
+        mvm = model_vs_market(tracker.load("backtest.json", {}))
+        return "\n".join(lines + ([""] + [mvm] if mvm else []) + ["", why_hard()])
     if cmd == "/typy":
         return tracker.load("picks_latest.json", {}).get("message", "Brak typów na dziś.")
     return "Nie rozumiem. /pomoc"

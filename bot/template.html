@@ -125,14 +125,15 @@ function matchCard(m){
   const p = m.probs, mk = m.market_probs;
   const ab = side => (m.absences[side]||[]).slice(0,5).map(x => `<span class="pill ${x.weight>=1?'w':''}" title="${esc(x.reason)}${x.until?' · do '+x.until:''}">${esc(x.player)}${x.value?' · '+(x.value/1e6).toFixed(0)+'M€':''}</span>`).join('') || '<span class="muted small">brak danych o brakach</span>';
   const nw = side => (m.news[side]||[]).map(n => `<div class="small">${n.injury?'🚑 ':''}<a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a> <span class="muted">· ${esc(n.source)}</span></div>`).join('');
-  const adj = m.injury_adj && (m.injury_adj.d_lh || m.injury_adj.d_la) ? `<span class="pill w">korekta za braki: ${m.injury_adj.d_lh>=0?'+':''}${m.injury_adj.d_lh} / ${m.injury_adj.d_la>=0?'+':''}${m.injury_adj.d_la} gola</span>` : '';
+  const why = (m.why||[]).length ? `<div class="small" style="margin:6px 0"><b>Dlaczego:</b><ul style="margin:4px 0 0 18px;padding:0">${m.why.map(w=>`<li>${esc(w.text)}${w.impact!=null?` <span class="pill ${w.impact<0?'w':'b'}">wpływ ${w.impact>0?'+':''}${w.impact} pkt proc.</span>`:''}</li>`).join('')}</ul></div>` : '';
+  const adj = m.lineup ? `<span class="pill" title="skład z FotMob">skład: ${m.lineup.confirmed?'potwierdzony':'przewidywany'}</span>` : '';
   const opts = (m.options||[]).filter(o=>['1','X','2','1X','X2','O2.5','U2.5','BTTS','BTTS_NO','O1.5','U3.5'].includes(o.key));
   return `<div class="card">
    <div class="row small muted"><span>${m.flag} ${esc(m.league_name)}</span><span>${tfmt(m.kickoff, m.time_unknown)}</span></div>
    <h3 style="font-size:16px;margin:4px 0 8px">${esc(m.home)} – ${esc(m.away)}</h3>
    ${bar(p['1'],p['X'],p['2'],'model')}${mk&&mk['1']?bar(mk['1'],mk['X'],mk['2'],'rynek'):''}
    <div style="margin:8px 0"><span class="pill" title="oczekiwane gole wg modelu">gole ${m.lambdas[0].toFixed(2)} : ${m.lambdas[1].toFixed(2)}</span><span class="pill" title="model w kalibracji – bez typów na tym rynku">O2.5 ${pct(p['O2.5'])} (w kalibracji)</span><span class="pill">BTTS ${pct(p.BTTS)}</span>
-   <span class="pill">wynik: ${m.top_scores.slice(0,3).map(s=>s[1]+' '+pct(s[0])).join(', ')}</span>${adj}</div>
+   <span class="pill">wynik: ${m.top_scores.slice(0,3).map(s=>s[1]+' '+pct(s[0])).join(', ')}</span>${adj}</div>${why}
    <details><summary>Rynki, kursy fair i „opłaca się od”</summary><table><tr><th>Typ</th><th>Szansa</th><th>Model</th><th>Rynek</th><th>Fair</th><th>Opłaca się od</th></tr>
    ${opts.map(o=>`<tr><td>${esc(o.label)}${o.calibrating?' <span class="small muted" title="Ten rynek nie przeszedł jeszcze backtestu – bot nie daje na nim typów">(model w kalibracji)</span>':''}</td><td class="num"><b>${pct(o.p)}</b></td><td class="num">${pct(o.p_model)}</td><td class="num">${o.p_market!=null?pct(o.p_market):'–'}</td><td class="num">${o.fair}</td><td class="num">${o.min_sts}</td></tr>`).join('')}</table></details>
    <details><summary>Kadra i newsy</summary>
@@ -179,12 +180,17 @@ function how(){
   <li><b>Marża</b> – suma prawdopodobieństw z kursów przekracza 100%. Na 1X2 w topowych ligach to zwykle kilka procent, na niszowych rynkach i ligach więcej.</li>
   <li><b>Kupony łączone</b> – marża mnoży się z każdym zdarzeniem, dlatego bukmacherzy promują długie kupony i bonusy za ich liczbę zdarzeń.</li></ul>
   <h3>Co robi ten bot</h3>
-  <ul><li><b>Dixon-Coles</b> dla każdej ligi: siła ataku i obrony z 3 sezonów, nowsze mecze ważą więcej, w top 5 ligach połowa „goli” to xG (mniej szumu niż same gole).</li>
-  <li><b>Liga Mistrzów</b>: ratingi ClubElo przeliczone na gole przez regresję na ligach krajowych.</li>
-  <li><b>Kontuzje</b>: Transfermarkt; brakujący udział wartości kadry obniża atak i osłabia obronę (świeże absencje ważą więcej niż długie, bo te model już widzi w wynikach).</li>
+  <ul><li><b>Dixon-Coles</b> dla każdej ligi: siła ataku i obrony z 3 sezonów, nowsze mecze ważą więcej, w top 5 ligach połowa „goli” to xG, gdy Understat działa (obecnie przerwa – same gole); średni poziom goli ligi aktualizuje się szybciej (półokres ~35 dni).</li>
+  <li><b>Liga Mistrzów</b>: ranking Elo (ClubElo, a gdy nie działa – elofootball.com) przeliczony na gole; przelicznik dopasowany do prognoz samego źródła Elo.</li>
+  <li><b>Kadra</b> (FotMob): niedostępni zawodnicy, przewidywany i potwierdzony skład porównany ze „zwykłą jedenastką” (najwięcej minut w 8 ostatnich meczach ligowych). Na ok. 60 min przed meczem bot sprawdza potwierdzone składy i wysyła alert, gdy szanse zmienią się o ≥3 pkt proc. Zmęczenie (dni odpoczynku, puchary) – tylko jako informacja.</li>
   <li><b>Rynek</b>: kursy średnie bez marży. Finalna szansa to ${Math.round((1-CFG.market_weight)*100)}% model + ${Math.round(CFG.market_weight*100)}% rynek – model musi mocno się nie zgadzać z rynkiem, żeby wskazać przewagę.</li>
-  <li><b>Backtest</b> (≈8 900 meczów 2022–2026, kursy zamknięcia): rynek przewiduje lepiej niż sam model, a single „z przewagą” miały ujemny zwrot poza próbą. Dlatego model ma małą wagę, a rynki Powyżej/Poniżej są „w kalibracji” (bez typów). Typy to analiza, nie przewaga nad bukmacherem.</li>
+  ${DATA.backtest ? `<li><b>Model vs rynek</b> – backtest ${DATA.backtest.seasons}, ${DATA.backtest.n} meczów, kursy zamknięcia (log-loss, niżej = lepiej): 1X2 model <b>${DATA.backtest.ll_model_1x2}</b> vs rynek <b>${DATA.backtest.ll_market_1x2}</b>; Powyżej/Poniżej 2.5 model <b>${DATA.backtest.ll_model_o25}</b> vs rynek <b>${DATA.backtest.ll_market_o25}</b>. Single „z przewagą” poza próbą: zwrot ${(DATA.backtest.single_roi_test_1x2*100).toFixed(0)}% przed podatkiem, ${(DATA.backtest.single_roi_test_1x2_sts*100).toFixed(0)}% po kursie STS i podatku. Rynek przewiduje lepiej niż model, dlatego model ma małą wagę, a rynki Powyżej/Poniżej są „w kalibracji” (bez typów).</li>` : ''}
   <li><b>Podatek</b>: w Polsce 12% od stawki, więc zakład opłaca się dopiero przy kursie ≥ 1/(0,88·szansa). Dlatego „opłaca się od” jest wyższe niż „fair”.</li></ul>
+  <h3>Dlaczego w Polsce trudno wyjść na plus</h3>
+  <ul><li><b>Podatek 12% od stawki</b>: stawiasz 10 zł, a w grze jest tylko 8,80 zł.</li>
+  <li><b>Marża bukmachera</b>: kursy są zaniżone o kilka procent (na 1X2 zwykle 5–8%, na kuponach i rynkach pobocznych więcej).</li>
+  <li><b>Razem</b>: przy kursie 2,00 trzeba trafiać <b>57%</b> zakładów, żeby wyjść na zero – a uczciwa szansa przy takim kursie to ok. 50%.</li>
+  <li><b>Wniosek</b>: żeby zarabiać, trzeba przewidywać lepiej niż rynek o więcej niż ~12% + marża. Ten bot (jak widać wyżej) przewiduje gorzej niż rynek – traktuj go jako narzędzie do analizy i zabawy.</li></ul>
   <h3>Długie kupony – matematyka</h3>
   <p>Przy marży ~5% na zdarzenie: 1 zdarzenie oddaje średnio ~95% stawki, 5 zdarzeń ~77%, 10 zdarzeń ~60%, a po podatku jeszcze ×0,88. Bot wybiera do długich kuponów zdarzenia z najmniejszą stratą wartości, ale nie zmieni tej matematyki – to rozrywka za 2 zł, nie strategia.</p>
   <p class="muted small">Graj tylko kwotą, którą możesz stracić. Gdyby przestało to być zabawą: <a href="https://uzaleznieniabehawioralne.pl/" target="_blank" rel="noopener">Telefon Zaufania Uzależnień Behawioralnych</a>.</p></div>`;

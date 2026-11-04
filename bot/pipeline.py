@@ -7,7 +7,7 @@ import pandas as pd
 
 from . import config as C
 from . import data_sources as D
-from . import injuries as I
+from . import team_news as TN
 from . import news as N
 from . import picks as P
 from . import tracker as T
@@ -202,12 +202,18 @@ def analyse(now=None, until=None, prefix=""):
     ucl_strength = UclStrength(models, elo_map, elo_df, team_cc)
     news_items = N.fetch_all()
 
-    absences = {}
-    for lg in {f["league"] for f in fixtures if f["league"] in models}:
-        absences[lg] = I.league_absences(lg, current_teams(hist, lg))
+    # wiadomości kadrowe z FotMob (działa też z GitHub Actions; Transfermarkt tam blokuje)
+    fm_ids = TN.find_fotmob_ids(fixtures)
+    contexts = {}
+    for i, fm in fm_ids.items():
+        try:
+            contexts[i] = TN.team_context(fm, fixtures[i]["league"])
+        except Exception as e:  # noqa: BLE001
+            log.warning("FotMob %s – %s: %s", fixtures[i]["home"], fixtures[i]["away"], e)
+    log.info("FotMob: dopasowano %d/%d meczów, kontekst kadrowy dla %d", len(fm_ids), len(fixtures), len(contexts))
 
     matches = []
-    for f in fixtures:
+    for i, f in enumerate(fixtures):
         lg = f["league"]
         home, away = f["home"], f["away"]
         info = {}
@@ -227,10 +233,16 @@ def analyse(now=None, until=None, prefix=""):
             lh, la = bridge.lambdas(eh, ea)
             rho = bridge.rho
             info["source"] = f"Elo {eh:.0f} vs {ea:.0f} ({sh}; {sa})"
-        ab_h = absences.get(lg, {}).get(home)
-        ab_a = absences.get(lg, {}).get(away)
-        lh2, la2, adj = I.adjust_lambdas(lh, la, ab_h, ab_a)
+        ctx = contexts.get(i) or {}
+        d_h, d_a = (ctx.get("home") or {}).get("d"), (ctx.get("away") or {}).get("d")
+        lh2, la2 = TN.lineup_effect(lh, la, d_h or 0.0, d_a or 0.0)
+        base = markets(score_matrix(lh, la, rho))
         mk = markets(score_matrix(lh2, la2, rho))
+        # wpływ składu na finalną szansę (model ma wagę 1 − MARKET_WEIGHT), w pkt proc.
+        w_model = 1 - C.MARKET_WEIGHT
+        impact = {"home": round(100 * w_model * (mk["1"] - base["1"]), 1),
+                  "away": round(100 * w_model * (mk["2"] - base["2"]), 1)} if (d_h or d_a) else None
+        why = TN.why_items(ctx, home, away, impact) if ctx else []
         top_scores = mk.pop("_top_scores")
         mid = match_id(lg, f["kickoff"], home, away)
         pm, _, _ = P.market_view({k: P._clean(f.get(k)) for k in P.ODDS_MARKETS.values()})
@@ -238,16 +250,24 @@ def analyse(now=None, until=None, prefix=""):
             id=mid, league=lg, league_name=C.LEAGUES[lg]["name"], flag=C.LEAGUES[lg]["flag"],
             kickoff=pd.Timestamp(f["kickoff"]).isoformat(), time_unknown=f.get("time_unknown", False),
             home=home, away=away, lambdas=[round(lh2, 3), round(la2, 3)],
-            lambdas_raw=[round(lh, 3), round(la, 3)], injury_adj=adj,
+            lambdas_raw=[round(lh, 3), round(la, 3)],
+            lineup=dict(fm_id=ctx.get("fm_id"), type=ctx.get("lineup_type"), confirmed=ctx.get("confirmed", False),
+                        d=[d_h, d_a], team_ids=[ctx["home"]["team_id"], ctx["away"]["team_id"]]) if ctx else None,
+            why=why,
             probs={k: round(v, 4) for k, v in mk.items()}, top_scores=[(round(p, 3), s) for p, s in top_scores],
             market_probs={k: round(float(v), 4) for k, v in pm.items()} or None,
             **{k: f.get(k) for k in ("odds_h", "odds_d", "odds_a", "odds_o25", "odds_u25",
                                        "max_h", "max_d", "max_a", "pin_h", "pin_d", "pin_a", "n_books")
                if f.get(k) == f.get(k) and f.get(k) is not None},
-            absences=dict(home=(ab_h or {}).get("players", [])[:8], away=(ab_a or {}).get("players", [])[:8]),
+            absences={side: [dict(player=p["name"], value=p["value"], weight=1.0, src="FotMob",
+                                  reason={"injury": "kontuzja", "suspension": "zawieszenie"}.get(p["type"], p["type"]),
+                                  until=p.get("expected_return"))
+                             for p in sorted((ctx.get(side) or {}).get("unavailable", []), key=lambda p: -p["value"])[:8]]
+                      for side in ("home", "away")},
             news=dict(home=N.for_team(news_items, f.get("short_home", home)),
                       away=N.for_team(news_items, f.get("short_away", away))),
-            rest=dict(home=rest_days(hist, lg, home, f["kickoff"]), away=rest_days(hist, lg, away, f["kickoff"])),
+            rest=dict(home=((ctx.get("home") or {}).get("schedule") or {}).get("rest_days") or rest_days(hist, lg, home, f["kickoff"]),
+                      away=((ctx.get("away") or {}).get("schedule") or {}).get("rest_days") or rest_days(hist, lg, away, f["kickoff"])),
             **info))
     matches.sort(key=lambda m: m["kickoff"])
     result = P.build(matches, prefix)

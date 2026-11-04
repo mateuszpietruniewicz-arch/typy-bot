@@ -94,14 +94,15 @@ def walk_forward(df, lg, variants):
                            **kw)
             ps = []
             for r in chunk.itertuples():
-                mk = markets(score_matrix(*m.lambdas(r.home, r.away), m.rho))
-                ps.append((mk["1"], mk["X"], mk["2"], mk["O2.5"]))
+                lh, la = m.lambdas(r.home, r.away)
+                mk = markets(score_matrix(lh, la, m.rho))
+                ps.append((mk["1"], mk["X"], mk["2"], mk["O2.5"], lh, la))
             preds[name] = ps
         for i, r in enumerate(chunk.itertuples()):
             row = dict(league=lg, season=r.season, date=r.date, home=r.home, away=r.away, hg=r.hg, ag=r.ag,
                        c1=r.c1, cx=r.cx, c2=r.c2, co=r.co, cu=r.cu)
             for name, ps in preds.items():
-                row.update({f"{k}_{name}": v for k, v in zip(("p1", "px", "p2", "po"), ps[i])})
+                row.update({f"{k}_{name}": v for k, v in zip(("p1", "px", "p2", "po", "lh", "la"), ps[i])})
             rows.append(row)
     return rows
 
@@ -317,8 +318,18 @@ def report(P, variants):
                   f"TEST ROI {b['roi']:+.3f} ±{b['se']:.3f} (n={b['n']}), po STS+podatku {b['roi_sts']:+.3f}")
         out[label] = dict(w_ll=w_best, pick=None if not pick else dict(
             w=pick[0], min_edge=pick[1], tune=pick[2], test=pick[3]))
-    (C.STATE / "backtest.json").write_text(json.dumps(dict(best_variant=best_v, results=out), indent=1,
-                                                      default=float))
+    prod = f"p1_{best_v}"
+    summary = dict(
+        n=int(ok1.sum()), seasons=f"20{PRED_SEASONS[0][:2]}/{PRED_SEASONS[0][2:]}–20{PRED_SEASONS[-1][:2]}/{PRED_SEASONS[-1][2:]}",
+        ll_model_1x2=round(float(ll_1x2(P[prod], P[f"px_{best_v}"], P[f"p2_{best_v}"], res)[ok1].mean()), 4),
+        ll_market_1x2=round(float(l1m), 4),
+        ll_model_o25=round(float(ll_bin(P[f"po_{best_v}"].values, y)[oko].mean()), 4),
+        ll_market_o25=round(float(lom), 4),
+        single_roi_test_1x2=round(float(bets(P[ok1 & test], best_v, 0.65, 0.03, "1x2")["roi"]), 3),
+        single_roi_test_1x2_sts=round(float(bets(P[ok1 & test], best_v, 0.65, 0.03, "1x2")["roi_sts"]), 3),
+    )
+    (C.STATE / "backtest.json").write_text(json.dumps(dict(summary=summary, best_variant=best_v, results=out),
+                                                      indent=1, default=float))
     print("\nZapisano state/backtest.json")
 
 
