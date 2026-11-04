@@ -41,18 +41,54 @@ def current_teams(hist, lg, days=200):
     return sorted(set(recent.home) | set(recent.away))
 
 
-def elo_lookup(hist, models):
-    """{(liga, drużyna): Elo} oraz Matcher dla wszystkich klubów ClubElo."""
-    elo = D.clubelo_ratings()
+def elo_lookup(models, extra_countries=()):
+    """{(liga, drużyna): Elo} dla drużyn naszych lig + cały ranking (do LM)."""
+    countries = {C.LEAGUES[lg]["elo_country"] for lg in models} | set(extra_countries)
+    elo = D.elo_ratings(countries)
     out = {}
     for lg in models:
-        sub = elo[elo.Country == C.LEAGUES[lg]["elo_country"]]
+        sub = elo[elo.Country == D.country_code(C.LEAGUES[lg]["elo_country"])]
         mt = Matcher(models[lg].teams)
         for r in sub.itertuples():
             t = mt.match(r.Club)
             if t:
                 out[(lg, t)] = float(r.Elo)
     return out, elo
+
+
+class UclStrength:
+    """Siła drużyny LM w skali Elo – dla wszystkich z jednego rankingu (ta sama skala, na której
+    skalibrowany jest most Elo -> gole). Klub z naszych lig, którego nie ma w rankingu: Elo
+    przewidziane z siły w modelu ligowym (regresja Elo ~ siła w obrębie ligi).
+    Brak danych -> None (mecz pomijamy, nie zgadujemy)."""
+
+    def __init__(self, models, elo_map, elo_df, team_cc):
+        self.models, self.elo, self.team_cc = models, elo_df, team_cc
+        self.cc2lg = {D.country_code(C.LEAGUES[lg]["elo_country"]): lg for lg in models}
+        self.reg = {}
+        for lg, m in models.items():
+            pairs = np.array([(m.strength(t), e) for (l, t), e in elo_map.items() if l == lg])
+            if len(pairs) >= 8 and pairs[:, 0].std() > 0:
+                b, a = np.polyfit(pairs[:, 0], pairs[:, 1], 1)
+                self.reg[lg] = (a, b)
+
+    def __call__(self, team_id, full, short):
+        cc = self.team_cc.get(team_id)
+        sub = self.elo[self.elo.Country == cc] if cc else self.elo
+        if len(sub):
+            mt = Matcher(sub.Club.tolist())
+            club = mt.match(full) or mt.match(short)
+            if club:
+                row = sub[sub.Club == club].iloc[0]
+                return float(row.Elo), f"{row.Source}: {club}"
+        lg = self.cc2lg.get(cc)
+        if lg in self.reg:
+            mt = Matcher(self.models[lg].teams)
+            t = mt.match(full) or mt.match(short)
+            if t:
+                a, b = self.reg[lg]
+                return a + b * self.models[lg].strength(t), f"model {lg}"
+        return None, None
 
 
 def gather_fixtures(hist, models, now):
@@ -82,7 +118,8 @@ def gather_fixtures(hist, models, now):
                 rows.append(dict(league=lg, kickoff=m["kickoff"], home=h, away=a))
             else:
                 rows.append(dict(league="UCL", kickoff=m["kickoff"], home=m["home_full"], away=m["away_full"],
-                                 short_home=m["home"], short_away=m["away"]))
+                                 short_home=m["home"], short_away=m["away"],
+                                 home_id=m["home_id"], away_id=m["away_id"]))
     # Transfermarkt jako terminarz zapasowy dla wszystkich lig krajowych (jedyny dla Ekstraklasy,
     # której nie ma w darmowym football-data.org; ClubElo wyłączyło API Fixtures)
     have = {(r["league"], norm(r["home"])) for r in rows}
@@ -137,16 +174,20 @@ def rest_days(hist, lg, team, kickoff):
 def analyse(now=None):
     now = now or datetime.now(timezone.utc)
     hist, models = load_history()
-    elo_map, elo_df = elo_lookup(hist, models)
-    bridge = fit_elo_bridge(models, elo_map)
     fixtures = gather_fixtures(hist, models, now)
+    team_cc = {}
+    if any(f["league"] == "UCL" for f in fixtures):
+        team_cc = {t["id"]: t["country"] for t in D.fdorg_teams("CL")}
+    ucl_ids = {f[k] for f in fixtures if f["league"] == "UCL" for k in ("home_id", "away_id")}
+    elo_map, elo_df = elo_lookup(models, {team_cc[i] for i in ucl_ids if team_cc.get(i)})
+    bridge = fit_elo_bridge(models, elo_map, D.ELO_PROBS if any(f["league"] == "UCL" for f in fixtures) else None)
+    ucl_strength = UclStrength(models, elo_map, elo_df, team_cc)
     news_items = N.fetch_all()
 
     absences = {}
     for lg in {f["league"] for f in fixtures if f["league"] in models}:
         absences[lg] = I.league_absences(lg, current_teams(hist, lg))
 
-    elo_mt = Matcher(elo_df.Club.tolist()) if len(elo_df) else None
     matches = []
     for f in fixtures:
         lg = f["league"]
@@ -159,14 +200,15 @@ def analyse(now=None):
             info["source"] = "Dixon-Coles (gole + xG)" if C.LEAGUES[lg].get("us") else "Dixon-Coles (gole)"
             info["unknown"] = [t for t in (home, away) if t not in m.att]
         else:  # LM -> most Elo
-            eh = elo_df.set_index("Club").Elo.get(elo_mt.match(home)) if elo_mt else None
-            ea = elo_df.set_index("Club").Elo.get(elo_mt.match(away)) if elo_mt else None
+            eh, sh = ucl_strength(f.get("home_id"), home, f.get("short_home", home))
+            ea, sa = ucl_strength(f.get("away_id"), away, f.get("short_away", away))
             if eh is None or ea is None:
-                log.warning("Brak Elo dla %s – %s, pomijam", home, away)
+                log.warning("LM: brak Elo dla %s – pomijam mecz %s – %s",
+                            " i ".join(n for n, e in ((home, eh), (away, ea)) if e is None), home, away)
                 continue
-            lh, la = bridge.lambdas(float(eh), float(ea))
+            lh, la = bridge.lambdas(eh, ea)
             rho = bridge.rho
-            info["source"] = f"Elo (ClubElo {eh:.0f} vs {ea:.0f})"
+            info["source"] = f"Elo {eh:.0f} vs {ea:.0f} ({sh}; {sa})"
         ab_h = absences.get(lg, {}).get(home)
         ab_a = absences.get(lg, {}).get(away)
         lh2, la2, adj = I.adjust_lambdas(lh, la, ab_h, ab_a)

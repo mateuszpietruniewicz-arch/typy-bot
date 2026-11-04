@@ -35,7 +35,7 @@ LEAGUES = {
     "SERIEA": dict(name="Serie A", flag="🇮🇹", fdcuk="I1", fdorg="SA",
                    odds="soccer_italy_serie_a", tm=("serie-a", "IT1"), us="Serie_A", elo_country="ITA"),
     "BUNDES": dict(name="Bundesliga", flag="🇩🇪", fdcuk="D1", fdorg="BL1",
-                   odds="soccer_germany_bundesliga", tm=("bundesliga", "L1"), us="Bundesliga", elo_country="GER"),
+                   odds="soccer_germany_bundesliga", tm=("bundesliga", "L1"), us="Bundesliga", elo_country="DEU"),
     "LIGUE1": dict(name="Ligue 1", flag="🇫🇷", fdcuk="F1", fdorg="FL1",
                    odds="soccer_france_ligue_one", tm=("ligue-1", "FR1"), us="Ligue_1", elo_country="FRA"),
     "EKSTRA": dict(name="Ekstraklasa", flag="🇵🇱", fdcuk_extra="POL", fdorg=None,
@@ -51,6 +51,8 @@ XG_WEIGHT = 0.5           # udział xG w ocenie siły (0 = tylko gole, 1 = tylko
 
 # --- Typy -------------------------------------------------------------------
 MARKET_WEIGHT = 0.65      # ile ufamy rynkowi vs modelowi przy łączeniu prawdopodobieństw
+ODDS_MIN_INTERVAL_H = 11  # The Odds API: liga odświeżana max ~2x dziennie (budżet 500 kredytów/mies.)
+ODDS_RESERVE = 25         # poniżej tylu kredytów nie pytamy (zostają zapisane kursy)
 HORIZON_HOURS = int(os.getenv("HORIZON_HOURS", "40"))  # jak daleko w przód szukamy meczów
 MIN_EDGE = 0.03           # minimalna przewaga dla singla (3%)
 MIN_PROB_SINGLE = 0.28

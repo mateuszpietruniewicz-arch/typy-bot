@@ -10,7 +10,7 @@ from .config import ROOT
 _STOP = {"fc", "cf", "afc", "sc", "ac", "as", "ssc", "us", "sv", "vfb", "vfl", "tsg", "fsv",
          "rcd", "ca", "cd", "ud", "sd", "rc", "ogc", "losc", "stade", "olympique", "club",
          "de", "the", "1", "04", "05", "1899", "1846", "1907", "1910", "1913", "ks", "sk",
-         "calcio", "bc", "hsc", "real club", "sp", "s.a.d", "ssd"}
+         "calcio", "bc", "hsc", "pae", "real club", "sp", "s.a.d", "ssd"}
 
 # ręczne aliasy (klucz: znormalizowana nazwa z dowolnego źródła -> nazwa kanoniczna)
 ALIASES_FILE = ROOT / "bot" / "aliases.json"

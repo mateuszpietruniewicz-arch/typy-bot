@@ -6,6 +6,7 @@ import logging
 import re
 import time
 from datetime import datetime, timedelta, timezone
+from urllib.parse import urlparse
 
 import numpy as np
 import pandas as pd
@@ -19,6 +20,9 @@ S = requests.Session()
 S.headers.update({"User-Agent": C.UA, "Accept-Language": "en-GB,en;q=0.9,pl;q=0.8"})
 
 
+LAST_HEADERS = {}  # host -> nagłówki ostatniej odpowiedzi z sieci (limity API)
+
+
 def get(url, *, headers=None, params=None, cache_h=0, tries=3, binary=False):
     """GET z ponawianiem i prostym cache na dysku (żeby nie męczyć źródeł)."""
     C.CACHE.mkdir(exist_ok=True)
@@ -30,6 +34,13 @@ def get(url, *, headers=None, params=None, cache_h=0, tries=3, binary=False):
     for i in range(tries):
         try:
             r = S.get(url, headers=headers, params=params, timeout=30)
+            LAST_HEADERS[urlparse(url).netloc] = r.headers
+            if r.status_code == 429:  # limit zapytań – czekamy tyle, ile każe serwer
+                wait = int(r.headers.get("X-RequestCounter-Reset") or r.headers.get("Retry-After") or 10 * (i + 1))
+                log.warning("%s: limit zapytań, czekam %d s", urlparse(url).netloc, wait)
+                time.sleep(min(wait + 1, 65))
+                last = "HTTP 429"
+                continue
             if r.status_code == 200:
                 if cache_h:
                     path.write_bytes(r.content)
@@ -155,22 +166,58 @@ def fdcuk_fixtures():
 # ---------------------------------------------------------------------------
 # football-data.org  (terminarz + wyniki, darmowy klucz; jedyne źródło LM)
 # ---------------------------------------------------------------------------
+FDORG_HOST = "api.football-data.org"
+_FD_LIMIT = {"available": None, "reset_at": 0.0}
+
+
+def fdorg_get(path, params=None, cache_h=1):
+    """Zapytanie do football-data.org z limitem czytanym z nagłówków
+    X-Requests-Available-Minute / X-RequestCounter-Reset (zamiast stałego sleep)."""
+    if _FD_LIMIT["available"] is not None and _FD_LIMIT["available"] <= 0:
+        wait = _FD_LIMIT["reset_at"] - time.time()
+        if wait > 0:
+            log.info("football-data.org: wyczerpany limit na minutę, czekam %.0f s", wait)
+            time.sleep(wait + 1)
+    LAST_HEADERS.pop(FDORG_HOST, None)
+    raw = get(f"https://{FDORG_HOST}/v4/{path}", headers={"X-Auth-Token": C.FDORG_KEY},
+              params=params, cache_h=cache_h)
+    h = LAST_HEADERS.get(FDORG_HOST)
+    if h is not None:  # było zapytanie do sieci (nie z cache)
+        try:
+            _FD_LIMIT["available"] = int(h.get("X-Requests-Available-Minute"))
+            _FD_LIMIT["reset_at"] = time.time() + int(h.get("X-RequestCounter-Reset") or 60)
+        except (TypeError, ValueError):
+            pass
+    return json.loads(raw)
+
+
+def fdorg_teams(comp):
+    """Drużyny rozgrywek z krajem (area.code) – potrzebne do Elo w LM."""
+    if not C.FDORG_KEY:
+        return []
+    try:
+        js = fdorg_get(f"competitions/{comp}/teams", cache_h=24)
+    except Exception as e:  # noqa: BLE001
+        log.warning("football-data.org teams %s: %s", comp, e)
+        return []
+    return [dict(id=t["id"], name=t["name"], short=t.get("shortName") or t["name"],
+                 country=country_code((t.get("area") or {}).get("code"))) for t in js.get("teams", [])]
+
+
 def fdorg_matches(comp, date_from, date_to):
     if not C.FDORG_KEY:
         return []
-    url = f"https://api.football-data.org/v4/competitions/{comp}/matches"
     try:
-        js = json.loads(get(url, headers={"X-Auth-Token": C.FDORG_KEY},
-                            params={"dateFrom": date_from, "dateTo": date_to}, cache_h=1))
+        js = fdorg_get(f"competitions/{comp}/matches", params={"dateFrom": date_from, "dateTo": date_to})
     except Exception as e:  # noqa: BLE001
         log.warning("football-data.org %s: %s", comp, e)
         return []
-    time.sleep(6.5)  # limit 10 zapytań/min
     out = []
     for m in js.get("matches", []):
         ft = (m.get("score") or {}).get("fullTime") or {}
         out.append(dict(
             id=m["id"], kickoff=pd.Timestamp(m["utcDate"]), status=m["status"],
+            home_id=m["homeTeam"].get("id"), away_id=m["awayTeam"].get("id"),
             home=m["homeTeam"].get("shortName") or m["homeTeam"]["name"],
             away=m["awayTeam"].get("shortName") or m["awayTeam"]["name"],
             home_full=m["homeTeam"]["name"], away_full=m["awayTeam"]["name"],
@@ -195,32 +242,105 @@ def ucl_history():
 # ---------------------------------------------------------------------------
 # ClubElo (bez klucza) – ranking siły wszystkich klubów w Europie
 # ---------------------------------------------------------------------------
-ELO_SNAPSHOT = C.STATE / "clubelo.csv"   # ostatni udany ranking (fallback, gdy API leży)
+# Kody krajów ujednolicone do ISO-3 (jak elofootball.com / football-data.org);
+# ClubElo i football-data.org mają kilka własnych skrótów.
+_CC = {"GER": "DEU", "POR": "PRT", "NED": "NLD", "SUI": "CHE", "DEN": "DNK", "CRO": "HRV",
+       "GRE": "GRC", "BUL": "BGR", "SLO": "SVN", "ROM": "ROU", "LAT": "LVA", "BIH": "BIH"}
+ELO_SNAPSHOT = C.STATE / "elo.csv"   # ostatni udany ranking (fallback, gdy źródła leżą)
+ELO_PROBS_FILE = C.STATE / "elo_probs.json"
+ELO_COLS = ["Club", "Country", "Elo", "Source", "Date"]
 
 
-def clubelo_ratings(day=None):
-    """Ranking ClubElo. API bywa niedostępne -> próbujemy kilku ostatnich dni,
-    a na końcu bierzemy ostatni zapisany snapshot z state/clubelo.csv."""
-    cols = ["Club", "Country", "Level", "Elo"]
-    d0 = datetime.fromisoformat(day).date() if day else datetime.now(timezone.utc).date()
+def country_code(c):
+    c = (c or "").upper()
+    return _CC.get(c, c)
+
+
+def _clubelo(day):
     for back in range(3):
-        d = (d0 - timedelta(days=back)).isoformat()
+        d = (day - timedelta(days=back)).isoformat()
         try:
             df = pd.read_csv(io.StringIO(get(f"http://api.clubelo.com/{d}", cache_h=12, tries=2)))
             if "Elo" in df and len(df) > 100:
-                df = df[cols]
-                C.STATE.mkdir(exist_ok=True)
-                df.to_csv(ELO_SNAPSHOT, index=False)
-                return df
+                return df.assign(Country=df.Country.map(country_code), Source="ClubElo", Date=d)
         except Exception as e:  # noqa: BLE001
             log.warning("clubelo %s: %s", d, e)
             if "HTTP 5" in str(e) or "timed out" in str(e):
                 break  # serwer leży – nie ma sensu pytać o inne dni
-    if ELO_SNAPSHOT.exists():
-        age = (time.time() - ELO_SNAPSHOT.stat().st_mtime) / 86400
-        log.warning("clubelo: używam zapisanego rankingu (%.0f dni)", age)
-        return pd.read_csv(ELO_SNAPSHOT)[cols]
-    return pd.DataFrame(columns=cols)
+    return None
+
+
+ELO_PROBS = []  # (różnica Elo gosp.-gość, p1, pX, p2) z prognoz elofootball – do kalibracji mostu
+
+
+def _elofootball(countries, day):
+    """elofootball.com: ranking per kraj (country.php). Pobieramy tylko potrzebne kraje."""
+    from bs4 import BeautifulSoup
+    y = day.year if day.month >= 7 else day.year - 1
+    rows = []
+    for cc in sorted(countries):
+        try:
+            html = get("http://elofootball.com/country.php",
+                       params={"countryiso": cc, "season": f"{y}-{y + 1}"}, cache_h=20, tries=2)
+        except Exception as e:  # noqa: BLE001
+            log.warning("elofootball %s: %s", cc, e)
+            continue
+        tables = BeautifulSoup(html, "lxml").find_all("table")
+        for t in tables:  # prognozy samego elofootball: "Drużyna 1631" ... "51 / 26 / 23 %"
+            if "Probabilities" not in [th.get_text(strip=True) for th in t.find_all("th")]:
+                continue
+            for tr in t.find_all("tr")[1:]:
+                td = [x.get_text(" ", strip=True) for x in tr.find_all("td")]
+                if len(td) < 6:
+                    continue
+                eh, ea = re.search(r"(\d{3,4})$", td[2]), re.search(r"(\d{3,4})$", td[4])
+                pr = re.findall(r"\d+", td[5])
+                if eh and ea and len(pr) == 3:
+                    ELO_PROBS.append((int(eh.group(1)) - int(ea.group(1)), *[int(x) / 100 for x in pr]))
+        tab = next((t for t in tables
+                    if "Rating" in [th.get_text(strip=True) for th in t.find_all("th")]), None)
+        if tab is None:
+            log.warning("elofootball %s: brak tabeli rankingu", cc)
+            continue
+        heads = [th.get_text(strip=True) for th in tab.find("tr").find_all(["th", "td"])]
+        ic, ir = heads.index("Club"), heads.index("Rating")
+        for tr in tab.find_all("tr")[1:]:
+            tds = [td.get_text(" ", strip=True) for td in tr.find_all("td")]
+            if len(tds) > max(ic, ir) and tds[ir].isdigit():
+                rows.append(dict(Club=tds[ic], Country=cc, Elo=float(tds[ir]),
+                                 Source="elofootball", Date=day.isoformat()))
+    return pd.DataFrame(rows, columns=ELO_COLS) if rows else None
+
+
+def elo_ratings(countries=(), day=None):
+    """Ranking Elo klubów: ClubElo -> elofootball.com (tylko kraje z `countries`) -> zapis w state/elo.csv.
+    W jednym przebiegu wszystkie oceny pochodzą z jednego źródła (różne skale!)."""
+    day = datetime.fromisoformat(day).date() if day else datetime.now(timezone.utc).date()
+    countries = {country_code(c) for c in countries if c}
+    snap = pd.read_csv(ELO_SNAPSHOT) if ELO_SNAPSHOT.exists() else pd.DataFrame(columns=ELO_COLS)
+    df = _clubelo(day)
+    if df is None:
+        df = _elofootball(countries, day)
+    if df is not None:
+        df = df[ELO_COLS]
+        src = df.Source.iloc[0]
+        # kraje pobrane teraz zastępują stare wpisy; reszta snapshotu zostaje (tylko z tego samego źródła)
+        keep = snap[(snap.Source == src) & ~snap.Country.isin(set(df.Country))]
+        out = pd.concat([keep, df], ignore_index=True) if len(keep) else df.reset_index(drop=True)
+        C.STATE.mkdir(exist_ok=True)
+        out.to_csv(ELO_SNAPSHOT, index=False)
+        if src == "elofootball" and len(ELO_PROBS) >= 50:
+            ELO_PROBS_FILE.write_text(json.dumps(ELO_PROBS[-1500:]))
+        log.info("Elo: %s, %d klubów (%d krajów)", src, len(out), out.Country.nunique())
+        return out
+    if len(snap):
+        if snap.Source.iloc[-1] == "elofootball" and ELO_PROBS_FILE.exists():
+            ELO_PROBS[:] = [tuple(x) for x in json.loads(ELO_PROBS_FILE.read_text())]
+        log.warning("Elo: źródła niedostępne – używam zapisanego rankingu (%s, %s)",
+                    snap.Source.iloc[-1], snap.Date.max())
+        return snap
+    log.warning("Elo: brak źródeł i zapisanego rankingu")
+    return pd.DataFrame(columns=ELO_COLS)
 
 
 # ---------------------------------------------------------------------------
@@ -265,17 +385,42 @@ def tm_fixtures(slug, code, tz="Europe/Warsaw"):
 # ---------------------------------------------------------------------------
 # The Odds API (darmowy klucz, 500 kredytów/mies.) – kursy wielu bukmacherów
 # ---------------------------------------------------------------------------
+ODDS_STATE = "odds_api.json"   # w state/: ostatnie pobranie per liga + pozostałe kredyty
+
+
 def odds_api(league):
-    if not C.ODDS_API_KEY or not C.LEAGUES[league].get("odds"):
+    """Kursy z The Odds API z pilnowaniem budżetu (500 kredytów/mies., h2h+totals = 2 kredyty):
+    liga odświeżana najwyżej co ODDS_MIN_INTERVAL_H, a poniżej ODDS_RESERVE kredytów nie pytamy wcale."""
+    from . import tracker as T
+    sport = C.LEAGUES[league].get("odds")
+    if not C.ODDS_API_KEY or not sport:
         return []
-    url = f"https://api.the-odds-api.com/v4/sports/{C.LEAGUES[league]['odds']}/odds"
+    st = T.load(ODDS_STATE, {"leagues": {}})
+    prev = st["leagues"].get(league)
+    now = datetime.now(timezone.utc)
+    fresh = prev and now - datetime.fromisoformat(prev["fetched"]) < timedelta(hours=C.ODDS_MIN_INTERVAL_H)
+    remaining = st.get("remaining")
+    if fresh or (remaining is not None and remaining <= C.ODDS_RESERVE):
+        if not fresh:
+            log.warning("odds-api: zostało %s kredytów (rezerwa %d) – używam zapisanych kursów %s",
+                        remaining, C.ODDS_RESERVE, league)
+        evs = (prev or {}).get("events", [])
+        return [{**e, "kickoff": pd.Timestamp(e["kickoff"])} for e in evs]
     try:
-        js = json.loads(get(url, params=dict(apiKey=C.ODDS_API_KEY, regions="eu",
-                                             markets="h2h,totals", oddsFormat="decimal"),
-                            cache_h=3))
+        js = json.loads(get(f"https://api.the-odds-api.com/v4/sports/{sport}/odds",
+                            params=dict(apiKey=C.ODDS_API_KEY, regions="eu", markets="h2h,totals",
+                                        oddsFormat="decimal"), tries=2))
     except Exception as e:  # noqa: BLE001
-        log.warning("odds-api %s: %s", league, e)
+        log.warning("odds-api %s: %s", league, str(e).replace(C.ODDS_API_KEY, "***"))
         return []
+    h = LAST_HEADERS.get("api.the-odds-api.com") or {}
+    try:
+        st["remaining"] = int(float(h.get("x-requests-remaining")))
+        st["used"] = int(float(h.get("x-requests-used")))
+    except (TypeError, ValueError):
+        pass
+    log.info("odds-api %s: %d meczów, koszt %s, zostało %s kredytów",
+             league, len(js), h.get("x-requests-last"), st.get("remaining"))
     out = []
     for ev in js:
         h2h = {"h": [], "d": [], "a": []}
@@ -300,6 +445,10 @@ def odds_api(league):
             row["odds_" + k] = float(np.mean(v)) if v else np.nan
             row["max_" + k] = float(np.max(v)) if v else np.nan
         out.append(row)
+    st["leagues"][league] = dict(fetched=now.isoformat(),
+                                 events=[{**r, "kickoff": r["kickoff"].isoformat()} for r in out])
+    st["updated"] = now.isoformat()
+    T.save(ODDS_STATE, st)
     return out
 
 

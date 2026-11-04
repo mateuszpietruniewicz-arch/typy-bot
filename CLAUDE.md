@@ -14,17 +14,27 @@ Komunikacja z użytkownikiem i teksty w bocie: po polsku.
 - `config.py` – WSZYSTKIE ustawienia: ligi i kody źródeł, wagi modelu, progi typów, sekrety z env, RSS.
 - `data_sources.py` – pobieranie z cache w `.cache/`: football-data.co.uk (wyniki + kursy średnie/zamknięcia,
   CSV `mmz4281/{sezon}/{E0..}` i `new/POL.csv`, terminarz `fixtures.csv`/`new_league_fixtures.csv`),
-  football-data.org v4 (klucz; terminarz, wyniki, jedyne źródło LM; limit 10/min), ClubElo (`api.clubelo.com`),
-  The Odds API (opcjonalny klucz), Understat xG (dwie metody: getLeagueData JSON i stary HTML).
-  Stan źródeł na 2026-11-04 (pierwszy przebieg na żywo): football-data.co.uk OK (CSV z BOM -> dekodowanie utf-8-sig),
+  football-data.org v4 (klucz; terminarz, wyniki, terminarz LM + kraje drużyn `competitions/CL/teams`;
+  limit czytany z nagłówków X-Requests-Available-Minute / X-RequestCounter-Reset w `fdorg_get`, 429 -> czekanie),
+  Elo (`elo_ratings`: ClubElo -> elofootball.com `country.php` tylko dla potrzebnych krajów -> `state/elo.csv`),
+  The Odds API (`odds_api`: tylko ligi z meczami w horyzoncie, liga max co ODDS_MIN_INTERVAL_H=11 h, stan i kursy
+  w `state/odds_api.json`, loguje x-requests-remaining, poniżej ODDS_RESERVE=25 nie pyta; h2h+totals/eu = 2 kredyty),
+  Understat xG (dwie metody: getLeagueData JSON i stary HTML).
+  Stan źródeł na 2026-11-04 (przebiegi na żywo): football-data.co.uk OK (CSV z BOM -> utf-8-sig), football-data.org OK,
+  The Odds API OK (klucze sportów sprawdzone przez /v4/sports, 57/57 meczów weekendu z kursami, ~12 kredytów/przebieg),
   Transfermarkt OK (kontuzje, wartości kadr, terminarz `gesamtspielplan` – zapasowy dla wszystkich lig, jedyny dla
-  Ekstraklasy; godziny w CET), RSS OK. ClubElo API Fixtures WYŁĄCZONE na stałe; ranking ClubElo bywa 502 ->
-  fallback `state/clubelo.csv`. Understat był w przerwie technicznej (nieprzetestowany format getLeagueData).
+  Ekstraklasy; godziny w CET), RSS OK. ClubElo: API Fixtures wyłączone na stałe, ranking zwraca 502 -> elofootball.
+  Understat w przerwie technicznej („We will come back soon”) -> model bez xG (nieprzetestowany format getLeagueData).
+  Kody krajów ujednolicone do ISO-3 (`country_code`: GER->DEU, POR->PRT...).
 - `names.py` + `aliases.json` – ujednolicanie nazw drużyn między źródłami (kanoniczne = nazwy football-data.co.uk),
   fuzzy match rapidfuzz. Nowe niedopasowania -> dopisać alias.
 - `model.py` – Dixon-Coles per liga: atak/obrona, przewaga gospodarzy, rho, waga czasowa XI=0.0022,
   ridge=2.0, cel = 50% gole + 50% xG (top 5). `markets()` liczy 1X2, DC, O/U 0.5–4.5, BTTS.
-  `EloBridge` – LM: regresja siły z modeli ligowych na Elo -> lambdy.
+  `EloBridge` – LM: różnica Elo -> lambdy. k dopasowane (`fit_k_to_probs`) do prognoz 1X2 publikowanych przez
+  elofootball (ta sama skala, RMSE ~0.02; zapis w `state/elo_probs.json`), zapas: `elo_scale_k` ze wzoru Elo/400.
+  Regresja siła~Elo z lig tylko diagnostycznie – zaniża k (korelacja ~0.6). LM w `pipeline.UclStrength`: wszystkie
+  drużyny z jednego rankingu Elo (dopasowanie w obrębie kraju z football-data.org); klub naszej ligi bez Elo ->
+  Elo z regresji Elo~siła w lidze; brak danych -> mecz pominięty z ostrzeżeniem.
   Backtest (tests/backtest_openfootball.py, ~1700 meczów): log-loss 1X2 0.974 vs 1.048 bazowo.
 - `injuries.py` – Transfermarkt (scraping tabel `verletztespieler` + wartości kadr) i opcjonalnie API-Football.
   Brakujący udział wartości kadry -> korekta lambd (INJURY_K_ATT/DEF, cap 25%). Absencje >45 dni ważą 0.4.
@@ -56,9 +66,14 @@ Pages: main /docs. Workflow permissions: read/write.
 - `python -m bot.main daily --no-send` – prawdziwy przebieg.
 
 ## Do zrobienia (priorytety)
-1. Sprawdzić Understat i ranking ClubElo, gdy wrócą (LM wymaga Elo + klucza football-data.org).
+0. ZNANY PROBLEM (2026-11-04): model zaniża O2.5 względem rynku o 5–11 pkt proc. w każdej lidze (w tym sezonie
+   pada więcej goli niż w poprzednim, a XI ma półokres ~10 mies.) -> fałszywe „przewagi” na Poniżej 2.5 w singlach.
+   Próba z szybszą wagą dla poziomu goli (półokres ~2 mies.) dała niespójny efekt na 40–70 meczach – cofnięta.
+   Do rozstrzygnięcia w backteście z kursami zamknięcia (MARKET_WEIGHT/MIN_EDGE osobno dla 1X2 i O/U).
+1. Sprawdzić Understat i ranking ClubElo, gdy wrócą.
 2. Sprawdzić dopasowanie nazw (log ostrzeżeń, aliases.json), szczególnie Ekstraklasa i LM.
-3. Założyć repo, Pages, sekrety; przeprowadzić użytkownika przez BotFather i klucz football-data.org.
+3. ZROBIONE: repo, Pages, sekrety (TELEGRAM_*, FOOTBALL_DATA_ORG_KEY, ODDS_API_KEY, BETS_ENCRYPTION_KEY);
+   lokalnie klucze w `.env` (ignorowany, wczytywany przez config.py). Bot: @mateusz_typy_bot.
 4. Potem: kalibracja MARKET_WEIGHT na danych z kursami zamknięcia (backtest z kursami z football-data.co.uk),
    ew. więcej rynków (rożne, kartki), Ekstraklasa xG.
 

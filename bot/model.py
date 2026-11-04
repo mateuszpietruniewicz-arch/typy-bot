@@ -182,8 +182,56 @@ class EloBridge:
         return float(lh), float(tot - lh)
 
 
-def fit_elo_bridge(models, elo_map):
-    """Regresja: siła drużyny w modelu ligowym ~ stała ligi + k * Elo."""
+def elo_scale_k(total=2.95, rho=-0.05):
+    """k (log-przewaga goli na 1 pkt Elo) zgodne ze skalą Elo: oczekiwany wynik modelu goli
+    (p1 + 0.5·pX, teren neutralny) ma odpowiadać 1/(1+10^(-d/400)) dla d w [-500, 500]."""
+    ds = np.arange(-500, 501, 50)
+    target = 1 / (1 + 10 ** (-ds / 400))
+
+    def err(k):
+        b = EloBridge(k=k, hadv=0.0, total=total, rho=rho)
+        e = []
+        for d in ds:
+            mk = markets(score_matrix(*b.lambdas(d, 0, neutral=True), rho))
+            e.append(mk["1"] + 0.5 * mk["X"])
+        return float(np.sum((np.array(e) - target) ** 2))
+
+    grid = np.linspace(0.001, 0.008, 71)
+    return float(grid[int(np.argmin([err(k) for k in grid]))])
+
+
+def fit_k_to_probs(probs, total=2.95, rho=-0.05):
+    """Dopasowanie (k, przewaga gosp.) do prognoz 1X2 publikowanych przez źródło Elo
+    (ta sama skala co ranking). -> (k, hadv, rmse) albo None."""
+    if len(probs) < 50:
+        return None
+    R = np.array(probs, dtype=float)
+
+    def err(x):
+        k, h = x
+        if not (0.0005 < k < 0.01 and -0.2 < h < 0.8):
+            return 1e9
+        b = EloBridge(k=k, hadv=h, total=total, rho=rho)
+        e = 0.0
+        for d, p1, px, p2 in R:
+            mk = markets(score_matrix(*b.lambdas(d, 0), rho))
+            e += (mk["1"] - p1) ** 2 + (mk["X"] - px) ** 2 + (mk["2"] - p2) ** 2
+        return e / (3 * len(R))
+
+    res = minimize(err, x0=[0.003, 0.25], method="Nelder-Mead", options=dict(xatol=1e-5, fatol=1e-7))
+    return float(res.x[0]), float(res.x[1]), float(np.sqrt(res.fun))
+
+
+def fit_elo_bridge(models, elo_map, source_probs=None):
+    """Most Elo -> gole. k dopasowane do prognoz źródła Elo (gdy są), inaczej ze wzoru Elo (elo_scale_k).
+    Regresja siła~Elo z lig tylko jako diagnostyka (szum w Elo zaniża jej nachylenie)."""
+    hadv = float(np.mean([m.home for m in models.values()])) * 0.8 if models else 0.22  # w LM nieco mniejsza
+    fit = fit_k_to_probs(source_probs or [])
+    if fit:
+        k = fit[0]
+        log.info("Most Elo: k=%.5f dopasowane do %d prognoz źródła (RMSE %.3f)", k, len(source_probs), fit[2])
+    else:
+        k = elo_scale_k()
     xs, ys, grp = [], [], []
     for lg, m in models.items():
         for t in m.teams:
@@ -192,13 +240,11 @@ def fit_elo_bridge(models, elo_map):
                 xs.append(e)
                 ys.append(m.strength(t))
                 grp.append(lg)
-    if len(xs) < 20:
-        return EloBridge(k=0.0028, hadv=0.22, total=2.9)
-    df = pd.DataFrame(dict(x=xs, y=ys, g=grp))
-    df["xc"] = df.x - df.groupby("g").x.transform("mean")
-    df["yc"] = df.y - df.groupby("g").y.transform("mean")
-    k_strength = float((df.xc * df.yc).sum() / (df.xc ** 2).sum())
-    # strength = att - dfn; przewaga w meczu = różnica sił (log λh - log λa)
-    hadv = float(np.mean([m.home for m in models.values()])) * 0.8  # w LM przewaga nieco mniejsza
-    log.info("Most Elo: k=%.5f (log-gole/pkt Elo)", k_strength)
-    return EloBridge(k=k_strength, hadv=hadv, total=2.95)
+    if len(xs) >= 20:
+        df = pd.DataFrame(dict(x=xs, y=ys, g=grp))
+        df["xc"] = df.x - df.groupby("g").x.transform("mean")
+        df["yc"] = df.y - df.groupby("g").y.transform("mean")
+        k_reg = float((df.xc * df.yc).sum() / (df.xc ** 2).sum())
+        log.info("Most Elo: używane k=%.5f (dla porównania regresja z lig: %.5f, korelacja %.2f, n=%d)",
+                 k, k_reg, float(np.corrcoef(df.xc, df.yc)[0, 1]), len(df))
+    return EloBridge(k=k, hadv=hadv, total=2.95)
