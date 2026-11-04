@@ -41,7 +41,7 @@ Rodzaje: single z przewagą, kupony 2–3 zdarzenia, długie kupony za 2 zł
 /bilans                   Twój bilans i ROI
 /model                    skuteczność modelu
 ```
-Bot nie działa non stop: komendy czyta przy najbliższym przebiegu (do godziny).
+Bot nie działa non stop: komendy czyta przy najbliższym przebiegu (co ok. 15 minut).
 Twoje zakłady są w `state/bets.enc`, zaszyfrowane kluczem z sekretów (repo jest publiczne).
 
 ## Uruchomienie (jednorazowo, ~15 min)

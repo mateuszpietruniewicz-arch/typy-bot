@@ -22,7 +22,7 @@ HELP = """<b>Komendy</b>
 /usun 7 – usuń zakład nr 7
 /bilans – Twój bilans, ROI, oczekujące
 /model – skuteczność modelu
-Komendy są czytane przy najbliższym przebiegu bota (zwykle do godziny)."""
+Komendy są czytane przy najbliższym przebiegu bota (co ok. 15 minut)."""
 
 
 def esc(s):
