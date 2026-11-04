@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Typy Bot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f12;--card:#16191e;--card2:#1d2127;--line:#2a2f37;--tx:#e9ecef;--mut:#8b93a0;
+--acc:#4ade80;--acc2:#22c55e;--warn:#fbbf24;--bad:#f87171;--blue:#60a5fa;--r:14px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 Inter,system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+h1{font-size:26px;margin:0;letter-spacing:-.02em}h1 span{color:var(--acc)}
+.sub{color:var(--mut);font-size:13px}
+nav{display:flex;gap:6px;margin:14px 0 20px;flex-wrap:wrap}
+nav button{background:var(--card);border:1px solid var(--line);color:var(--mut);padding:8px 14px;border-radius:99px;font:inherit;cursor:pointer}
+nav button.on{color:#0d0f12;background:var(--acc);border-color:var(--acc);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:12px}
+.grid{display:grid;gap:12px;align-items:start;grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+h2{font-size:17px;margin:22px 0 10px}h3{font-size:14px;margin:0 0 6px}
+.id{font:500 12px 'JetBrains Mono',monospace;background:var(--card2);border:1px solid var(--line);padding:2px 7px;border-radius:6px;color:var(--acc)}
+.pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:99px;background:var(--card2);color:var(--mut);margin:2px 4px 2px 0}
+.pill.g{color:var(--acc)}.pill.w{color:var(--warn)}.pill.b{color:var(--bad)}
+.leg{padding:8px 0;border-top:1px dashed var(--line)}.leg:first-of-type{border-top:0}
+.muted{color:var(--mut)}.small{font-size:12.5px}
+.num{font-variant-numeric:tabular-nums}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.bar{display:flex;height:22px;border-radius:7px;overflow:hidden;font-size:11.5px;font-weight:600;margin:4px 0}
+.bar div{display:flex;align-items:center;justify-content:center;color:#0d0f12;white-space:nowrap;overflow:hidden}
+.b1{background:#4ade80}.bx{background:#94a3b8}.b2{background:#60a5fa}
+.lbl{font-size:11px;color:var(--mut);width:52px;flex:none}
+input.k{width:76px;background:var(--card2);border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:5px 8px;font:inherit}
+.ev{font-weight:600}
+details{margin-top:8px}summary{cursor:pointer;color:var(--mut);font-size:13px}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+table{width:100%;border-collapse:collapse;font-size:13.5px}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--mut);font-weight:500}
+.stat{font-size:26px;font-weight:700}
+.note{border-left:3px solid var(--warn);padding:10px 14px;background:var(--card);border-radius:0 10px 10px 0;color:var(--mut);font-size:13.5px}
+.prose p,.prose li{color:#c9ced6}.prose h3{font-size:15px;margin-top:18px}
+svg text{fill:var(--mut);font-size:11px}
+@media (max-width:520px){.grid{grid-template-columns:1fr}h1{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div><h1>Typy<span>Bot</span></h1><div class="sub" id="gen"></div></div>
+  <div class="sub">Model Dixon-Coles + xG + rynek · <a href="#" onclick="show('how');return false">jak to działa</a></div>
+</header>
+<nav id="nav"></nav>
+<main id="main"></main>
+</div>
+<script>
+const DATA = __DATA__;
+const L = DATA.latest || {}, CFG = DATA.cfg, TAX = CFG.tax;
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct = p => (p*100).toFixed(0)+'%';
+const DAYS = ['nd','pon','wt','śr','czw','pt','sob'];
+const tfmt = (iso, unk) => { const d = new Date(iso); return DAYS[d.getDay()] + ' ' + (unk ? '?' : d.toLocaleTimeString('pl-PL',{hour:'2-digit',minute:'2-digit'})); };
+const store = { get(k){ try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch(e){ return null; } },
+                set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} } };
+const flag = lg => (CFG.leagues[lg]||{}).flag || '';
+const TABS = [['picks','Typy'],['matches','Mecze'],['record','Skuteczność'],['how','Jak to działa']];
+
+function show(t){
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('on', b.dataset.t===t));
+  ({picks, matches, record, how})[t]();
+  store.set('tab', t);
+}
+document.getElementById('nav').innerHTML = TABS.map(([k,v]) => `<button data-t="${k}" onclick="show('${k}')">${v}</button>`).join('');
+document.getElementById('gen').textContent = L.generated ? 'Aktualizacja: ' + new Date(L.generated).toLocaleString('pl-PL') : 'Brak analizy – bot jeszcze nie działał';
+
+function legHTML(l){
+  return `<div class="leg"><div class="row"><span>${flag(l.league)} ${esc(l.home)} – ${esc(l.away)}</span><span class="muted small">${tfmt(l.kickoff)}</span></div>
+  <div class="row"><b>${esc(l.label)}</b><span class="num small">szansa ${pct(l.p)} · rynek ~${l.odds.toFixed(2)}</span></div></div>`;
+}
+function evLine(id, p, base){
+  const v = store.get('k:'+id) || '';
+  return `<div class="row small" style="margin-top:8px"><span class="muted">Twój kurs w STS:</span>
+   <span><input class="k" inputmode="decimal" placeholder="${base.toFixed(2)}" value="${v}" oninput="ev(this,'${id}',${p})"> <span class="ev" id="ev-${id}"></span></span></div>`;
+}
+function ev(el, id, p){
+  const k = parseFloat(el.value.replace(',','.')); store.set('k:'+id, el.value);
+  const out = document.getElementById('ev-'+id);
+  if(!(k>1)){ out.textContent=''; return; }
+  const v = p*k*(1-TAX) - 1;
+  out.textContent = (v>=0?'+':'') + (v*100).toFixed(1) + '% po podatku';
+  out.style.color = v>=0 ? 'var(--acc)' : v>-0.12 ? 'var(--warn)' : 'var(--bad)';
+}
+function coupon(c, kind){
+  const legs = c.legs.map(legHTML).join('');
+  let head = `<div class="row"><span><span class="id">${c.id}</span> <span class="muted small">${esc(c.type)}</span></span>
+     <span class="num"><b>kurs ~${c.odds >= 20 ? c.odds.toFixed(0) : c.odds.toFixed(2)}</b></span></div>`;
+  let pills;
+  if(kind==='single'){ const l=c.legs[0];
+    pills = `<span class="pill g">przewaga ${(l.edge*100).toFixed(1)}%</span><span class="pill">fair ${l.fair}</span><span class="pill w">opłaca się od ${l.min_sts}</span>`;
+  } else if(kind==='long'){
+    pills = `<span class="pill w">szansa 1 na ${Math.round(c.one_in)}</span><span class="pill">wypłata ~${c.payout.toFixed(0)} zł z ${c.stake} zł</span><span class="pill b">średnio wraca ${(c.p*c.payout).toFixed(2)} zł</span>`;
+  } else {
+    pills = `<span class="pill">szansa ${pct(c.p)}</span><span class="pill ${c.ev_pct>=0?'g':'b'}">wartość ${(c.ev_pct*100).toFixed(0)}% po podatku</span>`;
+  }
+  return `<div class="card">${head}<div style="margin:6px 0">${pills}</div>${legs}${evLine(c.id + (L.day||''), c.p, c.odds)}</div>`;
+}
+function picks(){
+  const m = document.getElementById('main');
+  if(!L.matches){ m.innerHTML = '<div class="card">Brak danych.</div>'; return; }
+  let h = `<div class="note">Typy to wnioski z modelu, nie pewniaki. „Opłaca się od” uwzględnia 12% podatku od stawki.
+   Wpisz kurs ze STS, a strona policzy wartość zakładu. Zagrany typ zapisz na Telegramie: <code>/zagrane ID stawka kurs</code>.</div>`;
+  h += `<h2>${L.singles.length && L.singles[0].value===false ? 'Single – dziś bez wyraźnej przewagi' : 'Single z przewagą'}</h2>` + (L.singles.length ? `<div class="grid">${L.singles.map(c=>coupon(c,'single')).join('')}</div>`
+       : `<div class="card muted">Brak – model nie widzi dziś wyraźnej przewagi nad rynkiem. To też jest informacja.</div>`);
+  h += `<h2>Kupony 2–3 zdarzenia</h2>` + (L.combos.length ? `<div class="grid">${L.combos.map(c=>coupon(c,'combo')).join('')}</div>` : `<div class="card muted">Brak sensownych połączeń.</div>`);
+  h += `<h2>Długie kupony za 2 zł 🎰</h2><p class="muted small">Zdarzenia z najmniejszą stratą wartości. Każde dodatkowe zdarzenie mnoży marżę bukmachera – traktuj to jak los na loterię.</p>` +
+       (L.long.length ? `<div class="grid">${L.long.map(c=>coupon(c,'long')).join('')}</div>` : `<div class="card muted">Za mało meczów na długi kupon.</div>`);
+  m.innerHTML = h;
+  document.querySelectorAll('input.k').forEach(i => i.value && i.dispatchEvent(new Event('input')));
+}
+function bar(a,b,c,lab){
+  return `<div class="row"><span class="lbl">${lab}</span><div class="bar" style="flex:1"><div class="b1" style="width:${a*100}%">${pct(a)}</div><div class="bx" style="width:${b*100}%">${pct(b)}</div><div class="b2" style="width:${c*100}%">${pct(c)}</div></div></div>`;
+}
+function matchCard(m){
+  const p = m.probs, mk = m.market_probs;
+  const ab = side => (m.absences[side]||[]).slice(0,5).map(x => `<span class="pill ${x.weight>=1?'w':''}" title="${esc(x.reason)}${x.until?' · do '+x.until:''}">${esc(x.player)}${x.value?' · '+(x.value/1e6).toFixed(0)+'M€':''}</span>`).join('') || '<span class="muted small">brak danych o brakach</span>';
+  const nw = side => (m.news[side]||[]).map(n => `<div class="small">${n.injury?'🚑 ':''}<a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a> <span class="muted">· ${esc(n.source)}</span></div>`).join('');
+  const adj = m.injury_adj && (m.injury_adj.d_lh || m.injury_adj.d_la) ? `<span class="pill w">korekta za braki: ${m.injury_adj.d_lh>=0?'+':''}${m.injury_adj.d_lh} / ${m.injury_adj.d_la>=0?'+':''}${m.injury_adj.d_la} gola</span>` : '';
+  const opts = (m.options||[]).filter(o=>['1','X','2','1X','X2','O2.5','U2.5','BTTS','BTTS_NO','O1.5','U3.5'].includes(o.key));
+  return `<div class="card">
+   <div class="row small muted"><span>${m.flag} ${esc(m.league_name)}</span><span>${tfmt(m.kickoff, m.time_unknown)}</span></div>
+   <h3 style="font-size:16px;margin:4px 0 8px">${esc(m.home)} – ${esc(m.away)}</h3>
+   ${bar(p['1'],p['X'],p['2'],'model')}${mk&&mk['1']?bar(mk['1'],mk['X'],mk['2'],'rynek'):''}
+   <div style="margin:8px 0"><span class="pill" title="oczekiwane gole wg modelu">gole ${m.lambdas[0].toFixed(2)} : ${m.lambdas[1].toFixed(2)}</span><span class="pill">O2.5 ${pct(p['O2.5'])}</span><span class="pill">BTTS ${pct(p.BTTS)}</span>
+   <span class="pill">wynik: ${m.top_scores.slice(0,3).map(s=>s[1]+' '+pct(s[0])).join(', ')}</span>${adj}</div>
+   <details><summary>Rynki, kursy fair i „opłaca się od”</summary><table><tr><th>Typ</th><th>Szansa</th><th>Model</th><th>Rynek</th><th>Fair</th><th>Opłaca się od</th></tr>
+   ${opts.map(o=>`<tr><td>${esc(o.label)}</td><td class="num"><b>${pct(o.p)}</b></td><td class="num">${pct(o.p_model)}</td><td class="num">${o.p_market!=null?pct(o.p_market):'–'}</td><td class="num">${o.fair}</td><td class="num">${o.min_sts}</td></tr>`).join('')}</table></details>
+   <details><summary>Kadra i newsy</summary>
+     <div class="small" style="margin-top:6px"><b>${esc(m.home)}</b> ${m.rest.home!=null?'<span class="muted">· odpoczynek '+m.rest.home+' dni</span>':''}</div>${ab('home')}${nw('home')}
+     <div class="small" style="margin-top:8px"><b>${esc(m.away)}</b> ${m.rest.away!=null?'<span class="muted">· odpoczynek '+m.rest.away+' dni</span>':''}</div>${ab('away')}${nw('away')}
+     <div class="muted small" style="margin-top:8px">Źródło modelu: ${esc(m.source)}${m.unknown&&m.unknown.length?' · mało danych: '+esc(m.unknown.join(', ')):''}</div>
+   </details></div>`;
+}
+function matches(){
+  const ms = L.matches||[];
+  const by = {}; ms.forEach(m => (by[m.league_name] = by[m.league_name]||[]).push(m));
+  document.getElementById('main').innerHTML = ms.length ? Object.entries(by).map(([k,v]) => `<h2>${v[0].flag} ${esc(k)}</h2><div class="grid">${v.map(matchCard).join('')}</div>`).join('')
+    : '<div class="card muted">Brak meczów w najbliższych godzinach.</div>';
+}
+function curve(pts){
+  if(pts.length<2) return '<div class="muted small">Wykres pojawi się po kilku rozliczonych typach.</div>';
+  const W=700,H=180,P=30, ys=pts.map(p=>p.bal), mn=Math.min(0,...ys), mx=Math.max(0,...ys)||1;
+  const x=i=>P+i*(W-2*P)/(pts.length-1), y=v=>H-P-(v-mn)*(H-2*P)/((mx-mn)||1);
+  const d=pts.map((p,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(p.bal).toFixed(1)).join(' ');
+  return `<svg viewBox="0 0 ${W} ${H}" style="width:100%"><line x1="${P}" x2="${W-P}" y1="${y(0)}" y2="${y(0)}" stroke="#2a2f37" stroke-dasharray="4"/>
+   <path d="${d}" fill="none" stroke="${ys[ys.length-1]>=0?'#4ade80':'#f87171'}" stroke-width="2.5"/><text x="${P}" y="14">${mx.toFixed(0)} zł</text><text x="${P}" y="${H-8}">${mn.toFixed(0)} zł</text></svg>`;
+}
+function record(){
+  const s = DATA.stats, cal = s.calibration;
+  const box = (t,g) => { const v=s[g]; return `<div class="card"><div class="muted small">${t}</div><div class="stat num" style="color:${(v.profit||0)>=0?'var(--acc)':'var(--bad)'}">${v.n?(v.profit>=0?'+':'')+v.profit.toFixed(2)+' zł':'–'}</div>
+     <div class="small muted">${v.won}/${v.n} trafionych (oczekiwano ${v.expected_hits}) · ROI ${v.roi!=null?(v.roi*100).toFixed(1)+'%':'–'}</div></div>`; };
+  let h = `<div class="note">Uczciwy rejestr: każdy opublikowany typ, także przegrany, rozliczony po kursie rynkowym minus ~3% (szacunek STS) i po 12% podatku. Stawki: single 10 zł, kupony 5 zł, długie 2 zł.</div>
+   <div class="grid" style="margin-top:12px">${box('Single','single')}${box('Kupony 2–3','kupon')}${box('Długie kupony','długi')}</div>
+   <div class="card"><h3>Bilans wszystkich typów</h3>${curve(s.curve||[])}</div>`;
+  if(cal) h += `<div class="card"><h3>Jakość prawdopodobieństw</h3><p class="small">Log-loss 1X2 (niżej = lepiej): model <b>${cal.logloss_1x2}</b>${cal.logloss_market?` vs rynek <b>${cal.logloss_market}</b>`:''} na ${cal.n} meczach. Brier O2.5: ${cal.brier_o25}.
+     Jeśli model ma wyższy log-loss niż rynek, jego „przewagi” to głównie szum – wtedy warto zwiększyć wagę rynku w konfiguracji.</p></div>`;
+  const rec = (DATA.record||[]).slice().reverse().slice(0,40);
+  h += `<div class="card"><h3>Ostatnie typy</h3><table><tr><th>Dzień</th><th>ID</th><th>Typ</th><th>Kurs</th><th>Status</th></tr>${rec.map(c=>`<tr><td>${c.day}</td><td>${c.id}</td><td class="small">${c.legs.map(l=>esc(l.home)+' – '+esc(l.away)+': '+esc(l.label)+(l.result?' ('+l.result+')':'')).join('<br>')}</td><td class="num">${c.odds}</td><td>${c.status==='won'?'✅':c.status==='lost'?'❌':'⏳'}</td></tr>`).join('')}</table></div>`;
+  document.getElementById('main').innerHTML = h;
+}
+function how(){
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('on', b.dataset.t==='how'));
+  document.getElementById('main').innerHTML = `<div class="card prose">
+  <h3>Co biorą pod uwagę bukmacherzy</h3>
+  <ul><li><b>Model bazowy</b> – siła ataku i obrony, przewaga własnego boiska, forma, gole i xG. Coraz częściej kursy wyliczają algorytmy, a ludzie tylko je korygują.</li>
+  <li><b>Wiadomości kadrowe</b> – kontuzje, zawieszenia, rotacja, potwierdzone składy. Late news potrafi przesunąć kurs w kilka minut.</li>
+  <li><b>Kontekst</b> – terminarz (puchary w tygodniu), motywacja, pogoda, sędzia, podróż.</li>
+  <li><b>Pieniądze graczy</b> – kurs spada tam, gdzie płynie dużo pieniędzy. Duzi bukmacherzy „ostrzy” (np. Pinnacle) przyjmują wysokie stawki i ich kursy zamknięcia są najlepszym znanym oszacowaniem szansy. Mniejsi, „miękcy” bukmacherzy (jak większość polskich) często kopiują ich linie i ograniczają wygrywających graczy.</li>
+  <li><b>Marża</b> – suma prawdopodobieństw z kursów przekracza 100%. Na 1X2 w topowych ligach to zwykle kilka procent, na niszowych rynkach i ligach więcej.</li>
+  <li><b>Kupony łączone</b> – marża mnoży się z każdym zdarzeniem, dlatego bukmacherzy promują długie kupony i bonusy za ich liczbę zdarzeń.</li></ul>
+  <h3>Co robi ten bot</h3>
+  <ul><li><b>Dixon-Coles</b> dla każdej ligi: siła ataku i obrony z 3 sezonów, nowsze mecze ważą więcej, w top 5 ligach połowa „goli” to xG (mniej szumu niż same gole).</li>
+  <li><b>Liga Mistrzów</b>: ratingi ClubElo przeliczone na gole przez regresję na ligach krajowych.</li>
+  <li><b>Kontuzje</b>: Transfermarkt; brakujący udział wartości kadry obniża atak i osłabia obronę (świeże absencje ważą więcej niż długie, bo te model już widzi w wynikach).</li>
+  <li><b>Rynek</b>: kursy średnie bez marży. Finalna szansa to ${Math.round((1-CFG.market_weight)*100)}% model + ${Math.round(CFG.market_weight*100)}% rynek – model musi mocno się nie zgadzać z rynkiem, żeby wskazać przewagę.</li>
+  <li><b>Podatek</b>: w Polsce 12% od stawki, więc zakład opłaca się dopiero przy kursie ≥ 1/(0,88·szansa). Dlatego „opłaca się od” jest wyższe niż „fair”.</li></ul>
+  <h3>Długie kupony – matematyka</h3>
+  <p>Przy marży ~5% na zdarzenie: 1 zdarzenie oddaje średnio ~95% stawki, 5 zdarzeń ~77%, 10 zdarzeń ~60%, a po podatku jeszcze ×0,88. Bot wybiera do długich kuponów zdarzenia z najmniejszą stratą wartości, ale nie zmieni tej matematyki – to rozrywka za 2 zł, nie strategia.</p>
+  <p class="muted small">Graj tylko kwotą, którą możesz stracić. Gdyby przestało to być zabawą: <a href="https://uzaleznieniabehawioralne.pl/" target="_blank" rel="noopener">Telefon Zaufania Uzależnień Behawioralnych</a>.</p></div>`;
+}
+show(store.get('tab') || 'picks');
+</script>
+</body>
+</html>

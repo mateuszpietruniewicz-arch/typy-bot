@@ -1,0 +1,52 @@
+name: typy-bot
+
+on:
+  schedule:
+    - cron: "17 * * * *"      # co godzinę (UTC); bot sam decyduje, co zrobić
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "auto | daily | settle | site"
+        default: "auto"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: typy-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Cache danych
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: data-${{ github.run_id }}
+          restore-keys: data-
+      - name: Bot
+        env:
+          FOOTBALL_DATA_ORG_KEY: ${{ secrets.FOOTBALL_DATA_ORG_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BETS_ENCRYPTION_KEY: ${{ secrets.BETS_ENCRYPTION_KEY }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python -m bot.main ${{ github.event.inputs.mode || 'auto' }}
+      - name: Zapisz stan i stronę
+        run: |
+          git config user.name "typy-bot"
+          git config user.email "typy-bot@users.noreply.github.com"
+          git add state docs
+          git diff --cached --quiet || git commit -m "bot: $(date -u +'%Y-%m-%d %H:%M')"
+          git pull --rebase --autostash && git push
