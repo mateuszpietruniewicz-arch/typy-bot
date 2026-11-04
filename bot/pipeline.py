@@ -123,14 +123,16 @@ def gather_fixtures(hist, models, now, until=None):
     # Transfermarkt jako terminarz zapasowy dla wszystkich lig krajowych (jedyny dla Ekstraklasy,
     # której nie ma w darmowym football-data.org; ClubElo wyłączyło API Fixtures)
     have = {(r["league"], norm(r["home"])) for r in rows}
+    tm_blocked = False
     for lg in models:
         cfg = C.LEAGUES[lg]
-        if not cfg.get("tm"):
+        if not cfg.get("tm") or tm_blocked:
             continue
         try:
             tf = D.tm_fixtures(*cfg["tm"])
         except Exception as e:  # noqa: BLE001
             log.warning("terminarz Transfermarkt %s: %s", lg, e)
+            tm_blocked = "HTTP 202" in str(e) or "HTTP 403" in str(e)  # blokada -> nie pytamy o inne ligi
             continue
         if tf.empty:
             continue
@@ -204,6 +206,7 @@ def analyse(now=None, until=None, prefix=""):
 
     # wiadomości kadrowe z FotMob (działa też z GitHub Actions; Transfermarkt tam blokuje)
     fm_ids = TN.find_fotmob_ids(fixtures)
+    TN.prefetch(fm_ids, fixtures)
     contexts = {}
     for i, fm in fm_ids.items():
         try:

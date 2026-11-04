@@ -42,6 +42,36 @@ def find_fotmob_ids(fixtures):
     return out
 
 
+def prefetch(fm_ids, fixtures, workers=4):
+    """Równoległe pobranie terminarzy drużyn i minut z ostatnich meczów (pierwszy przebieg bez cache
+    to ~1000 zapytań – sekwencyjnie > 10 min)."""
+    from concurrent.futures import ThreadPoolExecutor
+    teams = {(m[f"{s}_id"], fixtures[i]["league"]) for i, m in fm_ids.items() for s in ("home", "away")}
+
+    def fx(t):
+        try:
+            return t, F.team_fixtures(t[0])
+        except Exception as e:  # noqa: BLE001
+            log.warning("fotmob drużyna %s: %s", t[0], e)
+            return t, []
+    with ThreadPoolExecutor(workers) as ex:
+        res = list(ex.map(fx, teams))
+    now = pd.Timestamp.now(tz="UTC")
+    ids = set()
+    for (tid, lg), fixt in res:
+        lg_fm = C.LEAGUES[lg].get("fotmob")
+        past = [f for f in fixt if f["finished"] and not f["cancelled"] and f["league_id"] == lg_fm and f["kickoff"] < now]
+        ids |= {f["id"] for f in past[-8:]}
+
+    def mins(mid):
+        try:
+            F.match_minutes(mid)
+        except Exception as e:  # noqa: BLE001
+            log.warning("fotmob minuty %s: %s", mid, e)
+    with ThreadPoolExecutor(workers) as ex:
+        list(ex.map(mins, ids))
+
+
 def lineup_effect(lh, la, d_h, d_a, a=None, b=None):
     a = C.LINEUP_A if a is None else a
     b = C.LINEUP_B if b is None else b

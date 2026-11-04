@@ -46,7 +46,7 @@ def get(url, *, headers=None, params=None, cache_h=0, tries=3, binary=False):
                     path.write_bytes(r.content)
                 return r.content if binary else _decode(r)
             last = f"HTTP {r.status_code}"
-            if r.status_code in (401, 403, 404):
+            if r.status_code in (202, 401, 403, 404):  # 202 = ochrona anty-bot (np. Transfermarkt z Actions)
                 break
         except requests.RequestException as e:  # noqa: PERF203
             last = str(e)
