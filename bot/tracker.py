@@ -96,7 +96,7 @@ def model_stats():
     rec = load("record.json", {"coupons": [], "predictions": []})
     out = {}
     for group, ids in (("single", "S"), ("kupon", "K"), ("długi", "D")):
-        cs = [c for c in rec["coupons"] if c["id"].startswith(ids) and c["status"] in ("won", "lost")]
+        cs = [c for c in rec["coupons"] if c["id"].lstrip("W").startswith(ids) and c["status"] in ("won", "lost")]
         stake = sum(c["stake"] for c in cs)
         ret = sum(c["stake"] * (1 - C.STS_TAX) * c["odds"] for c in cs if c["status"] == "won")
         out[group] = dict(n=len(cs), won=sum(c["status"] == "won" for c in cs), stake=round(stake, 2),

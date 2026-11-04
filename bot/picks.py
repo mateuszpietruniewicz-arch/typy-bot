@@ -175,9 +175,43 @@ def build(matches, prefix=""):
         return dict(id=prefix + name, type=f"{kind} · {len(legs)} zdarzeń", legs=legs,
                     **coupon_stats(legs, C.LONG_COUPON_STAKE))
 
+    def crazy_coupon(name):
+        """D3 „szalona”: 15–20 zdarzeń tylko z prawdziwym kursem rynkowym (bez szacowanych, np. DC),
+        max 1 na mecz, wybór wg najmniejszej straty wartości na zdarzenie, ligi przeplatane."""
+        lo3, hi3 = C.CRAZY_LEGS
+        by_lg = {}
+        for m in matches:
+            opts = [o for o in allowed[id(m)] if o["verified"] and not o["odds_estimated"]
+                    and o["p"] >= C.CRAZY_MIN_P]
+            if opts:
+                by_lg.setdefault(m["league"], []).append((m, max(opts, key=lambda o: o["edge"])))
+        n_avail = sum(len(v) for v in by_lg.values())
+        if n_avail < lo3:
+            return None, (f"tylko {n_avail} meczów z prawdziwymi kursami (potrzeba co najmniej {lo3})")
+        if len(by_lg) < C.CRAZY_MIN_LEAGUES:
+            return None, f"mecze z kursami tylko z {len(by_lg)} lig(i) (potrzeba {C.CRAZY_MIN_LEAGUES})"
+        for v in by_lg.values():
+            v.sort(key=lambda x: -x[1]["edge"])
+        # przeplatanie lig: w każdej rundzie najlepsze zdarzenie z każdej ligi, rundy wg straty wartości
+        picked, rnd = [], 0
+        while len(picked) < hi3 and any(len(v) > rnd for v in by_lg.values()):
+            layer = sorted((v[rnd] for v in by_lg.values() if len(v) > rnd), key=lambda x: -x[1]["edge"])
+            picked += layer[:hi3 - len(picked)]
+            rnd += 1
+        legs = [_leg(m, o) for m, o in picked]
+        legs.sort(key=lambda l: l["kickoff"])
+        return dict(id=prefix + name, type=f"szalona · {len(legs)} zdarzeń", legs=legs,
+                    **coupon_stats(legs, C.LONG_COUPON_STAKE)), None
+
     lo, hi = C.LONG_COUPON_LEGS
     longs = [c for c in (
         long_coupon("D1", "dużo zdarzeń", 1.18, 1.6, 0.6, lo, hi),
         long_coupon("D2", "duży przelicznik", 1.7, 2.8, 0.36, 5, 8),
     ) if c]
-    return dict(singles=singles, combos=combos, long=longs, matches=matches)
+    skipped = {}
+    d3, why = crazy_coupon("D3")
+    if d3:
+        longs.append(d3)
+    elif matches:
+        skipped[prefix + "D3"] = why
+    return dict(singles=singles, combos=combos, long=longs, long_skipped=skipped, matches=matches)

@@ -16,7 +16,7 @@ HELP = """<b>Komendy</b>
 /typy – dzisiejsze typy
 /weekend – zapowiedź weekendu (czw/pt), typy WS1, WK1, WD1…
 /zagrane S1 10 2.05 – zagrałem typ S1 za 10 zł po kursie 2.05 (ID z wiadomości z typami)
-/zagrane D1 2 87.3 – to samo dla kuponu/długiego kuponu
+/zagrane D1 2 87.3 – to samo dla kuponu/długiego kuponu (D1, D2, D3; weekend: WD1…)
 /zagrane wlasny 5 3.40 opis – własny kupon spoza bota
 /wynik 7 w|p – ręczne rozliczenie własnego kuponu nr 7
 /usun 7 – usuń zakład nr 7

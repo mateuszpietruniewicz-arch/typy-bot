@@ -66,6 +66,9 @@ STS_TAX = 0.12            # podatek od stawki w Polsce
 BIG_WIN_TAX_LIMIT = 2280  # wygrana powyżej tej kwoty -> 10% podatku dochodowego
 LONG_COUPON_LEGS = (6, 12)
 LONG_COUPON_STAKE = 2.0
+CRAZY_LEGS = (15, 20)     # D3 „szalona”: liczba zdarzeń
+CRAZY_MIN_P = 0.25        # pomijamy skrajne outsiderów (kurs > ~4)
+CRAZY_MIN_LEAGUES = 3     # zdarzenia z różnych lig
 
 # Korekta za kontuzje
 INJURY_K_ATT = 0.45       # spadek ataku na 100% brakującej wartości kadry

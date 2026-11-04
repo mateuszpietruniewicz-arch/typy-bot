@@ -113,7 +113,8 @@ function picks(){
        : `<div class="card muted">Brak – model nie widzi dziś wyraźnej przewagi nad rynkiem. To też jest informacja.</div>`);
   h += `<h2>Kupony 2–3 zdarzenia</h2>` + (L.combos.length ? `<div class="grid">${L.combos.map(c=>coupon(c,'combo')).join('')}</div>` : `<div class="card muted">Brak sensownych połączeń.</div>`);
   h += `<h2>Długie kupony za 2 zł 🎰</h2><p class="muted small">Zdarzenia z najmniejszą stratą wartości. Każde dodatkowe zdarzenie mnoży marżę bukmachera – traktuj to jak los na loterię.</p>` +
-       (L.long.length ? `<div class="grid">${L.long.map(c=>coupon(c,'long')).join('')}</div>` : `<div class="card muted">Za mało meczów na długi kupon.</div>`);
+       (L.long.length ? `<div class="grid">${L.long.map(c=>coupon(c,'long')).join('')}</div>` : `<div class="card muted">Za mało meczów na długi kupon.</div>`) +
+       Object.entries(L.long_skipped||{}).map(([k,v])=>`<div class="card muted small">${esc(k)} „szalona” – dziś nie ma: ${esc(v)}.</div>`).join('');
   m.innerHTML = h;
   document.querySelectorAll('input.k').forEach(i => i.value && i.dispatchEvent(new Event('input')));
 }

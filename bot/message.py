@@ -53,6 +53,8 @@ def daily(result, title="Typy"):
                        f"wypłata ~{c['payout']:.0f} zł · szansa 1 na {c['one_in']:.0f} · "
                        f"średnio wraca {c['p'] * c['payout']:.2f} zł z 2 zł")
             out += [f"   • {leg_line(l)}" for l in c["legs"]]
+    for cid, why in (result.get("long_skipped") or {}).items():
+        out.append(f"<code>{cid}</code> szalona: dziś nie ma – {esc(why)}.")
     big = []
     for m in result["matches"]:
         for side in ("home", "away"):
