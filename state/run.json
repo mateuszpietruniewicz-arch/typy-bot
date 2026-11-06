@@ -1,5 +1,11 @@
 {
  "lineups_done": [],
  "daily_done": "2026-11-06",
- "preview_done": "2026-11-06"
+ "preview_done": "2026-11-06",
+ "prematch_sent": [
+  "BUNDES:2026-11-06:hamburg-mgladbach",
+  "EKSTRA:2026-11-06:wisla_krakow-cracovia",
+  "LIGUE1:2026-11-06:toulouse-strasbourg",
+  "SERIEA:2026-11-06:venezia-udinese"
+ ]
 }
