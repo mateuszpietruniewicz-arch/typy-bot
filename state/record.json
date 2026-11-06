@@ -918,7 +918,9 @@
      "odds": 1.38,
      "fair": 1.49,
      "min_sts": 1.7,
-     "edge": -0.0743
+     "edge": -0.0743,
+     "result": "3:1",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-06:toulouse-strasbourg",
@@ -986,7 +988,9 @@
      "odds": 1.38,
      "fair": 1.49,
      "min_sts": 1.7,
-     "edge": -0.0743
+     "edge": -0.0743,
+     "result": "3:1",
+     "won": true
     },
     {
      "match_id": "EKSTRA:2026-11-06:wisla_krakow-cracovia",
@@ -1082,7 +1086,9 @@
      "odds": 2.28,
      "fair": 2.45,
      "min_sts": 2.79,
-     "edge": -0.072
+     "edge": -0.072,
+     "result": "3:1",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-06:toulouse-strasbourg",
@@ -1974,7 +1980,10 @@
     "O2.5": 0.5982,
     "U2.5": 0.4018
    },
-   "result": null
+   "result": [
+    3,
+    1
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-06:wisla_krakow-cracovia",
