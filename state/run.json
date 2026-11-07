@@ -4,8 +4,13 @@
  "preview_done": "2026-11-06",
  "prematch_sent": [
   "BUNDES:2026-11-06:hamburg-mgladbach",
+  "BUNDES:2026-11-07:stuttgart-werder_bremen",
   "EKSTRA:2026-11-06:wisla_krakow-cracovia",
+  "EKSTRA:2026-11-07:gornik_z-wieczysta_krakow",
+  "EPL:2026-11-07:nottm_forest-man_city",
+  "LALIGA:2026-11-07:osasuna-ath_bilbao",
   "LIGUE1:2026-11-06:toulouse-strasbourg",
-  "SERIEA:2026-11-06:venezia-udinese"
+  "SERIEA:2026-11-06:venezia-udinese",
+  "SERIEA:2026-11-07:parma-bologna"
  ]
 }
