@@ -102,7 +102,9 @@
      "odds": 1.09,
      "fair": 1.14,
      "min_sts": 1.3,
-     "edge": -0.0481
+     "edge": -0.0481,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-07:mainz-bayern_munich",
@@ -124,7 +126,8 @@
    "odds": 1.4,
    "p": 0.65045666,
    "stake": 5,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-07T22:55:19.112970+00:00"
   },
   {
    "uid": "2026-11-05:WK2",
@@ -144,7 +147,9 @@
      "odds": 1.09,
      "fair": 1.14,
      "min_sts": 1.3,
-     "edge": -0.0481
+     "edge": -0.0481,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-07:roma-sassuolo",
@@ -158,7 +163,9 @@
      "odds": 1.25,
      "fair": 1.32,
      "min_sts": 1.5,
-     "edge": -0.0494
+     "edge": -0.0494,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "EPL:2026-11-08:ipswich-bournemouth",
@@ -1301,13 +1308,16 @@
      "odds": 1.07,
      "fair": 1.12,
      "min_sts": 1.28,
-     "edge": -0.0483
+     "edge": -0.0483,
+     "result": "1:0",
+     "won": true
     }
    ],
    "odds": 1.07,
    "p": 0.8912,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-07T22:55:19.112992+00:00"
   },
   {
    "uid": "2026-11-06:WK1",
@@ -1327,7 +1337,9 @@
      "odds": 1.07,
      "fair": 1.12,
      "min_sts": 1.28,
-     "edge": -0.0483
+     "edge": -0.0483,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-07:roma-sassuolo",
@@ -1341,13 +1353,16 @@
      "odds": 1.25,
      "fair": 1.31,
      "min_sts": 1.49,
-     "edge": -0.0497
+     "edge": -0.0497,
+     "result": "3:0",
+     "won": true
     }
    ],
    "odds": 1.34,
    "p": 0.67927264,
    "stake": 5,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-07T22:55:19.112999+00:00"
   },
   {
    "uid": "2026-11-06:WK2",
@@ -1367,7 +1382,9 @@
      "odds": 1.07,
      "fair": 1.12,
      "min_sts": 1.28,
-     "edge": -0.0483
+     "edge": -0.0483,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-07:mainz-bayern_munich",
@@ -2063,13 +2080,16 @@
      "odds": 1.09,
      "fair": 1.15,
      "min_sts": 1.31,
-     "edge": -0.0482
+     "edge": -0.0482,
+     "result": "1:0",
+     "won": true
     }
    ],
    "odds": 1.09,
    "p": 0.8694,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-07T22:55:19.113007+00:00"
   },
   {
    "uid": "2026-11-07:S3",
@@ -2118,7 +2138,9 @@
      "odds": 1.09,
      "fair": 1.15,
      "min_sts": 1.31,
-     "edge": -0.0482
+     "edge": -0.0482,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-07:mainz-bayern_munich",
@@ -2140,7 +2162,8 @@
    "odds": 1.34,
    "p": 0.6673514399999999,
    "stake": 5,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-07T22:55:19.113012+00:00"
   },
   {
    "uid": "2026-11-07:K2",
@@ -2160,7 +2183,9 @@
      "odds": 1.09,
      "fair": 1.15,
      "min_sts": 1.31,
-     "edge": -0.0482
+     "edge": -0.0482,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-07:roma-sassuolo",
@@ -2174,7 +2199,9 @@
      "odds": 1.24,
      "fair": 1.32,
      "min_sts": 1.5,
-     "edge": -0.0546
+     "edge": -0.0546,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-07:stuttgart-werder_bremen",
@@ -2188,13 +2215,16 @@
      "odds": 1.76,
      "fair": 1.86,
      "min_sts": 2.12,
-     "edge": -0.0587
+     "edge": -0.0587,
+     "result": "1:0",
+     "won": true
     }
    ],
    "odds": 2.38,
    "p": 0.354310381278,
    "stake": 5,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-07T22:55:19.113018+00:00"
   },
   {
    "uid": "2026-11-07:D1",
@@ -3391,7 +3421,10 @@
     "O2.5": 0.4445,
     "U2.5": 0.5555
    },
-   "result": null
+   "result": [
+    1,
+    2
+   ]
   },
   {
    "match_id": "EPL:2026-11-07:nottm_forest-man_city",
@@ -3414,7 +3447,10 @@
     "O2.5": 0.5883,
     "U2.5": 0.4117
    },
-   "result": null
+   "result": [
+    3,
+    1
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-07:osasuna-ath_bilbao",
@@ -3460,7 +3496,10 @@
     "O2.5": 0.7423,
     "U2.5": 0.2577
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-07:auxerre-paris",
@@ -3483,7 +3522,10 @@
     "O2.5": 0.5638,
     "U2.5": 0.4362
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-07:widzew_lodz-pogon_szczecin",
@@ -3529,7 +3571,10 @@
     "O2.5": 0.7107,
     "U2.5": 0.2893
    },
-   "result": null
+   "result": [
+    3,
+    0
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-07:valencia-real_madrid",
@@ -3575,7 +3620,10 @@
     "O2.5": 0.7734,
     "U2.5": 0.2266
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-08:napoli-lazio",
