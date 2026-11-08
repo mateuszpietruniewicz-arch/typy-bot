@@ -3473,7 +3473,10 @@
     "O2.5": 0.455,
     "U2.5": 0.545
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-07:stuttgart-werder_bremen",
@@ -3597,7 +3600,10 @@
     "O2.5": 0.6862,
     "U2.5": 0.3138
    },
-   "result": null
+   "result": [
+    0,
+    3
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-07:paris_sg-troyes",
