@@ -3169,7 +3169,9 @@
      "odds": 1.37,
      "fair": 1.48,
      "min_sts": 1.68,
-     "edge": -0.0725
+     "edge": -0.0725,
+     "result": "1:1",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-08:fiorentina-juventus",
@@ -3361,7 +3363,9 @@
      "odds": 2.22,
      "fair": 2.38,
      "min_sts": 2.7,
-     "edge": -0.0667
+     "edge": -0.0667,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-08:elche-betis",
@@ -3375,7 +3379,9 @@
      "odds": 3.55,
      "fair": 3.77,
      "min_sts": 4.28,
-     "edge": -0.0563
+     "edge": -0.0563,
+     "result": "0:2",
+     "won": false
     },
     {
      "match_id": "EKSTRA:2026-11-08:jagiellonia-katowice",
@@ -3633,7 +3639,8 @@
    "odds": 363556.67,
    "p": 7.205553503467996e-07,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-08T15:55:48.508549+00:00"
   }
  ],
  "predictions": [
@@ -4420,7 +4427,10 @@
     "O2.5": 0.5435,
     "U2.5": 0.4565
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-08:elche-betis",
@@ -4443,7 +4453,10 @@
     "O2.5": 0.5797,
     "U2.5": 0.4203
    },
-   "result": null
+   "result": [
+    0,
+    2
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-08:jagiellonia-katowice",
