@@ -3152,7 +3152,9 @@
      "odds": 1.53,
      "fair": 1.66,
      "min_sts": 1.88,
-     "edge": -0.075
+     "edge": -0.075,
+     "result": "2:1",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-08:monza-atalanta",
@@ -3228,7 +3230,9 @@
      "odds": 1.27,
      "fair": 1.37,
      "min_sts": 1.55,
-     "edge": -0.0726
+     "edge": -0.0726,
+     "result": "2:2",
+     "won": false
     },
     {
      "match_id": "LIGUE1:2026-11-08:lens-marseille",
@@ -3266,7 +3270,8 @@
    "odds": 35.44,
    "p": 0.011833431393861057,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-09T05:22:59.112873+00:00"
   },
   {
    "uid": "2026-11-08:D2",
@@ -5053,7 +5058,10 @@
     "O2.5": 0.658,
     "U2.5": 0.342
    },
-   "result": null
+   "result": [
+    2,
+    1
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-08:lech-zaglebie",
@@ -5099,7 +5107,10 @@
     "O2.5": 0.539,
     "U2.5": 0.461
    },
-   "result": null
+   "result": [
+    2,
+    2
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-08:lens-marseille",
@@ -5148,7 +5159,10 @@
     "O2.5": 0.7403,
     "U2.5": 0.2597
    },
-   "result": null
+   "result": [
+    1,
+    2
+   ]
   }
  ]
 }
