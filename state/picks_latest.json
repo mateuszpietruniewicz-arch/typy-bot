@@ -4,7 +4,7 @@
  "long": [],
  "long_skipped": {},
  "matches": [],
- "generated": "2026-11-09T14:13:48.463357+00:00",
+ "generated": "2026-11-10T13:02:35.847402+00:00",
  "models": {
   "EPL": {
    "n": 860,
@@ -492,87 +492,87 @@
    ]
   },
   "EKSTRA": {
-   "n": 727,
-   "home_adv": 0.266,
-   "rho": -0.108,
+   "n": 736,
+   "home_adv": 0.26,
+   "rho": -0.106,
    "avg_goals": 2.82,
-   "last": "2026-11-02",
+   "last": "2026-11-08",
    "table": [
     [
      "Lech Poznan",
-     0.636
-    ],
-    [
-     "Legia",
-     0.378
+     0.613
     ],
     [
      "Gornik Zabrze",
-     0.369
+     0.366
     ],
     [
-     "Pogon Szczecin",
-     0.236
+     "Legia",
+     0.321
     ],
     [
      "Jagiellonia",
-     0.233
+     0.247
     ],
     [
      "GKS Katowice",
-     0.22
+     0.213
     ],
     [
      "Wisla",
+     0.193
+    ],
+    [
+     "Pogon Szczecin",
      0.184
     ],
     [
      "Rakow",
-     0.129
+     0.168
     ],
     [
      "Piast Gliwice",
-     0.089
+     0.088
     ],
     [
      "Zaglebie",
-     0.022
+     0.045
     ],
     [
      "Widzew Lodz",
-     -0.038
+     0.017
     ],
     [
      "Lechia Gdansk",
      -0.047
     ],
     [
-     "Korona Kielce",
-     -0.054
-    ],
-    [
      "Motor Lublin",
-     -0.082
+     -0.071
     ],
     [
      "Cracovia",
-     -0.097
+     -0.102
+    ],
+    [
+     "Korona Kielce",
+     -0.103
     ],
     [
      "Radomiak Radom",
-     -0.18
+     -0.143
     ],
     [
      "Wisla Plock",
-     -0.201
-    ],
-    [
-     "Slask Wroclaw",
-     -0.231
+     -0.204
     ],
     [
      "Wieczysta Krakow",
-     -0.245
+     -0.232
+    ],
+    [
+     "Slask Wroclaw",
+     -0.236
     ],
     [
      "Termalica B-B.",
@@ -580,13 +580,13 @@
     ],
     [
      "Arka Gdynia",
-     -0.42
+     -0.418
     ]
    ]
   }
  },
  "bridge_k": 0.0,
- "day": "2026-11-09",
+ "day": "2026-11-10",
  "kind": "daily",
- "message": "🎯 <b>Typy · pon 09.11</b>\nMecze w analizie: 0\nBrak meczów w tym okresie."
+ "message": "🎯 <b>Typy · wt 10.11</b>\nMecze w analizie: 0\nBrak meczów w tym okresie."
 }
