@@ -4,7 +4,7 @@
  "long": [],
  "long_skipped": {},
  "matches": [],
- "generated": "2026-11-12T11:29:34.372862+00:00",
+ "generated": "2026-11-13T15:25:02.643739+00:00",
  "models": {
   "EPL": {
    "n": 860,
@@ -586,7 +586,7 @@
   }
  },
  "bridge_k": 0.0,
- "day": "2026-11-12",
+ "day": "2026-11-13",
  "kind": "preview",
- "message": "📅 <b>Zapowiedź weekendu · czw 12.11</b>\nMecze w analizie: 0\nBrak meczów w tym okresie."
+ "message": "📅 <b>Zapowiedź weekendu · pt 13.11</b>\nMecze w analizie: 0\nBrak meczów w tym okresie."
 }
