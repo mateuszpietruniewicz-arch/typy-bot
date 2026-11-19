@@ -4,7 +4,7 @@
  "long": [],
  "long_skipped": {},
  "matches": [],
- "generated": "2026-11-18T10:32:40.556495+00:00",
+ "generated": "2026-11-19T08:51:43.833471+00:00",
  "models": {
   "EPL": {
    "n": 860,
@@ -586,7 +586,7 @@
   }
  },
  "bridge_k": 0.0,
- "day": "2026-11-18",
+ "day": "2026-11-19",
  "kind": "daily",
- "message": "🎯 <b>Typy · śr 18.11</b>\nMecze w analizie: 0\nBrak meczów w tym okresie."
+ "message": "🎯 <b>Typy · czw 19.11</b>\nMecze w analizie: 0\nBrak meczów w tym okresie."
 }
