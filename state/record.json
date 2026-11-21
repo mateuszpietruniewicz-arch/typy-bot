@@ -3725,13 +3725,16 @@
      "odds": 3.32,
      "fair": 3.45,
      "min_sts": 3.92,
-     "edge": -0.0389
+     "edge": -0.0389,
+     "result": "0:1",
+     "won": false
     }
    ],
    "odds": 3.32,
    "p": 0.2896,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739316+00:00"
   },
   {
    "uid": "2026-11-19:WS2",
@@ -3780,13 +3783,16 @@
      "odds": 1.86,
      "fair": 1.96,
      "min_sts": 2.23,
-     "edge": -0.0511
+     "edge": -0.0511,
+     "result": "0:1",
+     "won": false
     }
    ],
    "odds": 1.86,
    "p": 0.509,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739330+00:00"
   },
   {
    "uid": "2026-11-19:WK1",
@@ -3849,7 +3855,9 @@
      "odds": 1.86,
      "fair": 1.96,
      "min_sts": 2.23,
-     "edge": -0.0511
+     "edge": -0.0511,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-22:barcelona-villarreal",
@@ -3883,7 +3891,8 @@
    "odds": 3.02,
    "p": 0.28220785274,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739334+00:00"
   },
   {
    "uid": "2026-11-19:WD1",
@@ -4106,7 +4115,9 @@
      "odds": 1.86,
      "fair": 1.96,
      "min_sts": 2.23,
-     "edge": -0.0511
+     "edge": -0.0511,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "SERIEA:2026-11-22:milan-frosinone",
@@ -4148,7 +4159,9 @@
      "odds": 2.13,
      "fair": 2.26,
      "min_sts": 2.57,
-     "edge": -0.0577
+     "edge": -0.0577,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "LIGUE1:2026-11-21:lille-lyon",
@@ -4162,7 +4175,9 @@
      "odds": 2.23,
      "fair": 2.37,
      "min_sts": 2.7,
-     "edge": -0.0614
+     "edge": -0.0614,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "BUNDES:2026-11-21:ein_frankfurt-hoffenheim",
@@ -4176,7 +4191,9 @@
      "odds": 2.26,
      "fair": 2.41,
      "min_sts": 2.73,
-     "edge": -0.0629
+     "edge": -0.0629,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-21:lens-toulouse",
@@ -4190,13 +4207,16 @@
      "odds": 1.76,
      "fair": 1.88,
      "min_sts": 2.14,
-     "edge": -0.0657
+     "edge": -0.0657,
+     "result": "1:1",
+     "won": false
     }
    ],
    "odds": 406.86,
    "p": 0.0016341735568268236,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739339+00:00"
   },
   {
    "uid": "2026-11-19:WD3",
@@ -4694,13 +4714,16 @@
      "odds": 3.38,
      "fair": 3.5,
      "min_sts": 3.97,
-     "edge": -0.0325
+     "edge": -0.0325,
+     "result": "0:1",
+     "won": false
     }
    ],
    "odds": 3.38,
    "p": 0.2861,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739345+00:00"
   },
   {
    "uid": "2026-11-20:WS2",
@@ -5486,13 +5509,16 @@
      "odds": 3.43,
      "fair": 3.54,
      "min_sts": 4.02,
-     "edge": -0.0312
+     "edge": -0.0312,
+     "result": "0:1",
+     "won": false
     }
    ],
    "odds": 3.43,
    "p": 0.2826,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739348+00:00"
   },
   {
    "uid": "2026-11-21:S2",
@@ -5512,13 +5538,16 @@
      "odds": 2.15,
      "fair": 2.27,
      "min_sts": 2.58,
-     "edge": -0.0546
+     "edge": -0.0546,
+     "result": "0:1",
+     "won": false
     }
    ],
    "odds": 2.15,
    "p": 0.4404,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739350+00:00"
   },
   {
    "uid": "2026-11-21:S3",
@@ -5538,13 +5567,16 @@
      "odds": 2.03,
      "fair": 2.15,
      "min_sts": 2.45,
-     "edge": -0.055
+     "edge": -0.055,
+     "result": "1:1",
+     "won": false
     }
    ],
    "odds": 2.03,
    "p": 0.4646,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739352+00:00"
   },
   {
    "uid": "2026-11-21:K1",
@@ -5625,7 +5657,9 @@
      "odds": 1.45,
      "fair": 1.55,
      "min_sts": 1.76,
-     "edge": -0.0626
+     "edge": -0.0626,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-21:nice-paris_sg",
@@ -5647,7 +5681,8 @@
    "odds": 2.9,
    "p": 0.28436717376,
    "stake": 5,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-21T23:53:26.739356+00:00"
   },
   {
    "uid": "2026-11-21:D1",
@@ -5858,7 +5893,9 @@
      "odds": 2.15,
      "fair": 2.27,
      "min_sts": 2.58,
-     "edge": -0.0546
+     "edge": -0.0546,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "LIGUE1:2026-11-21:lens-toulouse",
@@ -5872,7 +5909,9 @@
      "odds": 2.03,
      "fair": 2.15,
      "min_sts": 2.45,
-     "edge": -0.055
+     "edge": -0.055,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "EKSTRA:2026-11-21:zaglebie-gornik_z",
@@ -5900,7 +5939,9 @@
      "odds": 2.37,
      "fair": 2.51,
      "min_sts": 2.85,
-     "edge": -0.0582
+     "edge": -0.0582,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-21:lille-lyon",
@@ -5914,7 +5955,9 @@
      "odds": 2.24,
      "fair": 2.38,
      "min_sts": 2.7,
-     "edge": -0.0591
+     "edge": -0.0591,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-21:bournemouth-nottm_forest",
@@ -5944,7 +5987,9 @@
      "odds": 1.86,
      "fair": 1.99,
      "min_sts": 2.26,
-     "edge": -0.0645
+     "edge": -0.0645,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-21:coventry-crystal_palace",
@@ -5966,7 +6011,8 @@
    "odds": 430.48,
    "p": 0.0014603731871622471,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-21T23:53:26.739360+00:00"
   },
   {
    "uid": "2026-11-21:D3",
@@ -7928,7 +7974,10 @@
     "O2.5": 0.4265,
     "U2.5": 0.5735
    },
-   "result": null
+   "result": [
+    3,
+    1
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-21:cracovia-jagiellonia",
@@ -8026,7 +8075,10 @@
     "O2.5": 0.7207,
     "U2.5": 0.2793
    },
-   "result": null
+   "result": [
+    4,
+    0
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-21:union_berlin-rb_leipzig",
@@ -8049,7 +8101,10 @@
     "O2.5": 0.6773,
     "U2.5": 0.3227
    },
-   "result": null
+   "result": [
+    1,
+    5
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-21:elversberg-freiburg",
@@ -8072,7 +8127,10 @@
     "O2.5": 0.6199,
     "U2.5": 0.3801
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-21:mgladbach-dortmund",
@@ -8095,7 +8153,10 @@
     "O2.5": 0.6547,
     "U2.5": 0.3453
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-21:ein_frankfurt-hoffenheim",
@@ -8118,7 +8179,10 @@
     "O2.5": 0.7206,
     "U2.5": 0.2794
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   },
   {
    "match_id": "EPL:2026-11-21:chelsea-leeds",
@@ -8271,7 +8335,10 @@
     "O2.5": 0.4673,
     "U2.5": 0.5327
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-21:nice-paris_sg",
@@ -8343,7 +8410,10 @@
     "O2.5": 0.6296,
     "U2.5": 0.3704
    },
-   "result": null
+   "result": [
+    1,
+    5
+   ]
   },
   {
    "match_id": "EPL:2026-11-21:newcastle-arsenal",
@@ -8389,7 +8459,10 @@
     "O2.5": 0.5406,
     "U2.5": 0.4594
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-21:schalke-stuttgart",
@@ -8412,7 +8485,10 @@
     "O2.5": 0.6611,
     "U2.5": 0.3389
    },
-   "result": null
+   "result": [
+    0,
+    0
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-21:radomiak-wisla_krakow",
@@ -8458,7 +8534,10 @@
     "O2.5": 0.5734,
     "U2.5": 0.4266
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-21:monaco-auxerre",
@@ -8481,7 +8560,10 @@
     "O2.5": 0.6385,
     "U2.5": 0.3615
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-21:lens-toulouse",
@@ -8504,7 +8586,10 @@
     "O2.5": 0.5935,
     "U2.5": 0.4065
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-21:lille-lyon",
@@ -8527,7 +8612,10 @@
     "O2.5": 0.4791,
     "U2.5": 0.5209
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-21:strasbourg-brest",
@@ -8550,7 +8638,10 @@
     "O2.5": 0.5814,
     "U2.5": 0.4186
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-21:real_madrid-celta",
@@ -8573,7 +8664,10 @@
     "O2.5": 0.7107,
     "U2.5": 0.2893
    },
-   "result": null
+   "result": [
+    2,
+    1
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-22:rakow-widzew_lodz",
