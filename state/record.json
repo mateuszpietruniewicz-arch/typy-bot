@@ -6363,13 +6363,16 @@
      "odds": 1.75,
      "fair": 1.85,
      "min_sts": 2.1,
-     "edge": -0.0535
+     "edge": -0.0535,
+     "result": "1:0",
+     "won": true
     }
    ],
    "odds": 1.75,
    "p": 0.5406,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-22T20:48:04.526568+00:00"
   },
   {
    "uid": "2026-11-22:S3",
@@ -6389,13 +6392,16 @@
      "odds": 3.03,
      "fair": 3.21,
      "min_sts": 3.65,
-     "edge": -0.0562
+     "edge": -0.0562,
+     "result": "1:1",
+     "won": false
     }
    ],
    "odds": 3.03,
    "p": 0.3117,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-22T20:48:04.526588+00:00"
   },
   {
    "uid": "2026-11-22:K1",
@@ -6429,7 +6435,9 @@
      "odds": 1.68,
      "fair": 1.78,
      "min_sts": 2.02,
-     "edge": -0.0562
+     "edge": -0.0562,
+     "result": "4:0",
+     "won": true
     }
    ],
    "odds": 2.34,
@@ -6469,7 +6477,9 @@
      "odds": 1.75,
      "fair": 1.85,
      "min_sts": 2.1,
-     "edge": -0.0535
+     "edge": -0.0535,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-22:sassuolo-genoa",
@@ -6483,7 +6493,9 @@
      "odds": 1.35,
      "fair": 1.45,
      "min_sts": 1.64,
-     "edge": -0.0661
+     "edge": -0.0661,
+     "result": "0:2",
+     "won": true
     }
    ],
    "odds": 3.28,
@@ -6537,7 +6549,9 @@
      "odds": 1.25,
      "fair": 1.35,
      "min_sts": 1.54,
-     "edge": -0.0723
+     "edge": -0.0723,
+     "result": "4:0",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-22:werder_bremen-hamburg",
@@ -6551,7 +6565,9 @@
      "odds": 1.53,
      "fair": 1.65,
      "min_sts": 1.88,
-     "edge": -0.0749
+     "edge": -0.0749,
+     "result": "4:0",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-22:getafe-ath_madrid",
@@ -6579,7 +6595,9 @@
      "odds": 1.35,
      "fair": 1.45,
      "min_sts": 1.64,
-     "edge": -0.0661
+     "edge": -0.0661,
+     "result": "0:2",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-22:bologna-udinese",
@@ -6593,7 +6611,9 @@
      "odds": 1.3,
      "fair": 1.39,
      "min_sts": 1.58,
-     "edge": -0.0671
+     "edge": -0.0671,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-22:hull-brighton",
@@ -6607,7 +6627,9 @@
      "odds": 1.44,
      "fair": 1.6,
      "min_sts": 1.82,
-     "edge": -0.0992
+     "edge": -0.0992,
+     "result": "2:0",
+     "won": false
     },
     {
      "match_id": "EKSTRA:2026-11-22:katowice-lech",
@@ -6635,7 +6657,9 @@
      "odds": 1.3,
      "fair": 1.4,
      "min_sts": 1.59,
-     "edge": -0.0714
+     "edge": -0.0714,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "EKSTRA:2026-11-22:plock-legia",
@@ -6663,13 +6687,16 @@
      "odds": 1.21,
      "fair": 1.3,
      "min_sts": 1.48,
-     "edge": -0.0735
+     "edge": -0.0735,
+     "result": "3:2",
+     "won": true
     }
    ],
    "odds": 40.57,
    "p": 0.010017279975984669,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-22T20:48:04.526605+00:00"
   },
   {
    "uid": "2026-11-22:D2",
@@ -6689,7 +6716,9 @@
      "odds": 2.62,
      "fair": 2.66,
      "min_sts": 3.03,
-     "edge": -0.0169
+     "edge": -0.0169,
+     "result": "2:0",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-22:osasuna-malaga",
@@ -6703,7 +6732,9 @@
      "odds": 1.75,
      "fair": 1.85,
      "min_sts": 2.1,
-     "edge": -0.0535
+     "edge": -0.0535,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-22:getafe-ath_madrid",
@@ -6731,7 +6762,9 @@
      "odds": 1.88,
      "fair": 2.01,
      "min_sts": 2.28,
-     "edge": -0.0656
+     "edge": -0.0656,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "SERIEA:2026-11-22:milan-frosinone",
@@ -6745,7 +6778,9 @@
      "odds": 2.34,
      "fair": 2.42,
      "min_sts": 2.75,
-     "edge": -0.0361
+     "edge": -0.0361,
+     "result": "5:1",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-22:santander-sociedad",
@@ -6759,7 +6794,9 @@
      "odds": 1.98,
      "fair": 2.14,
      "min_sts": 2.43,
-     "edge": -0.0751
+     "edge": -0.0751,
+     "result": "3:2",
+     "won": false
     },
     {
      "match_id": "BUNDES:2026-11-22:werder_bremen-hamburg",
@@ -6773,7 +6810,9 @@
      "odds": 2.41,
      "fair": 2.53,
      "min_sts": 2.88,
-     "edge": -0.0494
+     "edge": -0.0494,
+     "result": "4:0",
+     "won": false
     },
     {
      "match_id": "SERIEA:2026-11-22:atalanta-inter",
@@ -6793,7 +6832,8 @@
    "odds": 616.04,
    "p": 0.0011053207922190771,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-22T20:48:04.526613+00:00"
   },
   {
    "uid": "2026-11-22:D3",
@@ -6827,7 +6867,9 @@
      "odds": 1.88,
      "fair": 2.01,
      "min_sts": 2.28,
-     "edge": -0.0656
+     "edge": -0.0656,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-22:hull-brighton",
@@ -6841,7 +6883,9 @@
      "odds": 1.44,
      "fair": 1.6,
      "min_sts": 1.82,
-     "edge": -0.0992
+     "edge": -0.0992,
+     "result": "2:0",
+     "won": false
     },
     {
      "match_id": "LIGUE1:2026-11-22:paris-angers",
@@ -6855,7 +6899,9 @@
      "odds": 1.25,
      "fair": 1.35,
      "min_sts": 1.54,
-     "edge": -0.0723
+     "edge": -0.0723,
+     "result": "4:0",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-22:sassuolo-genoa",
@@ -6869,7 +6915,9 @@
      "odds": 2.83,
      "fair": 3.1,
      "min_sts": 3.52,
-     "edge": -0.0887
+     "edge": -0.0887,
+     "result": "0:2",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-22:augsburg-mainz",
@@ -6883,7 +6931,9 @@
      "odds": 2.78,
      "fair": 2.99,
      "min_sts": 3.4,
-     "edge": -0.0711
+     "edge": -0.0711,
+     "result": "3:1",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-22:santander-sociedad",
@@ -6897,7 +6947,9 @@
      "odds": 3.12,
      "fair": 3.35,
      "min_sts": 3.81,
-     "edge": -0.0682
+     "edge": -0.0682,
+     "result": "3:2",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-22:lorient-rennes",
@@ -6911,7 +6963,9 @@
      "odds": 3.03,
      "fair": 3.21,
      "min_sts": 3.65,
-     "edge": -0.0562
+     "edge": -0.0562,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-22:liverpool-man_united",
@@ -6925,7 +6979,9 @@
      "odds": 1.68,
      "fair": 1.78,
      "min_sts": 2.02,
-     "edge": -0.0562
+     "edge": -0.0562,
+     "result": "4:0",
+     "won": true
     },
     {
      "match_id": "EKSTRA:2026-11-22:plock-legia",
@@ -6953,7 +7009,9 @@
      "odds": 1.53,
      "fair": 1.65,
      "min_sts": 1.88,
-     "edge": -0.0749
+     "edge": -0.0749,
+     "result": "4:0",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-22:milan-frosinone",
@@ -6967,7 +7025,9 @@
      "odds": 1.56,
      "fair": 1.7,
      "min_sts": 1.93,
-     "edge": -0.0848
+     "edge": -0.0848,
+     "result": "5:1",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-22:osasuna-malaga",
@@ -6981,7 +7041,9 @@
      "odds": 1.75,
      "fair": 1.85,
      "min_sts": 2.1,
-     "edge": -0.0535
+     "edge": -0.0535,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-22:marseille-le_mans",
@@ -7029,7 +7091,8 @@
    "odds": 29077.71,
    "p": 9.837472730664903e-06,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-22T20:48:04.526623+00:00"
   }
  ],
  "predictions": [
@@ -9454,7 +9517,10 @@
     "O2.5": 0.8328,
     "U2.5": 0.1672
    },
-   "result": null
+   "result": [
+    3,
+    2
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-22:katowice-lech",
@@ -9500,7 +9566,10 @@
     "O2.5": 0.5809,
     "U2.5": 0.4191
    },
-   "result": null
+   "result": [
+    2,
+    0
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-22:bologna-udinese",
@@ -9523,7 +9592,10 @@
     "O2.5": 0.4997,
     "U2.5": 0.5003
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-22:sassuolo-genoa",
@@ -9546,7 +9618,10 @@
     "O2.5": 0.4923,
     "U2.5": 0.5077
    },
-   "result": null
+   "result": [
+    0,
+    2
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-22:paris-angers",
@@ -9569,7 +9644,10 @@
     "O2.5": 0.6098,
     "U2.5": 0.3902
    },
-   "result": null
+   "result": [
+    4,
+    0
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-22:augsburg-mainz",
@@ -9592,7 +9670,10 @@
     "O2.5": 0.6849,
     "U2.5": 0.3151
    },
-   "result": null
+   "result": [
+    3,
+    1
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-22:santander-sociedad",
@@ -9615,7 +9696,10 @@
     "O2.5": 0.7169,
     "U2.5": 0.2831
    },
-   "result": null
+   "result": [
+    3,
+    2
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-22:lorient-rennes",
@@ -9638,7 +9722,10 @@
     "O2.5": 0.5152,
     "U2.5": 0.4848
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "EPL:2026-11-22:liverpool-man_united",
@@ -9661,7 +9748,10 @@
     "O2.5": 0.6537,
     "U2.5": 0.3463
    },
-   "result": null
+   "result": [
+    4,
+    0
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-22:werder_bremen-hamburg",
@@ -9684,7 +9774,10 @@
     "O2.5": 0.638,
     "U2.5": 0.362
    },
-   "result": null
+   "result": [
+    4,
+    0
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-22:plock-legia",
@@ -9730,7 +9823,10 @@
     "O2.5": 0.711,
     "U2.5": 0.289
    },
-   "result": null
+   "result": [
+    5,
+    1
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-22:osasuna-malaga",
@@ -9753,7 +9849,10 @@
     "O2.5": 0.4784,
     "U2.5": 0.5216
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-22:atalanta-inter",
