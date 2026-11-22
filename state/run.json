@@ -1,9 +1,10 @@
 {
  "lineups_done": [
   "LALIGA:2026-11-21:alaves-la_coruna",
+  "LALIGA:2026-11-22:santander-sociedad",
   "LIGUE1:2026-11-07:paris_sg-troyes"
  ],
- "daily_done": "2026-11-21",
+ "daily_done": "2026-11-22",
  "preview_done": "2026-11-20",
  "prematch_sent": [
   "BUNDES:2026-11-06:hamburg-mgladbach",
@@ -13,14 +14,18 @@
   "BUNDES:2026-11-21:leverkusen-paderborn",
   "BUNDES:2026-11-21:mgladbach-dortmund",
   "BUNDES:2026-11-21:union_berlin-rb_leipzig",
+  "BUNDES:2026-11-22:werder_bremen-hamburg",
   "EKSTRA:2026-11-06:wisla_krakow-cracovia",
   "EKSTRA:2026-11-07:gornik_z-wieczysta_krakow",
   "EKSTRA:2026-11-21:cracovia-jagiellonia",
+  "EKSTRA:2026-11-22:plock-legia",
   "EPL:2026-11-07:nottm_forest-man_city",
+  "EPL:2026-11-22:liverpool-man_united",
   "LALIGA:2026-11-07:osasuna-ath_bilbao",
   "LALIGA:2026-11-08:celta-levante",
   "LALIGA:2026-11-08:villarreal-getafe",
   "LIGUE1:2026-11-06:toulouse-strasbourg",
+  "LIGUE1:2026-11-22:lorient-rennes",
   "SERIEA:2026-11-06:venezia-udinese",
   "SERIEA:2026-11-07:parma-bologna",
   "SERIEA:2026-11-08:napoli-lazio",
