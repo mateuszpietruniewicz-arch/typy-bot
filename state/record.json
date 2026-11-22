@@ -8436,7 +8436,10 @@
     "O2.5": 0.5665,
     "U2.5": 0.4335
    },
-   "result": null
+   "result": [
+    2,
+    2
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-21:sevilla-betis",
