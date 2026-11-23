@@ -1,0 +1,2508 @@
+{
+ "singles": [
+  {
+   "id": "S1",
+   "type": "single (bez przewagi)",
+   "value": false,
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-23:monza-fiorentina",
+     "league": "SERIEA",
+     "home": "Monza",
+     "away": "Fiorentina",
+     "kickoff": "2026-11-23T19:45:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.4985,
+     "odds": 1.89,
+     "fair": 2.01,
+     "min_sts": 2.28,
+     "edge": -0.0587
+    }
+   ],
+   "p": 0.4985,
+   "odds": 1.89,
+   "payout": 16.63,
+   "stake": 10,
+   "ev": -1.71,
+   "ev_pct": -0.1709,
+   "one_in": 2.0
+  },
+  {
+   "id": "S2",
+   "type": "single (bez przewagi)",
+   "value": false,
+   "legs": [
+    {
+     "match_id": "EPL:2026-11-23:brentford-everton",
+     "league": "EPL",
+     "home": "Brentford",
+     "away": "Everton",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4295,
+     "odds": 2.18,
+     "fair": 2.33,
+     "min_sts": 2.65,
+     "edge": -0.0649
+    }
+   ],
+   "p": 0.4295,
+   "odds": 2.18,
+   "payout": 19.18,
+   "stake": 10,
+   "ev": -1.76,
+   "ev_pct": -0.176,
+   "one_in": 2.3
+  },
+  {
+   "id": "S3",
+   "type": "single (bez przewagi)",
+   "value": false,
+   "legs": [
+    {
+     "match_id": "LALIGA:2026-11-23:levante-elche",
+     "league": "LALIGA",
+     "home": "Levante",
+     "away": "Elche",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4456,
+     "odds": 2.09,
+     "fair": 2.24,
+     "min_sts": 2.55,
+     "edge": -0.0684
+    }
+   ],
+   "p": 0.4456,
+   "odds": 2.09,
+   "payout": 18.39,
+   "stake": 10,
+   "ev": -1.8,
+   "ev_pct": -0.1805,
+   "one_in": 2.2
+  }
+ ],
+ "combos": [
+  {
+   "id": "K1",
+   "type": "kupon 2",
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-23:monza-fiorentina",
+     "league": "SERIEA",
+     "home": "Monza",
+     "away": "Fiorentina",
+     "kickoff": "2026-11-23T19:45:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7569,
+     "odds": 1.23,
+     "fair": 1.32,
+     "min_sts": 1.5,
+     "edge": -0.0711
+    },
+    {
+     "match_id": "EKSTRA:2026-11-23:wieczysta_krakow-motor_lublin",
+     "league": "EKSTRA",
+     "home": "Wieczysta Krakow",
+     "away": "Motor Lublin",
+     "kickoff": "2026-11-23T18:00:00+00:00",
+     "market": "1X",
+     "label": "1X",
+     "p": 0.6253,
+     "odds": 1.48,
+     "fair": 1.6,
+     "min_sts": 1.82,
+     "edge": -0.0716
+    }
+   ],
+   "p": 0.47328957,
+   "odds": 1.82,
+   "payout": 8.01,
+   "stake": 5,
+   "ev": -1.21,
+   "ev_pct": -0.2418,
+   "one_in": 2.1
+  },
+  {
+   "id": "K2",
+   "type": "kupon 3",
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-23:monza-fiorentina",
+     "league": "SERIEA",
+     "home": "Monza",
+     "away": "Fiorentina",
+     "kickoff": "2026-11-23T19:45:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7569,
+     "odds": 1.23,
+     "fair": 1.32,
+     "min_sts": 1.5,
+     "edge": -0.0711
+    },
+    {
+     "match_id": "EPL:2026-11-23:brentford-everton",
+     "league": "EPL",
+     "home": "Brentford",
+     "away": "Everton",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "1X",
+     "label": "1X",
+     "p": 0.7011,
+     "odds": 1.32,
+     "fair": 1.43,
+     "min_sts": 1.62,
+     "edge": -0.0728
+    },
+    {
+     "match_id": "LALIGA:2026-11-23:levante-elche",
+     "league": "LALIGA",
+     "home": "Levante",
+     "away": "Elche",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7381,
+     "odds": 1.25,
+     "fair": 1.35,
+     "min_sts": 1.54,
+     "edge": -0.0753
+    }
+   ],
+   "p": 0.39168205767899994,
+   "odds": 2.03,
+   "payout": 8.93,
+   "stake": 5,
+   "ev": -1.5,
+   "ev_pct": -0.3005,
+   "one_in": 2.6
+  }
+ ],
+ "long": [],
+ "long_skipped": {
+  "D3": "tylko 4 meczów z prawdziwymi kursami (potrzeba co najmniej 15)"
+ },
+ "matches": [
+  {
+   "id": "EKSTRA:2026-11-23:wieczysta_krakow-motor_lublin",
+   "league": "EKSTRA",
+   "league_name": "Ekstraklasa",
+   "flag": "🇵🇱",
+   "kickoff": "2026-11-23T18:00:00+00:00",
+   "time_unknown": false,
+   "home": "Wieczysta Krakow",
+   "away": "Motor Lublin",
+   "lambdas": [
+    1.943,
+    1.759
+   ],
+   "lambdas_raw": [
+    1.943,
+    1.759
+   ],
+   "lineup": {
+    "fm_id": 5804046,
+    "type": "unavailable",
+    "confirmed": false,
+    "d": [
+     null,
+     null
+    ],
+    "team_ids": [
+     1286895,
+     89466
+    ]
+   },
+   "why": [
+    {
+     "factor": "absencje",
+     "text": "Wieczysta Krakow: niedostępni – Stefan Feiertag (kontuzja, powrót: Late December 2026), Mateusz Wieteska (kontuzja, powrót: Doubtful), Kamil Pestka (zawieszenie, powrót: Late November 2026)",
+     "impact": null
+    },
+    {
+     "factor": "absencje",
+     "text": "Motor Lublin: niedostępni – Bartosz Bereszyński (kontuzja, powrót: Doubtful), Ivo Rodrigues (kontuzja, powrót: Late December 2026)",
+     "impact": null
+    }
+   ],
+   "probs": {
+    "1": 0.4202,
+    "X": 0.233,
+    "2": 0.3469,
+    "1X": 0.6531,
+    "X2": 0.5798,
+    "12": 0.767,
+    "O0.5": 0.9664,
+    "U0.5": 0.0336,
+    "O1.5": 0.8929,
+    "U1.5": 0.1071,
+    "O2.5": 0.715,
+    "U2.5": 0.285,
+    "O3.5": 0.5063,
+    "U3.5": 0.4937,
+    "O4.5": 0.3132,
+    "U4.5": 0.6868,
+    "BTTS": 0.7182,
+    "BTTS_NO": 0.2818
+   },
+   "top_scores": [
+    [
+     0.093,
+     "1:1"
+    ],
+    [
+     0.082,
+     "2:1"
+    ],
+    [
+     0.074,
+     "1:2"
+    ],
+    [
+     0.072,
+     "2:2"
+    ],
+    [
+     0.053,
+     "3:1"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.3818,
+    "X": 0.2405,
+    "2": 0.3777,
+    "1X": 0.6223,
+    "X2": 0.6182,
+    "12": 0.7595,
+    "O2.5": 0.6572,
+    "U2.5": 0.3428
+   },
+   "odds_h": 2.4265,
+   "odds_d": 3.714,
+   "odds_a": 2.4505000000000003,
+   "odds_o25": 1.45,
+   "odds_u25": 2.58,
+   "max_h": 2.62,
+   "max_d": 4.1,
+   "max_a": 2.63,
+   "pin_h": 2.57,
+   "pin_d": 4.07,
+   "pin_a": 2.49,
+   "n_books": 20,
+   "absences": {
+    "home": [
+     {
+      "player": "Stefan Feiertag",
+      "value": 383757.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late December 2026"
+     },
+     {
+      "player": "Mateusz Wieteska",
+      "value": 239742.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Kamil Pestka",
+      "value": 172711.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "zawieszenie",
+      "until": "Late November 2026"
+     }
+    ],
+    "away": [
+     {
+      "player": "Bartosz Bereszyński",
+      "value": 278993.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Ivo Rodrigues",
+      "value": 206081.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late December 2026"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "Kowal ostro o zamieszaniu w Radomiu: To pie***lony żart",
+      "link": "https://weszlo.com/kowal-ostro-o-zamieszaniu-w-radomiu-to-pielony-zart",
+      "summary": "    W studiu WeszłoTV gorąca dyskusja o kulisach zamieszania wokół meczu Radomiak Radom &#8211; Wisła Kraków. Wojciech Kowalczyk bez hamulców komentuje &#8222;aferę drzwiową&#8221;, postawę wojewody mazowieckiego, opieszałość władz ligi oraz determinację Jarosława Królewskiego. Dlaczego mimo nocnego sabotażu na stadionie w Radomiu spotkanie ostatecznie doszło do skutku, jaką rolę odegrali gospodar",
+      "published": "2026-11-23T08:38:08+00:00",
+      "source": "weszlo.com",
+      "injury": false
+     },
+     {
+      "title": "Wieczysta Kraków – Motor Lublin: zapowiedź i typy na PKO BP Ekstraklasa (23.11.2026)",
+      "link": "https://weszlo.com/bukmacherzy/typy/wieczysta-krakow-motor-lublin-zapowiedz-i-typy-na-pko-bp-ekstraklasa-23-11-2026",
+      "summary": "  Zmagania w 15. serii gier piłkarskiej PKO BP Ekstraklasy zakończy poniedziałkowe starcie pod Wawelem. Niezależnie od wyniku tej rywalizacji beniaminek nie opuści ostatniego miejsca w tabeli, a kursy i typy bukmacherskie na mecz Wieczysta Kraków &#8211; Motor Lublin znajdziecie w poniższej zapowiedzi.   \n \n \n                                   \n Odbierz 255 zł freebetów na start! \n \n \n  Freebet (d",
+      "published": "2026-11-23T04:40:12+00:00",
+      "source": "weszlo.com",
+      "injury": false
+     }
+    ],
+    "away": [
+     {
+      "title": "Wieczysta Kraków – Motor Lublin: zapowiedź i typy na PKO BP Ekstraklasa (23.11.2026)",
+      "link": "https://weszlo.com/bukmacherzy/typy/wieczysta-krakow-motor-lublin-zapowiedz-i-typy-na-pko-bp-ekstraklasa-23-11-2026",
+      "summary": "  Zmagania w 15. serii gier piłkarskiej PKO BP Ekstraklasy zakończy poniedziałkowe starcie pod Wawelem. Niezależnie od wyniku tej rywalizacji beniaminek nie opuści ostatniego miejsca w tabeli, a kursy i typy bukmacherskie na mecz Wieczysta Kraków &#8211; Motor Lublin znajdziecie w poniższej zapowiedzi.   \n \n \n                                   \n Odbierz 255 zł freebetów na start! \n \n \n  Freebet (d",
+      "published": "2026-11-23T04:40:12+00:00",
+      "source": "weszlo.com",
+      "injury": false
+     }
+    ]
+   },
+   "rest": {
+    "home": 16.1,
+    "away": 17.0
+   },
+   "source": "Dixon-Coles (gole)",
+   "unknown": [],
+   "market_margin": 0.0894,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.3856,
+     "p_model": 0.4202,
+     "p_market": 0.3818,
+     "odds_market": 2.43,
+     "odds_estimated": false,
+     "odds_sts_est": 2.35,
+     "fair": 2.59,
+     "min_sts": 2.95,
+     "edge": -0.0923,
+     "ev_after_tax": -0.2012,
+     "disagreement": 0.0384,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2397,
+     "p_model": 0.233,
+     "p_market": 0.2405,
+     "odds_market": 3.71,
+     "odds_estimated": false,
+     "odds_sts_est": 3.6,
+     "fair": 4.17,
+     "min_sts": 4.74,
+     "edge": -0.1364,
+     "ev_after_tax": -0.24,
+     "disagreement": -0.0075,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.3747,
+     "p_model": 0.3469,
+     "p_market": 0.3777,
+     "odds_market": 2.45,
+     "odds_estimated": false,
+     "odds_sts_est": 2.38,
+     "fair": 2.67,
+     "min_sts": 3.03,
+     "edge": -0.1094,
+     "ev_after_tax": -0.2163,
+     "disagreement": -0.0308,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.6253,
+     "p_model": 0.6531,
+     "p_market": 0.6223,
+     "odds_market": 1.53,
+     "odds_estimated": true,
+     "odds_sts_est": 1.48,
+     "fair": 1.6,
+     "min_sts": 1.82,
+     "edge": -0.0716,
+     "ev_after_tax": -0.183,
+     "disagreement": 0.0308,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.6144,
+     "p_model": 0.5798,
+     "p_market": 0.6182,
+     "odds_market": 1.54,
+     "odds_estimated": true,
+     "odds_sts_est": 1.49,
+     "fair": 1.63,
+     "min_sts": 1.85,
+     "edge": -0.0819,
+     "ev_after_tax": -0.1921,
+     "disagreement": -0.0384,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7603,
+     "p_model": 0.767,
+     "p_market": 0.7595,
+     "odds_market": 1.25,
+     "odds_estimated": true,
+     "odds_sts_est": 1.22,
+     "fair": 1.32,
+     "min_sts": 1.49,
+     "edge": -0.0753,
+     "ev_after_tax": -0.1862,
+     "disagreement": 0.0075,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.8929,
+     "p_model": 0.8929,
+     "p_market": null,
+     "odds_market": 1.05,
+     "odds_estimated": true,
+     "odds_sts_est": 1.02,
+     "fair": 1.12,
+     "min_sts": 1.27,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.1071,
+     "p_model": 0.1071,
+     "p_market": null,
+     "odds_market": 8.73,
+     "odds_estimated": true,
+     "odds_sts_est": 8.46,
+     "fair": 9.34,
+     "min_sts": 10.61,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.663,
+     "p_model": 0.715,
+     "p_market": 0.6572,
+     "odds_market": 1.45,
+     "odds_estimated": false,
+     "odds_sts_est": 1.41,
+     "fair": 1.51,
+     "min_sts": 1.71,
+     "edge": -0.0675,
+     "ev_after_tax": -0.1794,
+     "disagreement": 0.0578,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.337,
+     "p_model": 0.285,
+     "p_market": 0.3428,
+     "odds_market": 2.58,
+     "odds_estimated": false,
+     "odds_sts_est": 2.5,
+     "fair": 2.97,
+     "min_sts": 3.37,
+     "edge": -0.1566,
+     "ev_after_tax": -0.2578,
+     "disagreement": -0.0578,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.5063,
+     "p_model": 0.5063,
+     "p_market": null,
+     "odds_market": 1.85,
+     "odds_estimated": true,
+     "odds_sts_est": 1.79,
+     "fair": 1.98,
+     "min_sts": 2.24,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.4937,
+     "p_model": 0.4937,
+     "p_market": null,
+     "odds_market": 1.89,
+     "odds_estimated": true,
+     "odds_sts_est": 1.84,
+     "fair": 2.03,
+     "min_sts": 2.3,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.7182,
+     "p_model": 0.7182,
+     "p_market": null,
+     "odds_market": 1.31,
+     "odds_estimated": true,
+     "odds_sts_est": 1.27,
+     "fair": 1.39,
+     "min_sts": 1.58,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.2818,
+     "p_model": 0.2818,
+     "p_market": null,
+     "odds_market": 3.35,
+     "odds_estimated": true,
+     "odds_sts_est": 3.25,
+     "fair": 3.55,
+     "min_sts": 4.03,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "SERIEA:2026-11-23:monza-fiorentina",
+   "league": "SERIEA",
+   "league_name": "Serie A",
+   "flag": "🇮🇹",
+   "kickoff": "2026-11-23T19:45:00+00:00",
+   "time_unknown": false,
+   "home": "Monza",
+   "away": "Fiorentina",
+   "lambdas": [
+    1.483,
+    2.146
+   ],
+   "lambdas_raw": [
+    1.467,
+    2.122
+   ],
+   "lineup": {
+    "fm_id": 5749756,
+    "type": "predicted",
+    "confirmed": false,
+    "d": [
+     -0.2727272727272727,
+     -0.2727272727272727
+    ],
+    "team_ids": [
+     6504,
+     8535
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Monza: przewidywany skład bez 3 z „zwykłej jedenastki”: Samuele Birindelli (rotacja/decyzja trenera), Andrea Carboni (rotacja/decyzja trenera), Foe Ondoa (rotacja/decyzja trenera)",
+     "impact": -0.0
+    },
+    {
+     "factor": "skład",
+     "text": "Fiorentina: przewidywany skład bez 3 z „zwykłej jedenastki”: Nicolò Fagioli (rotacja/decyzja trenera), Viery (rotacja/decyzja trenera), Marco Brescianini (rotacja/decyzja trenera)",
+     "impact": 0.0
+    }
+   ],
+   "probs": {
+    "1": 0.2655,
+    "X": 0.2055,
+    "2": 0.529,
+    "1X": 0.471,
+    "X2": 0.7345,
+    "12": 0.7945,
+    "O0.5": 0.9744,
+    "U0.5": 0.0256,
+    "O1.5": 0.8763,
+    "U1.5": 0.1237,
+    "O2.5": 0.7025,
+    "U2.5": 0.2975,
+    "O3.5": 0.4911,
+    "U3.5": 0.5089,
+    "O4.5": 0.2992,
+    "U4.5": 0.7008,
+    "BTTS": 0.6818,
+    "BTTS_NO": 0.3182
+   },
+   "top_scores": [
+    [
+     0.091,
+     "1:2"
+    ],
+    [
+     0.084,
+     "1:1"
+    ],
+    [
+     0.067,
+     "2:2"
+    ],
+    [
+     0.065,
+     "1:3"
+    ],
+    [
+     0.063,
+     "2:1"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.2576,
+    "X": 0.2473,
+    "2": 0.4951,
+    "1X": 0.5049,
+    "X2": 0.7424,
+    "12": 0.7527,
+    "O2.5": 0.6133,
+    "U2.5": 0.3867
+   },
+   "odds_h": 3.6158333333333332,
+   "odds_d": 3.7579166666666666,
+   "odds_a": 1.9466666666666665,
+   "odds_o25": 1.5630000000000002,
+   "odds_u25": 2.3820000000000006,
+   "max_h": 3.9,
+   "max_d": 4.07,
+   "max_a": 2.04,
+   "pin_h": 3.74,
+   "pin_d": 3.85,
+   "pin_a": 2.01,
+   "n_books": 24,
+   "absences": {
+    "home": [
+     {
+      "player": "Michael Folorunsho",
+      "value": 4113066.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Yvan Kouadio Maye",
+      "value": 1772369.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Back in training"
+     },
+     {
+      "player": "Ivan Jurić",
+      "value": 0.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "zawieszenie",
+      "until": "Late November 2026"
+     }
+    ],
+    "away": [
+     {
+      "player": "Fabiano Parisi",
+      "value": 6788131.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Marin Pongračić",
+      "value": 6241307.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Federico Croci",
+      "value": 0.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "internationalDuty",
+      "until": "Mid December 2026"
+     }
+    ]
+   },
+   "news": {
+    "home": [],
+    "away": []
+   },
+   "rest": {
+    "home": 15.2,
+    "away": 15.0
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0564,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.2584,
+     "p_model": 0.2655,
+     "p_market": 0.2576,
+     "odds_market": 3.62,
+     "odds_estimated": false,
+     "odds_sts_est": 3.51,
+     "fair": 3.87,
+     "min_sts": 4.4,
+     "edge": -0.0938,
+     "ev_after_tax": -0.2025,
+     "disagreement": 0.0079,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2431,
+     "p_model": 0.2055,
+     "p_market": 0.2473,
+     "odds_market": 3.76,
+     "odds_estimated": false,
+     "odds_sts_est": 3.65,
+     "fair": 4.11,
+     "min_sts": 4.67,
+     "edge": -0.1137,
+     "ev_after_tax": -0.2201,
+     "disagreement": -0.0418,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.4985,
+     "p_model": 0.529,
+     "p_market": 0.4951,
+     "odds_market": 1.95,
+     "odds_estimated": false,
+     "odds_sts_est": 1.89,
+     "fair": 2.01,
+     "min_sts": 2.28,
+     "edge": -0.0587,
+     "ev_after_tax": -0.1717,
+     "disagreement": 0.0339,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.5015,
+     "p_model": 0.471,
+     "p_market": 0.5049,
+     "odds_market": 1.89,
+     "odds_estimated": true,
+     "odds_sts_est": 1.83,
+     "fair": 1.99,
+     "min_sts": 2.27,
+     "edge": -0.0824,
+     "ev_after_tax": -0.1925,
+     "disagreement": -0.0339,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.7416,
+     "p_model": 0.7345,
+     "p_market": 0.7424,
+     "odds_market": 1.28,
+     "odds_estimated": true,
+     "odds_sts_est": 1.24,
+     "fair": 1.35,
+     "min_sts": 1.53,
+     "edge": -0.0772,
+     "ev_after_tax": -0.1879,
+     "disagreement": -0.0079,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7569,
+     "p_model": 0.7945,
+     "p_market": 0.7527,
+     "odds_market": 1.27,
+     "odds_estimated": true,
+     "odds_sts_est": 1.23,
+     "fair": 1.32,
+     "min_sts": 1.5,
+     "edge": -0.0711,
+     "ev_after_tax": -0.1825,
+     "disagreement": 0.0418,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.8763,
+     "p_model": 0.8763,
+     "p_market": null,
+     "odds_market": 1.07,
+     "odds_estimated": true,
+     "odds_sts_est": 1.03,
+     "fair": 1.14,
+     "min_sts": 1.3,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.1237,
+     "p_model": 0.1237,
+     "p_market": null,
+     "odds_market": 7.56,
+     "odds_estimated": true,
+     "odds_sts_est": 7.33,
+     "fair": 8.08,
+     "min_sts": 9.19,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.6222,
+     "p_model": 0.7025,
+     "p_market": 0.6133,
+     "odds_market": 1.56,
+     "odds_estimated": false,
+     "odds_sts_est": 1.52,
+     "fair": 1.61,
+     "min_sts": 1.83,
+     "edge": -0.0566,
+     "ev_after_tax": -0.1698,
+     "disagreement": 0.0892,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.3778,
+     "p_model": 0.2975,
+     "p_market": 0.3867,
+     "odds_market": 2.38,
+     "odds_estimated": false,
+     "odds_sts_est": 2.31,
+     "fair": 2.65,
+     "min_sts": 3.01,
+     "edge": -0.1271,
+     "ev_after_tax": -0.2319,
+     "disagreement": -0.0892,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.4911,
+     "p_model": 0.4911,
+     "p_market": null,
+     "odds_market": 1.9,
+     "odds_estimated": true,
+     "odds_sts_est": 1.85,
+     "fair": 2.04,
+     "min_sts": 2.31,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.5089,
+     "p_model": 0.5089,
+     "p_market": null,
+     "odds_market": 1.84,
+     "odds_estimated": true,
+     "odds_sts_est": 1.78,
+     "fair": 1.97,
+     "min_sts": 2.23,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.6818,
+     "p_model": 0.6818,
+     "p_market": null,
+     "odds_market": 1.38,
+     "odds_estimated": true,
+     "odds_sts_est": 1.34,
+     "fair": 1.47,
+     "min_sts": 1.67,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.3182,
+     "p_model": 0.3182,
+     "p_market": null,
+     "odds_market": 2.96,
+     "odds_estimated": true,
+     "odds_sts_est": 2.88,
+     "fair": 3.14,
+     "min_sts": 3.57,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "EPL:2026-11-23:brentford-everton",
+   "league": "EPL",
+   "league_name": "Premier League",
+   "flag": "🏴",
+   "kickoff": "2026-11-23T20:00:00+00:00",
+   "time_unknown": false,
+   "home": "Brentford",
+   "away": "Everton",
+   "lambdas": [
+    1.411,
+    1.064
+   ],
+   "lambdas_raw": [
+    1.453,
+    1.018
+   ],
+   "lineup": {
+    "fm_id": 5795517,
+    "type": "predicted",
+    "confirmed": false,
+    "d": [
+     -0.2727272727272727,
+     -0.09090909090909091
+    ],
+    "team_ids": [
+     9937,
+     8668
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Brentford: przewidywany skład bez 3 z „zwykłej jedenastki”: Igor Thiago (zawieszenie, powrót: Early December 2026), Jaidon Anthony (rotacja/decyzja trenera), Yehor Yarmoliuk (rotacja/decyzja trenera)",
+     "impact": -0.2
+    },
+    {
+     "factor": "skład",
+     "text": "Everton: przewidywany skład bez 1 z „zwykłej jedenastki”: Brennan Johnson (rotacja/decyzja trenera)",
+     "impact": 0.2
+    }
+   ],
+   "probs": {
+    "1": 0.4414,
+    "X": 0.2826,
+    "2": 0.276,
+    "1X": 0.724,
+    "X2": 0.5586,
+    "12": 0.7174,
+    "O0.5": 0.9079,
+    "U0.5": 0.0921,
+    "O1.5": 0.7156,
+    "U1.5": 0.2844,
+    "O2.5": 0.4498,
+    "U2.5": 0.5502,
+    "O3.5": 0.2371,
+    "U3.5": 0.7629,
+    "O4.5": 0.1055,
+    "U4.5": 0.8945,
+    "BTTS": 0.5032,
+    "BTTS_NO": 0.4968
+   },
+   "top_scores": [
+    [
+     0.134,
+     "1:1"
+    ],
+    [
+     0.111,
+     "1:0"
+    ],
+    [
+     0.092,
+     "0:0"
+    ],
+    [
+     0.089,
+     "2:1"
+    ],
+    [
+     0.084,
+     "2:0"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.4282,
+    "X": 0.2703,
+    "2": 0.3015,
+    "1X": 0.6985,
+    "X2": 0.5718,
+    "12": 0.7297,
+    "O2.5": 0.5276,
+    "U2.5": 0.4724
+   },
+   "odds_h": 2.2443999999999997,
+   "odds_d": 3.4792,
+   "odds_a": 3.1359999999999997,
+   "odds_o25": 1.8094444444444444,
+   "odds_u25": 2.005,
+   "max_h": 2.36,
+   "max_d": 3.71,
+   "max_a": 3.35,
+   "pin_h": 2.27,
+   "pin_d": 3.57,
+   "pin_a": 3.28,
+   "n_books": 25,
+   "absences": {
+    "home": [
+     {
+      "player": "Igor Thiago",
+      "value": 68630610.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "zawieszenie",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Nathan Collins",
+      "value": 38131304.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early January 2027"
+     },
+     {
+      "player": "Aaron Hickey",
+      "value": 22032737.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late December 2026"
+     },
+     {
+      "player": "Antoni Milambo",
+      "value": 20699154.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late November 2026"
+     },
+     {
+      "player": "Fábio Carvalho",
+      "value": 11486318.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Rico Henry",
+      "value": 7719910.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late November 2026"
+     },
+     {
+      "player": "Joshua Dasilva",
+      "value": 1206138.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late November 2026"
+     }
+    ],
+    "away": []
+   },
+   "news": {
+    "home": [],
+    "away": [
+     {
+      "title": "‘Haaland must be worried’: Thierno Barry’s rise has David Moyes purring",
+      "link": "https://www.theguardian.com/football/2026/nov/23/thierno-barry-rise-david-moyes-purring-everton",
+      "summary": " Everton striker has worked hard to find his scoring touch after admitting he hit ‘rock bottom’ at times last season  A most unexpected name sits behind the phenomenon Erling Haaland and the £125m proven marksman Alexander Isak in the Premier League goalscoring chart this season. The rise of Thierno Barry may have surprised even the man himself but stands as a fitting reward for single-minded pers",
+      "published": "2026-11-23T08:00:51+00:00",
+      "source": "Football | The Guardian",
+      "injury": false
+     }
+    ]
+   },
+   "rest": {
+    "home": 15.2,
+    "away": 17.0
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0519,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4295,
+     "p_model": 0.4414,
+     "p_market": 0.4282,
+     "odds_market": 2.24,
+     "odds_estimated": false,
+     "odds_sts_est": 2.18,
+     "fair": 2.33,
+     "min_sts": 2.65,
+     "edge": -0.0649,
+     "ev_after_tax": -0.1771,
+     "disagreement": 0.0132,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2716,
+     "p_model": 0.2826,
+     "p_market": 0.2703,
+     "odds_market": 3.48,
+     "odds_estimated": false,
+     "odds_sts_est": 3.37,
+     "fair": 3.68,
+     "min_sts": 4.18,
+     "edge": -0.0835,
+     "ev_after_tax": -0.1935,
+     "disagreement": 0.0123,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.2989,
+     "p_model": 0.276,
+     "p_market": 0.3015,
+     "odds_market": 3.14,
+     "odds_estimated": false,
+     "odds_sts_est": 3.04,
+     "fair": 3.35,
+     "min_sts": 3.8,
+     "edge": -0.0907,
+     "ev_after_tax": -0.1998,
+     "disagreement": -0.0255,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.7011,
+     "p_model": 0.724,
+     "p_market": 0.6985,
+     "odds_market": 1.36,
+     "odds_estimated": true,
+     "odds_sts_est": 1.32,
+     "fair": 1.43,
+     "min_sts": 1.62,
+     "edge": -0.0728,
+     "ev_after_tax": -0.1841,
+     "disagreement": 0.0255,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.5705,
+     "p_model": 0.5586,
+     "p_market": 0.5718,
+     "odds_market": 1.67,
+     "odds_estimated": true,
+     "odds_sts_est": 1.62,
+     "fair": 1.75,
+     "min_sts": 1.99,
+     "edge": -0.0783,
+     "ev_after_tax": -0.1889,
+     "disagreement": -0.0132,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7284,
+     "p_model": 0.7174,
+     "p_market": 0.7297,
+     "odds_market": 1.31,
+     "odds_estimated": true,
+     "odds_sts_est": 1.27,
+     "fair": 1.37,
+     "min_sts": 1.56,
+     "edge": -0.0777,
+     "ev_after_tax": -0.1884,
+     "disagreement": -0.0123,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.7156,
+     "p_model": 0.7156,
+     "p_market": null,
+     "odds_market": 1.31,
+     "odds_estimated": true,
+     "odds_sts_est": 1.27,
+     "fair": 1.4,
+     "min_sts": 1.59,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.2844,
+     "p_model": 0.2844,
+     "p_market": null,
+     "odds_market": 3.29,
+     "odds_estimated": true,
+     "odds_sts_est": 3.19,
+     "fair": 3.52,
+     "min_sts": 4.0,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.5198,
+     "p_model": 0.4498,
+     "p_market": 0.5276,
+     "odds_market": 1.81,
+     "odds_estimated": false,
+     "odds_sts_est": 1.76,
+     "fair": 1.92,
+     "min_sts": 2.19,
+     "edge": -0.0876,
+     "ev_after_tax": -0.1971,
+     "disagreement": -0.0778,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.4802,
+     "p_model": 0.5502,
+     "p_market": 0.4724,
+     "odds_market": 2.0,
+     "odds_estimated": false,
+     "odds_sts_est": 1.94,
+     "fair": 2.08,
+     "min_sts": 2.37,
+     "edge": -0.0662,
+     "ev_after_tax": -0.1782,
+     "disagreement": 0.0778,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.2371,
+     "p_model": 0.2371,
+     "p_market": null,
+     "odds_market": 3.94,
+     "odds_estimated": true,
+     "odds_sts_est": 3.82,
+     "fair": 4.22,
+     "min_sts": 4.79,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.7629,
+     "p_model": 0.7629,
+     "p_market": null,
+     "odds_market": 1.23,
+     "odds_estimated": true,
+     "odds_sts_est": 1.19,
+     "fair": 1.31,
+     "min_sts": 1.49,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.5032,
+     "p_model": 0.5032,
+     "p_market": null,
+     "odds_market": 1.87,
+     "odds_estimated": true,
+     "odds_sts_est": 1.82,
+     "fair": 1.99,
+     "min_sts": 2.26,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.4968,
+     "p_model": 0.4968,
+     "p_market": null,
+     "odds_market": 1.9,
+     "odds_estimated": true,
+     "odds_sts_est": 1.84,
+     "fair": 2.01,
+     "min_sts": 2.29,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "LALIGA:2026-11-23:levante-elche",
+   "league": "LALIGA",
+   "league_name": "LaLiga",
+   "flag": "🇪🇸",
+   "kickoff": "2026-11-23T20:00:00+00:00",
+   "time_unknown": false,
+   "home": "Levante",
+   "away": "Elche",
+   "lambdas": [
+    1.61,
+    1.267
+   ],
+   "lambdas_raw": [
+    1.636,
+    1.242
+   ],
+   "lineup": {
+    "fm_id": 5868135,
+    "type": "predicted",
+    "confirmed": false,
+    "d": [
+     -0.09090909090909091,
+     0.0
+    ],
+    "team_ids": [
+     8581,
+     10268
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Levante: przewidywany skład bez 1 z „zwykłej jedenastki”: Aïssa Mandi (rotacja/decyzja trenera)",
+     "impact": -0.1
+    },
+    {
+     "factor": "absencje",
+     "text": "Elche: niedostępni – Marc Aguado (kontuzja, powrót: Doubtful), Yago Santiago (kontuzja, powrót: Doubtful), Ali Houary (kontuzja, powrót: Early December 2026)",
+     "impact": null
+    }
+   ],
+   "probs": {
+    "1": 0.4488,
+    "X": 0.2552,
+    "2": 0.296,
+    "1X": 0.704,
+    "X2": 0.5512,
+    "12": 0.7448,
+    "O0.5": 0.9385,
+    "U0.5": 0.0615,
+    "O1.5": 0.7868,
+    "U1.5": 0.2132,
+    "O2.5": 0.5486,
+    "U2.5": 0.4514,
+    "O3.5": 0.3251,
+    "U3.5": 0.6749,
+    "O4.5": 0.1644,
+    "U4.5": 0.8356,
+    "BTTS": 0.5798,
+    "BTTS_NO": 0.4202
+   },
+   "top_scores": [
+    [
+     0.12,
+     "1:1"
+    ],
+    [
+     0.092,
+     "2:1"
+    ],
+    [
+     0.085,
+     "1:0"
+    ],
+    [
+     0.073,
+     "2:0"
+    ],
+    [
+     0.073,
+     "1:2"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.4452,
+    "X": 0.2627,
+    "2": 0.2921,
+    "1X": 0.7079,
+    "X2": 0.5548,
+    "12": 0.7373,
+    "O2.5": 0.5703,
+    "U2.5": 0.4297
+   },
+   "odds_h": 2.1555,
+   "odds_d": 3.5565000000000007,
+   "odds_a": 3.2159999999999997,
+   "odds_o25": 1.669090909090909,
+   "odds_u25": 2.160909090909091,
+   "max_h": 2.26,
+   "max_d": 3.82,
+   "max_a": 3.45,
+   "pin_h": 2.21,
+   "pin_d": 3.63,
+   "pin_a": 3.37,
+   "n_books": 20,
+   "absences": {
+    "home": [],
+    "away": [
+     {
+      "player": "Marc Aguado",
+      "value": 2133467.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Yago Santiago",
+      "value": 934119.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Ali Houary",
+      "value": 929336.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "Levante-Elche: horario, dónde ver en TV y canal del partido de LaLiga EA Sports",
+      "link": "https://www.marca.com/futbol/primera-division/2026/11/22/levante-elche-horario-ver-tv-canal-partido-laliga-ea-sports.html",
+      "summary": "Levante y Elche se enfrentan el lunes 23 de noviembre en el Ciutat de València&nbsp;",
+      "published": "2026-11-22T15:56:52+00:00",
+      "source": "Primera División",
+      "injury": false
+     }
+    ],
+    "away": [
+     {
+      "title": "Levante-Elche: horario, dónde ver en TV y canal del partido de LaLiga EA Sports",
+      "link": "https://www.marca.com/futbol/primera-division/2026/11/22/levante-elche-horario-ver-tv-canal-partido-laliga-ea-sports.html",
+      "summary": "Levante y Elche se enfrentan el lunes 23 de noviembre en el Ciutat de València&nbsp;",
+      "published": "2026-11-22T15:56:52+00:00",
+      "source": "Primera División",
+      "injury": false
+     }
+    ]
+   },
+   "rest": {
+    "home": 11.1,
+    "away": 15.3
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0561,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4456,
+     "p_model": 0.4488,
+     "p_market": 0.4452,
+     "odds_market": 2.16,
+     "odds_estimated": false,
+     "odds_sts_est": 2.09,
+     "fair": 2.24,
+     "min_sts": 2.55,
+     "edge": -0.0684,
+     "ev_after_tax": -0.1802,
+     "disagreement": 0.0036,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2619,
+     "p_model": 0.2552,
+     "p_market": 0.2627,
+     "odds_market": 3.56,
+     "odds_estimated": false,
+     "odds_sts_est": 3.45,
+     "fair": 3.82,
+     "min_sts": 4.34,
+     "edge": -0.0963,
+     "ev_after_tax": -0.2048,
+     "disagreement": -0.0075,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.2925,
+     "p_model": 0.296,
+     "p_market": 0.2921,
+     "odds_market": 3.22,
+     "odds_estimated": false,
+     "odds_sts_est": 3.12,
+     "fair": 3.42,
+     "min_sts": 3.89,
+     "edge": -0.0876,
+     "ev_after_tax": -0.1971,
+     "disagreement": 0.0039,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.7075,
+     "p_model": 0.704,
+     "p_market": 0.7079,
+     "odds_market": 1.35,
+     "odds_estimated": true,
+     "odds_sts_est": 1.3,
+     "fair": 1.41,
+     "min_sts": 1.61,
+     "edge": -0.0767,
+     "ev_after_tax": -0.1875,
+     "disagreement": -0.0039,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.5544,
+     "p_model": 0.5512,
+     "p_market": 0.5548,
+     "odds_market": 1.72,
+     "odds_estimated": true,
+     "odds_sts_est": 1.67,
+     "fair": 1.8,
+     "min_sts": 2.05,
+     "edge": -0.0768,
+     "ev_after_tax": -0.1876,
+     "disagreement": -0.0036,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7381,
+     "p_model": 0.7448,
+     "p_market": 0.7373,
+     "odds_market": 1.29,
+     "odds_estimated": true,
+     "odds_sts_est": 1.25,
+     "fair": 1.35,
+     "min_sts": 1.54,
+     "edge": -0.0753,
+     "ev_after_tax": -0.1862,
+     "disagreement": 0.0075,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.7868,
+     "p_model": 0.7868,
+     "p_market": null,
+     "odds_market": 1.19,
+     "odds_estimated": true,
+     "odds_sts_est": 1.15,
+     "fair": 1.27,
+     "min_sts": 1.44,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.2132,
+     "p_model": 0.2132,
+     "p_market": null,
+     "odds_market": 4.38,
+     "odds_estimated": true,
+     "odds_sts_est": 4.25,
+     "fair": 4.69,
+     "min_sts": 5.33,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.5681,
+     "p_model": 0.5486,
+     "p_market": 0.5703,
+     "odds_market": 1.67,
+     "odds_estimated": false,
+     "odds_sts_est": 1.62,
+     "fair": 1.76,
+     "min_sts": 2.0,
+     "edge": -0.0802,
+     "ev_after_tax": -0.1906,
+     "disagreement": -0.0217,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.4319,
+     "p_model": 0.4514,
+     "p_market": 0.4297,
+     "odds_market": 2.16,
+     "odds_estimated": false,
+     "odds_sts_est": 2.1,
+     "fair": 2.32,
+     "min_sts": 2.63,
+     "edge": -0.0948,
+     "ev_after_tax": -0.2034,
+     "disagreement": 0.0217,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.3251,
+     "p_model": 0.3251,
+     "p_market": null,
+     "odds_market": 2.87,
+     "odds_estimated": true,
+     "odds_sts_est": 2.79,
+     "fair": 3.08,
+     "min_sts": 3.5,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.6749,
+     "p_model": 0.6749,
+     "p_market": null,
+     "odds_market": 1.38,
+     "odds_estimated": true,
+     "odds_sts_est": 1.34,
+     "fair": 1.48,
+     "min_sts": 1.68,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.5798,
+     "p_model": 0.5798,
+     "p_market": null,
+     "odds_market": 1.63,
+     "odds_estimated": true,
+     "odds_sts_est": 1.58,
+     "fair": 1.72,
+     "min_sts": 1.96,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.4202,
+     "p_model": 0.4202,
+     "p_market": null,
+     "odds_market": 2.25,
+     "odds_estimated": true,
+     "odds_sts_est": 2.18,
+     "fair": 2.38,
+     "min_sts": 2.7,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  }
+ ],
+ "generated": "2026-11-23T09:38:45.251060+00:00",
+ "models": {
+  "EPL": {
+   "n": 860,
+   "home_adv": 0.189,
+   "rho": -0.063,
+   "avg_goals": 2.78,
+   "last": "2026-11-08",
+   "table": [
+    [
+     "Arsenal",
+     0.866
+    ],
+    [
+     "Man City",
+     0.632
+    ],
+    [
+     "Brighton",
+     0.471
+    ],
+    [
+     "Liverpool",
+     0.404
+    ],
+    [
+     "Brentford",
+     0.235
+    ],
+    [
+     "Chelsea",
+     0.231
+    ],
+    [
+     "Bournemouth",
+     0.227
+    ],
+    [
+     "Aston Villa",
+     0.17
+    ],
+    [
+     "Man United",
+     0.139
+    ],
+    [
+     "Newcastle",
+     0.087
+    ],
+    [
+     "Leeds",
+     0.084
+    ],
+    [
+     "Nott'm Forest",
+     0.084
+    ],
+    [
+     "Everton",
+     0.069
+    ],
+    [
+     "Hull",
+     0.044
+    ],
+    [
+     "Fulham",
+     -0.013
+    ],
+    [
+     "Tottenham",
+     -0.068
+    ],
+    [
+     "West Ham",
+     -0.17
+    ],
+    [
+     "Sunderland",
+     -0.176
+    ],
+    [
+     "Crystal Palace",
+     -0.245
+    ],
+    [
+     "Coventry",
+     -0.319
+    ],
+    [
+     "Ipswich",
+     -0.389
+    ],
+    [
+     "Wolves",
+     -0.463
+    ],
+    [
+     "Burnley",
+     -0.488
+    ]
+   ]
+  },
+  "LALIGA": {
+   "n": 879,
+   "home_adv": 0.288,
+   "rho": -0.045,
+   "avg_goals": 2.74,
+   "last": "2026-11-08",
+   "table": [
+    [
+     "Barcelona",
+     1.087
+    ],
+    [
+     "Real Madrid",
+     0.909
+    ],
+    [
+     "Ath Madrid",
+     0.609
+    ],
+    [
+     "Villarreal",
+     0.405
+    ],
+    [
+     "Betis",
+     0.321
+    ],
+    [
+     "Ath Bilbao",
+     0.146
+    ],
+    [
+     "Celta",
+     0.117
+    ],
+    [
+     "Sociedad",
+     0.073
+    ],
+    [
+     "La Coruna",
+     0.06
+    ],
+    [
+     "Vallecano",
+     -0.005
+    ],
+    [
+     "Mallorca",
+     -0.049
+    ],
+    [
+     "Elche",
+     -0.053
+    ],
+    [
+     "Levante",
+     -0.065
+    ],
+    [
+     "Alaves",
+     -0.071
+    ],
+    [
+     "Sevilla",
+     -0.073
+    ],
+    [
+     "Espanol",
+     -0.084
+    ],
+    [
+     "Osasuna",
+     -0.147
+    ],
+    [
+     "Valencia",
+     -0.147
+    ],
+    [
+     "Girona",
+     -0.151
+    ],
+    [
+     "Getafe",
+     -0.183
+    ],
+    [
+     "Santander",
+     -0.379
+    ],
+    [
+     "Oviedo",
+     -0.516
+    ],
+    [
+     "Malaga",
+     -0.598
+    ]
+   ]
+  },
+  "SERIEA": {
+   "n": 870,
+   "home_adv": 0.086,
+   "rho": 0.011,
+   "avg_goals": 2.64,
+   "last": "2026-11-08",
+   "table": [
+    [
+     "Inter",
+     0.834
+    ],
+    [
+     "Roma",
+     0.766
+    ],
+    [
+     "Como",
+     0.575
+    ],
+    [
+     "Napoli",
+     0.512
+    ],
+    [
+     "Juventus",
+     0.465
+    ],
+    [
+     "Milan",
+     0.434
+    ],
+    [
+     "Frosinone",
+     0.413
+    ],
+    [
+     "Lazio",
+     0.352
+    ],
+    [
+     "Atalanta",
+     0.307
+    ],
+    [
+     "Bologna",
+     0.158
+    ],
+    [
+     "Fiorentina",
+     0.007
+    ],
+    [
+     "Genoa",
+     -0.126
+    ],
+    [
+     "Torino",
+     -0.158
+    ],
+    [
+     "Sassuolo",
+     -0.171
+    ],
+    [
+     "Cagliari",
+     -0.195
+    ],
+    [
+     "Udinese",
+     -0.22
+    ],
+    [
+     "Parma",
+     -0.317
+    ],
+    [
+     "Cremonese",
+     -0.447
+    ],
+    [
+     "Monza",
+     -0.449
+    ],
+    [
+     "Lecce",
+     -0.465
+    ],
+    [
+     "Venezia",
+     -0.481
+    ],
+    [
+     "Verona",
+     -0.62
+    ],
+    [
+     "Pisa",
+     -0.791
+    ]
+   ]
+  },
+  "BUNDES": {
+   "n": 693,
+   "home_adv": 0.237,
+   "rho": -0.043,
+   "avg_goals": 3.27,
+   "last": "2026-11-08",
+   "table": [
+    [
+     "Bayern Munich",
+     1.124
+    ],
+    [
+     "Dortmund",
+     0.656
+    ],
+    [
+     "RB Leipzig",
+     0.433
+    ],
+    [
+     "Leverkusen",
+     0.381
+    ],
+    [
+     "Stuttgart",
+     0.34
+    ],
+    [
+     "Freiburg",
+     0.157
+    ],
+    [
+     "Elversberg",
+     0.141
+    ],
+    [
+     "Hoffenheim",
+     0.059
+    ],
+    [
+     "Mainz",
+     0.047
+    ],
+    [
+     "Ein Frankfurt",
+     0.039
+    ],
+    [
+     "Werder Bremen",
+     -0.085
+    ],
+    [
+     "Augsburg",
+     -0.089
+    ],
+    [
+     "Paderborn",
+     -0.16
+    ],
+    [
+     "Wolfsburg",
+     -0.184
+    ],
+    [
+     "M'gladbach",
+     -0.201
+    ],
+    [
+     "FC Koln",
+     -0.22
+    ],
+    [
+     "Hamburg",
+     -0.26
+    ],
+    [
+     "Schalke 04",
+     -0.31
+    ],
+    [
+     "Union Berlin",
+     -0.319
+    ],
+    [
+     "Heidenheim",
+     -0.37
+    ],
+    [
+     "St Pauli",
+     -0.466
+    ]
+   ]
+  },
+  "LIGUE1": {
+   "n": 702,
+   "home_adv": 0.214,
+   "rho": -0.045,
+   "avg_goals": 2.89,
+   "last": "2026-11-08",
+   "table": [
+    [
+     "Paris SG",
+     0.911
+    ],
+    [
+     "Lille",
+     0.466
+    ],
+    [
+     "Marseille",
+     0.433
+    ],
+    [
+     "Lens",
+     0.432
+    ],
+    [
+     "Lyon",
+     0.397
+    ],
+    [
+     "Monaco",
+     0.311
+    ],
+    [
+     "Paris FC",
+     0.282
+    ],
+    [
+     "Strasbourg",
+     0.214
+    ],
+    [
+     "Rennes",
+     0.195
+    ],
+    [
+     "Toulouse",
+     0.133
+    ],
+    [
+     "Lorient",
+     0.096
+    ],
+    [
+     "Brest",
+     0.051
+    ],
+    [
+     "Nice",
+     0.041
+    ],
+    [
+     "Auxerre",
+     -0.163
+    ],
+    [
+     "Le Mans",
+     -0.24
+    ],
+    [
+     "Nantes",
+     -0.293
+    ],
+    [
+     "Le Havre",
+     -0.352
+    ],
+    [
+     "Troyes",
+     -0.425
+    ],
+    [
+     "Angers",
+     -0.447
+    ],
+    [
+     "Metz",
+     -0.6
+    ]
+   ]
+  },
+  "EKSTRA": {
+   "n": 736,
+   "home_adv": 0.26,
+   "rho": -0.106,
+   "avg_goals": 2.82,
+   "last": "2026-11-08",
+   "table": [
+    [
+     "Lech Poznan",
+     0.613
+    ],
+    [
+     "Gornik Zabrze",
+     0.366
+    ],
+    [
+     "Legia",
+     0.321
+    ],
+    [
+     "Jagiellonia",
+     0.247
+    ],
+    [
+     "GKS Katowice",
+     0.213
+    ],
+    [
+     "Wisla",
+     0.193
+    ],
+    [
+     "Pogon Szczecin",
+     0.184
+    ],
+    [
+     "Rakow",
+     0.168
+    ],
+    [
+     "Piast Gliwice",
+     0.088
+    ],
+    [
+     "Zaglebie",
+     0.045
+    ],
+    [
+     "Widzew Lodz",
+     0.017
+    ],
+    [
+     "Lechia Gdansk",
+     -0.047
+    ],
+    [
+     "Motor Lublin",
+     -0.071
+    ],
+    [
+     "Cracovia",
+     -0.102
+    ],
+    [
+     "Korona Kielce",
+     -0.103
+    ],
+    [
+     "Radomiak Radom",
+     -0.143
+    ],
+    [
+     "Wisla Plock",
+     -0.204
+    ],
+    [
+     "Wieczysta Krakow",
+     -0.232
+    ],
+    [
+     "Slask Wroclaw",
+     -0.236
+    ],
+    [
+     "Termalica B-B.",
+     -0.315
+    ],
+    [
+     "Arka Gdynia",
+     -0.418
+    ]
+   ]
+  }
+ },
+ "bridge_k": 0.0,
+ "day": "2026-11-23",
+ "kind": "daily",
+ "message": "🎯 <b>Typy · pon 23.11</b>\nMecze w analizie: 4\n\n<b>SINGLE</b> (graj tylko, gdy kurs STS ≥ „opłaca się od”)\n<code>S1</code> pon 20:45 🇮🇹 Monza – Fiorentina: <b>2 (gość)</b> (50%, ~1.89)\n     przewaga -5.9% · fair 2.01 · opłaca się od <b>2.28</b>\n<code>S2</code> pon 21:00 🏴 Brentford – Everton: <b>1 (gospodarz)</b> (43%, ~2.18)\n     przewaga -6.5% · fair 2.33 · opłaca się od <b>2.65</b>\n<code>S3</code> pon 21:00 🇪🇸 Levante – Elche: <b>1 (gospodarz)</b> (45%, ~2.09)\n     przewaga -6.8% · fair 2.24 · opłaca się od <b>2.55</b>\n<i>Dziś brak wyraźnej przewagi – to typy najbliżej wartości. Graj tylko, gdy STS da „opłaca się od”.</i>\n\n<b>KUPONY 2–3</b>\n<code>K1</code> kupon 2 · kurs ~1.82 · szansa 47% · wartość -24% (po podatku)\n   • 🇮🇹 Monza – Fiorentina: <b>12</b> (76%, ~1.23)\n   • 🇵🇱 Wieczysta Krakow – Motor Lublin: <b>1X</b> (63%, ~1.48)\n<code>K2</code> kupon 3 · kurs ~2.03 · szansa 39% · wartość -30% (po podatku)\n   • 🇮🇹 Monza – Fiorentina: <b>12</b> (76%, ~1.23)\n   • 🏴 Brentford – Everton: <b>1X</b> (70%, ~1.32)\n   • 🇪🇸 Levante – Elche: <b>12</b> (74%, ~1.25)\n<code>D3</code> szalona: dziś nie ma – tylko 4 meczów z prawdziwymi kursami (potrzeba co najmniej 15).\n\n🔎 <b>Dlaczego (składy, zmęczenie):</b>\n• Monza: przewidywany skład bez 3 z „zwykłej jedenastki”: Samuele Birindelli (rotacja/decyzja trenera), Andrea Carboni (rotacja/decyzja trenera), Foe Ondoa (rotacja/decyzja trenera)\n• Fiorentina: przewidywany skład bez 3 z „zwykłej jedenastki”: Nicolò Fagioli (rotacja/decyzja trenera), Viery (rotacja/decyzja trenera), Marco Brescianini (rotacja/decyzja trenera)\n• Brentford: przewidywany skład bez 3 z „zwykłej jedenastki”: Igor Thiago (zawieszenie, powrót: Early December 2026), Jaidon Anthony (rotacja/decyzja trenera), Yehor Yarmoliuk (rotacja/decyzja trenera) (-0.2 pkt proc.)\n• Everton: przewidywany skład bez 1 z „zwykłej jedenastki”: Brennan Johnson (rotacja/decyzja trenera) (+0.2 pkt proc.)\n• Levante: przewidywany skład bez 1 z „zwykłej jedenastki”: Aïssa Mandi (rotacja/decyzja trenera) (-0.1 pkt proc.)\n\n🚑 <b>Ważne braki:</b> Igor Thiago (Brentford), Nathan Collins (Brentford)\n\nZapisz zagrany: /zagrane ID stawka kurs\n📊 <a href=\"https://mateuszpietruniewicz-arch.github.io/typy-bot/\">Pełna analiza meczów</a>"
+}

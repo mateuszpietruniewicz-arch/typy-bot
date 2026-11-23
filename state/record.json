@@ -7105,6 +7105,178 @@
    "stake": 2.0,
    "status": "lost",
    "settled_at": "2026-11-22T20:48:04.526623+00:00"
+  },
+  {
+   "uid": "2026-11-23:S1",
+   "day": "2026-11-23",
+   "id": "S1",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-23:monza-fiorentina",
+     "league": "SERIEA",
+     "home": "Monza",
+     "away": "Fiorentina",
+     "kickoff": "2026-11-23T19:45:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.4985,
+     "odds": 1.89,
+     "fair": 2.01,
+     "min_sts": 2.28,
+     "edge": -0.0587
+    }
+   ],
+   "odds": 1.89,
+   "p": 0.4985,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-23:S2",
+   "day": "2026-11-23",
+   "id": "S2",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "EPL:2026-11-23:brentford-everton",
+     "league": "EPL",
+     "home": "Brentford",
+     "away": "Everton",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4295,
+     "odds": 2.18,
+     "fair": 2.33,
+     "min_sts": 2.65,
+     "edge": -0.0649
+    }
+   ],
+   "odds": 2.18,
+   "p": 0.4295,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-23:S3",
+   "day": "2026-11-23",
+   "id": "S3",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "LALIGA:2026-11-23:levante-elche",
+     "league": "LALIGA",
+     "home": "Levante",
+     "away": "Elche",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4456,
+     "odds": 2.09,
+     "fair": 2.24,
+     "min_sts": 2.55,
+     "edge": -0.0684
+    }
+   ],
+   "odds": 2.09,
+   "p": 0.4456,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-23:K1",
+   "day": "2026-11-23",
+   "id": "K1",
+   "type": "kupon 2",
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-23:monza-fiorentina",
+     "league": "SERIEA",
+     "home": "Monza",
+     "away": "Fiorentina",
+     "kickoff": "2026-11-23T19:45:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7569,
+     "odds": 1.23,
+     "fair": 1.32,
+     "min_sts": 1.5,
+     "edge": -0.0711
+    },
+    {
+     "match_id": "EKSTRA:2026-11-23:wieczysta_krakow-motor_lublin",
+     "league": "EKSTRA",
+     "home": "Wieczysta Krakow",
+     "away": "Motor Lublin",
+     "kickoff": "2026-11-23T18:00:00+00:00",
+     "market": "1X",
+     "label": "1X",
+     "p": 0.6253,
+     "odds": 1.48,
+     "fair": 1.6,
+     "min_sts": 1.82,
+     "edge": -0.0716
+    }
+   ],
+   "odds": 1.82,
+   "p": 0.47328957,
+   "stake": 5,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-23:K2",
+   "day": "2026-11-23",
+   "id": "K2",
+   "type": "kupon 3",
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-23:monza-fiorentina",
+     "league": "SERIEA",
+     "home": "Monza",
+     "away": "Fiorentina",
+     "kickoff": "2026-11-23T19:45:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7569,
+     "odds": 1.23,
+     "fair": 1.32,
+     "min_sts": 1.5,
+     "edge": -0.0711
+    },
+    {
+     "match_id": "EPL:2026-11-23:brentford-everton",
+     "league": "EPL",
+     "home": "Brentford",
+     "away": "Everton",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "1X",
+     "label": "1X",
+     "p": 0.7011,
+     "odds": 1.32,
+     "fair": 1.43,
+     "min_sts": 1.62,
+     "edge": -0.0728
+    },
+    {
+     "match_id": "LALIGA:2026-11-23:levante-elche",
+     "league": "LALIGA",
+     "home": "Levante",
+     "away": "Elche",
+     "kickoff": "2026-11-23T20:00:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7381,
+     "odds": 1.25,
+     "fair": 1.35,
+     "min_sts": 1.54,
+     "edge": -0.0753
+    }
+   ],
+   "odds": 2.03,
+   "p": 0.39168205767899994,
+   "stake": 5,
+   "status": "pending"
   }
  ],
  "predictions": [
@@ -9943,6 +10115,98 @@
     0,
     3
    ]
+  },
+  {
+   "match_id": "EKSTRA:2026-11-23:wieczysta_krakow-motor_lublin",
+   "league": "EKSTRA",
+   "home": "Wieczysta Krakow",
+   "away": "Motor Lublin",
+   "kickoff": "2026-11-23T18:00:00+00:00",
+   "p1": 0.4202,
+   "px": 0.233,
+   "p2": 0.3469,
+   "po25": 0.715,
+   "pbtts": 0.7182,
+   "market": {
+    "1": 0.3818,
+    "X": 0.2405,
+    "2": 0.3777,
+    "1X": 0.6223,
+    "X2": 0.6182,
+    "12": 0.7595,
+    "O2.5": 0.6572,
+    "U2.5": 0.3428
+   },
+   "result": null
+  },
+  {
+   "match_id": "SERIEA:2026-11-23:monza-fiorentina",
+   "league": "SERIEA",
+   "home": "Monza",
+   "away": "Fiorentina",
+   "kickoff": "2026-11-23T19:45:00+00:00",
+   "p1": 0.2655,
+   "px": 0.2055,
+   "p2": 0.529,
+   "po25": 0.7025,
+   "pbtts": 0.6818,
+   "market": {
+    "1": 0.2576,
+    "X": 0.2473,
+    "2": 0.4951,
+    "1X": 0.5049,
+    "X2": 0.7424,
+    "12": 0.7527,
+    "O2.5": 0.6133,
+    "U2.5": 0.3867
+   },
+   "result": null
+  },
+  {
+   "match_id": "EPL:2026-11-23:brentford-everton",
+   "league": "EPL",
+   "home": "Brentford",
+   "away": "Everton",
+   "kickoff": "2026-11-23T20:00:00+00:00",
+   "p1": 0.4414,
+   "px": 0.2826,
+   "p2": 0.276,
+   "po25": 0.4498,
+   "pbtts": 0.5032,
+   "market": {
+    "1": 0.4282,
+    "X": 0.2703,
+    "2": 0.3015,
+    "1X": 0.6985,
+    "X2": 0.5718,
+    "12": 0.7297,
+    "O2.5": 0.5276,
+    "U2.5": 0.4724
+   },
+   "result": null
+  },
+  {
+   "match_id": "LALIGA:2026-11-23:levante-elche",
+   "league": "LALIGA",
+   "home": "Levante",
+   "away": "Elche",
+   "kickoff": "2026-11-23T20:00:00+00:00",
+   "p1": 0.4488,
+   "px": 0.2552,
+   "p2": 0.296,
+   "po25": 0.5486,
+   "pbtts": 0.5798,
+   "market": {
+    "1": 0.4452,
+    "X": 0.2627,
+    "2": 0.2921,
+    "1X": 0.7079,
+    "X2": 0.5548,
+    "12": 0.7373,
+    "O2.5": 0.5703,
+    "U2.5": 0.4297
+   },
+   "result": null
   }
  ]
 }
