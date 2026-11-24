@@ -4560,13 +4560,16 @@
      "odds": 1.65,
      "fair": 1.77,
      "min_sts": 2.01,
-     "edge": -0.0676
+     "edge": -0.0676,
+     "result": "1:2",
+     "won": false
     }
    ],
    "odds": 1.65,
    "p": 0.5656,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-24T16:31:44.571419+00:00"
   },
   {
    "uid": "2026-11-20:S3",
@@ -4586,13 +4589,16 @@
      "odds": 2.39,
      "fair": 2.58,
      "min_sts": 2.93,
-     "edge": -0.0721
+     "edge": -0.0721,
+     "result": "2:0",
+     "won": true
     }
    ],
    "odds": 2.39,
    "p": 0.3877,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-24T16:31:44.571435+00:00"
   },
   {
    "uid": "2026-11-20:K1",
@@ -7227,13 +7233,16 @@
      "odds": 1.48,
      "fair": 1.6,
      "min_sts": 1.82,
-     "edge": -0.0716
+     "edge": -0.0716,
+     "result": "2:1",
+     "won": true
     }
    ],
    "odds": 1.82,
    "p": 0.47328957,
    "stake": 5,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-24T16:31:44.571443+00:00"
   },
   {
    "uid": "2026-11-23:K2",
@@ -7295,6 +7304,302 @@
    "stake": 5,
    "status": "lost",
    "settled_at": "2026-11-24T05:34:43.585803+00:00"
+  },
+  {
+   "uid": "2026-11-24:S1",
+   "day": "2026-11-24",
+   "id": "S1",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-24:feyenoord_rotterdam-porto",
+     "league": "UCL",
+     "home": "Feyenoord Rotterdam",
+     "away": "FC Porto",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.4613,
+     "odds": 2.05,
+     "fair": 2.17,
+     "min_sts": 2.46,
+     "edge": -0.0528
+    }
+   ],
+   "odds": 2.05,
+   "p": 0.4613,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-24:S2",
+   "day": "2026-11-24",
+   "id": "S2",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-24:arsenal-dortmund",
+     "league": "UCL",
+     "home": "Arsenal FC",
+     "away": "Borussia Dortmund",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6735,
+     "odds": 1.4,
+     "fair": 1.48,
+     "min_sts": 1.69,
+     "edge": -0.0596
+    }
+   ],
+   "odds": 1.4,
+   "p": 0.6735,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-24:S3",
+   "day": "2026-11-24",
+   "id": "S3",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-24:real_madrid-psv",
+     "league": "UCL",
+     "home": "Real Madrid CF",
+     "away": "PSV",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.8559,
+     "odds": 1.1,
+     "fair": 1.17,
+     "min_sts": 1.33,
+     "edge": -0.0604
+    }
+   ],
+   "odds": 1.1,
+   "p": 0.8559,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-24:K1",
+   "day": "2026-11-24",
+   "id": "K1",
+   "type": "kupon 2",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-24:arsenal-dortmund",
+     "league": "UCL",
+     "home": "Arsenal FC",
+     "away": "Borussia Dortmund",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6735,
+     "odds": 1.4,
+     "fair": 1.48,
+     "min_sts": 1.69,
+     "edge": -0.0596
+    },
+    {
+     "match_id": "UCL:2026-11-24:real_madrid-psv",
+     "league": "UCL",
+     "home": "Real Madrid CF",
+     "away": "PSV",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.8559,
+     "odds": 1.1,
+     "fair": 1.17,
+     "min_sts": 1.33,
+     "edge": -0.0604
+    }
+   ],
+   "odds": 1.54,
+   "p": 0.57644865,
+   "stake": 5,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-24:K2",
+   "day": "2026-11-24",
+   "id": "K2",
+   "type": "kupon 3",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-24:arsenal-dortmund",
+     "league": "UCL",
+     "home": "Arsenal FC",
+     "away": "Borussia Dortmund",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6735,
+     "odds": 1.4,
+     "fair": 1.48,
+     "min_sts": 1.69,
+     "edge": -0.0596
+    },
+    {
+     "match_id": "UCL:2026-11-24:slovan_bratislava-betis",
+     "league": "UCL",
+     "home": "ŠK Slovan Bratislava",
+     "away": "Real Betis Balompié",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.7726,
+     "odds": 1.21,
+     "fair": 1.29,
+     "min_sts": 1.47,
+     "edge": -0.0625
+    },
+    {
+     "match_id": "UCL:2026-11-24:man_city-napoli",
+     "league": "UCL",
+     "home": "Manchester City FC",
+     "away": "SSC Napoli",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.758,
+     "odds": 1.24,
+     "fair": 1.32,
+     "min_sts": 1.5,
+     "edge": -0.0628
+    }
+   ],
+   "odds": 2.1,
+   "p": 0.39442234379999996,
+   "stake": 5,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-24:D1",
+   "day": "2026-11-24",
+   "id": "D1",
+   "type": "dużo zdarzeń · 8 zdarzeń",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-24:arsenal-dortmund",
+     "league": "UCL",
+     "home": "Arsenal FC",
+     "away": "Borussia Dortmund",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6735,
+     "odds": 1.4,
+     "fair": 1.48,
+     "min_sts": 1.69,
+     "edge": -0.0596
+    },
+    {
+     "match_id": "UCL:2026-11-24:slovan_bratislava-betis",
+     "league": "UCL",
+     "home": "ŠK Slovan Bratislava",
+     "away": "Real Betis Balompié",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.7726,
+     "odds": 1.21,
+     "fair": 1.29,
+     "min_sts": 1.47,
+     "edge": -0.0625
+    },
+    {
+     "match_id": "UCL:2026-11-24:man_city-napoli",
+     "league": "UCL",
+     "home": "Manchester City FC",
+     "away": "SSC Napoli",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.758,
+     "odds": 1.24,
+     "fair": 1.32,
+     "min_sts": 1.5,
+     "edge": -0.0628
+    },
+    {
+     "match_id": "UCL:2026-11-24:fk_bod_glimt-lask_linz",
+     "league": "UCL",
+     "home": "FK Bodø/Glimt",
+     "away": "LASK Linz",
+     "kickoff": "2026-11-24T17:45:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.7019,
+     "odds": 1.33,
+     "fair": 1.42,
+     "min_sts": 1.62,
+     "edge": -0.0631
+    },
+    {
+     "match_id": "UCL:2026-11-24:como-aek",
+     "league": "UCL",
+     "home": "Como 1907",
+     "away": "PAE AEK",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.7649,
+     "odds": 1.22,
+     "fair": 1.31,
+     "min_sts": 1.49,
+     "edge": -0.0648
+    },
+    {
+     "match_id": "UCL:2026-11-24:rb_leipzig-lens",
+     "league": "UCL",
+     "home": "RB Leipzig",
+     "away": "Racing Club de Lens",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.7158,
+     "odds": 1.29,
+     "fair": 1.4,
+     "min_sts": 1.59,
+     "edge": -0.0759
+    },
+    {
+     "match_id": "UCL:2026-11-24:feyenoord_rotterdam-porto",
+     "league": "UCL",
+     "home": "Feyenoord Rotterdam",
+     "away": "FC Porto",
+     "kickoff": "2026-11-24T20:00:00+00:00",
+     "market": "X2",
+     "label": "X2",
+     "p": 0.7173,
+     "odds": 1.3,
+     "fair": 1.39,
+     "min_sts": 1.58,
+     "edge": -0.0691
+    },
+    {
+     "match_id": "UCL:2026-11-24:galatasaray-aston_villa",
+     "league": "UCL",
+     "home": "Galatasaray SK",
+     "away": "Aston Villa FC",
+     "kickoff": "2026-11-24T17:45:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7539,
+     "odds": 1.22,
+     "fair": 1.33,
+     "min_sts": 1.51,
+     "edge": -0.0768
+    }
+   ],
+   "odds": 6.97,
+   "p": 0.0819686308608881,
+   "stake": 2.0,
+   "status": "pending"
   }
  ],
  "predictions": [
@@ -8801,7 +9106,10 @@
     "O2.5": 0.5559,
     "U2.5": 0.4441
    },
-   "result": null
+   "result": [
+    2,
+    0
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-20:bayern_munich-koln",
@@ -8850,7 +9158,10 @@
     "O2.5": 0.5934,
     "U2.5": 0.4066
    },
-   "result": null
+   "result": [
+    1,
+    2
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-20:troyes-le_havre",
@@ -8977,7 +9288,10 @@
     "O2.5": 0.5842,
     "U2.5": 0.4158
    },
-   "result": null
+   "result": [
+    3,
+    1
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-21:como-cagliari",
@@ -9364,7 +9678,10 @@
     "O2.5": 0.4763,
     "U2.5": 0.5237
    },
-   "result": null
+   "result": [
+    2,
+    0
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-21:parma-roma",
@@ -9491,7 +9808,10 @@
     "O2.5": 0.6144,
     "U2.5": 0.3856
    },
-   "result": null
+   "result": [
+    0,
+    0
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-21:napoli-torino",
@@ -9670,7 +9990,10 @@
     "O2.5": 0.5917,
     "U2.5": 0.4083
    },
-   "result": null
+   "result": [
+    3,
+    1
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-22:juventus-venezia",
@@ -9745,7 +10068,10 @@
     "O2.5": 0.6657,
     "U2.5": 0.3343
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "EPL:2026-11-22:hull-brighton",
@@ -10002,7 +10328,10 @@
     "O2.5": 0.552,
     "U2.5": 0.448
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-22:milan-frosinone",
@@ -10155,7 +10484,10 @@
     "O2.5": 0.6572,
     "U2.5": 0.3428
    },
-   "result": null
+   "result": [
+    2,
+    1
+   ]
   },
   {
    "match_id": "SERIEA:2026-11-23:monza-fiorentina",
@@ -10234,6 +10566,213 @@
     1,
     1
    ]
+  },
+  {
+   "match_id": "UCL:2026-11-24:galatasaray-aston_villa",
+   "league": "UCL",
+   "home": "Galatasaray SK",
+   "away": "Aston Villa FC",
+   "kickoff": "2026-11-24T17:45:00+00:00",
+   "p1": 0.3025,
+   "px": 0.2504,
+   "p2": 0.4471,
+   "po25": 0.5773,
+   "pbtts": 0.6033,
+   "market": {
+    "1": 0.2968,
+    "X": 0.2456,
+    "2": 0.4576,
+    "1X": 0.5424,
+    "X2": 0.7032,
+    "12": 0.7544,
+    "O2.5": 0.633,
+    "U2.5": 0.367
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:fk_bod_glimt-lask_linz",
+   "league": "UCL",
+   "home": "FK Bodø/Glimt",
+   "away": "LASK Linz",
+   "kickoff": "2026-11-24T17:45:00+00:00",
+   "p1": 0.6236,
+   "px": 0.2106,
+   "p2": 0.1658,
+   "po25": 0.6043,
+   "pbtts": 0.5632,
+   "market": {
+    "1": 0.7106,
+    "X": 0.1574,
+    "2": 0.132,
+    "1X": 0.868,
+    "X2": 0.2894,
+    "12": 0.8426,
+    "O2.5": 0.796,
+    "U2.5": 0.204
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:real_madrid-psv",
+   "league": "UCL",
+   "home": "Real Madrid CF",
+   "away": "PSV",
+   "kickoff": "2026-11-24T20:00:00+00:00",
+   "p1": 0.7098,
+   "px": 0.1793,
+   "p2": 0.1109,
+   "po25": 0.6191,
+   "pbtts": 0.5165,
+   "market": {
+    "1": 0.8721,
+    "X": 0.0797,
+    "2": 0.0482,
+    "1X": 0.9518,
+    "X2": 0.1279,
+    "12": 0.9203,
+    "O2.5": 0.8624,
+    "U2.5": 0.1376
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:man_city-napoli",
+   "league": "UCL",
+   "home": "Manchester City FC",
+   "away": "SSC Napoli",
+   "kickoff": "2026-11-24T20:00:00+00:00",
+   "p1": 0.6565,
+   "px": 0.1996,
+   "p2": 0.144,
+   "po25": 0.6097,
+   "pbtts": 0.5479,
+   "market": {
+    "1": 0.7692,
+    "X": 0.1352,
+    "2": 0.0956,
+    "1X": 0.9044,
+    "X2": 0.2308,
+    "12": 0.8648,
+    "O2.5": 0.764,
+    "U2.5": 0.236
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:arsenal-dortmund",
+   "league": "UCL",
+   "home": "Arsenal FC",
+   "away": "Borussia Dortmund",
+   "kickoff": "2026-11-24T20:00:00+00:00",
+   "p1": 0.6383,
+   "px": 0.2058,
+   "p2": 0.1559,
+   "po25": 0.6067,
+   "pbtts": 0.5567,
+   "market": {
+    "1": 0.6774,
+    "X": 0.1941,
+    "2": 0.1285,
+    "1X": 0.8715,
+    "X2": 0.3226,
+    "12": 0.8059,
+    "O2.5": 0.556,
+    "U2.5": 0.444
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:feyenoord_rotterdam-porto",
+   "league": "UCL",
+   "home": "Feyenoord Rotterdam",
+   "away": "FC Porto",
+   "kickoff": "2026-11-24T20:00:00+00:00",
+   "p1": 0.2338,
+   "px": 0.2357,
+   "p2": 0.5305,
+   "po25": 0.5899,
+   "pbtts": 0.5925,
+   "market": {
+    "1": 0.2882,
+    "X": 0.2582,
+    "2": 0.4537,
+    "1X": 0.5463,
+    "X2": 0.7118,
+    "12": 0.7418,
+    "O2.5": 0.575,
+    "U2.5": 0.425
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:slovan_bratislava-betis",
+   "league": "UCL",
+   "home": "ŠK Slovan Bratislava",
+   "away": "Real Betis Balompié",
+   "kickoff": "2026-11-24T20:00:00+00:00",
+   "p1": 0.1381,
+   "px": 0.1963,
+   "p2": 0.6657,
+   "po25": 0.6113,
+   "pbtts": 0.5431,
+   "market": {
+    "1": 0.0816,
+    "X": 0.1339,
+    "2": 0.7845,
+    "1X": 0.2155,
+    "X2": 0.9184,
+    "12": 0.8661,
+    "O2.5": 0.7274,
+    "U2.5": 0.2726
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:rb_leipzig-lens",
+   "league": "UCL",
+   "home": "RB Leipzig",
+   "away": "Racing Club de Lens",
+   "kickoff": "2026-11-24T20:00:00+00:00",
+   "p1": 0.5393,
+   "px": 0.2337,
+   "p2": 0.227,
+   "po25": 0.5912,
+   "pbtts": 0.5906,
+   "market": {
+    "1": 0.7354,
+    "X": 0.1504,
+    "2": 0.1142,
+    "1X": 0.8858,
+    "X2": 0.2646,
+    "12": 0.8496,
+    "O2.5": 0.7761,
+    "U2.5": 0.2239
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-24:como-aek",
+   "league": "UCL",
+   "home": "Como 1907",
+   "away": "PAE AEK",
+   "kickoff": "2026-11-24T20:00:00+00:00",
+   "p1": 0.647,
+   "px": 0.2028,
+   "p2": 0.1502,
+   "po25": 0.6081,
+   "pbtts": 0.5526,
+   "market": {
+    "1": 0.778,
+    "X": 0.1335,
+    "2": 0.0885,
+    "1X": 0.9115,
+    "X2": 0.222,
+    "12": 0.8665,
+    "O2.5": 0.7408,
+    "U2.5": 0.2592
+   },
+   "result": null
   }
  ]
 }

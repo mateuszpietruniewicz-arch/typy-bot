@@ -1,44 +1,4 @@
 Club,Country,Elo,Source,Date
-RB Salzburg,AUT,1881.0,elofootball,2026-11-04
-LASK,AUT,1878.0,elofootball,2026-11-04
-Sturm Graz,AUT,1825.0,elofootball,2026-11-04
-Rapid Wien,AUT,1803.0,elofootball,2026-11-04
-TSV Hartberg,AUT,1719.0,elofootball,2026-11-04
-Austria Wien,AUT,1664.0,elofootball,2026-11-04
-SV Ried,AUT,1654.0,elofootball,2026-11-04
-SCR Altach,AUT,1626.0,elofootball,2026-11-04
-FC Blau Weiß Linz,AUT,1601.0,elofootball,2026-11-04
-WSG Tirol,AUT,1592.0,elofootball,2026-11-04
-Wolfsberger AC,AUT,1578.0,elofootball,2026-11-04
-Grazer AK,AUT,1568.0,elofootball,2026-11-04
-Austria Lustenau,AUT,1468.0,elofootball,2026-11-04
-FC Admira Wacker,AUT,1450.0,elofootball,2026-11-04
-First Vienna FC,AUT,1438.0,elofootball,2026-11-04
-SKN St. Pölten,AUT,1410.0,elofootball,2026-11-04
-FC Liefering,AUT,1398.0,elofootball,2026-11-04
-Wiener Sport-Club,AUT,1394.0,elofootball,2026-11-04
-SKU Amstetten,AUT,1371.0,elofootball,2026-11-04
-Floridsdorfer AC,AUT,1368.0,elofootball,2026-11-04
-DSV Leoben,AUT,1368.0,elofootball,2026-11-04
-FC Wacker Innsbruck,AUT,1364.0,elofootball,2026-11-04
-SK Austria Klagenfurt,AUT,1360.0,elofootball,2026-11-04
-Austria Salzburg,AUT,1359.0,elofootball,2026-11-04
-SK Bischofshofen,AUT,1336.0,elofootball,2026-11-04
-Austria Wien II,AUT,1314.0,elofootball,2026-11-04
-SV Oberwart,AUT,1307.0,elofootball,2026-11-04
-SV Horn,AUT,1303.0,elofootball,2026-11-04
-ASK Voitsberg,AUT,1297.0,elofootball,2026-11-04
-SV Stripfing/Weiden,AUT,1291.0,elofootball,2026-11-04
-SC/ESV Parndorf,AUT,1273.0,elofootball,2026-11-04
-FC Dornbirn,AUT,1269.0,elofootball,2026-11-04
-FC Hertha Wels,AUT,1260.0,elofootball,2026-11-04
-Kremser SC,AUT,1252.0,elofootball,2026-11-04
-Schwarz-Weiß Bregenz,AUT,1249.0,elofootball,2026-11-04
-Vorwärts Steyr,AUT,1247.0,elofootball,2026-11-04
-Kapfenberger SV 1919,AUT,1239.0,elofootball,2026-11-04
-Rapid Wien (A),AUT,1223.0,elofootball,2026-11-04
-Sturm Graz (A),AUT,1218.0,elofootball,2026-11-04
-SV Lafnitz,AUT,1152.0,elofootball,2026-11-04
 Sabah FK,AZE,1791.0,elofootball,2026-11-04
 Qarabag FK,AZE,1742.0,elofootball,2026-11-04
 Neftçi PFK,AZE,1607.0,elofootball,2026-11-04
@@ -136,286 +96,6 @@ FK Frýdek-Místek,CZE,1320.0,elofootball,2026-11-04
 AC Sparta Praha B,CZE,1309.0,elofootball,2026-11-04
 FK Trinec,CZE,1304.0,elofootball,2026-11-04
 MFK Vítkovice,CZE,1220.0,elofootball,2026-11-04
-Olympiakos Piraeus,GRC,2028.0,elofootball,2026-11-04
-Panathinaikos,GRC,1978.0,elofootball,2026-11-04
-AEK Athen,GRC,1956.0,elofootball,2026-11-04
-PAOK Saloniki,GRC,1919.0,elofootball,2026-11-04
-Aris Saloniki,GRC,1788.0,elofootball,2026-11-04
-OFI Heraklion,GRC,1784.0,elofootball,2026-11-04
-Levadiakos,GRC,1727.0,elofootball,2026-11-04
-Atromitos,GRC,1703.0,elofootball,2026-11-04
-PS Kalamata,GRC,1698.0,elofootball,2026-11-04
-AE Kifisias,GRC,1678.0,elofootball,2026-11-04
-AEP Iraklis FC,GRC,1644.0,elofootball,2026-11-04
-Panetolikos,GRC,1619.0,elofootball,2026-11-04
-Asteras Tripolis,GRC,1618.0,elofootball,2026-11-04
-AE Lárissa,GRC,1605.0,elofootball,2026-11-04
-Panionios GSS,GRC,1563.0,elofootball,2026-11-04
-Volos NFC,GRC,1562.0,elofootball,2026-11-04
-Niki Volou FC,GRC,1511.0,elofootball,2026-11-04
-Panserraikos,GRC,1506.0,elofootball,2026-11-04
-GS Kallithea,GRC,1501.0,elofootball,2026-11-04
-GS Marko,GRC,1457.0,elofootball,2026-11-04
-Anagennisi Karditsa,GRC,1405.0,elofootball,2026-11-04
-Panthrakikos,GRC,1395.0,elofootball,2026-11-04
-PAOK Saloniki II,GRC,1385.0,elofootball,2026-11-04
-Ellas Syrou,GRC,1369.0,elofootball,2026-11-04
-Asteras Tripolis II,GRC,1352.0,elofootball,2026-11-04
-Olympiakos Piraeus II,GRC,1346.0,elofootball,2026-11-04
-AO Egaleo,GRC,1330.0,elofootball,2026-11-04
-AO Kavala,GRC,1323.0,elofootball,2026-11-04
-PAS Giannina,GRC,1315.0,elofootball,2026-11-04
-PAE Chania,GRC,1308.0,elofootball,2026-11-04
-Nestos Chrysoupoli FC,GRC,1276.0,elofootball,2026-11-04
-Kampaniakos FC,GRC,1244.0,elofootball,2026-11-04
-PAS Pyrgos 1968,GRC,1239.0,elofootball,2026-11-04
-GS Ilioupolis,GRC,1221.0,elofootball,2026-11-04
-APS Zakynthos,GRC,1220.0,elofootball,2026-11-04
-Apollon Kalamarias,GRC,1216.0,elofootball,2026-11-04
-Makedonikos FC,GRC,1214.0,elofootball,2026-11-04
-Panargiakos FC,GRC,1152.0,elofootball,2026-11-04
-PSV Eindhoven,NLD,2034.0,elofootball,2026-11-04
-AFC Ajax,NLD,1928.0,elofootball,2026-11-04
-Feyenoord,NLD,1923.0,elofootball,2026-11-04
-FC Twente,NLD,1905.0,elofootball,2026-11-04
-AZ,NLD,1889.0,elofootball,2026-11-04
-NEC,NLD,1784.0,elofootball,2026-11-04
-sc Heerenveen,NLD,1771.0,elofootball,2026-11-04
-FC Utrecht,NLD,1760.0,elofootball,2026-11-04
-Fortuna Sittard,NLD,1679.0,elofootball,2026-11-04
-Go Ahead Eagles,NLD,1677.0,elofootball,2026-11-04
-FC Groningen,NLD,1676.0,elofootball,2026-11-04
-Sparta Rotterdam,NLD,1664.0,elofootball,2026-11-04
-SBV Excelsior,NLD,1622.0,elofootball,2026-11-04
-PEC Zwolle,NLD,1618.0,elofootball,2026-11-04
-Telstar,NLD,1609.0,elofootball,2026-11-04
-SC Cambuur,NLD,1587.0,elofootball,2026-11-04
-Heracles Almelo,NLD,1578.0,elofootball,2026-11-04
-ADO Den Haag,NLD,1567.0,elofootball,2026-11-04
-NAC Breda,NLD,1538.0,elofootball,2026-11-04
-Almere City FC,NLD,1536.0,elofootball,2026-11-04
-FC Volendam,NLD,1504.0,elofootball,2026-11-04
-Willem II,NLD,1469.0,elofootball,2026-11-04
-RKC Waalwijk,NLD,1466.0,elofootball,2026-11-04
-Roda JC Kerkrade,NLD,1449.0,elofootball,2026-11-04
-Quick Boys,NLD,1449.0,elofootball,2026-11-04
-Vitesse,NLD,1438.0,elofootball,2026-11-04
-FC Emmen,NLD,1418.0,elofootball,2026-11-04
-VVV-Venlo,NLD,1411.0,elofootball,2026-11-04
-De Graafschap,NLD,1408.0,elofootball,2026-11-04
-De Treffers,NLD,1407.0,elofootball,2026-11-04
-FC Den Bosch,NLD,1391.0,elofootball,2026-11-04
-Jong AZ,NLD,1370.0,elofootball,2026-11-04
-TOP Oss,NLD,1337.0,elofootball,2026-11-04
-Jong PSV,NLD,1332.0,elofootball,2026-11-04
-FC Dordrecht,NLD,1299.0,elofootball,2026-11-04
-FC Eindhoven,NLD,1299.0,elofootball,2026-11-04
-SV Spakenburg,NLD,1284.0,elofootball,2026-11-04
-MVV,NLD,1273.0,elofootball,2026-11-04
-Helmond Sport,NLD,1270.0,elofootball,2026-11-04
-HHC Hardenberg,NLD,1268.0,elofootball,2026-11-04
-VV Katwijk,NLD,1264.0,elofootball,2026-11-04
-Jong FC Utrecht,NLD,1262.0,elofootball,2026-11-04
-RBC Roosendaal,NLD,1260.0,elofootball,2026-11-04
-Jong Almere City FC,NLD,1259.0,elofootball,2026-11-04
-Jong Ajax,NLD,1252.0,elofootball,2026-11-04
-BVV Barendrecht,NLD,1250.0,elofootball,2026-11-04
-Rijnsburgse Boys,NLD,1247.0,elofootball,2026-11-04
-GVVV,NLD,1242.0,elofootball,2026-11-04
-Kozakken Boys,NLD,1231.0,elofootball,2026-11-04
-Jong Sparta Rotterdam,NLD,1229.0,elofootball,2026-11-04
-Amsterdamsche FC,NLD,1228.0,elofootball,2026-11-04
-HSV Hoek,NLD,1216.0,elofootball,2026-11-04
-IJsselmeervogels,NLD,1214.0,elofootball,2026-11-04
-RKAV Volendam,NLD,1205.0,elofootball,2026-11-04
-VV Noordwijk,NLD,1174.0,elofootball,2026-11-04
-Koninklijke HFC,NLD,1140.0,elofootball,2026-11-04
-Excelsior Maassluis,NLD,1139.0,elofootball,2026-11-04
-ACV Assen,NLD,1137.0,elofootball,2026-11-04
-VV Sint Bavo,NLD,1135.0,elofootball,2026-11-04
-VV Kloetinge,NLD,1096.0,elofootball,2026-11-04
-Rohda Raalte,NLD,1041.0,elofootball,2026-11-04
-FC Lisse,NLD,1003.0,elofootball,2026-11-04
-ADO 20,NLD,963.0,elofootball,2026-11-04
-FK Bodø/Glimt,NOR,2058.0,elofootball,2026-11-04
-Viking FK,NOR,1955.0,elofootball,2026-11-04
-Rosenborg BK,NOR,1793.0,elofootball,2026-11-04
-SK Brann,NOR,1775.0,elofootball,2026-11-04
-Molde FK,NOR,1761.0,elofootball,2026-11-04
-Lillestrøm SK,NOR,1742.0,elofootball,2026-11-04
-Tromsø IL,NOR,1736.0,elofootball,2026-11-04
-Fredrikstad FK,NOR,1675.0,elofootball,2026-11-04
-Vålerenga IF,NOR,1669.0,elofootball,2026-11-04
-Sarpsborg 08,NOR,1654.0,elofootball,2026-11-04
-KFUM Oslo,NOR,1650.0,elofootball,2026-11-04
-Hamarkameratene,NOR,1631.0,elofootball,2026-11-04
-Sandefjord Fotball,NOR,1626.0,elofootball,2026-11-04
-Strømsgodset IF,NOR,1592.0,elofootball,2026-11-04
-Aalesunds FK,NOR,1589.0,elofootball,2026-11-04
-Kristiansund BK,NOR,1558.0,elofootball,2026-11-04
-FK Haugesund,NOR,1555.0,elofootball,2026-11-04
-IK Start,NOR,1497.0,elofootball,2026-11-04
-Stabæk IF,NOR,1495.0,elofootball,2026-11-04
-Kongsvinger IL,NOR,1488.0,elofootball,2026-11-04
-Bryne FK,NOR,1463.0,elofootball,2026-11-04
-Odds BK,NOR,1439.0,elofootball,2026-11-04
-Ranheim IL,NOR,1431.0,elofootball,2026-11-04
-Egersunds IK,NOR,1407.0,elofootball,2026-11-04
-Fyllingen Fotball,NOR,1385.0,elofootball,2026-11-04
-Lyn Oslo,NOR,1378.0,elofootball,2026-11-04
-Sogndal IL,NOR,1325.0,elofootball,2026-11-04
-Steinkjer IFK,NOR,1316.0,elofootball,2026-11-04
-Bærum SK,NOR,1314.0,elofootball,2026-11-04
-Strømmen IF,NOR,1314.0,elofootball,2026-11-04
-SK Vard,NOR,1310.0,elofootball,2026-11-04
-Pors Grenland,NOR,1307.0,elofootball,2026-11-04
-Hønefoss BK,NOR,1305.0,elofootball,2026-11-04
-Eik Tønsberg,NOR,1305.0,elofootball,2026-11-04
-IL Hødd,NOR,1296.0,elofootball,2026-11-04
-Mjøndalen IF,NOR,1293.0,elofootball,2026-11-04
-Åsane Fotball,NOR,1291.0,elofootball,2026-11-04
-Levanger FK,NOR,1287.0,elofootball,2026-11-04
-Sandnes Ulf,NOR,1287.0,elofootball,2026-11-04
-Alta IF,NOR,1283.0,elofootball,2026-11-04
-Follo FK,NOR,1273.0,elofootball,2026-11-04
-Moss FK,NOR,1269.0,elofootball,2026-11-04
-FK Jerv,NOR,1267.0,elofootball,2026-11-04
-Strindheim IL,NOR,1266.0,elofootball,2026-11-04
-Tromsdalen UIL,NOR,1264.0,elofootball,2026-11-04
-Asker SK,NOR,1252.0,elofootball,2026-11-04
-Notodden FK,NOR,1240.0,elofootball,2026-11-04
-Grorud IL,NOR,1234.0,elofootball,2026-11-04
-Ullensaker/Kisa IL,NOR,1225.0,elofootball,2026-11-04
-IL Stjørdals-Blink,NOR,1218.0,elofootball,2026-11-04
-Os TF,NOR,1212.0,elofootball,2026-11-04
-Raufoss IL,NOR,1204.0,elofootball,2026-11-04
-FK Arendal,NOR,1190.0,elofootball,2026-11-04
-Elverum Fotball,NOR,1149.0,elofootball,2026-11-04
-Skeid Fotball,NOR,1142.0,elofootball,2026-11-04
-SL Benfica,PRT,2157.0,elofootball,2026-11-04
-Sporting CP,PRT,2136.0,elofootball,2026-11-04
-FC Porto,PRT,2076.0,elofootball,2026-11-04
-Sporting Braga,PRT,1930.0,elofootball,2026-11-04
-FC Famalicão,PRT,1828.0,elofootball,2026-11-04
-FC Arouca,PRT,1801.0,elofootball,2026-11-04
-CD Santa Clara,PRT,1785.0,elofootball,2026-11-04
-Gil Vicente,PRT,1768.0,elofootball,2026-11-04
-Vitória Guimarães,PRT,1763.0,elofootball,2026-11-04
-Moreirense FC,PRT,1738.0,elofootball,2026-11-04
-FC Alverca,PRT,1712.0,elofootball,2026-11-04
-Académico de Viseu,PRT,1688.0,elofootball,2026-11-04
-GD Estoril,PRT,1669.0,elofootball,2026-11-04
-Rio Ave FC,PRT,1667.0,elofootball,2026-11-04
-Casa Pia AC,PRT,1666.0,elofootball,2026-11-04
-CD Nacional,PRT,1641.0,elofootball,2026-11-04
-CD Tondela,PRT,1639.0,elofootball,2026-11-04
-Estrela Amadora,PRT,1638.0,elofootball,2026-11-04
-AVS,PRT,1622.0,elofootball,2026-11-04
-União Torreense,PRT,1619.0,elofootball,2026-11-04
-CS Marítimo,PRT,1615.0,elofootball,2026-11-04
-FC Tirsense,PRT,1592.0,elofootball,2026-11-04
-União Leiria,PRT,1579.0,elofootball,2026-11-04
-O Elvas,PRT,1572.0,elofootball,2026-11-04
-SC Farense,PRT,1569.0,elofootball,2026-11-04
-Caldas SC,PRT,1569.0,elofootball,2026-11-04
-FC Penafiel,PRT,1565.0,elofootball,2026-11-04
-SL Benfica B,PRT,1560.0,elofootball,2026-11-04
-FC Vizela,PRT,1554.0,elofootball,2026-11-04
-SC Salgueiros,PRT,1545.0,elofootball,2026-11-04
-Sporting CP B,PRT,1543.0,elofootball,2026-11-04
-Leça FC,PRT,1536.0,elofootball,2026-11-04
-Lusitano GC,PRT,1531.0,elofootball,2026-11-04
-LFC Lourosa,PRT,1527.0,elofootball,2026-11-04
-SC Espinho,PRT,1527.0,elofootball,2026-11-04
-AD Fafe,PRT,1523.0,elofootball,2026-11-04
-FC Felgueiras 1932,PRT,1519.0,elofootball,2026-11-04
-Leixões SC,PRT,1508.0,elofootball,2026-11-04
-GD Chaves,PRT,1501.0,elofootball,2026-11-04
-Naval 1° de Maio,PRT,1498.0,elofootball,2026-11-04
-FC Porto B,PRT,1496.0,elofootball,2026-11-04
-AD Sanjoanense,PRT,1480.0,elofootball,2026-11-04
-Académica Coimbra,PRT,1478.0,elofootball,2026-11-04
-Paços de Ferreira,PRT,1470.0,elofootball,2026-11-04
-Portimonense SC,PRT,1470.0,elofootball,2026-11-04
-Os Belenenses,PRT,1467.0,elofootball,2026-11-04
-CD Mafra,PRT,1458.0,elofootball,2026-11-04
-CD Feirense,PRT,1449.0,elofootball,2026-11-04
-SC Beira-Mar,PRT,1441.0,elofootball,2026-11-04
-Atlético CP,PRT,1428.0,elofootball,2026-11-04
-UD Oliveirense,PRT,1405.0,elofootball,2026-11-04
-Amarante FC,PRT,1402.0,elofootball,2026-11-04
-Sporting Covilhã,PRT,1390.0,elofootball,2026-11-04
-Real SC,PRT,1388.0,elofootball,2026-11-04
-CD Fátima,PRT,1379.0,elofootball,2026-11-04
-Oriental de Lisboa,PRT,1374.0,elofootball,2026-11-04
-FC DAC 1904,SVK,1766.0,elofootball,2026-11-04
-Slovan Bratislava,SVK,1764.0,elofootball,2026-11-04
-MŠK Žilina,SVK,1653.0,elofootball,2026-11-04
-Spartak Trnava,SVK,1634.0,elofootball,2026-11-04
-FC Košice,SVK,1566.0,elofootball,2026-11-04
-FK Železiarne Podbrezová,SVK,1561.0,elofootball,2026-11-04
-MFK Zemplín Michalovce,SVK,1464.0,elofootball,2026-11-04
-MFK Ružomberok,SVK,1459.0,elofootball,2026-11-04
-FC Petržalka,SVK,1447.0,elofootball,2026-11-04
-Inter Bratislava,SVK,1438.0,elofootball,2026-11-04
-MFK Skalica,SVK,1431.0,elofootball,2026-11-04
-Spartak Myjava,SVK,1419.0,elofootball,2026-11-04
-AS Trencín,SVK,1415.0,elofootball,2026-11-04
-MFK Dubnica,SVK,1410.0,elofootball,2026-11-04
-KFC Komárno,SVK,1403.0,elofootball,2026-11-04
-Dukla Banská Bystrica,SVK,1391.0,elofootball,2026-11-04
-1. FC Tatran Prešov,SVK,1385.0,elofootball,2026-11-04
-Tatran Liptovský Mikuláš,SVK,1341.0,elofootball,2026-11-04
-FC Nitra,SVK,1340.0,elofootball,2026-11-04
-Zlaté Moravce,SVK,1296.0,elofootball,2026-11-04
-Partizán Bardejov,SVK,1260.0,elofootball,2026-11-04
-Galatasaray,TUR,2041.0,elofootball,2026-11-04
-Fenerbahçe,TUR,1969.0,elofootball,2026-11-04
-Trabzonspor,TUR,1913.0,elofootball,2026-11-04
-Besiktas,TUR,1911.0,elofootball,2026-11-04
-Istanbul Basaksehir,TUR,1791.0,elofootball,2026-11-04
-Göztepe,TUR,1788.0,elofootball,2026-11-04
-Kasimpasa SK,TUR,1709.0,elofootball,2026-11-04
-Konyaspor,TUR,1698.0,elofootball,2026-11-04
-Çaykur Rizespor,TUR,1691.0,elofootball,2026-11-04
-Samsunspor,TUR,1691.0,elofootball,2026-11-04
-Alanyaspor,TUR,1685.0,elofootball,2026-11-04
-Amed SFK,TUR,1679.0,elofootball,2026-11-04
-Çorum FK,TUR,1673.0,elofootball,2026-11-04
-Erzurumspor FK,TUR,1670.0,elofootball,2026-11-04
-Kayserispor,TUR,1661.0,elofootball,2026-11-04
-Gençlerbirligi,TUR,1654.0,elofootball,2026-11-04
-Kocaelispor,TUR,1648.0,elofootball,2026-11-04
-Gaziantep FK,TUR,1612.0,elofootball,2026-11-04
-Bursaspor,TUR,1573.0,elofootball,2026-11-04
-Fatih Karagümrük,TUR,1568.0,elofootball,2026-11-04
-Eyüpspor,TUR,1563.0,elofootball,2026-11-04
-Keçiörengücü,TUR,1544.0,elofootball,2026-11-04
-Bodrum FK,TUR,1544.0,elofootball,2026-11-04
-Erokspor,TUR,1535.0,elofootball,2026-11-04
-Antalyaspor,TUR,1529.0,elofootball,2026-11-04
-Igdir FK,TUR,1508.0,elofootball,2026-11-04
-Bandirmaspor,TUR,1504.0,elofootball,2026-11-04
-Pendikspor,TUR,1470.0,elofootball,2026-11-04
-Sivasspor,TUR,1468.0,elofootball,2026-11-04
-Ümraniyespor,TUR,1452.0,elofootball,2026-11-04
-Sariyer SK,TUR,1443.0,elofootball,2026-11-04
-Manisa FK,TUR,1441.0,elofootball,2026-11-04
-Istanbulspor AS,TUR,1392.0,elofootball,2026-11-04
-Mardin 1969 SK,TUR,1380.0,elofootball,2026-11-04
-Fethiyespor,TUR,1379.0,elofootball,2026-11-04
-Karsiyaka SK,TUR,1375.0,elofootball,2026-11-04
-Vanspor FK,TUR,1372.0,elofootball,2026-11-04
-Batman Petrolspor,TUR,1366.0,elofootball,2026-11-04
-Ankaraspor,TUR,1366.0,elofootball,2026-11-04
-Muglaspor,TUR,1341.0,elofootball,2026-11-04
-Sakaryaspor,TUR,1336.0,elofootball,2026-11-04
-Boluspor,TUR,1313.0,elofootball,2026-11-04
-Serik Belediyespor,TUR,1293.0,elofootball,2026-11-04
-Kahramanmarasspor,TUR,1292.0,elofootball,2026-11-04
-Hatayspor,TUR,1281.0,elofootball,2026-11-04
-Eskisehirspor,TUR,1239.0,elofootball,2026-11-04
-Adana Demirspor,TUR,1151.0,elofootball,2026-11-04
 Shakhtar Donetsk,UKR,1930.0,elofootball,2026-11-04
 Dinamo Kiev,UKR,1787.0,elofootball,2026-11-04
 Polissya Zhytomyr,UKR,1774.0,elofootball,2026-11-04
@@ -438,524 +118,853 @@ Livyi Bereh,UKR,1463.0,elofootball,2026-11-04
 FC Kudrivka,UKR,1441.0,elofootball,2026-11-04
 Niva Ternopil,UKR,1427.0,elofootball,2026-11-04
 SK Poltava,UKR,1358.0,elofootball,2026-11-04
-Bayern München,DEU,2403.0,elofootball,2026-11-04
-Borussia Dortmund,DEU,2168.0,elofootball,2026-11-04
-Bayer Leverkusen,DEU,2119.0,elofootball,2026-11-04
-VfB Stuttgart,DEU,2074.0,elofootball,2026-11-04
-RB Leipzig,DEU,2071.0,elofootball,2026-11-04
-SC Freiburg,DEU,2046.0,elofootball,2026-11-04
-TSG Hoffenheim,DEU,1964.0,elofootball,2026-11-04
-Eintracht Frankfurt,DEU,1956.0,elofootball,2026-11-04
-FC Augsburg,DEU,1937.0,elofootball,2026-11-04
-Werder Bremen,DEU,1929.0,elofootball,2026-11-04
-1. FSV Mainz 05,DEU,1923.0,elofootball,2026-11-04
-Bor. Mönchengladbach,DEU,1877.0,elofootball,2026-11-04
-VfL Wolfsburg,DEU,1869.0,elofootball,2026-11-04
-1. FC Union Berlin,DEU,1868.0,elofootball,2026-11-04
-Hamburger SV,DEU,1864.0,elofootball,2026-11-04
-1. FC Köln,DEU,1862.0,elofootball,2026-11-04
-Hertha BSC,DEU,1847.0,elofootball,2026-11-04
-SC Paderborn 07,DEU,1846.0,elofootball,2026-11-04
-SV 07 Elversberg,DEU,1840.0,elofootball,2026-11-04
-FC Schalke 04,DEU,1792.0,elofootball,2026-11-04
-1. FC Nürnberg,DEU,1778.0,elofootball,2026-11-04
-1. FC Kaiserslautern,DEU,1772.0,elofootball,2026-11-04
-1. FC Heidenheim 1846,DEU,1766.0,elofootball,2026-11-04
-FC St. Pauli,DEU,1758.0,elofootball,2026-11-04
-VfL Bochum,DEU,1753.0,elofootball,2026-11-04
-1. FC Magdeburg,DEU,1742.0,elofootball,2026-11-04
-Hannover 96,DEU,1734.0,elofootball,2026-11-04
-SV Darmstadt 98,DEU,1717.0,elofootball,2026-11-04
-Holstein Kiel,DEU,1711.0,elofootball,2026-11-04
-Arminia Bielefeld,DEU,1705.0,elofootball,2026-11-04
-Dynamo Dresden,DEU,1681.0,elofootball,2026-11-04
-Karlsruher SC,DEU,1674.0,elofootball,2026-11-04
-VfL Osnabrück,DEU,1655.0,elofootball,2026-11-04
-SpVgg Greuther Fürth,DEU,1640.0,elofootball,2026-11-04
-MSV Duisburg,DEU,1638.0,elofootball,2026-11-04
-Energie Cottbus,DEU,1633.0,elofootball,2026-11-04
-Eintracht Braunschweig,DEU,1627.0,elofootball,2026-11-04
-Rot-Weiss Essen,DEU,1624.0,elofootball,2026-11-04
-Fortuna Düsseldorf,DEU,1606.0,elofootball,2026-11-04
-Viktoria Köln,DEU,1603.0,elofootball,2026-11-04
-Alemannia Aachen,DEU,1596.0,elofootball,2026-11-04
-Hansa Rostock,DEU,1579.0,elofootball,2026-11-04
-FV Engers 07,DEU,1549.0,elofootball,2026-11-04
-Preußen Münster,DEU,1546.0,elofootball,2026-11-04
-SV Wehen Wiesbaden,DEU,1543.0,elofootball,2026-11-04
-1. FC Saarbrücken,DEU,1540.0,elofootball,2026-11-04
-FC Ingolstadt 04,DEU,1534.0,elofootball,2026-11-04
-SV Meppen,DEU,1529.0,elofootball,2026-11-04
-SC Verl,DEU,1522.0,elofootball,2026-11-04
-Jahn Regensburg,DEU,1500.0,elofootball,2026-11-04
-VfR Mannheim,DEU,1478.0,elofootball,2026-11-04
-Waldhof Mannheim,DEU,1472.0,elofootball,2026-11-04
-Würzburger Kickers,DEU,1471.0,elofootball,2026-11-04
-TSV 1860 München,DEU,1466.0,elofootball,2026-11-04
-Hallescher FC,DEU,1461.0,elofootball,2026-11-04
-VfB Stuttgart II,DEU,1457.0,elofootball,2026-11-04
-TSG Hoffenheim II,DEU,1454.0,elofootball,2026-11-04
-Rot-Weiß Erfurt,DEU,1454.0,elofootball,2026-11-04
-SV Drochtersen/Assel,DEU,1441.0,elofootball,2026-11-04
-Rot-Weiß Oberhausen,DEU,1437.0,elofootball,2026-11-04
-Borussia Dortmund II,DEU,1433.0,elofootball,2026-11-04
-VfB Oldenburg,DEU,1433.0,elofootball,2026-11-04
-Chemnitzer FC,DEU,1432.0,elofootball,2026-11-04
-FC Carl Zeiss Jena,DEU,1428.0,elofootball,2026-11-04
-1. FC Phönix Lübeck,DEU,1423.0,elofootball,2026-11-04
-SGV Heilbronn-Freiberg,DEU,1420.0,elofootball,2026-11-04
-Erzgebirge Aue,DEU,1419.0,elofootball,2026-11-04
-Fortuna Köln,DEU,1411.0,elofootball,2026-11-04
-Hannover 96 II,DEU,1403.0,elofootball,2026-11-04
-FC Gütersloh,DEU,1391.0,elofootball,2026-11-04
-1. FC Lok Leipzig,DEU,1389.0,elofootball,2026-11-04
-TSV Havelse,DEU,1385.0,elofootball,2026-11-04
-SpVgg Unterhaching,DEU,1376.0,elofootball,2026-11-04
-VSG Altglienicke,DEU,1374.0,elofootball,2026-11-04
-Bor. Mönchengladbach II,DEU,1368.0,elofootball,2026-11-04
-Weiche Flensburg 08,DEU,1364.0,elofootball,2026-11-04
-FC 08 Homburg,DEU,1359.0,elofootball,2026-11-04
-SG Sonnenhof Großaspach,DEU,1353.0,elofootball,2026-11-04
-BFC Dynamo,DEU,1353.0,elofootball,2026-11-04
-Sportfreunde Siegen,DEU,1347.0,elofootball,2026-11-04
-SSV Ulm 1846,DEU,1335.0,elofootball,2026-11-04
-FV Illertissen,DEU,1319.0,elofootball,2026-11-04
-Kickers Offenbach,DEU,1318.0,elofootball,2026-11-04
-Stuttgarter Kickers,DEU,1318.0,elofootball,2026-11-04
-FSV Zwickau,DEU,1316.0,elofootball,2026-11-04
-1. FC Nürnberg II,DEU,1315.0,elofootball,2026-11-04
-TSV Steinbach Haiger,DEU,1314.0,elofootball,2026-11-04
-SC Freiburg II,DEU,1312.0,elofootball,2026-11-04
-Greifswalder FC,DEU,1307.0,elofootball,2026-11-04
-Kickers Emden,DEU,1307.0,elofootball,2026-11-04
-SV Sandhausen,DEU,1305.0,elofootball,2026-11-04
-FC Schalke 04 II,DEU,1298.0,elofootball,2026-11-04
-BFC Preussen,DEU,1284.0,elofootball,2026-11-04
-VfR Aalen,DEU,1283.0,elofootball,2026-11-04
-SC Paderborn 07 II,DEU,1279.0,elofootball,2026-11-04
-FSV Frankfurt,DEU,1278.0,elofootball,2026-11-04
-Bayern München II,DEU,1277.0,elofootball,2026-11-04
-1. FC Magdeburg II,DEU,1272.0,elofootball,2026-11-04
-1. FC Köln II,DEU,1271.0,elofootball,2026-11-04
-Hessen Kassel,DEU,1267.0,elofootball,2026-11-04
-Bonner SC,DEU,1258.0,elofootball,2026-11-04
-DJK Vilzing,DEU,1258.0,elofootball,2026-11-04
-Hamburger SV II,DEU,1257.0,elofootball,2026-11-04
-Wacker Burghausen,DEU,1253.0,elofootball,2026-11-04
-VfB Lübeck,DEU,1252.0,elofootball,2026-11-04
-SSV Jeddeloh II,DEU,1249.0,elofootball,2026-11-04
-FC Memmingen,DEU,1247.0,elofootball,2026-11-04
-SG Barockstadt Fulda-Lehnerz,DEU,1244.0,elofootball,2026-11-04
-Eintracht Trier,DEU,1244.0,elofootball,2026-11-04
-Werder Bremen II,DEU,1241.0,elofootball,2026-11-04
-TSV Buchbach,DEU,1239.0,elofootball,2026-11-04
-Fortuna Düsseldorf II,DEU,1236.0,elofootball,2026-11-04
-Eintracht Frankfurt II,DEU,1233.0,elofootball,2026-11-04
-SV Babelsberg 03,DEU,1233.0,elofootball,2026-11-04
-FC-Astoria Walldorf,DEU,1232.0,elofootball,2026-11-04
-BSG Chemie Leipzig,DEU,1232.0,elofootball,2026-11-04
-1. FC Bocholt,DEU,1230.0,elofootball,2026-11-04
-1. FSV Mainz 05 II,DEU,1228.0,elofootball,2026-11-04
-Bremer SV,DEU,1227.0,elofootball,2026-11-04
-SpVgg Bayreuth,DEU,1221.0,elofootball,2026-11-04
-FC Augsburg II,DEU,1217.0,elofootball,2026-11-04
-1. FC Schweinfurt 05,DEU,1216.0,elofootball,2026-11-04
-VfL Bochum II,DEU,1198.0,elofootball,2026-11-04
-VfB Eichstätt,DEU,1197.0,elofootball,2026-11-04
-Eimsbütteler TV,DEU,1196.0,elofootball,2026-11-04
-Hertha BSC II,DEU,1194.0,elofootball,2026-11-04
-Atlas Delmenhorst,DEU,1187.0,elofootball,2026-11-04
-1. FC Kaiserslautern II,DEU,1183.0,elofootball,2026-11-04
-TSV Schwaben Augsburg,DEU,1179.0,elofootball,2026-11-04
-ZFC Meuselwitz,DEU,1179.0,elofootball,2026-11-04
-TSV Aubstadt,DEU,1177.0,elofootball,2026-11-04
-FC St. Pauli II,DEU,1167.0,elofootball,2026-11-04
-SV Rödinghausen,DEU,1167.0,elofootball,2026-11-04
-FSV Schöningen,DEU,1160.0,elofootball,2026-11-04
-Sportfreunde Lotte,DEU,1158.0,elofootball,2026-11-04
-Eintracht Norderstedt,DEU,1153.0,elofootball,2026-11-04
-FSV 63 Luckenwalde,DEU,1147.0,elofootball,2026-11-04
-Wuppertaler SV,DEU,1144.0,elofootball,2026-11-04
-HSC Hannover,DEU,1142.0,elofootball,2026-11-04
-SpVgg Greuther Fürth II,DEU,1142.0,elofootball,2026-11-04
-FK Pirmasens,DEU,1140.0,elofootball,2026-11-04
-SpVgg Ansbach,DEU,1134.0,elofootball,2026-11-04
-VfB 03 Hilden,DEU,1133.0,elofootball,2026-11-04
-Blau-Weiß Lohne,DEU,1131.0,elofootball,2026-11-04
-FC Eilenburg,DEU,1124.0,elofootball,2026-11-04
-SG Wattenscheid 09,DEU,1116.0,elofootball,2026-11-04
-SV Bergisch Gladbach 09,DEU,1108.0,elofootball,2026-11-04
-SV Todesfelde,DEU,1106.0,elofootball,2026-11-04
-Bahlinger SC,DEU,1105.0,elofootball,2026-11-04
-SSVg Velbert,DEU,1102.0,elofootball,2026-11-04
-Lüneburger SK Hansa,DEU,1098.0,elofootball,2026-11-04
-TSV Schott Mainz,DEU,1095.0,elofootball,2026-11-04
-Hertha Zehlendorf,DEU,1094.0,elofootball,2026-11-04
-SC Wiedenbrück,DEU,1090.0,elofootball,2026-11-04
-Viktoria Aschaffenburg,DEU,1074.0,elofootball,2026-11-04
-Westfalia Rhynern,DEU,1074.0,elofootball,2026-11-04
-RSV Eintracht 1949,DEU,1072.0,elofootball,2026-11-04
-TSG Balingen,DEU,1070.0,elofootball,2026-11-04
-SC Eltersdorf,DEU,1063.0,elofootball,2026-11-04
-Bayern Alzenau,DEU,1059.0,elofootball,2026-11-04
-TSV Landsberg,DEU,1058.0,elofootball,2026-11-04
-SpVgg Hankofen-Hailing,DEU,1009.0,elofootball,2026-11-04
-Altona 93,DEU,995.0,elofootball,2026-11-04
-SV Tasmania Berlin,DEU,961.0,elofootball,2026-11-04
-Arsenal FC,ENG,2378.0,elofootball,2026-11-04
-Manchester City,ENG,2279.0,elofootball,2026-11-04
-Liverpool FC,ENG,2191.0,elofootball,2026-11-04
-Brighton & Hove Albion,ENG,2177.0,elofootball,2026-11-04
-Aston Villa,ENG,2176.0,elofootball,2026-11-04
-AFC Bournemouth,ENG,2165.0,elofootball,2026-11-04
-Chelsea FC,ENG,2114.0,elofootball,2026-11-04
-Brentford FC,ENG,2099.0,elofootball,2026-11-04
-Manchester United,ENG,2085.0,elofootball,2026-11-04
-Newcastle United,ENG,2073.0,elofootball,2026-11-04
-Everton FC,ENG,2059.0,elofootball,2026-11-04
-Leeds United,ENG,2056.0,elofootball,2026-11-04
-Tottenham Hotspur,ENG,2055.0,elofootball,2026-11-04
-Nottingham Forest,ENG,2031.0,elofootball,2026-11-04
-Crystal Palace,ENG,2023.0,elofootball,2026-11-04
-Fulham FC,ENG,2017.0,elofootball,2026-11-04
-West Ham United,ENG,1960.0,elofootball,2026-11-04
-Sunderland AFC,ENG,1941.0,elofootball,2026-11-04
-Southampton FC,ENG,1898.0,elofootball,2026-11-04
-Coventry City,ENG,1883.0,elofootball,2026-11-04
-Ipswich Town,ENG,1880.0,elofootball,2026-11-04
-Wolverhampton Wanderers,ENG,1877.0,elofootball,2026-11-04
-Middlesbrough FC,ENG,1829.0,elofootball,2026-11-04
-Hull City,ENG,1800.0,elofootball,2026-11-04
-Birmingham City,ENG,1798.0,elofootball,2026-11-04
-Swansea City,ENG,1759.0,elofootball,2026-11-04
-Norwich City,ENG,1757.0,elofootball,2026-11-04
-Burnley FC,ENG,1755.0,elofootball,2026-11-04
-Millwall FC,ENG,1751.0,elofootball,2026-11-04
-West Bromwich Albion,ENG,1748.0,elofootball,2026-11-04
-Sheffield United,ENG,1737.0,elofootball,2026-11-04
-Wrexham AFC,ENG,1724.0,elofootball,2026-11-04
-Portsmouth FC,ENG,1724.0,elofootball,2026-11-04
-Lincoln City,ENG,1717.0,elofootball,2026-11-04
-Queens Park Rangers,ENG,1701.0,elofootball,2026-11-04
-Stoke City,ENG,1688.0,elofootball,2026-11-04
-Blackburn Rovers,ENG,1679.0,elofootball,2026-11-04
-Bristol City,ENG,1679.0,elofootball,2026-11-04
-Cardiff City,ENG,1667.0,elofootball,2026-11-04
-Luton Town,ENG,1649.0,elofootball,2026-11-04
-Oxford United,ENG,1645.0,elofootball,2026-11-04
-Stockport County,ENG,1641.0,elofootball,2026-11-04
-Bolton Wanderers,ENG,1636.0,elofootball,2026-11-04
-Huddersfield Town,ENG,1633.0,elofootball,2026-11-04
-Leicester City,ENG,1629.0,elofootball,2026-11-04
-Derby County,ENG,1629.0,elofootball,2026-11-04
-Plymouth Argyle,ENG,1617.0,elofootball,2026-11-04
-Charlton Athletic,ENG,1598.0,elofootball,2026-11-04
-Watford FC,ENG,1593.0,elofootball,2026-11-04
-Reading FC,ENG,1593.0,elofootball,2026-11-04
-Mansfield Town,ENG,1577.0,elofootball,2026-11-04
-Bradford City,ENG,1575.0,elofootball,2026-11-04
-Preston North End,ENG,1560.0,elofootball,2026-11-04
-Wycombe Wanderers,ENG,1551.0,elofootball,2026-11-04
-Stevenage FC,ENG,1537.0,elofootball,2026-11-04
-Sheffield Wednesday,ENG,1508.0,elofootball,2026-11-04
-Cambridge United,ENG,1506.0,elofootball,2026-11-04
-Blackpool FC,ENG,1500.0,elofootball,2026-11-04
-Milton Keynes Dons,ENG,1497.0,elofootball,2026-11-04
-Leyton Orient,ENG,1495.0,elofootball,2026-11-04
-Notts County,ENG,1490.0,elofootball,2026-11-04
-Salford City,ENG,1488.0,elofootball,2026-11-04
-Burton Albion,ENG,1483.0,elofootball,2026-11-04
-Doncaster Rovers,ENG,1477.0,elofootball,2026-11-04
-Barnet FC,ENG,1466.0,elofootball,2026-11-04
-Barnsley FC,ENG,1464.0,elofootball,2026-11-04
-Wigan Athletic,ENG,1457.0,elofootball,2026-11-04
-Peterborough United,ENG,1443.0,elofootball,2026-11-04
-Exeter City,ENG,1440.0,elofootball,2026-11-04
-Port Vale FC,ENG,1423.0,elofootball,2026-11-04
-Grimsby Town,ENG,1407.0,elofootball,2026-11-04
-AFC Wimbledon,ENG,1398.0,elofootball,2026-11-04
-Chesterfield FC,ENG,1397.0,elofootball,2026-11-04
-Walsall FC,ENG,1396.0,elofootball,2026-11-04
-Bromley FC,ENG,1393.0,elofootball,2026-11-04
-York City,ENG,1391.0,elofootball,2026-11-04
-Swindon Town,ENG,1384.0,elofootball,2026-11-04
-Boreham Wood,ENG,1381.0,elofootball,2026-11-04
-Crewe Alexandra,ENG,1370.0,elofootball,2026-11-04
-Fleetwood Town,ENG,1366.0,elofootball,2026-11-04
-Oldham Athletic,ENG,1336.0,elofootball,2026-11-04
-Rotherham United,ENG,1325.0,elofootball,2026-11-04
-Bristol Rovers,ENG,1325.0,elofootball,2026-11-04
-Accrington Stanley,ENG,1322.0,elofootball,2026-11-04
-Colchester United,ENG,1320.0,elofootball,2026-11-04
-Northampton Town,ENG,1311.0,elofootball,2026-11-04
-Cheltenham Town,ENG,1304.0,elofootball,2026-11-04
-Gillingham FC,ENG,1299.0,elofootball,2026-11-04
-Carlisle United,ENG,1293.0,elofootball,2026-11-04
-Rochdale AFC,ENG,1287.0,elofootball,2026-11-04
-Newport County,ENG,1283.0,elofootball,2026-11-04
-Shrewsbury Town,ENG,1276.0,elofootball,2026-11-04
-Tranmere Rovers,ENG,1269.0,elofootball,2026-11-04
-Southend United,ENG,1258.0,elofootball,2026-11-04
-Harrogate Town,ENG,1258.0,elofootball,2026-11-04
-Crawley Town,ENG,1250.0,elofootball,2026-11-04
-Barrow AFC,ENG,1220.0,elofootball,2026-11-04
-Halifax Town,ENG,1181.0,elofootball,2026-11-04
-Slough Town,ENG,1179.0,elofootball,2026-11-04
-Woking FC,ENG,1178.0,elofootball,2026-11-04
-Forest Green Rovers,ENG,1174.0,elofootball,2026-11-04
-Altrincham FC,ENG,1155.0,elofootball,2026-11-04
-Yeovil Town,ENG,1131.0,elofootball,2026-11-04
-AFC Fylde,ENG,1124.0,elofootball,2026-11-04
-Boston United,ENG,1121.0,elofootball,2026-11-04
-Tamworth FC,ENG,1108.0,elofootball,2026-11-04
-Sutton United,ENG,1107.0,elofootball,2026-11-04
-Kidderminster Harriers,ENG,1097.0,elofootball,2026-11-04
-Scunthorpe United,ENG,1089.0,elofootball,2026-11-04
-Hartlepool United,ENG,1089.0,elofootball,2026-11-04
-Wealdstone FC,ENG,1085.0,elofootball,2026-11-04
-Worthing FC,ENG,1075.0,elofootball,2026-11-04
-Aldershot Town,ENG,1064.0,elofootball,2026-11-04
-Eastleigh FC,ENG,1061.0,elofootball,2026-11-04
-Solihull Moors,ENG,1051.0,elofootball,2026-11-04
-Morecambe FC,ENG,1051.0,elofootball,2026-11-04
-AFC Telford United,ENG,1028.0,elofootball,2026-11-04
-AFC Hornchurch,ENG,1020.0,elofootball,2026-11-04
-Braintree Town,ENG,1006.0,elofootball,2026-11-04
-Truro City,ENG,998.0,elofootball,2026-11-04
-St. Albans City,ENG,996.0,elofootball,2026-11-04
-Gateshead FC,ENG,986.0,elofootball,2026-11-04
-Chester FC,ENG,980.0,elofootball,2026-11-04
-Brackley Town,ENG,972.0,elofootball,2026-11-04
-Ebbsfleet United,ENG,954.0,elofootball,2026-11-04
-FC Barcelona,ESP,2335.0,elofootball,2026-11-04
-Real Madrid,ESP,2296.0,elofootball,2026-11-04
-Atlético Madrid,ESP,2175.0,elofootball,2026-11-04
-Real Betis,ESP,2092.0,elofootball,2026-11-04
-Real Sociedad,ESP,2018.0,elofootball,2026-11-04
-Villarreal CF,ESP,2006.0,elofootball,2026-11-04
-Athletic Club,ESP,1977.0,elofootball,2026-11-04
-Rayo Vallecano,ESP,1977.0,elofootball,2026-11-04
-RC Celta,ESP,1958.0,elofootball,2026-11-04
-Valencia CF,ESP,1957.0,elofootball,2026-11-04
-Sevilla FC,ESP,1937.0,elofootball,2026-11-04
-CD Alavés,ESP,1927.0,elofootball,2026-11-04
-Elche CF,ESP,1921.0,elofootball,2026-11-04
-RCD Mallorca,ESP,1913.0,elofootball,2026-11-04
-Levante UD,ESP,1912.0,elofootball,2026-11-04
-Espanyol Barcelona,ESP,1906.0,elofootball,2026-11-04
-CA Osasuna,ESP,1906.0,elofootball,2026-11-04
-Girona FC,ESP,1903.0,elofootball,2026-11-04
-Getafe CF,ESP,1897.0,elofootball,2026-11-04
-CD Castellón,ESP,1863.0,elofootball,2026-11-04
-Deportivo A Coruña,ESP,1859.0,elofootball,2026-11-04
-UD Almería,ESP,1857.0,elofootball,2026-11-04
-Racing Santander,ESP,1852.0,elofootball,2026-11-04
-SD Eibar,ESP,1822.0,elofootball,2026-11-04
-Málaga CF,ESP,1821.0,elofootball,2026-11-04
-Burgos CF,ESP,1817.0,elofootball,2026-11-04
-Real Oviedo,ESP,1807.0,elofootball,2026-11-04
-UD Las Palmas,ESP,1798.0,elofootball,2026-11-04
-Sporting Gijón,ESP,1776.0,elofootball,2026-11-04
-Granada CF,ESP,1765.0,elofootball,2026-11-04
-Real Murcia,ESP,1718.0,elofootball,2026-11-04
-Pontevedra CF,ESP,1714.0,elofootball,2026-11-04
-Atlético Baleares,ESP,1712.0,elofootball,2026-11-04
-Córdoba CF,ESP,1712.0,elofootball,2026-11-04
-UE Sant Andreu,ESP,1707.0,elofootball,2026-11-04
-Caudal Deportivo,ESP,1700.0,elofootball,2026-11-04
-CE Sabadell,ESP,1698.0,elofootball,2026-11-04
-Albacete,ESP,1696.0,elofootball,2026-11-04
-CD Eldense,ESP,1693.0,elofootball,2026-11-04
-SD Ponferradina,ESP,1684.0,elofootball,2026-11-04
-FC Andorra,ESP,1682.0,elofootball,2026-11-04
-CD Guadalajara,ESP,1680.0,elofootball,2026-11-04
-CD Tenerife,ESP,1680.0,elofootball,2026-11-04
-Real Valladolid,ESP,1676.0,elofootball,2026-11-04
-CD Toledo,ESP,1672.0,elofootball,2026-11-04
-CD Leganés,ESP,1672.0,elofootball,2026-11-04
-CD Mirandés,ESP,1662.0,elofootball,2026-11-04
-UP Langreo,ESP,1660.0,elofootball,2026-11-04
-Cádiz CF,ESP,1650.0,elofootball,2026-11-04
-Real Jaén,ESP,1641.0,elofootball,2026-11-04
-CD Numancia,ESP,1638.0,elofootball,2026-11-04
-Real Sociedad B,ESP,1637.0,elofootball,2026-11-04
-SD Huesca,ESP,1630.0,elofootball,2026-11-04
-Recreativo Huelva,ESP,1629.0,elofootball,2026-11-04
-RC Celta B,ESP,1622.0,elofootball,2026-11-04
-UD Logroñés,ESP,1621.0,elofootball,2026-11-04
-AD Ceuta FC,ESP,1614.0,elofootball,2026-11-04
-UCAM Murcia CF,ESP,1610.0,elofootball,2026-11-04
-Real Zaragoza,ESP,1604.0,elofootball,2026-11-04
-Cultural Leonesa,ESP,1581.0,elofootball,2026-11-04
-CD Constància,ESP,1572.0,elofootball,2026-11-04
-Lorca Deportiva,ESP,1569.0,elofootball,2026-11-04
-Racing Ferrol,ESP,1557.0,elofootball,2026-11-04
-Xerez CD,ESP,1550.0,elofootball,2026-11-04
-FC Cartagena,ESP,1541.0,elofootball,2026-11-04
-Paris Saint-Germain,FRA,2363.0,elofootball,2026-11-04
-AS Monaco,FRA,2038.0,elofootball,2026-11-04
-RC Lens,FRA,2037.0,elofootball,2026-11-04
-Olympique Lyonnais,FRA,2030.0,elofootball,2026-11-04
-Stade Rennais,FRA,1998.0,elofootball,2026-11-04
-Lille OSC,FRA,1995.0,elofootball,2026-11-04
-Olympique Marseille,FRA,1959.0,elofootball,2026-11-04
-Racing Strasbourg,FRA,1947.0,elofootball,2026-11-04
-Paris FC,FRA,1939.0,elofootball,2026-11-04
-Toulouse FC,FRA,1902.0,elofootball,2026-11-04
-Stade Brestois 29,FRA,1892.0,elofootball,2026-11-04
-OGC Nice,FRA,1887.0,elofootball,2026-11-04
-FC Lorient,FRA,1882.0,elofootball,2026-11-04
-AJ Auxerre,FRA,1850.0,elofootball,2026-11-04
-Stade de Reims,FRA,1796.0,elofootball,2026-11-04
-Angers SCO,FRA,1779.0,elofootball,2026-11-04
-Montpellier HSC,FRA,1773.0,elofootball,2026-11-04
-Havre AC,FRA,1764.0,elofootball,2026-11-04
-AS Saint-Étienne,FRA,1764.0,elofootball,2026-11-04
-ES Troyes AC,FRA,1755.0,elofootball,2026-11-04
-Le Mans FC,FRA,1709.0,elofootball,2026-11-04
-FC Nantes,FRA,1704.0,elofootball,2026-11-04
-Rodez AF,FRA,1692.0,elofootball,2026-11-04
-FC Annecy,FRA,1680.0,elofootball,2026-11-04
-FC Metz,FRA,1675.0,elofootball,2026-11-04
-Red Star FC,FRA,1649.0,elofootball,2026-11-04
-AS Nancy Lorraine,FRA,1646.0,elofootball,2026-11-04
-Girondins Bordeaux,FRA,1646.0,elofootball,2026-11-04
-Pau FC,FRA,1637.0,elofootball,2026-11-04
-Dijon FCO,FRA,1632.0,elofootball,2026-11-04
-USL Dunkerque,FRA,1631.0,elofootball,2026-11-04
-EA Guingamp,FRA,1615.0,elofootball,2026-11-04
-AS Cannes,FRA,1599.0,elofootball,2026-11-04
-Grenoble Foot 38,FRA,1573.0,elofootball,2026-11-04
-Stade Lavallois,FRA,1571.0,elofootball,2026-11-04
-Clermont Foot 63,FRA,1569.0,elofootball,2026-11-04
-US Boulogne,FRA,1558.0,elofootball,2026-11-04
-FC Sochaux,FRA,1548.0,elofootball,2026-11-04
-FC Rouen 1899,FRA,1546.0,elofootball,2026-11-04
-SC Bastia,FRA,1545.0,elofootball,2026-11-04
-FC Versailles,FRA,1540.0,elofootball,2026-11-04
-Amiens SC,FRA,1532.0,elofootball,2026-11-04
-Vendée Les Herbiers,FRA,1501.0,elofootball,2026-11-04
-Le Puy Foot 43,FRA,1500.0,elofootball,2026-11-04
-SM Caen,FRA,1496.0,elofootball,2026-11-04
-FC Fleury 91,FRA,1496.0,elofootball,2026-11-04
-US Orléans,FRA,1468.0,elofootball,2026-11-04
-US Concarneau,FRA,1466.0,elofootball,2026-11-04
-VFC La Roche,FRA,1453.0,elofootball,2026-11-04
-US Quevilly-Rouen,FRA,1439.0,elofootball,2026-11-04
-Le Puy-en-Velay FC,FRA,1423.0,elofootball,2026-11-04
-Valenciennes FC,FRA,1420.0,elofootball,2026-11-04
-AS Beauvais,FRA,1417.0,elofootball,2026-11-04
-Stade Briochin,FRA,1399.0,elofootball,2026-11-04
-US Thionville-Lusitanos,FRA,1397.0,elofootball,2026-11-04
-Paris 13 Atletico,FRA,1394.0,elofootball,2026-11-04
-Stade Plabennec,FRA,1390.0,elofootball,2026-11-04
-LB Châteauroux,FRA,1382.0,elofootball,2026-11-04
-FC Villefranche Beaujolais,FRA,1367.0,elofootball,2026-11-04
-US Avranches,FRA,1361.0,elofootball,2026-11-04
-SC Aubagne Air Bel,FRA,1353.0,elofootball,2026-11-04
-Aviron Bayonnais,FRA,1350.0,elofootball,2026-11-04
-JA Drancy,FRA,1325.0,elofootball,2026-11-04
-FC Bourg-Péronnas,FRA,1324.0,elofootball,2026-11-04
-FC Istres,FRA,1309.0,elofootball,2026-11-04
-Inter,ITA,2222.0,elofootball,2026-11-04
-AS Roma,ITA,2135.0,elofootball,2026-11-04
-Como 1907,ITA,2133.0,elofootball,2026-11-04
-AC Milan,ITA,2077.0,elofootball,2026-11-04
-Juventus,ITA,2073.0,elofootball,2026-11-04
-Lazio Roma,ITA,2070.0,elofootball,2026-11-04
-SSC Napoli,ITA,2062.0,elofootball,2026-11-04
-Bologna FC,ITA,2009.0,elofootball,2026-11-04
-Atalanta,ITA,1991.0,elofootball,2026-11-04
-ACF Fiorentina,ITA,1927.0,elofootball,2026-11-04
-Frosinone Calcio,ITA,1918.0,elofootball,2026-11-04
-Torino FC,ITA,1903.0,elofootball,2026-11-04
-Genoa CFC,ITA,1903.0,elofootball,2026-11-04
-Udinese Calcio,ITA,1868.0,elofootball,2026-11-04
-US Sassuolo,ITA,1860.0,elofootball,2026-11-04
-Cagliari Calcio,ITA,1857.0,elofootball,2026-11-04
-Parma Calcio 1913,ITA,1836.0,elofootball,2026-11-04
-Palermo FC,ITA,1824.0,elofootball,2026-11-04
-US Lecce,ITA,1811.0,elofootball,2026-11-04
-AC Monza,ITA,1801.0,elofootball,2026-11-04
-Venezia FC,ITA,1800.0,elofootball,2026-11-04
-US Cremonese,ITA,1760.0,elofootball,2026-11-04
-Hellas Verona,ITA,1735.0,elofootball,2026-11-04
-Pisa SC,ITA,1695.0,elofootball,2026-11-04
-Modena FC,ITA,1684.0,elofootball,2026-11-04
-Ascoli Calcio,ITA,1679.0,elofootball,2026-11-04
-Mantova 1911,ITA,1664.0,elofootball,2026-11-04
-Juve Stabia,ITA,1648.0,elofootball,2026-11-04
-Benevento Calcio,ITA,1627.0,elofootball,2026-11-04
-US Catanzaro,ITA,1624.0,elofootball,2026-11-04
-US Avellino,ITA,1620.0,elofootball,2026-11-04
-Spezia Calcio,ITA,1598.0,elofootball,2026-11-04
-Empoli FC,ITA,1597.0,elofootball,2026-11-04
-FC Südtirol,ITA,1596.0,elofootball,2026-11-04
-Calcio Padova,ITA,1594.0,elofootball,2026-11-04
-Carrarese Calcio,ITA,1585.0,elofootball,2026-11-04
-SSC Bari,ITA,1582.0,elofootball,2026-11-04
-Cesena FC,ITA,1576.0,elofootball,2026-11-04
-Ternana Calcio,ITA,1571.0,elofootball,2026-11-04
-Sampdoria,ITA,1565.0,elofootball,2026-11-04
-Virtus Entella,ITA,1564.0,elofootball,2026-11-04
-Delfino Pescara,ITA,1551.0,elofootball,2026-11-04
-Ravenna Calcio,ITA,1548.0,elofootball,2026-11-04
-L.R. Vicenza,ITA,1547.0,elofootball,2026-11-04
-AC Reggiana 1919,ITA,1540.0,elofootball,2026-11-04
-US Arezzo,ITA,1534.0,elofootball,2026-11-04
-Potenza,ITA,1505.0,elofootball,2026-11-04
-Lech Poznan,POL,1854.0,elofootball,2026-11-04
-Górnik Zabrze,POL,1796.0,elofootball,2026-11-04
-Legia Warszawa,POL,1764.0,elofootball,2026-11-04
-Jagiellonia Bialystok,POL,1745.0,elofootball,2026-11-04
-Pogon Szczecin,POL,1720.0,elofootball,2026-11-04
-GKS Katowice,POL,1700.0,elofootball,2026-11-04
-Raków Czestochowa,POL,1684.0,elofootball,2026-11-04
-Piast Gliwice,POL,1680.0,elofootball,2026-11-04
-Wisla Kraków,POL,1660.0,elofootball,2026-11-04
-Zaglebie Lubin,POL,1655.0,elofootball,2026-11-04
-Korona Kielce,POL,1653.0,elofootball,2026-11-04
-Motor Lublin,POL,1637.0,elofootball,2026-11-04
-Widzew Lódz,POL,1621.0,elofootball,2026-11-04
-Wisla Plock,POL,1607.0,elofootball,2026-11-04
-KS Cracovia,POL,1600.0,elofootball,2026-11-04
-Radomiak Radom,POL,1583.0,elofootball,2026-11-04
-Slask Wroclaw,POL,1572.0,elofootball,2026-11-04
-Lechia Gdansk,POL,1557.0,elofootball,2026-11-04
-Bruk-Bet Termalica Nieciecza,POL,1554.0,elofootball,2026-11-04
-Polonia Warszawa,POL,1535.0,elofootball,2026-11-04
-Ruch Chorzów,POL,1516.0,elofootball,2026-11-04
-Arka Gdynia,POL,1509.0,elofootball,2026-11-04
-LKS Lódz,POL,1492.0,elofootball,2026-11-04
-Hutnik Kraków,POL,1490.0,elofootball,2026-11-04
-Wieczysta Kraków,POL,1485.0,elofootball,2026-11-04
-Miedz Legnica,POL,1477.0,elofootball,2026-11-04
-Zawisza Bydgoszcz,POL,1466.0,elofootball,2026-11-04
-Puszcza Niepolomice,POL,1456.0,elofootball,2026-11-04
-Chrobry Glogów,POL,1442.0,elofootball,2026-11-04
-Polonia Bytom,POL,1425.0,elofootball,2026-11-04
-FKS Stal Mielec,POL,1417.0,elofootball,2026-11-04
-Pogon Grodzisk Mazowiecki,POL,1414.0,elofootball,2026-11-04
-Stal Rzeszow,POL,1406.0,elofootball,2026-11-04
-Flota Swinoujscie,POL,1396.0,elofootball,2026-11-04
-Odra Opole,POL,1388.0,elofootball,2026-11-04
-Warta Poznan,POL,1387.0,elofootball,2026-11-04
-Podbeskidzie Bielsko-Biala,POL,1376.0,elofootball,2026-11-04
-Resovia Rzeszów,POL,1375.0,elofootball,2026-11-04
-Górnik Leczna,POL,1372.0,elofootball,2026-11-04
-Olimpia Grudziadz,POL,1370.0,elofootball,2026-11-04
-Pogon Siedlce,POL,1355.0,elofootball,2026-11-04
-GKS Tychy 71,POL,1350.0,elofootball,2026-11-04
-Znicz Pruszków,POL,1337.0,elofootball,2026-11-04
-Siarka Tarnobrzeg,POL,1336.0,elofootball,2026-11-04
-Unia Skierniewice,POL,1316.0,elofootball,2026-11-04
-Chojniczanka Chojnice,POL,1316.0,elofootball,2026-11-04
-Stal Stalowa Wola,POL,1315.0,elofootball,2026-11-04
-Wisla Pulawy,POL,1294.0,elofootball,2026-11-04
-Olimpia Elblag,POL,1281.0,elofootball,2026-11-04
-GKS Jastrzebie,POL,1272.0,elofootball,2026-11-04
-Wigry Suwalki,POL,1262.0,elofootball,2026-11-04
-Górnik Polkowice,POL,1258.0,elofootball,2026-11-04
-Skra Czestochowa,POL,1243.0,elofootball,2026-11-04
-Zaglebie Sosnowiec,POL,1242.0,elofootball,2026-11-04
-MKS Kluczbork,POL,1229.0,elofootball,2026-11-04
+LASK,AUT,1892.0,elofootball,2026-11-24
+RB Salzburg,AUT,1865.0,elofootball,2026-11-24
+Rapid Wien,AUT,1819.0,elofootball,2026-11-24
+Sturm Graz,AUT,1782.0,elofootball,2026-11-24
+TSV Hartberg,AUT,1724.0,elofootball,2026-11-24
+Austria Wien,AUT,1678.0,elofootball,2026-11-24
+SV Ried,AUT,1655.0,elofootball,2026-11-24
+SCR Altach,AUT,1629.0,elofootball,2026-11-24
+FC Blau Weiß Linz,AUT,1612.0,elofootball,2026-11-24
+WSG Tirol,AUT,1576.0,elofootball,2026-11-24
+Wolfsberger AC,AUT,1561.0,elofootball,2026-11-24
+Grazer AK,AUT,1548.0,elofootball,2026-11-24
+Austria Lustenau,AUT,1493.0,elofootball,2026-11-24
+FC Admira Wacker,AUT,1456.0,elofootball,2026-11-24
+First Vienna FC,AUT,1440.0,elofootball,2026-11-24
+FC Wacker Innsbruck,AUT,1401.0,elofootball,2026-11-24
+Wiener Sport-Club,AUT,1394.0,elofootball,2026-11-24
+SKN St. Pölten,AUT,1391.0,elofootball,2026-11-24
+FC Liefering,AUT,1385.0,elofootball,2026-11-24
+Floridsdorfer AC,AUT,1373.0,elofootball,2026-11-24
+DSV Leoben,AUT,1368.0,elofootball,2026-11-24
+SK Austria Klagenfurt,AUT,1360.0,elofootball,2026-11-24
+SKU Amstetten,AUT,1357.0,elofootball,2026-11-24
+Austria Salzburg,AUT,1338.0,elofootball,2026-11-24
+SK Bischofshofen,AUT,1336.0,elofootball,2026-11-24
+ASK Voitsberg,AUT,1331.0,elofootball,2026-11-24
+SV Oberwart,AUT,1307.0,elofootball,2026-11-24
+Austria Wien II,AUT,1306.0,elofootball,2026-11-24
+SV Horn,AUT,1303.0,elofootball,2026-11-24
+SV Stripfing/Weiden,AUT,1291.0,elofootball,2026-11-24
+SC/ESV Parndorf,AUT,1273.0,elofootball,2026-11-24
+FC Dornbirn,AUT,1269.0,elofootball,2026-11-24
+Kremser SC,AUT,1252.0,elofootball,2026-11-24
+Vorwärts Steyr,AUT,1247.0,elofootball,2026-11-24
+Schwarz-Weiß Bregenz,AUT,1243.0,elofootball,2026-11-24
+Sturm Graz (A),AUT,1240.0,elofootball,2026-11-24
+Kapfenberger SV 1919,AUT,1235.0,elofootball,2026-11-24
+FC Hertha Wels,AUT,1232.0,elofootball,2026-11-24
+Rapid Wien (A),AUT,1219.0,elofootball,2026-11-24
+SV Lafnitz,AUT,1152.0,elofootball,2026-11-24
+Bayern München,DEU,2395.0,elofootball,2026-11-24
+Borussia Dortmund,DEU,2183.0,elofootball,2026-11-24
+Bayer Leverkusen,DEU,2109.0,elofootball,2026-11-24
+RB Leipzig,DEU,2082.0,elofootball,2026-11-24
+VfB Stuttgart,DEU,2074.0,elofootball,2026-11-24
+SC Freiburg,DEU,2067.0,elofootball,2026-11-24
+TSG Hoffenheim,DEU,1964.0,elofootball,2026-11-24
+Eintracht Frankfurt,DEU,1964.0,elofootball,2026-11-24
+FC Augsburg,DEU,1939.0,elofootball,2026-11-24
+Werder Bremen,DEU,1936.0,elofootball,2026-11-24
+1. FSV Mainz 05,DEU,1911.0,elofootball,2026-11-24
+Hertha BSC,DEU,1868.0,elofootball,2026-11-24
+VfL Wolfsburg,DEU,1867.0,elofootball,2026-11-24
+1. FC Köln,DEU,1866.0,elofootball,2026-11-24
+Hamburger SV,DEU,1864.0,elofootball,2026-11-24
+Bor. Mönchengladbach,DEU,1861.0,elofootball,2026-11-24
+1. FC Union Berlin,DEU,1850.0,elofootball,2026-11-24
+SC Paderborn 07,DEU,1842.0,elofootball,2026-11-24
+SV 07 Elversberg,DEU,1831.0,elofootball,2026-11-24
+FC Schalke 04,DEU,1794.0,elofootball,2026-11-24
+1. FC Kaiserslautern,DEU,1777.0,elofootball,2026-11-24
+1. FC Nürnberg,DEU,1771.0,elofootball,2026-11-24
+1. FC Magdeburg,DEU,1767.0,elofootball,2026-11-24
+FC St. Pauli,DEU,1756.0,elofootball,2026-11-24
+1. FC Heidenheim 1846,DEU,1749.0,elofootball,2026-11-24
+VfL Bochum,DEU,1747.0,elofootball,2026-11-24
+Hannover 96,DEU,1743.0,elofootball,2026-11-24
+SV Darmstadt 98,DEU,1721.0,elofootball,2026-11-24
+Arminia Bielefeld,DEU,1706.0,elofootball,2026-11-24
+Dynamo Dresden,DEU,1697.0,elofootball,2026-11-24
+Holstein Kiel,DEU,1692.0,elofootball,2026-11-24
+Karlsruher SC,DEU,1666.0,elofootball,2026-11-24
+MSV Duisburg,DEU,1656.0,elofootball,2026-11-24
+VfL Osnabrück,DEU,1648.0,elofootball,2026-11-24
+Rot-Weiss Essen,DEU,1647.0,elofootball,2026-11-24
+Eintracht Braunschweig,DEU,1640.0,elofootball,2026-11-24
+SpVgg Greuther Fürth,DEU,1624.0,elofootball,2026-11-24
+Viktoria Köln,DEU,1624.0,elofootball,2026-11-24
+Energie Cottbus,DEU,1623.0,elofootball,2026-11-24
+Fortuna Düsseldorf,DEU,1601.0,elofootball,2026-11-24
+Alemannia Aachen,DEU,1598.0,elofootball,2026-11-24
+Hansa Rostock,DEU,1576.0,elofootball,2026-11-24
+FV Engers 07,DEU,1549.0,elofootball,2026-11-24
+SV Wehen Wiesbaden,DEU,1541.0,elofootball,2026-11-24
+1. FC Saarbrücken,DEU,1540.0,elofootball,2026-11-24
+FC Ingolstadt 04,DEU,1524.0,elofootball,2026-11-24
+SV Meppen,DEU,1524.0,elofootball,2026-11-24
+Preußen Münster,DEU,1519.0,elofootball,2026-11-24
+Jahn Regensburg,DEU,1500.0,elofootball,2026-11-24
+SC Verl,DEU,1496.0,elofootball,2026-11-24
+VfR Mannheim,DEU,1495.0,elofootball,2026-11-24
+VfB Stuttgart II,DEU,1485.0,elofootball,2026-11-24
+TSG Hoffenheim II,DEU,1484.0,elofootball,2026-11-24
+Rot-Weiß Erfurt,DEU,1473.0,elofootball,2026-11-24
+Waldhof Mannheim,DEU,1470.0,elofootball,2026-11-24
+TSV 1860 München,DEU,1463.0,elofootball,2026-11-24
+Hallescher FC,DEU,1463.0,elofootball,2026-11-24
+Würzburger Kickers,DEU,1452.0,elofootball,2026-11-24
+SV Drochtersen/Assel,DEU,1445.0,elofootball,2026-11-24
+SGV Heilbronn-Freiberg,DEU,1445.0,elofootball,2026-11-24
+Rot-Weiß Oberhausen,DEU,1445.0,elofootball,2026-11-24
+VfB Oldenburg,DEU,1440.0,elofootball,2026-11-24
+Borussia Dortmund II,DEU,1439.0,elofootball,2026-11-24
+Erzgebirge Aue,DEU,1428.0,elofootball,2026-11-24
+Fortuna Köln,DEU,1416.0,elofootball,2026-11-24
+Hannover 96 II,DEU,1414.0,elofootball,2026-11-24
+Chemnitzer FC,DEU,1409.0,elofootball,2026-11-24
+FC Carl Zeiss Jena,DEU,1408.0,elofootball,2026-11-24
+1. FC Lok Leipzig,DEU,1403.0,elofootball,2026-11-24
+1. FC Phönix Lübeck,DEU,1398.0,elofootball,2026-11-24
+Bor. Mönchengladbach II,DEU,1392.0,elofootball,2026-11-24
+FC 08 Homburg,DEU,1376.0,elofootball,2026-11-24
+VSG Altglienicke,DEU,1367.0,elofootball,2026-11-24
+TSV Havelse,DEU,1366.0,elofootball,2026-11-24
+FC Gütersloh,DEU,1364.0,elofootball,2026-11-24
+SpVgg Unterhaching,DEU,1357.0,elofootball,2026-11-24
+Sportfreunde Siegen,DEU,1352.0,elofootball,2026-11-24
+BFC Dynamo,DEU,1352.0,elofootball,2026-11-24
+Greifswalder FC,DEU,1350.0,elofootball,2026-11-24
+Weiche Flensburg 08,DEU,1349.0,elofootball,2026-11-24
+SG Sonnenhof Großaspach,DEU,1344.0,elofootball,2026-11-24
+TSV Steinbach Haiger,DEU,1344.0,elofootball,2026-11-24
+Stuttgarter Kickers,DEU,1342.0,elofootball,2026-11-24
+SSV Ulm 1846,DEU,1334.0,elofootball,2026-11-24
+1. FC Nürnberg II,DEU,1332.0,elofootball,2026-11-24
+Kickers Offenbach,DEU,1317.0,elofootball,2026-11-24
+FV Illertissen,DEU,1313.0,elofootball,2026-11-24
+Kickers Emden,DEU,1309.0,elofootball,2026-11-24
+FSV Zwickau,DEU,1307.0,elofootball,2026-11-24
+BFC Preussen,DEU,1298.0,elofootball,2026-11-24
+FSV Frankfurt,DEU,1289.0,elofootball,2026-11-24
+SV Sandhausen,DEU,1288.0,elofootball,2026-11-24
+Bayern München II,DEU,1286.0,elofootball,2026-11-24
+SSV Jeddeloh II,DEU,1284.0,elofootball,2026-11-24
+VfB Lübeck,DEU,1277.0,elofootball,2026-11-24
+Bonner SC,DEU,1274.0,elofootball,2026-11-24
+SC Freiburg II,DEU,1272.0,elofootball,2026-11-24
+1. FC Magdeburg II,DEU,1271.0,elofootball,2026-11-24
+FC Memmingen,DEU,1270.0,elofootball,2026-11-24
+1. FC Köln II,DEU,1268.0,elofootball,2026-11-24
+Hessen Kassel,DEU,1267.0,elofootball,2026-11-24
+Eintracht Trier,DEU,1265.0,elofootball,2026-11-24
+SC Paderborn 07 II,DEU,1265.0,elofootball,2026-11-24
+FC Schalke 04 II,DEU,1264.0,elofootball,2026-11-24
+TSV Buchbach,DEU,1257.0,elofootball,2026-11-24
+VfR Aalen,DEU,1255.0,elofootball,2026-11-24
+FC-Astoria Walldorf,DEU,1244.0,elofootball,2026-11-24
+Hamburger SV II,DEU,1242.0,elofootball,2026-11-24
+Fortuna Düsseldorf II,DEU,1236.0,elofootball,2026-11-24
+1. FC Schweinfurt 05,DEU,1234.0,elofootball,2026-11-24
+1. FC Bocholt,DEU,1233.0,elofootball,2026-11-24
+Eintracht Frankfurt II,DEU,1231.0,elofootball,2026-11-24
+Bremer SV,DEU,1230.0,elofootball,2026-11-24
+DJK Vilzing,DEU,1222.0,elofootball,2026-11-24
+SG Barockstadt Fulda-Lehnerz,DEU,1221.0,elofootball,2026-11-24
+SV Babelsberg 03,DEU,1219.0,elofootball,2026-11-24
+BSG Chemie Leipzig,DEU,1214.0,elofootball,2026-11-24
+SpVgg Bayreuth,DEU,1212.0,elofootball,2026-11-24
+Werder Bremen II,DEU,1212.0,elofootball,2026-11-24
+VfB Eichstätt,DEU,1206.0,elofootball,2026-11-24
+Wacker Burghausen,DEU,1206.0,elofootball,2026-11-24
+FC Augsburg II,DEU,1204.0,elofootball,2026-11-24
+Eimsbütteler TV,DEU,1204.0,elofootball,2026-11-24
+1. FSV Mainz 05 II,DEU,1204.0,elofootball,2026-11-24
+FSV Schöningen,DEU,1201.0,elofootball,2026-11-24
+VfL Bochum II,DEU,1199.0,elofootball,2026-11-24
+FC St. Pauli II,DEU,1192.0,elofootball,2026-11-24
+TSV Schwaben Augsburg,DEU,1191.0,elofootball,2026-11-24
+Hertha BSC II,DEU,1189.0,elofootball,2026-11-24
+SV Rödinghausen,DEU,1179.0,elofootball,2026-11-24
+ZFC Meuselwitz,DEU,1179.0,elofootball,2026-11-24
+SpVgg Ansbach,DEU,1173.0,elofootball,2026-11-24
+Atlas Delmenhorst,DEU,1168.0,elofootball,2026-11-24
+1. FC Kaiserslautern II,DEU,1162.0,elofootball,2026-11-24
+FSV 63 Luckenwalde,DEU,1149.0,elofootball,2026-11-24
+TSV Aubstadt,DEU,1148.0,elofootball,2026-11-24
+VfB 03 Hilden,DEU,1147.0,elofootball,2026-11-24
+Wuppertaler SV,DEU,1144.0,elofootball,2026-11-24
+FK Pirmasens,DEU,1140.0,elofootball,2026-11-24
+Eintracht Norderstedt,DEU,1138.0,elofootball,2026-11-24
+SpVgg Greuther Fürth II,DEU,1133.0,elofootball,2026-11-24
+Blau-Weiß Lohne,DEU,1131.0,elofootball,2026-11-24
+Sportfreunde Lotte,DEU,1128.0,elofootball,2026-11-24
+FC Eilenburg,DEU,1124.0,elofootball,2026-11-24
+SC Wiedenbrück,DEU,1116.0,elofootball,2026-11-24
+SG Wattenscheid 09,DEU,1113.0,elofootball,2026-11-24
+Bahlinger SC,DEU,1105.0,elofootball,2026-11-24
+SV Todesfelde,DEU,1103.0,elofootball,2026-11-24
+SSVg Velbert,DEU,1102.0,elofootball,2026-11-24
+HSC Hannover,DEU,1102.0,elofootball,2026-11-24
+Lüneburger SK Hansa,DEU,1098.0,elofootball,2026-11-24
+TSV Schott Mainz,DEU,1095.0,elofootball,2026-11-24
+SV Bergisch Gladbach 09,DEU,1095.0,elofootball,2026-11-24
+Hertha Zehlendorf,DEU,1094.0,elofootball,2026-11-24
+Westfalia Rhynern,DEU,1083.0,elofootball,2026-11-24
+SC Eltersdorf,DEU,1083.0,elofootball,2026-11-24
+Viktoria Aschaffenburg,DEU,1074.0,elofootball,2026-11-24
+TSG Balingen,DEU,1070.0,elofootball,2026-11-24
+RSV Eintracht 1949,DEU,1065.0,elofootball,2026-11-24
+TSV Landsberg,DEU,1064.0,elofootball,2026-11-24
+Bayern Alzenau,DEU,1059.0,elofootball,2026-11-24
+SpVgg Hankofen-Hailing,DEU,1009.0,elofootball,2026-11-24
+Altona 93,DEU,995.0,elofootball,2026-11-24
+SV Tasmania Berlin,DEU,963.0,elofootball,2026-11-24
+Arsenal FC,ENG,2378.0,elofootball,2026-11-24
+Manchester City,ENG,2260.0,elofootball,2026-11-24
+Liverpool FC,ENG,2194.0,elofootball,2026-11-24
+AFC Bournemouth,ENG,2185.0,elofootball,2026-11-24
+Aston Villa,ENG,2168.0,elofootball,2026-11-24
+Brighton & Hove Albion,ENG,2165.0,elofootball,2026-11-24
+Brentford FC,ENG,2091.0,elofootball,2026-11-24
+Leeds United,ENG,2087.0,elofootball,2026-11-24
+Newcastle United,ENG,2079.0,elofootball,2026-11-24
+Chelsea FC,ENG,2077.0,elofootball,2026-11-24
+Manchester United,ENG,2076.0,elofootball,2026-11-24
+Everton FC,ENG,2064.0,elofootball,2026-11-24
+Tottenham Hotspur,ENG,2053.0,elofootball,2026-11-24
+Nottingham Forest,ENG,2047.0,elofootball,2026-11-24
+Fulham FC,ENG,2024.0,elofootball,2026-11-24
+Crystal Palace,ENG,1994.0,elofootball,2026-11-24
+Sunderland AFC,ENG,1935.0,elofootball,2026-11-24
+West Ham United,ENG,1931.0,elofootball,2026-11-24
+Coventry City,ENG,1889.0,elofootball,2026-11-24
+Southampton FC,ENG,1886.0,elofootball,2026-11-24
+Wolverhampton Wanderers,ENG,1885.0,elofootball,2026-11-24
+Ipswich Town,ENG,1870.0,elofootball,2026-11-24
+Hull City,ENG,1825.0,elofootball,2026-11-24
+Middlesbrough FC,ENG,1816.0,elofootball,2026-11-24
+Birmingham City,ENG,1794.0,elofootball,2026-11-24
+Norwich City,ENG,1783.0,elofootball,2026-11-24
+West Bromwich Albion,ENG,1764.0,elofootball,2026-11-24
+Wrexham AFC,ENG,1752.0,elofootball,2026-11-24
+Swansea City,ENG,1750.0,elofootball,2026-11-24
+Burnley FC,ENG,1741.0,elofootball,2026-11-24
+Sheffield United,ENG,1734.0,elofootball,2026-11-24
+Millwall FC,ENG,1724.0,elofootball,2026-11-24
+Queens Park Rangers,ENG,1723.0,elofootball,2026-11-24
+Stoke City,ENG,1712.0,elofootball,2026-11-24
+Portsmouth FC,ENG,1710.0,elofootball,2026-11-24
+Blackburn Rovers,ENG,1698.0,elofootball,2026-11-24
+Lincoln City,ENG,1697.0,elofootball,2026-11-24
+Cardiff City,ENG,1677.0,elofootball,2026-11-24
+Stockport County,ENG,1664.0,elofootball,2026-11-24
+Luton Town,ENG,1658.0,elofootball,2026-11-24
+Bristol City,ENG,1646.0,elofootball,2026-11-24
+Oxford United,ENG,1643.0,elofootball,2026-11-24
+Leicester City,ENG,1642.0,elofootball,2026-11-24
+Derby County,ENG,1636.0,elofootball,2026-11-24
+Bolton Wanderers,ENG,1625.0,elofootball,2026-11-24
+Charlton Athletic,ENG,1607.0,elofootball,2026-11-24
+Huddersfield Town,ENG,1604.0,elofootball,2026-11-24
+Watford FC,ENG,1588.0,elofootball,2026-11-24
+Preston North End,ENG,1585.0,elofootball,2026-11-24
+Reading FC,ENG,1576.0,elofootball,2026-11-24
+Mansfield Town,ENG,1573.0,elofootball,2026-11-24
+Plymouth Argyle,ENG,1573.0,elofootball,2026-11-24
+Bradford City,ENG,1569.0,elofootball,2026-11-24
+Stevenage FC,ENG,1564.0,elofootball,2026-11-24
+Wycombe Wanderers,ENG,1556.0,elofootball,2026-11-24
+Sheffield Wednesday,ENG,1526.0,elofootball,2026-11-24
+Milton Keynes Dons,ENG,1519.0,elofootball,2026-11-24
+Leyton Orient,ENG,1504.0,elofootball,2026-11-24
+Wigan Athletic,ENG,1496.0,elofootball,2026-11-24
+Blackpool FC,ENG,1479.0,elofootball,2026-11-24
+Barnet FC,ENG,1477.0,elofootball,2026-11-24
+Cambridge United,ENG,1474.0,elofootball,2026-11-24
+Notts County,ENG,1473.0,elofootball,2026-11-24
+Salford City,ENG,1466.0,elofootball,2026-11-24
+Burton Albion,ENG,1462.0,elofootball,2026-11-24
+Exeter City,ENG,1460.0,elofootball,2026-11-24
+Doncaster Rovers,ENG,1454.0,elofootball,2026-11-24
+Peterborough United,ENG,1450.0,elofootball,2026-11-24
+Barnsley FC,ENG,1448.0,elofootball,2026-11-24
+Port Vale FC,ENG,1426.0,elofootball,2026-11-24
+Chesterfield FC,ENG,1424.0,elofootball,2026-11-24
+Grimsby Town,ENG,1415.0,elofootball,2026-11-24
+York City,ENG,1407.0,elofootball,2026-11-24
+AFC Wimbledon,ENG,1391.0,elofootball,2026-11-24
+Bromley FC,ENG,1388.0,elofootball,2026-11-24
+Walsall FC,ENG,1384.0,elofootball,2026-11-24
+Crewe Alexandra,ENG,1373.0,elofootball,2026-11-24
+Boreham Wood,ENG,1368.0,elofootball,2026-11-24
+Rotherham United,ENG,1352.0,elofootball,2026-11-24
+Bristol Rovers,ENG,1348.0,elofootball,2026-11-24
+Fleetwood Town,ENG,1346.0,elofootball,2026-11-24
+Swindon Town,ENG,1345.0,elofootball,2026-11-24
+Oldham Athletic,ENG,1340.0,elofootball,2026-11-24
+Carlisle United,ENG,1327.0,elofootball,2026-11-24
+Colchester United,ENG,1323.0,elofootball,2026-11-24
+Newport County,ENG,1317.0,elofootball,2026-11-24
+Northampton Town,ENG,1315.0,elofootball,2026-11-24
+Accrington Stanley,ENG,1307.0,elofootball,2026-11-24
+Rochdale AFC,ENG,1285.0,elofootball,2026-11-24
+Cheltenham Town,ENG,1285.0,elofootball,2026-11-24
+Shrewsbury Town,ENG,1284.0,elofootball,2026-11-24
+Gillingham FC,ENG,1275.0,elofootball,2026-11-24
+Tranmere Rovers,ENG,1268.0,elofootball,2026-11-24
+Crawley Town,ENG,1260.0,elofootball,2026-11-24
+Southend United,ENG,1251.0,elofootball,2026-11-24
+Barrow AFC,ENG,1229.0,elofootball,2026-11-24
+Harrogate Town,ENG,1228.0,elofootball,2026-11-24
+Halifax Town,ENG,1190.0,elofootball,2026-11-24
+Slough Town,ENG,1179.0,elofootball,2026-11-24
+Forest Green Rovers,ENG,1165.0,elofootball,2026-11-24
+AFC Fylde,ENG,1164.0,elofootball,2026-11-24
+Woking FC,ENG,1163.0,elofootball,2026-11-24
+Altrincham FC,ENG,1142.0,elofootball,2026-11-24
+Yeovil Town,ENG,1141.0,elofootball,2026-11-24
+Kidderminster Harriers,ENG,1123.0,elofootball,2026-11-24
+Boston United,ENG,1108.0,elofootball,2026-11-24
+Hartlepool United,ENG,1096.0,elofootball,2026-11-24
+Worcester City,ENG,1096.0,elofootball,2026-11-24
+Worthing FC,ENG,1090.0,elofootball,2026-11-24
+Sutton United,ENG,1084.0,elofootball,2026-11-24
+Solihull Moors,ENG,1081.0,elofootball,2026-11-24
+Wealdstone FC,ENG,1080.0,elofootball,2026-11-24
+Tamworth FC,ENG,1077.0,elofootball,2026-11-24
+Scunthorpe United,ENG,1072.0,elofootball,2026-11-24
+Aldershot Town,ENG,1071.0,elofootball,2026-11-24
+Eastleigh FC,ENG,1065.0,elofootball,2026-11-24
+Morecambe FC,ENG,1051.0,elofootball,2026-11-24
+AFC Telford United,ENG,1028.0,elofootball,2026-11-24
+Guiseley AFC,ENG,1024.0,elofootball,2026-11-24
+AFC Hornchurch,ENG,1016.0,elofootball,2026-11-24
+Braintree Town,ENG,1006.0,elofootball,2026-11-24
+Truro City,ENG,998.0,elofootball,2026-11-24
+St. Albans City,ENG,996.0,elofootball,2026-11-24
+Chester FC,ENG,980.0,elofootball,2026-11-24
+Brackley Town,ENG,972.0,elofootball,2026-11-24
+Gateshead FC,ENG,966.0,elofootball,2026-11-24
+Ebbsfleet United,ENG,954.0,elofootball,2026-11-24
+Oxford City,ENG,939.0,elofootball,2026-11-24
+Stafford Rangers,ENG,927.0,elofootball,2026-11-24
+Dover Athletic,ENG,887.0,elofootball,2026-11-24
+FC Barcelona,ESP,2345.0,elofootball,2026-11-24
+Real Madrid,ESP,2310.0,elofootball,2026-11-24
+Atlético Madrid,ESP,2167.0,elofootball,2026-11-24
+Real Betis,ESP,2094.0,elofootball,2026-11-24
+Villarreal CF,ESP,2011.0,elofootball,2026-11-24
+Real Sociedad,ESP,2009.0,elofootball,2026-11-24
+Athletic Club,ESP,1963.0,elofootball,2026-11-24
+Valencia CF,ESP,1963.0,elofootball,2026-11-24
+Rayo Vallecano,ESP,1958.0,elofootball,2026-11-24
+RC Celta,ESP,1941.0,elofootball,2026-11-24
+CD Alavés,ESP,1938.0,elofootball,2026-11-24
+Sevilla FC,ESP,1936.0,elofootball,2026-11-24
+Espanyol Barcelona,ESP,1917.0,elofootball,2026-11-24
+Levante UD,ESP,1916.0,elofootball,2026-11-24
+RCD Mallorca,ESP,1913.0,elofootball,2026-11-24
+CA Osasuna,ESP,1910.0,elofootball,2026-11-24
+Elche CF,ESP,1909.0,elofootball,2026-11-24
+Girona FC,ESP,1905.0,elofootball,2026-11-24
+Getafe CF,ESP,1885.0,elofootball,2026-11-24
+CD Castellón,ESP,1876.0,elofootball,2026-11-24
+Racing Santander,ESP,1876.0,elofootball,2026-11-24
+UD Almería,ESP,1874.0,elofootball,2026-11-24
+Deportivo A Coruña,ESP,1855.0,elofootball,2026-11-24
+UD Las Palmas,ESP,1815.0,elofootball,2026-11-24
+SD Eibar,ESP,1810.0,elofootball,2026-11-24
+Málaga CF,ESP,1804.0,elofootball,2026-11-24
+Burgos CF,ESP,1802.0,elofootball,2026-11-24
+Real Oviedo,ESP,1788.0,elofootball,2026-11-24
+Granada CF,ESP,1773.0,elofootball,2026-11-24
+Córdoba CF,ESP,1743.0,elofootball,2026-11-24
+Sporting Gijón,ESP,1742.0,elofootball,2026-11-24
+Albacete,ESP,1719.0,elofootball,2026-11-24
+Real Murcia,ESP,1718.0,elofootball,2026-11-24
+Pontevedra CF,ESP,1714.0,elofootball,2026-11-24
+Atlético Baleares,ESP,1712.0,elofootball,2026-11-24
+UE Sant Andreu,ESP,1707.0,elofootball,2026-11-24
+CD Tenerife,ESP,1705.0,elofootball,2026-11-24
+Caudal Deportivo,ESP,1700.0,elofootball,2026-11-24
+CD Leganés,ESP,1692.0,elofootball,2026-11-24
+CD Eldense,ESP,1692.0,elofootball,2026-11-24
+SD Amorebieta,ESP,1685.0,elofootball,2026-11-24
+SD Ponferradina,ESP,1684.0,elofootball,2026-11-24
+Real Valladolid,ESP,1684.0,elofootball,2026-11-24
+CE Sabadell,ESP,1683.0,elofootball,2026-11-24
+CD Alcoyano,ESP,1681.0,elofootball,2026-11-24
+CD Guadalajara,ESP,1680.0,elofootball,2026-11-24
+CD Toledo,ESP,1672.0,elofootball,2026-11-24
+Cádiz CF,ESP,1671.0,elofootball,2026-11-24
+FC Andorra,ESP,1662.0,elofootball,2026-11-24
+CD Mirandés,ESP,1662.0,elofootball,2026-11-24
+UP Langreo,ESP,1660.0,elofootball,2026-11-24
+Real Jaén,ESP,1641.0,elofootball,2026-11-24
+CD Numancia,ESP,1638.0,elofootball,2026-11-24
+SD Huesca,ESP,1630.0,elofootball,2026-11-24
+Recreativo Huelva,ESP,1629.0,elofootball,2026-11-24
+Real Sociedad B,ESP,1620.0,elofootball,2026-11-24
+UD Logroñés,ESP,1615.0,elofootball,2026-11-24
+RC Celta B,ESP,1613.0,elofootball,2026-11-24
+UCAM Murcia CF,ESP,1610.0,elofootball,2026-11-24
+Real Zaragoza,ESP,1604.0,elofootball,2026-11-24
+AD Ceuta FC,ESP,1598.0,elofootball,2026-11-24
+Cultural Leonesa,ESP,1581.0,elofootball,2026-11-24
+CD Constància,ESP,1572.0,elofootball,2026-11-24
+Lorca Deportiva,ESP,1569.0,elofootball,2026-11-24
+CD Badajoz,ESP,1566.0,elofootball,2026-11-24
+Racing Ferrol,ESP,1557.0,elofootball,2026-11-24
+Xerez CD,ESP,1550.0,elofootball,2026-11-24
+FC Cartagena,ESP,1541.0,elofootball,2026-11-24
+Paris Saint-Germain,FRA,2365.0,elofootball,2026-11-24
+AS Monaco,FRA,2030.0,elofootball,2026-11-24
+Olympique Lyonnais,FRA,2029.0,elofootball,2026-11-24
+Lille OSC,FRA,1995.0,elofootball,2026-11-24
+Olympique Marseille,FRA,1992.0,elofootball,2026-11-24
+RC Lens,FRA,1983.0,elofootball,2026-11-24
+Stade Rennais,FRA,1983.0,elofootball,2026-11-24
+Paris FC,FRA,1955.0,elofootball,2026-11-24
+Stade Brestois 29,FRA,1922.0,elofootball,2026-11-24
+Racing Strasbourg,FRA,1921.0,elofootball,2026-11-24
+Toulouse FC,FRA,1920.0,elofootball,2026-11-24
+OGC Nice,FRA,1900.0,elofootball,2026-11-24
+FC Lorient,FRA,1896.0,elofootball,2026-11-24
+AJ Auxerre,FRA,1847.0,elofootball,2026-11-24
+AS Saint-Étienne,FRA,1782.0,elofootball,2026-11-24
+Stade de Reims,FRA,1770.0,elofootball,2026-11-24
+ES Troyes AC,FRA,1766.0,elofootball,2026-11-24
+Angers SCO,FRA,1758.0,elofootball,2026-11-24
+Montpellier HSC,FRA,1745.0,elofootball,2026-11-24
+Havre AC,FRA,1739.0,elofootball,2026-11-24
+FC Nantes,FRA,1720.0,elofootball,2026-11-24
+Le Mans FC,FRA,1715.0,elofootball,2026-11-24
+FC Metz,FRA,1695.0,elofootball,2026-11-24
+Rodez AF,FRA,1686.0,elofootball,2026-11-24
+FC Annecy,FRA,1669.0,elofootball,2026-11-24
+AS Nancy Lorraine,FRA,1657.0,elofootball,2026-11-24
+Red Star FC,FRA,1656.0,elofootball,2026-11-24
+Girondins Bordeaux,FRA,1646.0,elofootball,2026-11-24
+Dijon FCO,FRA,1617.0,elofootball,2026-11-24
+Pau FC,FRA,1615.0,elofootball,2026-11-24
+USL Dunkerque,FRA,1614.0,elofootball,2026-11-24
+EA Guingamp,FRA,1587.0,elofootball,2026-11-24
+Grenoble Foot 38,FRA,1586.0,elofootball,2026-11-24
+Stade Lavallois,FRA,1579.0,elofootball,2026-11-24
+AS Cannes,FRA,1578.0,elofootball,2026-11-24
+Clermont Foot 63,FRA,1572.0,elofootball,2026-11-24
+US Boulogne,FRA,1572.0,elofootball,2026-11-24
+Amiens SC,FRA,1550.0,elofootball,2026-11-24
+FC Versailles,FRA,1548.0,elofootball,2026-11-24
+FC Rouen 1899,FRA,1548.0,elofootball,2026-11-24
+FC Sochaux,FRA,1543.0,elofootball,2026-11-24
+SC Bastia,FRA,1539.0,elofootball,2026-11-24
+Vendée Les Herbiers,FRA,1501.0,elofootball,2026-11-24
+Le Puy Foot 43,FRA,1500.0,elofootball,2026-11-24
+SM Caen,FRA,1498.0,elofootball,2026-11-24
+FC Fleury 91,FRA,1493.0,elofootball,2026-11-24
+US Quevilly-Rouen,FRA,1492.0,elofootball,2026-11-24
+US Orléans,FRA,1486.0,elofootball,2026-11-24
+VFC La Roche,FRA,1472.0,elofootball,2026-11-24
+US Concarneau,FRA,1470.0,elofootball,2026-11-24
+Le Puy-en-Velay FC,FRA,1419.0,elofootball,2026-11-24
+AS Beauvais,FRA,1417.0,elofootball,2026-11-24
+Valenciennes FC,FRA,1411.0,elofootball,2026-11-24
+US Thionville-Lusitanos,FRA,1410.0,elofootball,2026-11-24
+Stade Briochin,FRA,1399.0,elofootball,2026-11-24
+Stade Plabennec,FRA,1390.0,elofootball,2026-11-24
+LB Châteauroux,FRA,1382.0,elofootball,2026-11-24
+Paris 13 Atletico,FRA,1378.0,elofootball,2026-11-24
+US Avranches,FRA,1361.0,elofootball,2026-11-24
+Aviron Bayonnais,FRA,1350.0,elofootball,2026-11-24
+SC Aubagne Air Bel,FRA,1349.0,elofootball,2026-11-24
+FC Villefranche Beaujolais,FRA,1346.0,elofootball,2026-11-24
+JA Drancy,FRA,1325.0,elofootball,2026-11-24
+FC Bourg-Péronnas,FRA,1319.0,elofootball,2026-11-24
+FC Istres,FRA,1309.0,elofootball,2026-11-24
+Olympiakos Piraeus,GRC,2027.0,elofootball,2026-11-24
+Panathinaikos,GRC,1991.0,elofootball,2026-11-24
+AEK Athen,GRC,1959.0,elofootball,2026-11-24
+PAOK Saloniki,GRC,1929.0,elofootball,2026-11-24
+OFI Heraklion,GRC,1800.0,elofootball,2026-11-24
+Aris Saloniki,GRC,1794.0,elofootball,2026-11-24
+Levadiakos,GRC,1721.0,elofootball,2026-11-24
+Atromitos,GRC,1711.0,elofootball,2026-11-24
+PS Kalamata,GRC,1693.0,elofootball,2026-11-24
+AE Kifisias,GRC,1687.0,elofootball,2026-11-24
+AEP Iraklis FC,GRC,1638.0,elofootball,2026-11-24
+Panetolikos,GRC,1619.0,elofootball,2026-11-24
+Asteras Tripolis,GRC,1617.0,elofootball,2026-11-24
+AE Lárissa,GRC,1611.0,elofootball,2026-11-24
+Panionios GSS,GRC,1552.0,elofootball,2026-11-24
+Volos NFC,GRC,1542.0,elofootball,2026-11-24
+Panserraikos,GRC,1524.0,elofootball,2026-11-24
+Niki Volou FC,GRC,1520.0,elofootball,2026-11-24
+GS Kallithea,GRC,1509.0,elofootball,2026-11-24
+GS Marko,GRC,1463.0,elofootball,2026-11-24
+Anagennisi Karditsa,GRC,1397.0,elofootball,2026-11-24
+PAOK Saloniki II,GRC,1383.0,elofootball,2026-11-24
+Ellas Syrou,GRC,1382.0,elofootball,2026-11-24
+Asteras Tripolis II,GRC,1375.0,elofootball,2026-11-24
+Panthrakikos,GRC,1374.0,elofootball,2026-11-24
+AO Egaleo,GRC,1330.0,elofootball,2026-11-24
+AO Kavala,GRC,1323.0,elofootball,2026-11-24
+Olympiakos Piraeus II,GRC,1319.0,elofootball,2026-11-24
+PAS Giannina,GRC,1315.0,elofootball,2026-11-24
+PAE Chania,GRC,1308.0,elofootball,2026-11-24
+Nestos Chrysoupoli FC,GRC,1290.0,elofootball,2026-11-24
+Kampaniakos FC,GRC,1244.0,elofootball,2026-11-24
+Apollon Kalamarias,GRC,1224.0,elofootball,2026-11-24
+PAS Pyrgos 1968,GRC,1224.0,elofootball,2026-11-24
+GS Ilioupolis,GRC,1221.0,elofootball,2026-11-24
+Makedonikos FC,GRC,1214.0,elofootball,2026-11-24
+APS Zakynthos,GRC,1199.0,elofootball,2026-11-24
+Panargiakos FC,GRC,1152.0,elofootball,2026-11-24
+Inter,ITA,2232.0,elofootball,2026-11-24
+Como 1907,ITA,2163.0,elofootball,2026-11-24
+AS Roma,ITA,2148.0,elofootball,2026-11-24
+Juventus,ITA,2085.0,elofootball,2026-11-24
+Lazio Roma,ITA,2076.0,elofootball,2026-11-24
+AC Milan,ITA,2065.0,elofootball,2026-11-24
+SSC Napoli,ITA,2046.0,elofootball,2026-11-24
+Bologna FC,ITA,2011.0,elofootball,2026-11-24
+Atalanta,ITA,1991.0,elofootball,2026-11-24
+ACF Fiorentina,ITA,1929.0,elofootball,2026-11-24
+Genoa CFC,ITA,1912.0,elofootball,2026-11-24
+Frosinone Calcio,ITA,1902.0,elofootball,2026-11-24
+Torino FC,ITA,1895.0,elofootball,2026-11-24
+Udinese Calcio,ITA,1865.0,elofootball,2026-11-24
+Cagliari Calcio,ITA,1863.0,elofootball,2026-11-24
+US Sassuolo,ITA,1838.0,elofootball,2026-11-24
+Parma Calcio 1913,ITA,1819.0,elofootball,2026-11-24
+US Lecce,ITA,1812.0,elofootball,2026-11-24
+Venezia FC,ITA,1805.0,elofootball,2026-11-24
+Palermo FC,ITA,1803.0,elofootball,2026-11-24
+AC Monza,ITA,1793.0,elofootball,2026-11-24
+US Cremonese,ITA,1760.0,elofootball,2026-11-24
+Hellas Verona,ITA,1712.0,elofootball,2026-11-24
+Modena FC,ITA,1707.0,elofootball,2026-11-24
+Pisa SC,ITA,1700.0,elofootball,2026-11-24
+Ascoli Calcio,ITA,1674.0,elofootball,2026-11-24
+Mantova 1911,ITA,1648.0,elofootball,2026-11-24
+Juve Stabia,ITA,1644.0,elofootball,2026-11-24
+US Avellino,ITA,1638.0,elofootball,2026-11-24
+US Catanzaro,ITA,1635.0,elofootball,2026-11-24
+FC Südtirol,ITA,1613.0,elofootball,2026-11-24
+Benevento Calcio,ITA,1611.0,elofootball,2026-11-24
+Cesena FC,ITA,1609.0,elofootball,2026-11-24
+Spezia Calcio,ITA,1598.0,elofootball,2026-11-24
+Calcio Padova,ITA,1592.0,elofootball,2026-11-24
+Sampdoria,ITA,1591.0,elofootball,2026-11-24
+Empoli FC,ITA,1590.0,elofootball,2026-11-24
+SSC Bari,ITA,1582.0,elofootball,2026-11-24
+Carrarese Calcio,ITA,1579.0,elofootball,2026-11-24
+Ternana Calcio,ITA,1571.0,elofootball,2026-11-24
+Delfino Pescara,ITA,1551.0,elofootball,2026-11-24
+Ravenna Calcio,ITA,1548.0,elofootball,2026-11-24
+Virtus Entella,ITA,1543.0,elofootball,2026-11-24
+L.R. Vicenza,ITA,1541.0,elofootball,2026-11-24
+AC Reggiana 1919,ITA,1540.0,elofootball,2026-11-24
+US Arezzo,ITA,1528.0,elofootball,2026-11-24
+Potenza,ITA,1505.0,elofootball,2026-11-24
+PSV Eindhoven,NLD,2036.0,elofootball,2026-11-24
+AFC Ajax,NLD,1962.0,elofootball,2026-11-24
+FC Twente,NLD,1911.0,elofootball,2026-11-24
+Feyenoord,NLD,1897.0,elofootball,2026-11-24
+AZ,NLD,1895.0,elofootball,2026-11-24
+sc Heerenveen,NLD,1805.0,elofootball,2026-11-24
+NEC,NLD,1801.0,elofootball,2026-11-24
+FC Utrecht,NLD,1733.0,elofootball,2026-11-24
+Fortuna Sittard,NLD,1688.0,elofootball,2026-11-24
+FC Groningen,NLD,1678.0,elofootball,2026-11-24
+Go Ahead Eagles,NLD,1676.0,elofootball,2026-11-24
+PEC Zwolle,NLD,1638.0,elofootball,2026-11-24
+Sparta Rotterdam,NLD,1637.0,elofootball,2026-11-24
+SBV Excelsior,NLD,1630.0,elofootball,2026-11-24
+SC Cambuur,NLD,1599.0,elofootball,2026-11-24
+Telstar,NLD,1596.0,elofootball,2026-11-24
+Heracles Almelo,NLD,1594.0,elofootball,2026-11-24
+ADO Den Haag,NLD,1582.0,elofootball,2026-11-24
+NAC Breda,NLD,1564.0,elofootball,2026-11-24
+Almere City FC,NLD,1529.0,elofootball,2026-11-24
+FC Volendam,NLD,1479.0,elofootball,2026-11-24
+Willem II,NLD,1469.0,elofootball,2026-11-24
+Quick Boys,NLD,1463.0,elofootball,2026-11-24
+RKC Waalwijk,NLD,1463.0,elofootball,2026-11-24
+Roda JC Kerkrade,NLD,1445.0,elofootball,2026-11-24
+De Graafschap,NLD,1402.0,elofootball,2026-11-24
+Vitesse,NLD,1402.0,elofootball,2026-11-24
+FC Den Bosch,NLD,1383.0,elofootball,2026-11-24
+Jong AZ,NLD,1383.0,elofootball,2026-11-24
+VVV-Venlo,NLD,1382.0,elofootball,2026-11-24
+FC Emmen,NLD,1377.0,elofootball,2026-11-24
+De Treffers,NLD,1364.0,elofootball,2026-11-24
+TOP Oss,NLD,1363.0,elofootball,2026-11-24
+Jong PSV,NLD,1335.0,elofootball,2026-11-24
+FC Eindhoven,NLD,1303.0,elofootball,2026-11-24
+MVV,NLD,1299.0,elofootball,2026-11-24
+Jong Ajax,NLD,1293.0,elofootball,2026-11-24
+HHC Hardenberg,NLD,1291.0,elofootball,2026-11-24
+SV Spakenburg,NLD,1285.0,elofootball,2026-11-24
+FC Dordrecht,NLD,1283.0,elofootball,2026-11-24
+Jong FC Utrecht,NLD,1279.0,elofootball,2026-11-24
+Helmond Sport,NLD,1275.0,elofootball,2026-11-24
+GVVV,NLD,1271.0,elofootball,2026-11-24
+Kozakken Boys,NLD,1268.0,elofootball,2026-11-24
+RBC Roosendaal,NLD,1260.0,elofootball,2026-11-24
+Jong Almere City FC,NLD,1239.0,elofootball,2026-11-24
+Amsterdamsche FC,NLD,1238.0,elofootball,2026-11-24
+IJsselmeervogels,NLD,1231.0,elofootball,2026-11-24
+Rijnsburgse Boys,NLD,1230.0,elofootball,2026-11-24
+RKAV Volendam,NLD,1224.0,elofootball,2026-11-24
+BVV Barendrecht,NLD,1219.0,elofootball,2026-11-24
+VV Katwijk,NLD,1218.0,elofootball,2026-11-24
+HSV Hoek,NLD,1199.0,elofootball,2026-11-24
+Jong Sparta Rotterdam,NLD,1185.0,elofootball,2026-11-24
+VV Noordwijk,NLD,1173.0,elofootball,2026-11-24
+Koninklijke HFC,NLD,1162.0,elofootball,2026-11-24
+Excelsior Maassluis,NLD,1138.0,elofootball,2026-11-24
+ACV Assen,NLD,1136.0,elofootball,2026-11-24
+VV Sint Bavo,NLD,1135.0,elofootball,2026-11-24
+VV Kloetinge,NLD,1095.0,elofootball,2026-11-24
+Rohda Raalte,NLD,1029.0,elofootball,2026-11-24
+FC Lisse,NLD,1003.0,elofootball,2026-11-24
+ADO 20,NLD,962.0,elofootball,2026-11-24
+FK Bodø/Glimt,NOR,2072.0,elofootball,2026-11-24
+Viking FK,NOR,1953.0,elofootball,2026-11-24
+Rosenborg BK,NOR,1793.0,elofootball,2026-11-24
+SK Brann,NOR,1787.0,elofootball,2026-11-24
+Molde FK,NOR,1753.0,elofootball,2026-11-24
+Lillestrøm SK,NOR,1749.0,elofootball,2026-11-24
+Tromsø IL,NOR,1743.0,elofootball,2026-11-24
+Fredrikstad FK,NOR,1677.0,elofootball,2026-11-24
+Hamarkameratene,NOR,1643.0,elofootball,2026-11-24
+Vålerenga IF,NOR,1643.0,elofootball,2026-11-24
+KFUM Oslo,NOR,1638.0,elofootball,2026-11-24
+Sandefjord Fotball,NOR,1628.0,elofootball,2026-11-24
+Sarpsborg 08,NOR,1625.0,elofootball,2026-11-24
+Strømsgodset IF,NOR,1602.0,elofootball,2026-11-24
+Aalesunds FK,NOR,1588.0,elofootball,2026-11-24
+Kristiansund BK,NOR,1567.0,elofootball,2026-11-24
+FK Haugesund,NOR,1539.0,elofootball,2026-11-24
+IK Start,NOR,1510.0,elofootball,2026-11-24
+Stabæk IF,NOR,1485.0,elofootball,2026-11-24
+Kongsvinger IL,NOR,1476.0,elofootball,2026-11-24
+Bryne FK,NOR,1467.0,elofootball,2026-11-24
+Odds BK,NOR,1463.0,elofootball,2026-11-24
+Egersunds IK,NOR,1418.0,elofootball,2026-11-24
+Ranheim IL,NOR,1413.0,elofootball,2026-11-24
+Fyllingen Fotball,NOR,1385.0,elofootball,2026-11-24
+Lyn Oslo,NOR,1365.0,elofootball,2026-11-24
+Strømmen IF,NOR,1327.0,elofootball,2026-11-24
+Sogndal IL,NOR,1321.0,elofootball,2026-11-24
+Steinkjer IFK,NOR,1316.0,elofootball,2026-11-24
+Bærum SK,NOR,1314.0,elofootball,2026-11-24
+SK Vard,NOR,1310.0,elofootball,2026-11-24
+Pors Grenland,NOR,1307.0,elofootball,2026-11-24
+Hønefoss BK,NOR,1305.0,elofootball,2026-11-24
+Eik Tønsberg,NOR,1305.0,elofootball,2026-11-24
+IL Hødd,NOR,1300.0,elofootball,2026-11-24
+Sandnes Ulf,NOR,1298.0,elofootball,2026-11-24
+Mjøndalen IF,NOR,1293.0,elofootball,2026-11-24
+Levanger FK,NOR,1287.0,elofootball,2026-11-24
+Moss FK,NOR,1287.0,elofootball,2026-11-24
+Alta IF,NOR,1283.0,elofootball,2026-11-24
+Åsane Fotball,NOR,1280.0,elofootball,2026-11-24
+Follo FK,NOR,1273.0,elofootball,2026-11-24
+FK Jerv,NOR,1267.0,elofootball,2026-11-24
+Strindheim IL,NOR,1266.0,elofootball,2026-11-24
+Tromsdalen UIL,NOR,1264.0,elofootball,2026-11-24
+Asker SK,NOR,1252.0,elofootball,2026-11-24
+Notodden FK,NOR,1240.0,elofootball,2026-11-24
+Grorud IL,NOR,1234.0,elofootball,2026-11-24
+Ullensaker/Kisa IL,NOR,1225.0,elofootball,2026-11-24
+IL Stjørdals-Blink,NOR,1218.0,elofootball,2026-11-24
+Os TF,NOR,1212.0,elofootball,2026-11-24
+Raufoss IL,NOR,1193.0,elofootball,2026-11-24
+FK Arendal,NOR,1190.0,elofootball,2026-11-24
+Elverum Fotball,NOR,1149.0,elofootball,2026-11-24
+Skeid Fotball,NOR,1142.0,elofootball,2026-11-24
+Lech Poznan,POL,1853.0,elofootball,2026-11-24
+Górnik Zabrze,POL,1781.0,elofootball,2026-11-24
+Legia Warszawa,POL,1751.0,elofootball,2026-11-24
+Jagiellonia Bialystok,POL,1729.0,elofootball,2026-11-24
+Raków Czestochowa,POL,1714.0,elofootball,2026-11-24
+Piast Gliwice,POL,1689.0,elofootball,2026-11-24
+Pogon Szczecin,POL,1687.0,elofootball,2026-11-24
+GKS Katowice,POL,1685.0,elofootball,2026-11-24
+Zaglebie Lubin,POL,1679.0,elofootball,2026-11-24
+Wisla Kraków,POL,1667.0,elofootball,2026-11-24
+Motor Lublin,POL,1643.0,elofootball,2026-11-24
+Widzew Lódz,POL,1630.0,elofootball,2026-11-24
+Korona Kielce,POL,1622.0,elofootball,2026-11-24
+KS Cracovia,POL,1611.0,elofootball,2026-11-24
+Radomiak Radom,POL,1604.0,elofootball,2026-11-24
+Wisla Plock,POL,1592.0,elofootball,2026-11-24
+Slask Wroclaw,POL,1588.0,elofootball,2026-11-24
+Lechia Gdansk,POL,1549.0,elofootball,2026-11-24
+Bruk-Bet Termalica Nieciecza,POL,1549.0,elofootball,2026-11-24
+Polonia Warszawa,POL,1544.0,elofootball,2026-11-24
+Arka Gdynia,POL,1525.0,elofootball,2026-11-24
+LKS Lódz,POL,1499.0,elofootball,2026-11-24
+Hutnik Kraków,POL,1490.0,elofootball,2026-11-24
+Ruch Chorzów,POL,1485.0,elofootball,2026-11-24
+Wieczysta Kraków,POL,1483.0,elofootball,2026-11-24
+Miedz Legnica,POL,1477.0,elofootball,2026-11-24
+Puszcza Niepolomice,POL,1473.0,elofootball,2026-11-24
+Zawisza Bydgoszcz,POL,1466.0,elofootball,2026-11-24
+FKS Stal Mielec,POL,1438.0,elofootball,2026-11-24
+Chrobry Glogów,POL,1428.0,elofootball,2026-11-24
+Polonia Bytom,POL,1421.0,elofootball,2026-11-24
+Stal Rzeszow,POL,1416.0,elofootball,2026-11-24
+Flota Swinoujscie,POL,1396.0,elofootball,2026-11-24
+Pogon Grodzisk Mazowiecki,POL,1395.0,elofootball,2026-11-24
+Warta Poznan,POL,1388.0,elofootball,2026-11-24
+Resovia Rzeszów,POL,1375.0,elofootball,2026-11-24
+Górnik Leczna,POL,1372.0,elofootball,2026-11-24
+Podbeskidzie Bielsko-Biala,POL,1370.0,elofootball,2026-11-24
+Olimpia Grudziadz,POL,1370.0,elofootball,2026-11-24
+Pogon Siedlce,POL,1366.0,elofootball,2026-11-24
+Odra Opole,POL,1363.0,elofootball,2026-11-24
+GKS Tychy 71,POL,1350.0,elofootball,2026-11-24
+Znicz Pruszków,POL,1337.0,elofootball,2026-11-24
+Unia Skierniewice,POL,1336.0,elofootball,2026-11-24
+Siarka Tarnobrzeg,POL,1336.0,elofootball,2026-11-24
+Chojniczanka Chojnice,POL,1316.0,elofootball,2026-11-24
+Stal Stalowa Wola,POL,1315.0,elofootball,2026-11-24
+Wisla Pulawy,POL,1294.0,elofootball,2026-11-24
+Olimpia Elblag,POL,1281.0,elofootball,2026-11-24
+GKS Jastrzebie,POL,1272.0,elofootball,2026-11-24
+Wigry Suwalki,POL,1262.0,elofootball,2026-11-24
+Górnik Polkowice,POL,1258.0,elofootball,2026-11-24
+Skra Czestochowa,POL,1243.0,elofootball,2026-11-24
+Zaglebie Sosnowiec,POL,1242.0,elofootball,2026-11-24
+MKS Kluczbork,POL,1229.0,elofootball,2026-11-24
+SL Benfica,PRT,2162.0,elofootball,2026-11-24
+Sporting CP,PRT,2137.0,elofootball,2026-11-24
+FC Porto,PRT,2098.0,elofootball,2026-11-24
+Sporting Braga,PRT,1947.0,elofootball,2026-11-24
+FC Famalicão,PRT,1835.0,elofootball,2026-11-24
+Gil Vicente,PRT,1783.0,elofootball,2026-11-24
+FC Arouca,PRT,1779.0,elofootball,2026-11-24
+CD Santa Clara,PRT,1772.0,elofootball,2026-11-24
+Vitória Guimarães,PRT,1747.0,elofootball,2026-11-24
+Moreirense FC,PRT,1737.0,elofootball,2026-11-24
+FC Alverca,PRT,1708.0,elofootball,2026-11-24
+Académico de Viseu,PRT,1680.0,elofootball,2026-11-24
+CD Tondela,PRT,1670.0,elofootball,2026-11-24
+Rio Ave FC,PRT,1661.0,elofootball,2026-11-24
+Casa Pia AC,PRT,1656.0,elofootball,2026-11-24
+GD Estoril,PRT,1653.0,elofootball,2026-11-24
+CD Nacional,PRT,1649.0,elofootball,2026-11-24
+Estrela Amadora,PRT,1640.0,elofootball,2026-11-24
+União Torreense,PRT,1611.0,elofootball,2026-11-24
+CS Marítimo,PRT,1609.0,elofootball,2026-11-24
+AVS,PRT,1595.0,elofootball,2026-11-24
+União Leiria,PRT,1593.0,elofootball,2026-11-24
+FC Tirsense,PRT,1592.0,elofootball,2026-11-24
+SL Benfica B,PRT,1573.0,elofootball,2026-11-24
+O Elvas,PRT,1572.0,elofootball,2026-11-24
+Caldas SC,PRT,1569.0,elofootball,2026-11-24
+FC Penafiel,PRT,1562.0,elofootball,2026-11-24
+FC Vizela,PRT,1553.0,elofootball,2026-11-24
+SC Farense,PRT,1552.0,elofootball,2026-11-24
+SC Salgueiros,PRT,1545.0,elofootball,2026-11-24
+Sporting CP B,PRT,1543.0,elofootball,2026-11-24
+Leça FC,PRT,1536.0,elofootball,2026-11-24
+LFC Lourosa,PRT,1532.0,elofootball,2026-11-24
+FC Felgueiras 1932,PRT,1532.0,elofootball,2026-11-24
+Lusitano GC,PRT,1531.0,elofootball,2026-11-24
+SC Espinho,PRT,1527.0,elofootball,2026-11-24
+AD Fafe,PRT,1523.0,elofootball,2026-11-24
+Leixões SC,PRT,1521.0,elofootball,2026-11-24
+Naval 1° de Maio,PRT,1498.0,elofootball,2026-11-24
+Académica Coimbra,PRT,1489.0,elofootball,2026-11-24
+GD Chaves,PRT,1486.0,elofootball,2026-11-24
+FC Porto B,PRT,1483.0,elofootball,2026-11-24
+Portimonense SC,PRT,1476.0,elofootball,2026-11-24
+CD Mafra,PRT,1474.0,elofootball,2026-11-24
+Paços de Ferreira,PRT,1470.0,elofootball,2026-11-24
+Os Belenenses,PRT,1467.0,elofootball,2026-11-24
+AD Sanjoanense,PRT,1467.0,elofootball,2026-11-24
+CD Feirense,PRT,1463.0,elofootball,2026-11-24
+Atlético CP,PRT,1442.0,elofootball,2026-11-24
+SC Beira-Mar,PRT,1441.0,elofootball,2026-11-24
+Amarante FC,PRT,1407.0,elofootball,2026-11-24
+UD Oliveirense,PRT,1405.0,elofootball,2026-11-24
+Sporting Covilhã,PRT,1390.0,elofootball,2026-11-24
+Real SC,PRT,1388.0,elofootball,2026-11-24
+CD Fátima,PRT,1375.0,elofootball,2026-11-24
+Oriental de Lisboa,PRT,1374.0,elofootball,2026-11-24
+SC Olhanense,PRT,1373.0,elofootball,2026-11-24
+FC DAC 1904,SVK,1771.0,elofootball,2026-11-24
+Slovan Bratislava,SVK,1760.0,elofootball,2026-11-24
+MŠK Žilina,SVK,1666.0,elofootball,2026-11-24
+Spartak Trnava,SVK,1647.0,elofootball,2026-11-24
+FK Železiarne Podbrezová,SVK,1570.0,elofootball,2026-11-24
+FC Košice,SVK,1557.0,elofootball,2026-11-24
+FC Petržalka,SVK,1447.0,elofootball,2026-11-24
+MFK Ružomberok,SVK,1446.0,elofootball,2026-11-24
+MFK Zemplín Michalovce,SVK,1444.0,elofootball,2026-11-24
+Inter Bratislava,SVK,1438.0,elofootball,2026-11-24
+MFK Skalica,SVK,1427.0,elofootball,2026-11-24
+Spartak Myjava,SVK,1419.0,elofootball,2026-11-24
+AS Trencín,SVK,1418.0,elofootball,2026-11-24
+KFC Komárno,SVK,1414.0,elofootball,2026-11-24
+MFK Dubnica,SVK,1410.0,elofootball,2026-11-24
+Dukla Banská Bystrica,SVK,1390.0,elofootball,2026-11-24
+1. FC Tatran Prešov,SVK,1385.0,elofootball,2026-11-24
+Tatran Liptovský Mikuláš,SVK,1341.0,elofootball,2026-11-24
+FC Nitra,SVK,1340.0,elofootball,2026-11-24
+Zlaté Moravce,SVK,1293.0,elofootball,2026-11-24
+Partizán Bardejov,SVK,1260.0,elofootball,2026-11-24
+Galatasaray,TUR,2043.0,elofootball,2026-11-24
+Fenerbahçe,TUR,1992.0,elofootball,2026-11-24
+Besiktas,TUR,1915.0,elofootball,2026-11-24
+Trabzonspor,TUR,1915.0,elofootball,2026-11-24
+Istanbul Basaksehir,TUR,1804.0,elofootball,2026-11-24
+Göztepe,TUR,1785.0,elofootball,2026-11-24
+Kasimpasa SK,TUR,1730.0,elofootball,2026-11-24
+Çaykur Rizespor,TUR,1716.0,elofootball,2026-11-24
+Samsunspor,TUR,1698.0,elofootball,2026-11-24
+Konyaspor,TUR,1681.0,elofootball,2026-11-24
+Kocaelispor,TUR,1670.0,elofootball,2026-11-24
+Alanyaspor,TUR,1669.0,elofootball,2026-11-24
+Çorum FK,TUR,1664.0,elofootball,2026-11-24
+Amed SFK,TUR,1660.0,elofootball,2026-11-24
+Gençlerbirligi,TUR,1656.0,elofootball,2026-11-24
+Erzurumspor FK,TUR,1653.0,elofootball,2026-11-24
+Kayserispor,TUR,1652.0,elofootball,2026-11-24
+Gaziantep FK,TUR,1591.0,elofootball,2026-11-24
+Bursaspor,TUR,1582.0,elofootball,2026-11-24
+Fatih Karagümrük,TUR,1581.0,elofootball,2026-11-24
+Keçiörengücü,TUR,1558.0,elofootball,2026-11-24
+Eyüpspor,TUR,1557.0,elofootball,2026-11-24
+Erokspor,TUR,1557.0,elofootball,2026-11-24
+Bodrum FK,TUR,1550.0,elofootball,2026-11-24
+Antalyaspor,TUR,1520.0,elofootball,2026-11-24
+Igdir FK,TUR,1505.0,elofootball,2026-11-24
+Bandirmaspor,TUR,1493.0,elofootball,2026-11-24
+Ümraniyespor,TUR,1469.0,elofootball,2026-11-24
+Manisa FK,TUR,1447.0,elofootball,2026-11-24
+Sivasspor,TUR,1446.0,elofootball,2026-11-24
+Sariyer SK,TUR,1438.0,elofootball,2026-11-24
+Pendikspor,TUR,1437.0,elofootball,2026-11-24
+Istanbulspor AS,TUR,1405.0,elofootball,2026-11-24
+Vanspor FK,TUR,1387.0,elofootball,2026-11-24
+Batman Petrolspor,TUR,1378.0,elofootball,2026-11-24
+Karsiyaka SK,TUR,1375.0,elofootball,2026-11-24
+Fethiyespor,TUR,1368.0,elofootball,2026-11-24
+Mardin 1969 SK,TUR,1367.0,elofootball,2026-11-24
+Ankaraspor,TUR,1366.0,elofootball,2026-11-24
+Sakaryaspor,TUR,1336.0,elofootball,2026-11-24
+Muglaspor,TUR,1317.0,elofootball,2026-11-24
+Boluspor,TUR,1315.0,elofootball,2026-11-24
+Serik Belediyespor,TUR,1293.0,elofootball,2026-11-24
+Kahramanmarasspor,TUR,1292.0,elofootball,2026-11-24
+Hatayspor,TUR,1281.0,elofootball,2026-11-24
+Eskisehirspor,TUR,1239.0,elofootball,2026-11-24
+Adana Demirspor,TUR,1151.0,elofootball,2026-11-24

@@ -4,7 +4,7 @@
   "LALIGA:2026-11-22:santander-sociedad",
   "LIGUE1:2026-11-07:paris_sg-troyes"
  ],
- "daily_done": "2026-11-23",
+ "daily_done": "2026-11-24",
  "preview_done": "2026-11-20",
  "prematch_sent": [
   "BUNDES:2026-11-06:hamburg-mgladbach",
@@ -30,6 +30,8 @@
   "SERIEA:2026-11-07:parma-bologna",
   "SERIEA:2026-11-08:napoli-lazio",
   "SERIEA:2026-11-21:como-cagliari",
-  "SERIEA:2026-11-21:lazio-lecce"
+  "SERIEA:2026-11-21:lazio-lecce",
+  "UCL:2026-11-24:fk_bod_glimt-lask_linz",
+  "UCL:2026-11-24:galatasaray-aston_villa"
  ]
 }
