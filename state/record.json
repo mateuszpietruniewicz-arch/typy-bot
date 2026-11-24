@@ -7124,13 +7124,16 @@
      "odds": 1.89,
      "fair": 2.01,
      "min_sts": 2.28,
-     "edge": -0.0587
+     "edge": -0.0587,
+     "result": "3:0",
+     "won": false
     }
    ],
    "odds": 1.89,
    "p": 0.4985,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-24T05:34:43.585763+00:00"
   },
   {
    "uid": "2026-11-23:S2",
@@ -7150,13 +7153,16 @@
      "odds": 2.18,
      "fair": 2.33,
      "min_sts": 2.65,
-     "edge": -0.0649
+     "edge": -0.0649,
+     "result": "4:0",
+     "won": true
     }
    ],
    "odds": 2.18,
    "p": 0.4295,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-24T05:34:43.585787+00:00"
   },
   {
    "uid": "2026-11-23:S3",
@@ -7176,13 +7182,16 @@
      "odds": 2.09,
      "fair": 2.24,
      "min_sts": 2.55,
-     "edge": -0.0684
+     "edge": -0.0684,
+     "result": "1:1",
+     "won": false
     }
    ],
    "odds": 2.09,
    "p": 0.4456,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-24T05:34:43.585793+00:00"
   },
   {
    "uid": "2026-11-23:K1",
@@ -7202,7 +7211,9 @@
      "odds": 1.23,
      "fair": 1.32,
      "min_sts": 1.5,
-     "edge": -0.0711
+     "edge": -0.0711,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "EKSTRA:2026-11-23:wieczysta_krakow-motor_lublin",
@@ -7242,7 +7253,9 @@
      "odds": 1.23,
      "fair": 1.32,
      "min_sts": 1.5,
-     "edge": -0.0711
+     "edge": -0.0711,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "EPL:2026-11-23:brentford-everton",
@@ -7256,7 +7269,9 @@
      "odds": 1.32,
      "fair": 1.43,
      "min_sts": 1.62,
-     "edge": -0.0728
+     "edge": -0.0728,
+     "result": "4:0",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-23:levante-elche",
@@ -7270,13 +7285,16 @@
      "odds": 1.25,
      "fair": 1.35,
      "min_sts": 1.54,
-     "edge": -0.0753
+     "edge": -0.0753,
+     "result": "1:1",
+     "won": false
     }
    ],
    "odds": 2.03,
    "p": 0.39168205767899994,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-24T05:34:43.585803+00:00"
   }
  ],
  "predictions": [
@@ -10160,7 +10178,10 @@
     "O2.5": 0.6133,
     "U2.5": 0.3867
    },
-   "result": null
+   "result": [
+    3,
+    0
+   ]
   },
   {
    "match_id": "EPL:2026-11-23:brentford-everton",
@@ -10183,7 +10204,10 @@
     "O2.5": 0.5276,
     "U2.5": 0.4724
    },
-   "result": null
+   "result": [
+    4,
+    0
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-23:levante-elche",
@@ -10206,7 +10230,10 @@
     "O2.5": 0.5703,
     "U2.5": 0.4297
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   }
  ]
 }
