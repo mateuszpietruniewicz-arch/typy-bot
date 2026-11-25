@@ -7638,6 +7638,178 @@
    "stake": 2.0,
    "status": "lost",
    "settled_at": "2026-11-25T01:00:13.684108+00:00"
+  },
+  {
+   "uid": "2026-11-25:S1",
+   "day": "2026-11-25",
+   "id": "S1",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-25:lille-bayern_munich",
+     "league": "UCL",
+     "home": "Lille OSC",
+     "away": "FC Bayern München",
+     "kickoff": "2026-11-25T20:00:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.6216,
+     "odds": 1.55,
+     "fair": 1.61,
+     "min_sts": 1.83,
+     "edge": -0.0371
+    }
+   ],
+   "odds": 1.55,
+   "p": 0.6216,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-25:S2",
+   "day": "2026-11-25",
+   "id": "S2",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-25:sabah_fk-barcelona",
+     "league": "UCL",
+     "home": "Sabah FK",
+     "away": "FC Barcelona",
+     "kickoff": "2026-11-25T17:45:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.9125,
+     "odds": 1.04,
+     "fair": 1.1,
+     "min_sts": 1.25,
+     "edge": -0.0499
+    }
+   ],
+   "odds": 1.04,
+   "p": 0.9125,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-25:S3",
+   "day": "2026-11-25",
+   "id": "S3",
+   "type": "single (bez przewagi)",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-25:slavia_praha-villarreal",
+     "league": "UCL",
+     "home": "SK Slavia Praha",
+     "away": "Villarreal CF",
+     "kickoff": "2026-11-25T17:45:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.3192,
+     "odds": 2.97,
+     "fair": 3.13,
+     "min_sts": 3.56,
+     "edge": -0.0514
+    }
+   ],
+   "odds": 2.97,
+   "p": 0.3192,
+   "stake": 10,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-25:K1",
+   "day": "2026-11-25",
+   "id": "K1",
+   "type": "kupon 2",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-25:lille-bayern_munich",
+     "league": "UCL",
+     "home": "Lille OSC",
+     "away": "FC Bayern München",
+     "kickoff": "2026-11-25T20:00:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.6216,
+     "odds": 1.55,
+     "fair": 1.61,
+     "min_sts": 1.83,
+     "edge": -0.0371
+    },
+    {
+     "match_id": "UCL:2026-11-25:sabah_fk-barcelona",
+     "league": "UCL",
+     "home": "Sabah FK",
+     "away": "FC Barcelona",
+     "kickoff": "2026-11-25T17:45:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.9125,
+     "odds": 1.04,
+     "fair": 1.1,
+     "min_sts": 1.25,
+     "edge": -0.0499
+    }
+   ],
+   "odds": 1.61,
+   "p": 0.56721,
+   "stake": 5,
+   "status": "pending"
+  },
+  {
+   "uid": "2026-11-25:K2",
+   "day": "2026-11-25",
+   "id": "K2",
+   "type": "kupon 3",
+   "legs": [
+    {
+     "match_id": "UCL:2026-11-25:lille-bayern_munich",
+     "league": "UCL",
+     "home": "Lille OSC",
+     "away": "FC Bayern München",
+     "kickoff": "2026-11-25T20:00:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.6216,
+     "odds": 1.55,
+     "fair": 1.61,
+     "min_sts": 1.83,
+     "edge": -0.0371
+    },
+    {
+     "match_id": "UCL:2026-11-25:paris_sg-roma",
+     "league": "UCL",
+     "home": "Paris Saint-Germain FC",
+     "away": "AS Roma",
+     "kickoff": "2026-11-25T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6615,
+     "odds": 1.43,
+     "fair": 1.51,
+     "min_sts": 1.72,
+     "edge": -0.0534
+    },
+    {
+     "match_id": "UCL:2026-11-25:inter-stuttgart",
+     "league": "UCL",
+     "home": "FC Internazionale Milano",
+     "away": "VfB Stuttgart",
+     "kickoff": "2026-11-25T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6849,
+     "odds": 1.37,
+     "fair": 1.46,
+     "min_sts": 1.66,
+     "edge": -0.0641
+    }
+   ],
+   "odds": 3.04,
+   "p": 0.28162293516,
+   "stake": 5,
+   "status": "pending"
   }
  ],
  "predictions": [
@@ -10838,6 +11010,204 @@
     1,
     0
    ]
+  },
+  {
+   "match_id": "UCL:2026-11-25:sabah_fk-barcelona",
+   "league": "UCL",
+   "home": "Sabah FK",
+   "away": "FC Barcelona",
+   "kickoff": "2026-11-25T17:45:00+00:00",
+   "p1": 0.0489,
+   "px": 0.1242,
+   "p2": 0.827,
+   "po25": 0.6413,
+   "pbtts": 0.4026,
+   "market": {
+    "1": 0.0254,
+    "X": 0.0526,
+    "2": 0.922,
+    "1X": 0.078,
+    "X2": 0.9746,
+    "12": 0.9474,
+    "O2.5": 0.871,
+    "U2.5": 0.129
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:slavia_praha-villarreal",
+   "league": "UCL",
+   "home": "SK Slavia Praha",
+   "away": "Villarreal CF",
+   "kickoff": "2026-11-25T17:45:00+00:00",
+   "p1": 0.4221,
+   "px": 0.2533,
+   "p2": 0.3246,
+   "po25": 0.5735,
+   "pbtts": 0.6038,
+   "market": {
+    "1": 0.3078,
+    "X": 0.2513,
+    "2": 0.441,
+    "1X": 0.559,
+    "X2": 0.6922,
+    "12": 0.7487,
+    "O2.5": 0.5877,
+    "U2.5": 0.4123
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:inter-stuttgart",
+   "league": "UCL",
+   "home": "FC Internazionale Milano",
+   "away": "VfB Stuttgart",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "p1": 0.6014,
+   "px": 0.2174,
+   "p2": 0.1812,
+   "po25": 0.6008,
+   "pbtts": 0.572,
+   "market": {
+    "1": 0.6942,
+    "X": 0.1643,
+    "2": 0.1414,
+    "1X": 0.8586,
+    "X2": 0.3058,
+    "12": 0.8357,
+    "O2.5": 0.7735,
+    "U2.5": 0.2265
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:ath_madrid-viking_fk",
+   "league": "UCL",
+   "home": "Club Atlético de Madrid",
+   "away": "Viking FK",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "p1": 0.6564,
+   "px": 0.1996,
+   "p2": 0.144,
+   "po25": 0.6097,
+   "pbtts": 0.5479,
+   "market": {
+    "1": 0.8942,
+    "X": 0.0732,
+    "2": 0.0326,
+    "1X": 0.9674,
+    "X2": 0.1058,
+    "12": 0.9268,
+    "O2.5": 0.7824,
+    "U2.5": 0.2176
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:paris_sg-roma",
+   "league": "UCL",
+   "home": "Paris Saint-Germain FC",
+   "away": "AS Roma",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "p1": 0.6592,
+   "px": 0.1986,
+   "p2": 0.1422,
+   "po25": 0.6102,
+   "pbtts": 0.5465,
+   "market": {
+    "1": 0.6618,
+    "X": 0.1867,
+    "2": 0.1515,
+    "1X": 0.8485,
+    "X2": 0.3382,
+    "12": 0.8133,
+    "O2.5": 0.7198,
+    "U2.5": 0.2802
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:brugge_kv-liverpool",
+   "league": "UCL",
+   "home": "Club Brugge KV",
+   "away": "Liverpool FC",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "p1": 0.3677,
+   "px": 0.2566,
+   "p2": 0.3757,
+   "po25": 0.5662,
+   "pbtts": 0.601,
+   "market": {
+    "1": 0.2047,
+    "X": 0.1969,
+    "2": 0.5984,
+    "1X": 0.4016,
+    "X2": 0.7953,
+    "12": 0.8031,
+    "O2.5": 0.7394,
+    "U2.5": 0.2606
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:lille-bayern_munich",
+   "league": "UCL",
+   "home": "Lille OSC",
+   "away": "FC Bayern München",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "p1": 0.1033,
+   "px": 0.1739,
+   "p2": 0.7227,
+   "po25": 0.6216,
+   "pbtts": 0.5076,
+   "market": {
+    "1": 0.1653,
+    "X": 0.2243,
+    "2": 0.6104,
+    "1X": 0.3896,
+    "X2": 0.8347,
+    "12": 0.7757,
+    "O2.5": 0.5506,
+    "U2.5": 0.4494
+   },
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:sporting_clube_portugal-man_united",
+   "league": "UCL",
+   "home": "Sporting Clube de Portugal",
+   "away": "Manchester United FC",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "p1": 0.4979,
+   "px": 0.2424,
+   "p2": 0.2598,
+   "po25": 0.585,
+   "pbtts": 0.5985,
+   "market": null,
+   "result": null
+  },
+  {
+   "match_id": "UCL:2026-11-25:fk_shakhtar_donetsk-fenerbahce",
+   "league": "UCL",
+   "home": "FK Shakhtar Donetsk",
+   "away": "Fenerbahçe SK",
+   "kickoff": "2026-11-25T20:00:00+00:00",
+   "p1": 0.3516,
+   "px": 0.2557,
+   "p2": 0.3928,
+   "po25": 0.5689,
+   "pbtts": 0.6026,
+   "market": {
+    "1": 0.3398,
+    "X": 0.2701,
+    "2": 0.39,
+    "1X": 0.61,
+    "X2": 0.6602,
+    "12": 0.7299,
+    "O2.5": 0.5419,
+    "U2.5": 0.4581
+   },
+   "result": null
   }
  ]
 }
