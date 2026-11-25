@@ -7323,13 +7323,16 @@
      "odds": 2.05,
      "fair": 2.17,
      "min_sts": 2.46,
-     "edge": -0.0528
+     "edge": -0.0528,
+     "result": "0:1",
+     "won": true
     }
    ],
    "odds": 2.05,
    "p": 0.4613,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-25T01:00:13.684065+00:00"
   },
   {
    "uid": "2026-11-24:S2",
@@ -7349,13 +7352,16 @@
      "odds": 1.4,
      "fair": 1.48,
      "min_sts": 1.69,
-     "edge": -0.0596
+     "edge": -0.0596,
+     "result": "1:1",
+     "won": false
     }
    ],
    "odds": 1.4,
    "p": 0.6735,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-25T01:00:13.684086+00:00"
   },
   {
    "uid": "2026-11-24:S3",
@@ -7375,13 +7381,16 @@
      "odds": 1.1,
      "fair": 1.17,
      "min_sts": 1.33,
-     "edge": -0.0604
+     "edge": -0.0604,
+     "result": "5:1",
+     "won": true
     }
    ],
    "odds": 1.1,
    "p": 0.8559,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-25T01:00:13.684092+00:00"
   },
   {
    "uid": "2026-11-24:K1",
@@ -7401,7 +7410,9 @@
      "odds": 1.4,
      "fair": 1.48,
      "min_sts": 1.69,
-     "edge": -0.0596
+     "edge": -0.0596,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "UCL:2026-11-24:real_madrid-psv",
@@ -7415,13 +7426,16 @@
      "odds": 1.1,
      "fair": 1.17,
      "min_sts": 1.33,
-     "edge": -0.0604
+     "edge": -0.0604,
+     "result": "5:1",
+     "won": true
     }
    ],
    "odds": 1.54,
    "p": 0.57644865,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-25T01:00:13.684096+00:00"
   },
   {
    "uid": "2026-11-24:K2",
@@ -7441,7 +7455,9 @@
      "odds": 1.4,
      "fair": 1.48,
      "min_sts": 1.69,
-     "edge": -0.0596
+     "edge": -0.0596,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "UCL:2026-11-24:slovan_bratislava-betis",
@@ -7455,7 +7471,9 @@
      "odds": 1.21,
      "fair": 1.29,
      "min_sts": 1.47,
-     "edge": -0.0625
+     "edge": -0.0625,
+     "result": "0:2",
+     "won": true
     },
     {
      "match_id": "UCL:2026-11-24:man_city-napoli",
@@ -7469,13 +7487,16 @@
      "odds": 1.24,
      "fair": 1.32,
      "min_sts": 1.5,
-     "edge": -0.0628
+     "edge": -0.0628,
+     "result": "2:2",
+     "won": false
     }
    ],
    "odds": 2.1,
    "p": 0.39442234379999996,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-25T01:00:13.684101+00:00"
   },
   {
    "uid": "2026-11-24:D1",
@@ -7495,7 +7516,9 @@
      "odds": 1.4,
      "fair": 1.48,
      "min_sts": 1.69,
-     "edge": -0.0596
+     "edge": -0.0596,
+     "result": "1:1",
+     "won": false
     },
     {
      "match_id": "UCL:2026-11-24:slovan_bratislava-betis",
@@ -7509,7 +7532,9 @@
      "odds": 1.21,
      "fair": 1.29,
      "min_sts": 1.47,
-     "edge": -0.0625
+     "edge": -0.0625,
+     "result": "0:2",
+     "won": true
     },
     {
      "match_id": "UCL:2026-11-24:man_city-napoli",
@@ -7523,7 +7548,9 @@
      "odds": 1.24,
      "fair": 1.32,
      "min_sts": 1.5,
-     "edge": -0.0628
+     "edge": -0.0628,
+     "result": "2:2",
+     "won": false
     },
     {
      "match_id": "UCL:2026-11-24:fk_bod_glimt-lask_linz",
@@ -7537,7 +7564,9 @@
      "odds": 1.33,
      "fair": 1.42,
      "min_sts": 1.62,
-     "edge": -0.0631
+     "edge": -0.0631,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "UCL:2026-11-24:como-aek",
@@ -7551,7 +7580,9 @@
      "odds": 1.22,
      "fair": 1.31,
      "min_sts": 1.49,
-     "edge": -0.0648
+     "edge": -0.0648,
+     "result": "1:0",
+     "won": true
     },
     {
      "match_id": "UCL:2026-11-24:rb_leipzig-lens",
@@ -7565,7 +7596,9 @@
      "odds": 1.29,
      "fair": 1.4,
      "min_sts": 1.59,
-     "edge": -0.0759
+     "edge": -0.0759,
+     "result": "3:1",
+     "won": true
     },
     {
      "match_id": "UCL:2026-11-24:feyenoord_rotterdam-porto",
@@ -7579,7 +7612,9 @@
      "odds": 1.3,
      "fair": 1.39,
      "min_sts": 1.58,
-     "edge": -0.0691
+     "edge": -0.0691,
+     "result": "0:1",
+     "won": true
     },
     {
      "match_id": "UCL:2026-11-24:galatasaray-aston_villa",
@@ -7593,13 +7628,16 @@
      "odds": 1.22,
      "fair": 1.33,
      "min_sts": 1.51,
-     "edge": -0.0768
+     "edge": -0.0768,
+     "result": "1:0",
+     "won": true
     }
    ],
    "odds": 6.97,
    "p": 0.0819686308608881,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-25T01:00:13.684108+00:00"
   }
  ],
  "predictions": [
@@ -10588,7 +10626,10 @@
     "O2.5": 0.633,
     "U2.5": 0.367
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:fk_bod_glimt-lask_linz",
@@ -10611,7 +10652,10 @@
     "O2.5": 0.796,
     "U2.5": 0.204
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:real_madrid-psv",
@@ -10634,7 +10678,10 @@
     "O2.5": 0.8624,
     "U2.5": 0.1376
    },
-   "result": null
+   "result": [
+    5,
+    1
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:man_city-napoli",
@@ -10657,7 +10704,10 @@
     "O2.5": 0.764,
     "U2.5": 0.236
    },
-   "result": null
+   "result": [
+    2,
+    2
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:arsenal-dortmund",
@@ -10680,7 +10730,10 @@
     "O2.5": 0.556,
     "U2.5": 0.444
    },
-   "result": null
+   "result": [
+    1,
+    1
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:feyenoord_rotterdam-porto",
@@ -10703,7 +10756,10 @@
     "O2.5": 0.575,
     "U2.5": 0.425
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:slovan_bratislava-betis",
@@ -10726,7 +10782,10 @@
     "O2.5": 0.7274,
     "U2.5": 0.2726
    },
-   "result": null
+   "result": [
+    0,
+    2
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:rb_leipzig-lens",
@@ -10749,7 +10808,10 @@
     "O2.5": 0.7761,
     "U2.5": 0.2239
    },
-   "result": null
+   "result": [
+    3,
+    1
+   ]
   },
   {
    "match_id": "UCL:2026-11-24:como-aek",
@@ -10772,7 +10834,10 @@
     "O2.5": 0.7408,
     "U2.5": 0.2592
    },
-   "result": null
+   "result": [
+    1,
+    0
+   ]
   }
  ]
 }
