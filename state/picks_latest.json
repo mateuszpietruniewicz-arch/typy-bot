@@ -1,10 +1,4010 @@
 {
- "singles": [],
- "combos": [],
- "long": [],
- "long_skipped": {},
- "matches": [],
- "generated": "2026-11-26T11:24:59.647629+00:00",
+ "singles": [
+  {
+   "id": "S1",
+   "type": "single (bez przewagi)",
+   "value": false,
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-27:venezia-bologna",
+     "league": "SERIEA",
+     "home": "Venezia",
+     "away": "Bologna",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.4092,
+     "odds": 2.34,
+     "fair": 2.44,
+     "min_sts": 2.78,
+     "edge": -0.0443
+    }
+   ],
+   "p": 0.4092,
+   "odds": 2.34,
+   "payout": 20.59,
+   "stake": 10,
+   "ev": -1.57,
+   "ev_pct": -0.1574,
+   "one_in": 2.4
+  },
+  {
+   "id": "S2",
+   "type": "single (bez przewagi)",
+   "value": false,
+   "legs": [
+    {
+     "match_id": "LALIGA:2026-11-27:levante-santander",
+     "league": "LALIGA",
+     "home": "Levante",
+     "away": "Santander",
+     "kickoff": "2026-11-27T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4839,
+     "odds": 1.96,
+     "fair": 2.07,
+     "min_sts": 2.35,
+     "edge": -0.0518
+    }
+   ],
+   "p": 0.4839,
+   "odds": 1.96,
+   "payout": 17.25,
+   "stake": 10,
+   "ev": -1.65,
+   "ev_pct": -0.1654,
+   "one_in": 2.1
+  },
+  {
+   "id": "S3",
+   "type": "single (bez przewagi)",
+   "value": false,
+   "legs": [
+    {
+     "match_id": "LIGUE1:2026-11-27:brest-paris",
+     "league": "LIGUE1",
+     "home": "Brest",
+     "away": "Paris FC",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.2823,
+     "odds": 3.32,
+     "fair": 3.54,
+     "min_sts": 4.03,
+     "edge": -0.0637
+    }
+   ],
+   "p": 0.2823,
+   "odds": 3.32,
+   "payout": 29.22,
+   "stake": 10,
+   "ev": -1.75,
+   "ev_pct": -0.1752,
+   "one_in": 3.5
+  }
+ ],
+ "combos": [
+  {
+   "id": "K1",
+   "type": "kupon 2",
+   "legs": [
+    {
+     "match_id": "BUNDES:2026-11-27:werder_bremen-mgladbach",
+     "league": "BUNDES",
+     "home": "Werder Bremen",
+     "away": "M'gladbach",
+     "kickoff": "2026-11-27T19:30:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.5785,
+     "odds": 1.62,
+     "fair": 1.73,
+     "min_sts": 1.96,
+     "edge": -0.0645
+    },
+    {
+     "match_id": "SERIEA:2026-11-27:venezia-bologna",
+     "league": "SERIEA",
+     "home": "Venezia",
+     "away": "Bologna",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "X2",
+     "label": "X2",
+     "p": 0.6975,
+     "odds": 1.34,
+     "fair": 1.43,
+     "min_sts": 1.63,
+     "edge": -0.0651
+    }
+   ],
+   "p": 0.40350375,
+   "odds": 2.17,
+   "payout": 9.55,
+   "stake": 5,
+   "ev": -1.15,
+   "ev_pct": -0.2292,
+   "one_in": 2.5
+  },
+  {
+   "id": "K2",
+   "type": "kupon 3",
+   "legs": [
+    {
+     "match_id": "LIGUE1:2026-11-27:brest-paris",
+     "league": "LIGUE1",
+     "home": "Brest",
+     "away": "Paris FC",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "1X",
+     "label": "1X",
+     "p": 0.5529,
+     "odds": 1.69,
+     "fair": 1.81,
+     "min_sts": 2.06,
+     "edge": -0.0633
+    },
+    {
+     "match_id": "SERIEA:2026-11-27:venezia-bologna",
+     "league": "SERIEA",
+     "home": "Venezia",
+     "away": "Bologna",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "X2",
+     "label": "X2",
+     "p": 0.6975,
+     "odds": 1.34,
+     "fair": 1.43,
+     "min_sts": 1.63,
+     "edge": -0.0651
+    },
+    {
+     "match_id": "EPL:2026-11-27:nottm_forest-chelsea",
+     "league": "EPL",
+     "home": "Nott'm Forest",
+     "away": "Chelsea",
+     "kickoff": "2026-11-27T20:00:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7237,
+     "odds": 1.28,
+     "fair": 1.38,
+     "min_sts": 1.57,
+     "edge": -0.0754
+    }
+   ],
+   "p": 0.27909327667499995,
+   "odds": 2.9,
+   "payout": 12.75,
+   "stake": 5,
+   "ev": -1.44,
+   "ev_pct": -0.2881,
+   "one_in": 3.6
+  }
+ ],
+ "long": [
+  {
+   "id": "D1",
+   "type": "dużo zdarzeń · 8 zdarzeń",
+   "legs": [
+    {
+     "match_id": "EKSTRA:2026-11-27:gornik_z-plock",
+     "league": "EKSTRA",
+     "home": "Gornik Zabrze",
+     "away": "Wisla Plock",
+     "kickoff": "2026-11-27T19:30:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6648,
+     "odds": 1.38,
+     "fair": 1.5,
+     "min_sts": 1.71,
+     "edge": -0.0801
+    },
+    {
+     "match_id": "EKSTRA:2026-11-27:gornik_z-plock",
+     "league": "EKSTRA",
+     "home": "Gornik Zabrze",
+     "away": "Wisla Plock",
+     "kickoff": "2026-11-27T19:30:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6648,
+     "odds": 1.38,
+     "fair": 1.5,
+     "min_sts": 1.71,
+     "edge": -0.0801
+    },
+    {
+     "match_id": "SERIEA:2026-11-27:venezia-bologna",
+     "league": "SERIEA",
+     "home": "Venezia",
+     "away": "Bologna",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "X2",
+     "label": "X2",
+     "p": 0.6975,
+     "odds": 1.34,
+     "fair": 1.43,
+     "min_sts": 1.63,
+     "edge": -0.0651
+    },
+    {
+     "match_id": "LALIGA:2026-11-27:levante-santander",
+     "league": "LALIGA",
+     "home": "Levante",
+     "away": "Santander",
+     "kickoff": "2026-11-27T20:00:00+00:00",
+     "market": "1X",
+     "label": "1X",
+     "p": 0.7176,
+     "odds": 1.29,
+     "fair": 1.39,
+     "min_sts": 1.58,
+     "edge": -0.0713
+    },
+    {
+     "match_id": "LIGUE1:2026-11-27:brest-paris",
+     "league": "LIGUE1",
+     "home": "Brest",
+     "away": "Paris FC",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7294,
+     "odds": 1.27,
+     "fair": 1.37,
+     "min_sts": 1.56,
+     "edge": -0.0744
+    },
+    {
+     "match_id": "EPL:2026-11-27:nottm_forest-chelsea",
+     "league": "EPL",
+     "home": "Nott'm Forest",
+     "away": "Chelsea",
+     "kickoff": "2026-11-27T20:00:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7237,
+     "odds": 1.28,
+     "fair": 1.38,
+     "min_sts": 1.57,
+     "edge": -0.0754
+    },
+    {
+     "match_id": "BUNDES:2026-11-27:werder_bremen-mgladbach",
+     "league": "BUNDES",
+     "home": "Werder Bremen",
+     "away": "M'gladbach",
+     "kickoff": "2026-11-27T19:30:00+00:00",
+     "market": "12",
+     "label": "12",
+     "p": 0.7818,
+     "odds": 1.18,
+     "fair": 1.28,
+     "min_sts": 1.45,
+     "edge": -0.0774
+    },
+    {
+     "match_id": "EKSTRA:2026-11-27:rakow-piast",
+     "league": "EKSTRA",
+     "home": "Rakow",
+     "away": "Piast Gliwice",
+     "kickoff": "2026-11-27T17:00:00+00:00",
+     "market": "1X",
+     "label": "1X",
+     "p": 0.7706,
+     "odds": 1.2,
+     "fair": 1.3,
+     "min_sts": 1.47,
+     "edge": -0.0789
+    }
+   ],
+   "p": 0.07034895748297028,
+   "odds": 7.58,
+   "payout": 13.34,
+   "stake": 2.0,
+   "ev": -1.06,
+   "ev_pct": -0.5309,
+   "one_in": 14.2
+  },
+  {
+   "id": "D2",
+   "type": "duży przelicznik · 6 zdarzeń",
+   "legs": [
+    {
+     "match_id": "SERIEA:2026-11-27:venezia-bologna",
+     "league": "SERIEA",
+     "home": "Venezia",
+     "away": "Bologna",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.4092,
+     "odds": 2.34,
+     "fair": 2.44,
+     "min_sts": 2.78,
+     "edge": -0.0443
+    },
+    {
+     "match_id": "LALIGA:2026-11-27:levante-santander",
+     "league": "LALIGA",
+     "home": "Levante",
+     "away": "Santander",
+     "kickoff": "2026-11-27T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4839,
+     "odds": 1.96,
+     "fair": 2.07,
+     "min_sts": 2.35,
+     "edge": -0.0518
+    },
+    {
+     "match_id": "EPL:2026-11-27:nottm_forest-chelsea",
+     "league": "EPL",
+     "home": "Nott'm Forest",
+     "away": "Chelsea",
+     "kickoff": "2026-11-27T20:00:00+00:00",
+     "market": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4012,
+     "odds": 2.32,
+     "fair": 2.49,
+     "min_sts": 2.83,
+     "edge": -0.0693
+    },
+    {
+     "match_id": "LIGUE1:2026-11-27:brest-paris",
+     "league": "LIGUE1",
+     "home": "Brest",
+     "away": "Paris FC",
+     "kickoff": "2026-11-27T19:45:00+00:00",
+     "market": "2",
+     "label": "2 (gość)",
+     "p": 0.4471,
+     "odds": 2.05,
+     "fair": 2.24,
+     "min_sts": 2.54,
+     "edge": -0.0849
+    },
+    {
+     "match_id": "EKSTRA:2026-11-27:rakow-piast",
+     "league": "EKSTRA",
+     "home": "Rakow",
+     "away": "Piast Gliwice",
+     "kickoff": "2026-11-27T17:00:00+00:00",
+     "market": "X2",
+     "label": "X2",
+     "p": 0.4594,
+     "odds": 2.03,
+     "fair": 2.18,
+     "min_sts": 2.47,
+     "edge": -0.0665
+    },
+    {
+     "match_id": "BUNDES:2026-11-27:werder_bremen-mgladbach",
+     "league": "BUNDES",
+     "home": "Werder Bremen",
+     "away": "M'gladbach",
+     "kickoff": "2026-11-27T19:30:00+00:00",
+     "market": "X2",
+     "label": "X2",
+     "p": 0.4215,
+     "odds": 2.21,
+     "fair": 2.37,
+     "min_sts": 2.7,
+     "edge": -0.0682
+    }
+   ],
+   "p": 0.00687773456921241,
+   "odds": 97.86,
+   "payout": 172.23,
+   "stake": 2.0,
+   "ev": -0.82,
+   "ev_pct": -0.4077,
+   "one_in": 145.4
+  }
+ ],
+ "long_skipped": {
+  "D3": "tylko 8 meczów z prawdziwymi kursami (potrzeba co najmniej 15)"
+ },
+ "matches": [
+  {
+   "id": "EKSTRA:2026-11-27:rakow-piast",
+   "league": "EKSTRA",
+   "league_name": "Ekstraklasa",
+   "flag": "🇵🇱",
+   "kickoff": "2026-11-27T17:00:00+00:00",
+   "time_unknown": false,
+   "home": "Rakow",
+   "away": "Piast Gliwice",
+   "lambdas": [
+    1.803,
+    1.23
+   ],
+   "lambdas_raw": [
+    1.755,
+    1.241
+   ],
+   "lineup": {
+    "fm_id": 5804054,
+    "type": "lastStarting11",
+    "confirmed": false,
+    "d": [
+     -0.18181818181818182,
+     -0.2727272727272727
+    ],
+    "team_ids": [
+     4024,
+     8028
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Rakow: ostatni skład bez 2 z „zwykłej jedenastki”: Kacper Trelowski (rotacja/decyzja trenera), Marko Bulat (rotacja/decyzja trenera)",
+     "impact": 0.1
+    },
+    {
+     "factor": "skład",
+     "text": "Piast Gliwice: ostatni skład bez 3 z „zwykłej jedenastki”: Samuel Ntamack (rotacja/decyzja trenera), Jakub Łabojko (rotacja/decyzja trenera), Jakub Czerwiński (rotacja/decyzja trenera)",
+     "impact": -0.1
+    }
+   ],
+   "probs": {
+    "1": 0.4975,
+    "X": 0.2529,
+    "2": 0.2496,
+    "1X": 0.7504,
+    "X2": 0.5025,
+    "12": 0.7471,
+    "O0.5": 0.9409,
+    "U0.5": 0.0591,
+    "O1.5": 0.8167,
+    "U1.5": 0.1833,
+    "O2.5": 0.5842,
+    "U2.5": 0.4158,
+    "O3.5": 0.3602,
+    "U3.5": 0.6398,
+    "O4.5": 0.1903,
+    "U4.5": 0.8097,
+    "BTTS": 0.602,
+    "BTTS_NO": 0.398
+   },
+   "top_scores": [
+    [
+     0.118,
+     "1:1"
+    ],
+    [
+     0.096,
+     "2:1"
+    ],
+    [
+     0.078,
+     "2:0"
+    ],
+    [
+     0.076,
+     "1:0"
+    ],
+    [
+     0.066,
+     "1:2"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.5454,
+    "X": 0.2275,
+    "2": 0.2271,
+    "1X": 0.7729,
+    "X2": 0.4546,
+    "12": 0.7725,
+    "O2.5": 0.6249,
+    "U2.5": 0.3751
+   },
+   "odds_h": 1.7414999999999998,
+   "odds_d": 3.876499999999999,
+   "odds_a": 3.882,
+   "odds_o25": 1.5,
+   "odds_u25": 2.33,
+   "max_h": 1.83,
+   "max_d": 4.4,
+   "max_a": 4.3,
+   "pin_h": 1.83,
+   "pin_d": 4.13,
+   "pin_a": 3.97,
+   "n_books": 20,
+   "absences": {
+    "home": [
+     {
+      "player": "Lamine Diaby-Fadiga",
+      "value": 2281854.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Marko Perović",
+      "value": 642535.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early January 2027"
+     },
+     {
+      "player": "Adriano",
+      "value": 0.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Unknown"
+     }
+    ],
+    "away": [
+     {
+      "player": "Quentin Boisgard",
+      "value": 168175.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "František Plach",
+      "value": 147503.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     }
+    ]
+   },
+   "news": {
+    "home": [],
+    "away": []
+   },
+   "rest": {
+    "home": 5.2,
+    "away": 7.0
+   },
+   "source": "Dixon-Coles (gole)",
+   "unknown": [],
+   "market_margin": 0.0898,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.5406,
+     "p_model": 0.4975,
+     "p_market": 0.5454,
+     "odds_market": 1.74,
+     "odds_estimated": false,
+     "odds_sts_est": 1.69,
+     "fair": 1.85,
+     "min_sts": 2.1,
+     "edge": -0.0868,
+     "ev_after_tax": -0.1964,
+     "disagreement": -0.0479,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.23,
+     "p_model": 0.2529,
+     "p_market": 0.2275,
+     "odds_market": 3.88,
+     "odds_estimated": false,
+     "odds_sts_est": 3.76,
+     "fair": 4.35,
+     "min_sts": 4.94,
+     "edge": -0.1351,
+     "ev_after_tax": -0.2389,
+     "disagreement": 0.0254,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.2294,
+     "p_model": 0.2496,
+     "p_market": 0.2271,
+     "odds_market": 3.88,
+     "odds_estimated": false,
+     "odds_sts_est": 3.77,
+     "fair": 4.36,
+     "min_sts": 4.95,
+     "edge": -0.1363,
+     "ev_after_tax": -0.2399,
+     "disagreement": 0.0225,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.7706,
+     "p_model": 0.7504,
+     "p_market": 0.7729,
+     "odds_market": 1.23,
+     "odds_estimated": true,
+     "odds_sts_est": 1.2,
+     "fair": 1.3,
+     "min_sts": 1.47,
+     "edge": -0.0789,
+     "ev_after_tax": -0.1894,
+     "disagreement": -0.0225,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.4594,
+     "p_model": 0.5025,
+     "p_market": 0.4546,
+     "odds_market": 2.09,
+     "odds_estimated": true,
+     "odds_sts_est": 2.03,
+     "fair": 2.18,
+     "min_sts": 2.47,
+     "edge": -0.0665,
+     "ev_after_tax": -0.1785,
+     "disagreement": 0.0479,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.77,
+     "p_model": 0.7471,
+     "p_market": 0.7725,
+     "odds_market": 1.23,
+     "odds_estimated": true,
+     "odds_sts_est": 1.2,
+     "fair": 1.3,
+     "min_sts": 1.48,
+     "edge": -0.0792,
+     "ev_after_tax": -0.1897,
+     "disagreement": -0.0254,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.8167,
+     "p_model": 0.8167,
+     "p_market": null,
+     "odds_market": 1.14,
+     "odds_estimated": true,
+     "odds_sts_est": 1.11,
+     "fair": 1.22,
+     "min_sts": 1.39,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.1833,
+     "p_model": 0.1833,
+     "p_market": null,
+     "odds_market": 5.1,
+     "odds_estimated": true,
+     "odds_sts_est": 4.95,
+     "fair": 5.46,
+     "min_sts": 6.2,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.6209,
+     "p_model": 0.5842,
+     "p_market": 0.6249,
+     "odds_market": 1.5,
+     "odds_estimated": false,
+     "odds_sts_est": 1.46,
+     "fair": 1.61,
+     "min_sts": 1.83,
+     "edge": -0.0966,
+     "ev_after_tax": -0.205,
+     "disagreement": -0.0407,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.3791,
+     "p_model": 0.4158,
+     "p_market": 0.3751,
+     "odds_market": 2.33,
+     "odds_estimated": false,
+     "odds_sts_est": 2.26,
+     "fair": 2.64,
+     "min_sts": 3.0,
+     "edge": -0.1431,
+     "ev_after_tax": -0.246,
+     "disagreement": 0.0407,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.3602,
+     "p_model": 0.3602,
+     "p_market": null,
+     "odds_market": 2.59,
+     "odds_estimated": true,
+     "odds_sts_est": 2.52,
+     "fair": 2.78,
+     "min_sts": 3.15,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.6398,
+     "p_model": 0.6398,
+     "p_market": null,
+     "odds_market": 1.46,
+     "odds_estimated": true,
+     "odds_sts_est": 1.42,
+     "fair": 1.56,
+     "min_sts": 1.78,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.602,
+     "p_model": 0.602,
+     "p_market": null,
+     "odds_market": 1.57,
+     "odds_estimated": true,
+     "odds_sts_est": 1.52,
+     "fair": 1.66,
+     "min_sts": 1.89,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.398,
+     "p_model": 0.398,
+     "p_market": null,
+     "odds_market": 2.37,
+     "odds_estimated": true,
+     "odds_sts_est": 2.3,
+     "fair": 2.51,
+     "min_sts": 2.86,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "BUNDES:2026-11-27:werder_bremen-mgladbach",
+   "league": "BUNDES",
+   "league_name": "Bundesliga",
+   "flag": "🇩🇪",
+   "kickoff": "2026-11-27T19:30:00+00:00",
+   "time_unknown": false,
+   "home": "Werder Bremen",
+   "away": "M'gladbach",
+   "lambdas": [
+    1.918,
+    1.166
+   ],
+   "lambdas_raw": [
+    1.836,
+    1.2
+   ],
+   "lineup": {
+    "fm_id": 5881241,
+    "type": "predicted",
+    "confirmed": false,
+    "d": [
+     -0.09090909090909091,
+     -0.2727272727272727
+    ],
+    "team_ids": [
+     8697,
+     9788
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Werder Bremen: przewidywany skład bez 1 z „zwykłej jedenastki”: Marco Grüll (kontuzja, powrót: Doubtful)",
+     "impact": 0.3
+    },
+    {
+     "factor": "skład",
+     "text": "M'gladbach: przewidywany skład bez 3 z „zwykłej jedenastki”: Lukas Ullrich (kontuzja, powrót: Early December 2026), Moritz Nicolas (rotacja/decyzja trenera), Hugo Bolin (kontuzja, powrót: About 1-2 weeks)",
+     "impact": -0.2
+    }
+   ],
+   "probs": {
+    "1": 0.5461,
+    "X": 0.2275,
+    "2": 0.2264,
+    "1X": 0.7736,
+    "X2": 0.4539,
+    "12": 0.7725,
+    "O0.5": 0.9514,
+    "U0.5": 0.0486,
+    "O1.5": 0.8159,
+    "U1.5": 0.1841,
+    "O2.5": 0.5954,
+    "U2.5": 0.4046,
+    "O3.5": 0.3716,
+    "U3.5": 0.6284,
+    "O4.5": 0.1991,
+    "U4.5": 0.8009,
+    "BTTS": 0.5901,
+    "BTTS_NO": 0.4099
+   },
+   "top_scores": [
+    [
+     0.105,
+     "1:1"
+    ],
+    [
+     0.098,
+     "2:1"
+    ],
+    [
+     0.085,
+     "1:0"
+    ],
+    [
+     0.084,
+     "2:0"
+    ],
+    [
+     0.063,
+     "3:1"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.5821,
+    "X": 0.2172,
+    "2": 0.2006,
+    "1X": 0.7994,
+    "X2": 0.4179,
+    "12": 0.7828,
+    "O2.5": 0.6358,
+    "U2.5": 0.3642
+   },
+   "odds_h": 1.6669565217391302,
+   "odds_d": 4.229565217391304,
+   "odds_a": 4.558695652173912,
+   "odds_o25": 1.51,
+   "odds_u25": 2.5066666666666664,
+   "max_h": 1.74,
+   "max_d": 4.6,
+   "max_a": 5.1,
+   "pin_h": 1.65,
+   "pin_d": 4.44,
+   "pin_a": 5.02,
+   "n_books": 23,
+   "absences": {
+    "home": [
+     {
+      "player": "Jens Stage",
+      "value": 8361934.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Keke Topp",
+      "value": 4613041.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early January 2027"
+     },
+     {
+      "player": "Moussa N'Diaye",
+      "value": 3844089.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Marco Grüll",
+      "value": 2323478.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Salim Musah",
+      "value": 2061026.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early January 2027"
+     },
+     {
+      "player": "Felix Agu",
+      "value": 2051555.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Mitchell Weiser",
+      "value": 1611180.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late November 2026"
+     },
+     {
+      "player": "Skelly Alvero",
+      "value": 1040707.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     }
+    ],
+    "away": [
+     {
+      "player": "Hugo Bolin",
+      "value": 9658193.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "About 1-2 weeks"
+     },
+     {
+      "player": "Lukas Ullrich",
+      "value": 7986517.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Tim Kleindienst",
+      "value": 6499408.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late November 2026"
+     },
+     {
+      "player": "Jan Leszczyński",
+      "value": 4947291.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Enzo Leopold",
+      "value": 3713941.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late May 2027"
+     },
+     {
+      "player": "Daiki Hashioka",
+      "value": 1160105.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "Wer überträgt Werder Bremen gegen Borussia Mönchengladbach live im TV und Stream?",
+      "link": "https://www.kicker.de/wer-uebertraegt-werder-bremen-gegen-borussia-moenchengladbach-live-im-tv-und-stream-1275051/artikel#omrss",
+      "summary": "Nach dem erfolgreichen Nordderby steht für Werder Bremen gegen Borussia Mönchengladbach das nächste Heimspiel an. Wo ihr die Partei live im TV und Stream verfolgen könnt, erfahrt ihr hier.",
+      "published": "2026-11-27T05:00:00+00:00",
+      "source": "kicker Bundesliga News",
+      "injury": false
+     }
+    ],
+    "away": []
+   },
+   "rest": {
+    "home": 5.1,
+    "away": 6.2
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0557,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.5785,
+     "p_model": 0.5461,
+     "p_market": 0.5821,
+     "odds_market": 1.67,
+     "odds_estimated": false,
+     "odds_sts_est": 1.62,
+     "fair": 1.73,
+     "min_sts": 1.96,
+     "edge": -0.0645,
+     "ev_after_tax": -0.1768,
+     "disagreement": -0.036,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2182,
+     "p_model": 0.2275,
+     "p_market": 0.2172,
+     "odds_market": 4.23,
+     "odds_estimated": false,
+     "odds_sts_est": 4.1,
+     "fair": 4.58,
+     "min_sts": 5.21,
+     "edge": -0.1046,
+     "ev_after_tax": -0.2121,
+     "disagreement": 0.0103,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.2032,
+     "p_model": 0.2264,
+     "p_market": 0.2006,
+     "odds_market": 4.56,
+     "odds_estimated": false,
+     "odds_sts_est": 4.42,
+     "fair": 4.92,
+     "min_sts": 5.59,
+     "edge": -0.1014,
+     "ev_after_tax": -0.2092,
+     "disagreement": 0.0258,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.7968,
+     "p_model": 0.7736,
+     "p_market": 0.7994,
+     "odds_market": 1.19,
+     "odds_estimated": true,
+     "odds_sts_est": 1.16,
+     "fair": 1.26,
+     "min_sts": 1.43,
+     "edge": -0.0792,
+     "ev_after_tax": -0.1897,
+     "disagreement": -0.0258,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.4215,
+     "p_model": 0.4539,
+     "p_market": 0.4179,
+     "odds_market": 2.28,
+     "odds_estimated": true,
+     "odds_sts_est": 2.21,
+     "fair": 2.37,
+     "min_sts": 2.7,
+     "edge": -0.0682,
+     "ev_after_tax": -0.18,
+     "disagreement": 0.036,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7818,
+     "p_model": 0.7725,
+     "p_market": 0.7828,
+     "odds_market": 1.22,
+     "odds_estimated": true,
+     "odds_sts_est": 1.18,
+     "fair": 1.28,
+     "min_sts": 1.45,
+     "edge": -0.0774,
+     "ev_after_tax": -0.1881,
+     "disagreement": -0.0103,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.8159,
+     "p_model": 0.8159,
+     "p_market": null,
+     "odds_market": 1.15,
+     "odds_estimated": true,
+     "odds_sts_est": 1.11,
+     "fair": 1.23,
+     "min_sts": 1.39,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.1841,
+     "p_model": 0.1841,
+     "p_market": null,
+     "odds_market": 5.08,
+     "odds_estimated": true,
+     "odds_sts_est": 4.92,
+     "fair": 5.43,
+     "min_sts": 6.17,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.6317,
+     "p_model": 0.5954,
+     "p_market": 0.6358,
+     "odds_market": 1.51,
+     "odds_estimated": false,
+     "odds_sts_est": 1.46,
+     "fair": 1.58,
+     "min_sts": 1.8,
+     "edge": -0.0747,
+     "ev_after_tax": -0.1857,
+     "disagreement": -0.0404,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.3683,
+     "p_model": 0.4046,
+     "p_market": 0.3642,
+     "odds_market": 2.51,
+     "odds_estimated": false,
+     "odds_sts_est": 2.43,
+     "fair": 2.72,
+     "min_sts": 3.09,
+     "edge": -0.1046,
+     "ev_after_tax": -0.212,
+     "disagreement": 0.0404,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.3716,
+     "p_model": 0.3716,
+     "p_market": null,
+     "odds_market": 2.52,
+     "odds_estimated": true,
+     "odds_sts_est": 2.44,
+     "fair": 2.69,
+     "min_sts": 3.06,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.6284,
+     "p_model": 0.6284,
+     "p_market": null,
+     "odds_market": 1.49,
+     "odds_estimated": true,
+     "odds_sts_est": 1.44,
+     "fair": 1.59,
+     "min_sts": 1.81,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.5901,
+     "p_model": 0.5901,
+     "p_market": null,
+     "odds_market": 1.6,
+     "odds_estimated": true,
+     "odds_sts_est": 1.55,
+     "fair": 1.69,
+     "min_sts": 1.93,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.4099,
+     "p_model": 0.4099,
+     "p_market": null,
+     "odds_market": 2.3,
+     "odds_estimated": true,
+     "odds_sts_est": 2.23,
+     "fair": 2.44,
+     "min_sts": 2.77,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "EKSTRA:2026-11-27:gornik_z-plock",
+   "league": "EKSTRA",
+   "league_name": "Ekstraklasa",
+   "flag": "🇵🇱",
+   "kickoff": "2026-11-27T19:30:00+00:00",
+   "time_unknown": false,
+   "home": "Gornik Zabrze",
+   "away": "Wisla Plock",
+   "lambdas": [
+    1.603,
+    0.702
+   ],
+   "lambdas_raw": [
+    1.585,
+    0.694
+   ],
+   "lineup": {
+    "fm_id": 5804049,
+    "type": "lastStarting11",
+    "confirmed": false,
+    "d": [
+     -0.2727272727272727,
+     -0.2727272727272727
+    ],
+    "team_ids": [
+     8020,
+     8243
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Gornik Zabrze: ostatni skład bez 3 z „zwykłej jedenastki”: Peter González (rotacja/decyzja trenera), Kacper Urbański (rotacja/decyzja trenera), Erik Janža (rotacja/decyzja trenera)",
+     "impact": 0.0
+    },
+    {
+     "factor": "skład",
+     "text": "Wisla Plock: ostatni skład bez 3 z „zwykłej jedenastki”: Martin Haglind Sangré (rotacja/decyzja trenera), Łukasz Sekulski (rotacja/decyzja trenera), Patryk Kun (rotacja/decyzja trenera)",
+     "impact": -0.0
+    }
+   ],
+   "probs": {
+    "1": 0.5789,
+    "X": 0.2709,
+    "2": 0.1503,
+    "1X": 0.8497,
+    "X2": 0.4211,
+    "12": 0.7291,
+    "O0.5": 0.8887,
+    "U0.5": 0.1113,
+    "O1.5": 0.6817,
+    "U1.5": 0.3183,
+    "O2.5": 0.4052,
+    "U2.5": 0.5948,
+    "O3.5": 0.2016,
+    "U3.5": 0.7984,
+    "O4.5": 0.0843,
+    "U4.5": 0.9157,
+    "BTTS": 0.4143,
+    "BTTS_NO": 0.5857
+   },
+   "top_scores": [
+    [
+     0.148,
+     "1:0"
+    ],
+    [
+     0.128,
+     "2:0"
+    ],
+    [
+     0.124,
+     "1:1"
+    ],
+    [
+     0.111,
+     "0:0"
+    ],
+    [
+     0.09,
+     "2:1"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.6743,
+    "X": 0.1991,
+    "2": 0.1266,
+    "1X": 0.8734,
+    "X2": 0.3257,
+    "12": 0.8009,
+    "O2.5": 0.5373,
+    "U2.5": 0.4627
+   },
+   "odds_h": 1.4264999999999999,
+   "odds_d": 4.284000000000001,
+   "odds_a": 6.445,
+   "odds_o25": 1.7358333333333336,
+   "odds_u25": 1.9825,
+   "max_h": 1.5,
+   "max_d": 4.7,
+   "max_a": 8.0,
+   "pin_h": 1.45,
+   "pin_d": 4.68,
+   "pin_a": 7.16,
+   "n_books": 20,
+   "absences": {
+    "home": [
+     {
+      "player": "Lukás Sadílek",
+      "value": 815027.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Unknown"
+     },
+     {
+      "player": "Michal Sácek",
+      "value": 594204.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     }
+    ],
+    "away": [
+     {
+      "player": "Jorge Jiménez",
+      "value": 287446.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Dani Pacheco",
+      "value": 139464.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Unknown"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "Mecz Ekstraklasy zagrożony. Klub walczy ze skutkami śnieżycy",
+      "link": "https://sportowefakty.wp.pl/pilka-nozna/1286391/mecz-ekstraklasy-zagrozony-klub-walczy-ze-skutkami-sniezycy",
+      "summary": "Intensywne opady śniegu utrudniają przygotowanie boisk na południu Polski. Górnik Zabrze robi wszystko, by piątkowy mecz z Wisłą Płock w 16. kolejce PKO Ekstraklasy odbył się zgodnie z planem.",
+      "published": "2026-11-27T11:18:47+00:00",
+      "source": "Piłka nożna - aktualne informacje ze świata sportu",
+      "injury": false
+     },
+     {
+      "title": "PKO Ekstraklasa. Górnik Zabrze - Wisła Płock. Gdzie oglądać? O której start?",
+      "link": "https://sportowefakty.wp.pl/pilka-nozna/1286335/pko-ekstraklasa-gornik-zabrze-wisla-plock-gdzie-ogladac-o-ktorej-start",
+      "summary": "W piątek, 27 listopada, o godz. 20:30 Górnik Zabrze zmierzy się z Wisłą Płock w 16. kolejce PKO Ekstraklasy. Mecz ten będzie można oglądać zarówno w TV, jak i online.",
+      "published": "2026-11-27T07:00:01+00:00",
+      "source": "Piłka nożna - aktualne informacje ze świata sportu",
+      "injury": false
+     }
+    ],
+    "away": []
+   },
+   "rest": {
+    "home": 6.1,
+    "away": 5.1
+   },
+   "source": "Dixon-Coles (gole)",
+   "unknown": [],
+   "market_margin": 0.0896,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6648,
+     "p_model": 0.5789,
+     "p_market": 0.6743,
+     "odds_market": 1.43,
+     "odds_estimated": false,
+     "odds_sts_est": 1.38,
+     "fair": 1.5,
+     "min_sts": 1.71,
+     "edge": -0.0801,
+     "ev_after_tax": -0.1905,
+     "disagreement": -0.0954,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2063,
+     "p_model": 0.2709,
+     "p_market": 0.1991,
+     "odds_market": 4.28,
+     "odds_estimated": false,
+     "odds_sts_est": 4.16,
+     "fair": 4.85,
+     "min_sts": 5.51,
+     "edge": -0.1428,
+     "ev_after_tax": -0.2456,
+     "disagreement": 0.0718,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.1289,
+     "p_model": 0.1503,
+     "p_market": 0.1266,
+     "odds_market": 6.45,
+     "odds_estimated": false,
+     "odds_sts_est": 6.25,
+     "fair": 7.76,
+     "min_sts": 8.81,
+     "edge": -0.1939,
+     "ev_after_tax": -0.2906,
+     "disagreement": 0.0237,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.8711,
+     "p_model": 0.8497,
+     "p_market": 0.8734,
+     "odds_market": 1.09,
+     "odds_estimated": true,
+     "odds_sts_est": 1.06,
+     "fair": 1.15,
+     "min_sts": 1.3,
+     "edge": -0.0787,
+     "ev_after_tax": -0.1893,
+     "disagreement": -0.0237,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.3352,
+     "p_model": 0.4211,
+     "p_market": 0.3257,
+     "odds_market": 2.92,
+     "odds_estimated": true,
+     "odds_sts_est": 2.84,
+     "fair": 2.98,
+     "min_sts": 3.39,
+     "edge": -0.0491,
+     "ev_after_tax": -0.1632,
+     "disagreement": 0.0954,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7937,
+     "p_model": 0.7291,
+     "p_market": 0.8009,
+     "odds_market": 1.19,
+     "odds_estimated": true,
+     "odds_sts_est": 1.15,
+     "fair": 1.26,
+     "min_sts": 1.43,
+     "edge": -0.0845,
+     "ev_after_tax": -0.1943,
+     "disagreement": -0.0718,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.6817,
+     "p_model": 0.6817,
+     "p_market": null,
+     "odds_market": 1.37,
+     "odds_estimated": true,
+     "odds_sts_est": 1.33,
+     "fair": 1.47,
+     "min_sts": 1.67,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.3183,
+     "p_model": 0.3183,
+     "p_market": null,
+     "odds_market": 2.94,
+     "odds_estimated": true,
+     "odds_sts_est": 2.85,
+     "fair": 3.14,
+     "min_sts": 3.57,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.5241,
+     "p_model": 0.4052,
+     "p_market": 0.5373,
+     "odds_market": 1.74,
+     "odds_estimated": false,
+     "odds_sts_est": 1.68,
+     "fair": 1.91,
+     "min_sts": 2.17,
+     "edge": -0.1175,
+     "ev_after_tax": -0.2234,
+     "disagreement": -0.1321,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.4759,
+     "p_model": 0.5948,
+     "p_market": 0.4627,
+     "odds_market": 1.98,
+     "odds_estimated": false,
+     "odds_sts_est": 1.92,
+     "fair": 2.1,
+     "min_sts": 2.39,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": 0.1321,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.2016,
+     "p_model": 0.2016,
+     "p_market": null,
+     "odds_market": 4.64,
+     "odds_estimated": true,
+     "odds_sts_est": 4.5,
+     "fair": 4.96,
+     "min_sts": 5.64,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.7984,
+     "p_model": 0.7984,
+     "p_market": null,
+     "odds_market": 1.17,
+     "odds_estimated": true,
+     "odds_sts_est": 1.14,
+     "fair": 1.25,
+     "min_sts": 1.42,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.4143,
+     "p_model": 0.4143,
+     "p_market": null,
+     "odds_market": 2.28,
+     "odds_estimated": true,
+     "odds_sts_est": 2.21,
+     "fair": 2.41,
+     "min_sts": 2.74,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.5857,
+     "p_model": 0.5857,
+     "p_market": null,
+     "odds_market": 1.61,
+     "odds_estimated": true,
+     "odds_sts_est": 1.56,
+     "fair": 1.71,
+     "min_sts": 1.94,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "EKSTRA:2026-11-27:gornik_z-plock",
+   "league": "EKSTRA",
+   "league_name": "Ekstraklasa",
+   "flag": "🇵🇱",
+   "kickoff": "2026-11-27T19:30:00+00:00",
+   "time_unknown": false,
+   "home": "Gornik Zabrze",
+   "away": "Wisla Plock",
+   "lambdas": [
+    1.603,
+    0.702
+   ],
+   "lambdas_raw": [
+    1.585,
+    0.694
+   ],
+   "lineup": {
+    "fm_id": 5804049,
+    "type": "lastStarting11",
+    "confirmed": false,
+    "d": [
+     -0.2727272727272727,
+     -0.2727272727272727
+    ],
+    "team_ids": [
+     8020,
+     8243
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Gornik Zabrze: ostatni skład bez 3 z „zwykłej jedenastki”: Peter González (rotacja/decyzja trenera), Kacper Urbański (rotacja/decyzja trenera), Erik Janža (rotacja/decyzja trenera)",
+     "impact": 0.0
+    },
+    {
+     "factor": "skład",
+     "text": "Wisla Plock: ostatni skład bez 3 z „zwykłej jedenastki”: Martin Haglind Sangré (rotacja/decyzja trenera), Łukasz Sekulski (rotacja/decyzja trenera), Patryk Kun (rotacja/decyzja trenera)",
+     "impact": -0.0
+    }
+   ],
+   "probs": {
+    "1": 0.5789,
+    "X": 0.2709,
+    "2": 0.1503,
+    "1X": 0.8497,
+    "X2": 0.4211,
+    "12": 0.7291,
+    "O0.5": 0.8887,
+    "U0.5": 0.1113,
+    "O1.5": 0.6817,
+    "U1.5": 0.3183,
+    "O2.5": 0.4052,
+    "U2.5": 0.5948,
+    "O3.5": 0.2016,
+    "U3.5": 0.7984,
+    "O4.5": 0.0843,
+    "U4.5": 0.9157,
+    "BTTS": 0.4143,
+    "BTTS_NO": 0.5857
+   },
+   "top_scores": [
+    [
+     0.148,
+     "1:0"
+    ],
+    [
+     0.128,
+     "2:0"
+    ],
+    [
+     0.124,
+     "1:1"
+    ],
+    [
+     0.111,
+     "0:0"
+    ],
+    [
+     0.09,
+     "2:1"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.6743,
+    "X": 0.1991,
+    "2": 0.1266,
+    "1X": 0.8734,
+    "X2": 0.3257,
+    "12": 0.8009,
+    "O2.5": 0.5373,
+    "U2.5": 0.4627
+   },
+   "odds_h": 1.4264999999999999,
+   "odds_d": 4.284000000000001,
+   "odds_a": 6.445,
+   "odds_o25": 1.7358333333333336,
+   "odds_u25": 1.9825,
+   "max_h": 1.5,
+   "max_d": 4.7,
+   "max_a": 8.0,
+   "pin_h": 1.45,
+   "pin_d": 4.68,
+   "pin_a": 7.16,
+   "n_books": 20,
+   "absences": {
+    "home": [
+     {
+      "player": "Lukás Sadílek",
+      "value": 815027.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Unknown"
+     },
+     {
+      "player": "Michal Sácek",
+      "value": 594204.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     }
+    ],
+    "away": [
+     {
+      "player": "Jorge Jiménez",
+      "value": 287446.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Dani Pacheco",
+      "value": 139464.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Unknown"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "Mecz Ekstraklasy zagrożony. Klub walczy ze skutkami śnieżycy",
+      "link": "https://sportowefakty.wp.pl/pilka-nozna/1286391/mecz-ekstraklasy-zagrozony-klub-walczy-ze-skutkami-sniezycy",
+      "summary": "Intensywne opady śniegu utrudniają przygotowanie boisk na południu Polski. Górnik Zabrze robi wszystko, by piątkowy mecz z Wisłą Płock w 16. kolejce PKO Ekstraklasy odbył się zgodnie z planem.",
+      "published": "2026-11-27T11:18:47+00:00",
+      "source": "Piłka nożna - aktualne informacje ze świata sportu",
+      "injury": false
+     },
+     {
+      "title": "PKO Ekstraklasa. Górnik Zabrze - Wisła Płock. Gdzie oglądać? O której start?",
+      "link": "https://sportowefakty.wp.pl/pilka-nozna/1286335/pko-ekstraklasa-gornik-zabrze-wisla-plock-gdzie-ogladac-o-ktorej-start",
+      "summary": "W piątek, 27 listopada, o godz. 20:30 Górnik Zabrze zmierzy się z Wisłą Płock w 16. kolejce PKO Ekstraklasy. Mecz ten będzie można oglądać zarówno w TV, jak i online.",
+      "published": "2026-11-27T07:00:01+00:00",
+      "source": "Piłka nożna - aktualne informacje ze świata sportu",
+      "injury": false
+     }
+    ],
+    "away": []
+   },
+   "rest": {
+    "home": 6.1,
+    "away": 5.1
+   },
+   "source": "Dixon-Coles (gole)",
+   "unknown": [],
+   "market_margin": 0.0896,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.6648,
+     "p_model": 0.5789,
+     "p_market": 0.6743,
+     "odds_market": 1.43,
+     "odds_estimated": false,
+     "odds_sts_est": 1.38,
+     "fair": 1.5,
+     "min_sts": 1.71,
+     "edge": -0.0801,
+     "ev_after_tax": -0.1905,
+     "disagreement": -0.0954,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2063,
+     "p_model": 0.2709,
+     "p_market": 0.1991,
+     "odds_market": 4.28,
+     "odds_estimated": false,
+     "odds_sts_est": 4.16,
+     "fair": 4.85,
+     "min_sts": 5.51,
+     "edge": -0.1428,
+     "ev_after_tax": -0.2456,
+     "disagreement": 0.0718,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.1289,
+     "p_model": 0.1503,
+     "p_market": 0.1266,
+     "odds_market": 6.45,
+     "odds_estimated": false,
+     "odds_sts_est": 6.25,
+     "fair": 7.76,
+     "min_sts": 8.81,
+     "edge": -0.1939,
+     "ev_after_tax": -0.2906,
+     "disagreement": 0.0237,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.8711,
+     "p_model": 0.8497,
+     "p_market": 0.8734,
+     "odds_market": 1.09,
+     "odds_estimated": true,
+     "odds_sts_est": 1.06,
+     "fair": 1.15,
+     "min_sts": 1.3,
+     "edge": -0.0787,
+     "ev_after_tax": -0.1893,
+     "disagreement": -0.0237,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.3352,
+     "p_model": 0.4211,
+     "p_market": 0.3257,
+     "odds_market": 2.92,
+     "odds_estimated": true,
+     "odds_sts_est": 2.84,
+     "fair": 2.98,
+     "min_sts": 3.39,
+     "edge": -0.0491,
+     "ev_after_tax": -0.1632,
+     "disagreement": 0.0954,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7937,
+     "p_model": 0.7291,
+     "p_market": 0.8009,
+     "odds_market": 1.19,
+     "odds_estimated": true,
+     "odds_sts_est": 1.15,
+     "fair": 1.26,
+     "min_sts": 1.43,
+     "edge": -0.0845,
+     "ev_after_tax": -0.1943,
+     "disagreement": -0.0718,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.6817,
+     "p_model": 0.6817,
+     "p_market": null,
+     "odds_market": 1.37,
+     "odds_estimated": true,
+     "odds_sts_est": 1.33,
+     "fair": 1.47,
+     "min_sts": 1.67,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.3183,
+     "p_model": 0.3183,
+     "p_market": null,
+     "odds_market": 2.94,
+     "odds_estimated": true,
+     "odds_sts_est": 2.85,
+     "fair": 3.14,
+     "min_sts": 3.57,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.5241,
+     "p_model": 0.4052,
+     "p_market": 0.5373,
+     "odds_market": 1.74,
+     "odds_estimated": false,
+     "odds_sts_est": 1.68,
+     "fair": 1.91,
+     "min_sts": 2.17,
+     "edge": -0.1175,
+     "ev_after_tax": -0.2234,
+     "disagreement": -0.1321,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.4759,
+     "p_model": 0.5948,
+     "p_market": 0.4627,
+     "odds_market": 1.98,
+     "odds_estimated": false,
+     "odds_sts_est": 1.92,
+     "fair": 2.1,
+     "min_sts": 2.39,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": 0.1321,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.2016,
+     "p_model": 0.2016,
+     "p_market": null,
+     "odds_market": 4.64,
+     "odds_estimated": true,
+     "odds_sts_est": 4.5,
+     "fair": 4.96,
+     "min_sts": 5.64,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.7984,
+     "p_model": 0.7984,
+     "p_market": null,
+     "odds_market": 1.17,
+     "odds_estimated": true,
+     "odds_sts_est": 1.14,
+     "fair": 1.25,
+     "min_sts": 1.42,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.4143,
+     "p_model": 0.4143,
+     "p_market": null,
+     "odds_market": 2.28,
+     "odds_estimated": true,
+     "odds_sts_est": 2.21,
+     "fair": 2.41,
+     "min_sts": 2.74,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.5857,
+     "p_model": 0.5857,
+     "p_market": null,
+     "odds_market": 1.61,
+     "odds_estimated": true,
+     "odds_sts_est": 1.56,
+     "fair": 1.71,
+     "min_sts": 1.94,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "LIGUE1:2026-11-27:brest-paris",
+   "league": "LIGUE1",
+   "league_name": "Ligue 1",
+   "flag": "🇫🇷",
+   "kickoff": "2026-11-27T19:45:00+00:00",
+   "time_unknown": false,
+   "home": "Brest",
+   "away": "Paris FC",
+   "lambdas": [
+    1.433,
+    1.465
+   ],
+   "lambdas_raw": [
+    1.394,
+    1.478
+   ],
+   "lineup": {
+    "fm_id": 5803002,
+    "type": "lastStarting11",
+    "confirmed": false,
+    "d": [
+     -0.18181818181818182,
+     -0.2727272727272727
+    ],
+    "team_ids": [
+     8521,
+     6379
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Brest: ostatni skład bez 2 z „zwykłej jedenastki”: Kamory Doumbia (kontuzja, powrót: Doubtful), Mama Baldé (rotacja/decyzja trenera)",
+     "impact": 0.1
+    },
+    {
+     "factor": "skład",
+     "text": "Paris FC: ostatni skład bez 3 z „zwykłej jedenastki”: Lassine Sinayoko (rotacja/decyzja trenera), Hamari Traoré (rotacja/decyzja trenera), Adama Camara (rotacja/decyzja trenera)",
+     "impact": -0.1
+    }
+   ],
+   "probs": {
+    "1": 0.364,
+    "X": 0.2576,
+    "2": 0.3784,
+    "1X": 0.6216,
+    "X2": 0.636,
+    "12": 0.7424,
+    "O0.5": 0.94,
+    "U0.5": 0.06,
+    "O1.5": 0.7898,
+    "U1.5": 0.2102,
+    "O2.5": 0.5534,
+    "U2.5": 0.4466,
+    "O3.5": 0.3298,
+    "U3.5": 0.6702,
+    "O4.5": 0.1678,
+    "U4.5": 0.8322,
+    "BTTS": 0.5902,
+    "BTTS_NO": 0.4098
+   },
+   "top_scores": [
+    [
+     0.121,
+     "1:1"
+    ],
+    [
+     0.085,
+     "1:2"
+    ],
+    [
+     0.083,
+     "2:1"
+    ],
+    [
+     0.076,
+     "0:1"
+    ],
+    [
+     0.074,
+     "1:0"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.2732,
+    "X": 0.2721,
+    "2": 0.4547,
+    "1X": 0.5453,
+    "X2": 0.7268,
+    "12": 0.7279,
+    "O2.5": 0.5111,
+    "U2.5": 0.4889
+   },
+   "odds_h": 3.419545454545454,
+   "odds_d": 3.433181818181818,
+   "odds_a": 2.11,
+   "odds_o25": 1.8566666666666662,
+   "odds_u25": 1.934,
+   "max_h": 3.7,
+   "max_d": 3.68,
+   "max_a": 2.25,
+   "pin_h": 3.68,
+   "pin_d": 3.46,
+   "pin_a": 2.15,
+   "n_books": 22,
+   "absences": {
+    "home": [
+     {
+      "player": "Raphaël Le Guen",
+      "value": 18971810.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late January 2027"
+     },
+     {
+      "player": "Kamory Doumbia",
+      "value": 15124151.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Brendan Chardonnet",
+      "value": 2041955.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "About 1-2 weeks"
+     },
+     {
+      "player": "Kenny Lala",
+      "value": 951623.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late December 2026"
+     }
+    ],
+    "away": [
+     {
+      "player": "Nhoa Sangui",
+      "value": 13434384.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late November 2026"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "Ligue 1 : Le programme de la 12e journée avec le choc LYON - MONACO",
+      "link": "https://rmcsport.bfmtv.com/football/ligue-1/video-ligue-1-le-programme-de-la-12e-journee-avec-le-choc-lyon-monaco_VN-202611270559.html",
+      "summary": "Douzième journée de la saison 2026/27, à suivre les 27, 28 et 29 novembre. Avec Brest - Paris FC en ouverture, et PSG-Lorient, Auxerre-Marseille et Lyon-Monaco en clôture.   ",
+      "published": "2026-11-27T12:11:57+00:00",
+      "source": "Home Football - actualités",
+      "injury": false
+     },
+     {
+      "title": "Brest - Paris FC : sur quelle chaîne TV et à quelle heure regarder le match de Ligue 1 en direct ?",
+      "link": "https://rmcsport.bfmtv.com/football/ligue-1/brest-paris-fc-sur-quelle-chaine-tv-et-a-quelle-heure-regarder-le-match-de-ligue-1-en-direct_AN-202611270076.html",
+      "summary": "Et si le Paris FC s’invitait dans la course au titre ? Surprenants deuxièmes de Ligue 1, les Parisiens passent un nouveau test sur la pelouse du Stade Brestois, fort de trois victoires consécutives. De quoi confirmer leurs ambitions ou freiner leur ascension ? Voici toutes les informations pour suivre cette affiche en direct.     ",
+      "published": "2026-11-27T05:15:00+00:00",
+      "source": "Home Football - actualités",
+      "injury": false
+     }
+    ],
+    "away": [
+     {
+      "title": "Ligue 1 : Le programme de la 12e journée avec le choc LYON - MONACO",
+      "link": "https://rmcsport.bfmtv.com/football/ligue-1/video-ligue-1-le-programme-de-la-12e-journee-avec-le-choc-lyon-monaco_VN-202611270559.html",
+      "summary": "Douzième journée de la saison 2026/27, à suivre les 27, 28 et 29 novembre. Avec Brest - Paris FC en ouverture, et PSG-Lorient, Auxerre-Marseille et Lyon-Monaco en clôture.   ",
+      "published": "2026-11-27T12:11:57+00:00",
+      "source": "Home Football - actualités",
+      "injury": false
+     },
+     {
+      "title": "Brest - Paris FC : sur quelle chaîne TV et à quelle heure regarder le match de Ligue 1 en direct ?",
+      "link": "https://rmcsport.bfmtv.com/football/ligue-1/brest-paris-fc-sur-quelle-chaine-tv-et-a-quelle-heure-regarder-le-match-de-ligue-1-en-direct_AN-202611270076.html",
+      "summary": "Et si le Paris FC s’invitait dans la course au titre ? Surprenants deuxièmes de Ligue 1, les Parisiens passent un nouveau test sur la pelouse du Stade Brestois, fort de trois victoires consécutives. De quoi confirmer leurs ambitions ou freiner leur ascension ? Voici toutes les informations pour suivre cette affiche en direct.     ",
+      "published": "2026-11-27T05:15:00+00:00",
+      "source": "Home Football - actualités",
+      "injury": false
+     },
+     {
+      "title": "Paris Fury retracts Tyson schizophrenia claim",
+      "link": "https://www.skysports.com/boxing/news/12040/13617026/tyson-fury-vs-anthony-joshua-paris-fury-retracts-claim-her-husband-has-been-diagnosed-with-schizophrenia",
+      "summary": "Paris Fury has retracted her claim that husband Tyson Fury was diagnosed with schizophrenia.",
+      "published": "2026-11-26T22:26:00+00:00",
+      "source": "SkySports | News",
+      "injury": false
+     }
+    ]
+   },
+   "rest": {
+    "home": 6.0,
+    "away": 5.2
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0576,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.2823,
+     "p_model": 0.364,
+     "p_market": 0.2732,
+     "odds_market": 3.42,
+     "odds_estimated": false,
+     "odds_sts_est": 3.32,
+     "fair": 3.54,
+     "min_sts": 4.03,
+     "edge": -0.0637,
+     "ev_after_tax": -0.176,
+     "disagreement": 0.0908,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2706,
+     "p_model": 0.2576,
+     "p_market": 0.2721,
+     "odds_market": 3.43,
+     "odds_estimated": false,
+     "odds_sts_est": 3.33,
+     "fair": 3.7,
+     "min_sts": 4.2,
+     "edge": -0.0988,
+     "ev_after_tax": -0.207,
+     "disagreement": -0.0145,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.4471,
+     "p_model": 0.3784,
+     "p_market": 0.4547,
+     "odds_market": 2.11,
+     "odds_estimated": false,
+     "odds_sts_est": 2.05,
+     "fair": 2.24,
+     "min_sts": 2.54,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": -0.0763,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.5529,
+     "p_model": 0.6216,
+     "p_market": 0.5453,
+     "odds_market": 1.75,
+     "odds_estimated": true,
+     "odds_sts_est": 1.69,
+     "fair": 1.81,
+     "min_sts": 2.06,
+     "edge": -0.0633,
+     "ev_after_tax": -0.1757,
+     "disagreement": 0.0763,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.7177,
+     "p_model": 0.636,
+     "p_market": 0.7268,
+     "odds_market": 1.31,
+     "odds_estimated": true,
+     "odds_sts_est": 1.27,
+     "fair": 1.39,
+     "min_sts": 1.58,
+     "edge": -0.0877,
+     "ev_after_tax": -0.1972,
+     "disagreement": -0.0908,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7294,
+     "p_model": 0.7424,
+     "p_market": 0.7279,
+     "odds_market": 1.31,
+     "odds_estimated": true,
+     "odds_sts_est": 1.27,
+     "fair": 1.37,
+     "min_sts": 1.56,
+     "edge": -0.0744,
+     "ev_after_tax": -0.1854,
+     "disagreement": 0.0145,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.7898,
+     "p_model": 0.7898,
+     "p_market": null,
+     "odds_market": 1.18,
+     "odds_estimated": true,
+     "odds_sts_est": 1.15,
+     "fair": 1.27,
+     "min_sts": 1.44,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.2102,
+     "p_model": 0.2102,
+     "p_market": null,
+     "odds_market": 4.45,
+     "odds_estimated": true,
+     "odds_sts_est": 4.31,
+     "fair": 4.76,
+     "min_sts": 5.41,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.5153,
+     "p_model": 0.5534,
+     "p_market": 0.5111,
+     "odds_market": 1.86,
+     "odds_estimated": false,
+     "odds_sts_est": 1.8,
+     "fair": 1.94,
+     "min_sts": 2.21,
+     "edge": -0.072,
+     "ev_after_tax": -0.1833,
+     "disagreement": 0.0423,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.4847,
+     "p_model": 0.4466,
+     "p_market": 0.4889,
+     "odds_market": 1.93,
+     "odds_estimated": false,
+     "odds_sts_est": 1.88,
+     "fair": 2.06,
+     "min_sts": 2.34,
+     "edge": -0.0907,
+     "ev_after_tax": -0.1998,
+     "disagreement": -0.0423,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.3298,
+     "p_model": 0.3298,
+     "p_market": null,
+     "odds_market": 2.83,
+     "odds_estimated": true,
+     "odds_sts_est": 2.75,
+     "fair": 3.03,
+     "min_sts": 3.45,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.6702,
+     "p_model": 0.6702,
+     "p_market": null,
+     "odds_market": 1.39,
+     "odds_estimated": true,
+     "odds_sts_est": 1.35,
+     "fair": 1.49,
+     "min_sts": 1.7,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.5902,
+     "p_model": 0.5902,
+     "p_market": null,
+     "odds_market": 1.6,
+     "odds_estimated": true,
+     "odds_sts_est": 1.55,
+     "fair": 1.69,
+     "min_sts": 1.93,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.4098,
+     "p_model": 0.4098,
+     "p_market": null,
+     "odds_market": 2.3,
+     "odds_estimated": true,
+     "odds_sts_est": 2.23,
+     "fair": 2.44,
+     "min_sts": 2.77,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "SERIEA:2026-11-27:venezia-bologna",
+   "league": "SERIEA",
+   "league_name": "Serie A",
+   "flag": "🇮🇹",
+   "kickoff": "2026-11-27T19:45:00+00:00",
+   "time_unknown": false,
+   "home": "Venezia",
+   "away": "Bologna",
+   "lambdas": [
+    0.987,
+    1.647
+   ],
+   "lambdas_raw": [
+    0.929,
+    1.729
+   ],
+   "lineup": {
+    "fm_id": 5749769,
+    "type": "predicted",
+    "confirmed": false,
+    "d": [
+     0.0,
+     -0.2727272727272727
+    ],
+    "team_ids": [
+     7881,
+     9857
+    ]
+   },
+   "why": [
+    {
+     "factor": "absencje",
+     "text": "Venezia: niedostępni – Thierry Correia (kontuzja, powrót: About 1-2 weeks), Marin Šverko (kontuzja, powrót: Unknown), Bartol Franjić (kontuzja, powrót: Doubtful)",
+     "impact": null
+    },
+    {
+     "factor": "skład",
+     "text": "Bologna: przewidywany skład bez 3 z „zwykłej jedenastki”: Federico Bernardeschi (rotacja/decyzja trenera), Juan Miranda (kontuzja, powrót: Doubtful), Jens Odgaard (rotacja/decyzja trenera)",
+     "impact": -0.3
+    }
+   ],
+   "probs": {
+    "1": 0.2278,
+    "X": 0.2425,
+    "2": 0.5297,
+    "1X": 0.4703,
+    "X2": 0.7722,
+    "12": 0.7575,
+    "O0.5": 0.9296,
+    "U0.5": 0.0704,
+    "O1.5": 0.7376,
+    "U1.5": 0.2624,
+    "O2.5": 0.49,
+    "U2.5": 0.51,
+    "O3.5": 0.2713,
+    "U3.5": 0.7287,
+    "O4.5": 0.1274,
+    "U4.5": 0.8726,
+    "BTTS": 0.5049,
+    "BTTS_NO": 0.4951
+   },
+   "top_scores": [
+    [
+     0.12,
+     "0:1"
+    ],
+    [
+     0.115,
+     "1:1"
+    ],
+    [
+     0.097,
+     "0:2"
+    ],
+    [
+     0.096,
+     "1:2"
+    ],
+    [
+     0.072,
+     "1:0"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.3108,
+    "X": 0.2934,
+    "2": 0.3959,
+    "1X": 0.6041,
+    "X2": 0.6892,
+    "12": 0.7066,
+    "O2.5": 0.4554,
+    "U2.5": 0.5446
+   },
+   "odds_h": 3.0283999999999995,
+   "odds_d": 3.1988,
+   "odds_a": 2.4076,
+   "odds_o25": 2.065882352941177,
+   "odds_u25": 1.751764705882353,
+   "max_h": 3.25,
+   "max_d": 3.45,
+   "max_a": 2.58,
+   "pin_h": 3.13,
+   "pin_d": 3.21,
+   "pin_a": 2.54,
+   "n_books": 25,
+   "absences": {
+    "home": [
+     {
+      "player": "Thierry Correia",
+      "value": 1533078.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "About 1-2 weeks"
+     },
+     {
+      "player": "Marin Šverko",
+      "value": 1197028.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Unknown"
+     },
+     {
+      "player": "Bartol Franjić",
+      "value": 660652.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     }
+    ],
+    "away": [
+     {
+      "player": "Juan Miranda",
+      "value": 14393410.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Emil Holm",
+      "value": 10486688.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late February 2027"
+     },
+     {
+      "player": "Jay Enem",
+      "value": 7456381.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Oussama El Azzouzi",
+      "value": 1027658.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Lorenzo De Silvestri",
+      "value": 283875.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "About 1-2 weeks"
+     },
+     {
+      "player": "Ukko Happonen",
+      "value": 0.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Mid December 2026"
+     }
+    ]
+   },
+   "news": {
+    "home": [],
+    "away": []
+   },
+   "rest": {
+    "home": 5.3,
+    "away": 5.2
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0582,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.3025,
+     "p_model": 0.2278,
+     "p_market": 0.3108,
+     "odds_market": 3.03,
+     "odds_estimated": false,
+     "odds_sts_est": 2.94,
+     "fair": 3.31,
+     "min_sts": 3.76,
+     "edge": -0.1114,
+     "ev_after_tax": -0.2181,
+     "disagreement": -0.083,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2883,
+     "p_model": 0.2425,
+     "p_market": 0.2934,
+     "odds_market": 3.2,
+     "odds_estimated": false,
+     "odds_sts_est": 3.1,
+     "fair": 3.47,
+     "min_sts": 3.94,
+     "edge": -0.1056,
+     "ev_after_tax": -0.2129,
+     "disagreement": -0.0509,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.4092,
+     "p_model": 0.5297,
+     "p_market": 0.3959,
+     "odds_market": 2.41,
+     "odds_estimated": false,
+     "odds_sts_est": 2.34,
+     "fair": 2.44,
+     "min_sts": 2.78,
+     "edge": -0.0443,
+     "ev_after_tax": -0.159,
+     "disagreement": 0.1338,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.5908,
+     "p_model": 0.4703,
+     "p_market": 0.6041,
+     "odds_market": 1.58,
+     "odds_estimated": true,
+     "odds_sts_est": 1.53,
+     "fair": 1.69,
+     "min_sts": 1.92,
+     "edge": -0.0967,
+     "ev_after_tax": -0.2051,
+     "disagreement": -0.1338,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.6975,
+     "p_model": 0.7722,
+     "p_market": 0.6892,
+     "odds_market": 1.38,
+     "odds_estimated": true,
+     "odds_sts_est": 1.34,
+     "fair": 1.43,
+     "min_sts": 1.63,
+     "edge": -0.0651,
+     "ev_after_tax": -0.1773,
+     "disagreement": 0.083,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7117,
+     "p_model": 0.7575,
+     "p_market": 0.7066,
+     "odds_market": 1.35,
+     "odds_estimated": true,
+     "odds_sts_est": 1.31,
+     "fair": 1.41,
+     "min_sts": 1.6,
+     "edge": -0.0695,
+     "ev_after_tax": -0.1812,
+     "disagreement": 0.0509,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.7376,
+     "p_model": 0.7376,
+     "p_market": null,
+     "odds_market": 1.27,
+     "odds_estimated": true,
+     "odds_sts_est": 1.23,
+     "fair": 1.36,
+     "min_sts": 1.54,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.2624,
+     "p_model": 0.2624,
+     "p_market": null,
+     "odds_market": 3.56,
+     "odds_estimated": true,
+     "odds_sts_est": 3.45,
+     "fair": 3.81,
+     "min_sts": 4.33,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.4589,
+     "p_model": 0.49,
+     "p_market": 0.4554,
+     "odds_market": 2.07,
+     "odds_estimated": false,
+     "odds_sts_est": 2.0,
+     "fair": 2.18,
+     "min_sts": 2.48,
+     "edge": -0.0805,
+     "ev_after_tax": -0.1908,
+     "disagreement": 0.0346,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.5411,
+     "p_model": 0.51,
+     "p_market": 0.5446,
+     "odds_market": 1.75,
+     "odds_estimated": false,
+     "odds_sts_est": 1.7,
+     "fair": 1.85,
+     "min_sts": 2.1,
+     "edge": -0.0805,
+     "ev_after_tax": -0.1909,
+     "disagreement": -0.0346,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.2713,
+     "p_model": 0.2713,
+     "p_market": null,
+     "odds_market": 3.44,
+     "odds_estimated": true,
+     "odds_sts_est": 3.34,
+     "fair": 3.69,
+     "min_sts": 4.19,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.7287,
+     "p_model": 0.7287,
+     "p_market": null,
+     "odds_market": 1.28,
+     "odds_estimated": true,
+     "odds_sts_est": 1.24,
+     "fair": 1.37,
+     "min_sts": 1.56,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.5049,
+     "p_model": 0.5049,
+     "p_market": null,
+     "odds_market": 1.87,
+     "odds_estimated": true,
+     "odds_sts_est": 1.81,
+     "fair": 1.98,
+     "min_sts": 2.25,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.4951,
+     "p_model": 0.4951,
+     "p_market": null,
+     "odds_market": 1.91,
+     "odds_estimated": true,
+     "odds_sts_est": 1.85,
+     "fair": 2.02,
+     "min_sts": 2.3,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "EPL:2026-11-27:nottm_forest-chelsea",
+   "league": "EPL",
+   "league_name": "Premier League",
+   "flag": "🏴",
+   "kickoff": "2026-11-27T20:00:00+00:00",
+   "time_unknown": false,
+   "home": "Nott'm Forest",
+   "away": "Chelsea",
+   "lambdas": [
+    1.47,
+    1.302
+   ],
+   "lambdas_raw": [
+    1.436,
+    1.319
+   ],
+   "lineup": {
+    "fm_id": 5795533,
+    "type": "predicted",
+    "confirmed": false,
+    "d": [
+     -0.09090909090909091,
+     -0.18181818181818182
+    ],
+    "team_ids": [
+     10203,
+     8455
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Nott'm Forest: przewidywany skład bez 1 z „zwykłej jedenastki”: Dan Ndoye (rotacja/decyzja trenera)",
+     "impact": 0.1
+    },
+    {
+     "factor": "skład",
+     "text": "Chelsea: przewidywany skład bez 2 z „zwykłej jedenastki”: Moisés Caicedo (rotacja/decyzja trenera), Maxence Lacroix (kontuzja, powrót: Early January 2027)",
+     "impact": -0.1
+    }
+   ],
+   "probs": {
+    "1": 0.4028,
+    "X": 0.2708,
+    "2": 0.3265,
+    "1X": 0.6735,
+    "X2": 0.5972,
+    "12": 0.7292,
+    "O0.5": 0.9287,
+    "U0.5": 0.0713,
+    "O1.5": 0.773,
+    "U1.5": 0.227,
+    "O2.5": 0.524,
+    "U2.5": 0.476,
+    "O3.5": 0.302,
+    "U3.5": 0.698,
+    "O4.5": 0.1481,
+    "U4.5": 0.8519,
+    "BTTS": 0.5695,
+    "BTTS_NO": 0.4305
+   },
+   "top_scores": [
+    [
+     0.128,
+     "1:1"
+    ],
+    [
+     0.088,
+     "2:1"
+    ],
+    [
+     0.083,
+     "1:0"
+    ],
+    [
+     0.078,
+     "1:2"
+    ],
+    [
+     0.073,
+     "0:1"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.401,
+    "X": 0.2769,
+    "2": 0.3221,
+    "1X": 0.6779,
+    "X2": 0.599,
+    "12": 0.7231,
+    "O2.5": 0.5206,
+    "U2.5": 0.4794
+   },
+   "odds_h": 2.3915999999999995,
+   "odds_d": 3.406,
+   "odds_a": 2.948,
+   "odds_o25": 1.8355555555555556,
+   "odds_u25": 1.982222222222222,
+   "max_h": 2.5,
+   "max_d": 3.68,
+   "max_a": 3.12,
+   "pin_h": 2.47,
+   "pin_d": 3.44,
+   "pin_a": 3.04,
+   "n_books": 25,
+   "absences": {
+    "home": [
+     {
+      "player": "Callum Hudson-Odoi",
+      "value": 23053301.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Nicolò Savona",
+      "value": 19933993.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early December 2026"
+     },
+     {
+      "player": "Nicolás Domínguez",
+      "value": 13479700.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early January 2027"
+     }
+    ],
+    "away": [
+     {
+      "player": "João Pedro",
+      "value": 102739034.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late November 2026"
+     },
+     {
+      "player": "Reece James",
+      "value": 58778081.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Mid January 2027"
+     },
+     {
+      "player": "Maxence Lacroix",
+      "value": 58671218.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Early January 2027"
+     },
+     {
+      "player": "Jorrel Hato",
+      "value": 58230692.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Mid November 2026"
+     },
+     {
+      "player": "Jamie Gittens",
+      "value": 34472363.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "How to watch Nottingham Forest vs Chelsea",
+      "link": "https://www.skysports.com/football/news/12040/13613312/nottingham-forest-vs-chelsea-how-to-watch-tv-channel-live-stream-now-tv-team-news-and-score-prediction",
+      "summary": "Nottingham Forest host Chelsea at the City Ground in a Friday Night Football Premier League clash on November 27, live on  Sky Sports .",
+      "published": "2026-11-27T06:00:00+00:00",
+      "source": "SkySports | News",
+      "injury": false
+     }
+    ],
+    "away": [
+     {
+      "title": "How to watch Nottingham Forest vs Chelsea",
+      "link": "https://www.skysports.com/football/news/12040/13613312/nottingham-forest-vs-chelsea-how-to-watch-tv-channel-live-stream-now-tv-team-news-and-score-prediction",
+      "summary": "Nottingham Forest host Chelsea at the City Ground in a Friday Night Football Premier League clash on November 27, live on  Sky Sports .",
+      "published": "2026-11-27T06:00:00+00:00",
+      "source": "SkySports | News",
+      "injury": false
+     },
+     {
+      "title": "Fofana has apologised for interview - Alonso",
+      "link": "https://www.bbc.co.uk/sport/football/articles/c5wy43j1l3rwo?at_medium=RSS&at_campaign=rss",
+      "summary": "Chelsea manager Xabi Alonso says defender Wesley Fofana has apologised for his controversial comments in an interview he gave without permission from the club.",
+      "published": "2026-11-26T16:47:47+00:00",
+      "source": "BBC Sport",
+      "injury": false
+     }
+    ]
+   },
+   "rest": {
+    "home": 6.2,
+    "away": 6.2
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0509,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4012,
+     "p_model": 0.4028,
+     "p_market": 0.401,
+     "odds_market": 2.39,
+     "odds_estimated": false,
+     "odds_sts_est": 2.32,
+     "fair": 2.49,
+     "min_sts": 2.83,
+     "edge": -0.0693,
+     "ev_after_tax": -0.1809,
+     "disagreement": 0.0018,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2763,
+     "p_model": 0.2708,
+     "p_market": 0.2769,
+     "odds_market": 3.41,
+     "odds_estimated": false,
+     "odds_sts_est": 3.3,
+     "fair": 3.62,
+     "min_sts": 4.11,
+     "edge": -0.0873,
+     "ev_after_tax": -0.1968,
+     "disagreement": -0.0061,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.3225,
+     "p_model": 0.3265,
+     "p_market": 0.3221,
+     "odds_market": 2.95,
+     "odds_estimated": false,
+     "odds_sts_est": 2.86,
+     "fair": 3.1,
+     "min_sts": 3.52,
+     "edge": -0.0777,
+     "ev_after_tax": -0.1884,
+     "disagreement": 0.0044,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.6775,
+     "p_model": 0.6735,
+     "p_market": 0.6779,
+     "odds_market": 1.4,
+     "odds_estimated": true,
+     "odds_sts_est": 1.36,
+     "fair": 1.48,
+     "min_sts": 1.68,
+     "edge": -0.0768,
+     "ev_after_tax": -0.1876,
+     "disagreement": -0.0044,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.5988,
+     "p_model": 0.5972,
+     "p_market": 0.599,
+     "odds_market": 1.59,
+     "odds_estimated": true,
+     "odds_sts_est": 1.54,
+     "fair": 1.67,
+     "min_sts": 1.9,
+     "edge": -0.0765,
+     "ev_after_tax": -0.1873,
+     "disagreement": -0.0018,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7237,
+     "p_model": 0.7292,
+     "p_market": 0.7231,
+     "odds_market": 1.32,
+     "odds_estimated": true,
+     "odds_sts_est": 1.28,
+     "fair": 1.38,
+     "min_sts": 1.57,
+     "edge": -0.0754,
+     "ev_after_tax": -0.1864,
+     "disagreement": 0.0061,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.773,
+     "p_model": 0.773,
+     "p_market": null,
+     "odds_market": 1.21,
+     "odds_estimated": true,
+     "odds_sts_est": 1.17,
+     "fair": 1.29,
+     "min_sts": 1.47,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.227,
+     "p_model": 0.227,
+     "p_market": null,
+     "odds_market": 4.12,
+     "odds_estimated": true,
+     "odds_sts_est": 3.99,
+     "fair": 4.41,
+     "min_sts": 5.01,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.521,
+     "p_model": 0.524,
+     "p_market": 0.5206,
+     "odds_market": 1.84,
+     "odds_estimated": false,
+     "odds_sts_est": 1.78,
+     "fair": 1.92,
+     "min_sts": 2.18,
+     "edge": -0.0724,
+     "ev_after_tax": -0.1837,
+     "disagreement": 0.0034,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.479,
+     "p_model": 0.476,
+     "p_market": 0.4794,
+     "odds_market": 1.98,
+     "odds_estimated": false,
+     "odds_sts_est": 1.92,
+     "fair": 2.09,
+     "min_sts": 2.37,
+     "edge": -0.079,
+     "ev_after_tax": -0.1895,
+     "disagreement": -0.0034,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.302,
+     "p_model": 0.302,
+     "p_market": null,
+     "odds_market": 3.09,
+     "odds_estimated": true,
+     "odds_sts_est": 3.0,
+     "fair": 3.31,
+     "min_sts": 3.76,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.698,
+     "p_model": 0.698,
+     "p_market": null,
+     "odds_market": 1.34,
+     "odds_estimated": true,
+     "odds_sts_est": 1.3,
+     "fair": 1.43,
+     "min_sts": 1.63,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.5695,
+     "p_model": 0.5695,
+     "p_market": null,
+     "odds_market": 1.66,
+     "odds_estimated": true,
+     "odds_sts_est": 1.61,
+     "fair": 1.76,
+     "min_sts": 2.0,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.4305,
+     "p_model": 0.4305,
+     "p_market": null,
+     "odds_market": 2.19,
+     "odds_estimated": true,
+     "odds_sts_est": 2.13,
+     "fair": 2.32,
+     "min_sts": 2.64,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  },
+  {
+   "id": "LALIGA:2026-11-27:levante-santander",
+   "league": "LALIGA",
+   "league_name": "LaLiga",
+   "flag": "🇪🇸",
+   "kickoff": "2026-11-27T20:00:00+00:00",
+   "time_unknown": false,
+   "home": "Levante",
+   "away": "Santander",
+   "lambdas": [
+    2.33,
+    1.544
+   ],
+   "lambdas_raw": [
+    2.437,
+    1.448
+   ],
+   "lineup": {
+    "fm_id": 5868146,
+    "type": "predicted",
+    "confirmed": false,
+    "d": [
+     -0.36363636363636365,
+     -0.09090909090909091
+    ],
+    "team_ids": [
+     8581,
+     8696
+    ]
+   },
+   "why": [
+    {
+     "factor": "skład",
+     "text": "Levante: przewidywany skład bez 4 z „zwykłej jedenastki”: Iván Romero (rotacja/decyzja trenera), Ifeanyi Ndukwe (rotacja/decyzja trenera), Manuel Sánchez (kontuzja, powrót: Out for season), Jeremy Toljan (kontuzja, powrót: Mid December 2026)",
+     "impact": -0.4
+    },
+    {
+     "factor": "skład",
+     "text": "Santander: przewidywany skład bez 1 z „zwykłej jedenastki”: Álvaro Mantilla (kontuzja, powrót: Out for season)",
+     "impact": 0.3
+    }
+   ],
+   "probs": {
+    "1": 0.5498,
+    "X": 0.202,
+    "2": 0.2482,
+    "1X": 0.7518,
+    "X2": 0.4502,
+    "12": 0.798,
+    "O0.5": 0.9765,
+    "U0.5": 0.0235,
+    "O1.5": 0.9014,
+    "U1.5": 0.0986,
+    "O2.5": 0.7428,
+    "U2.5": 0.2572,
+    "O3.5": 0.5414,
+    "U3.5": 0.4586,
+    "O4.5": 0.3464,
+    "U4.5": 0.6536,
+    "BTTS": 0.7125,
+    "BTTS_NO": 0.2875
+   },
+   "top_scores": [
+    [
+     0.087,
+     "2:1"
+    ],
+    [
+     0.077,
+     "1:1"
+    ],
+    [
+     0.068,
+     "3:1"
+    ],
+    [
+     0.067,
+     "2:2"
+    ],
+    [
+     0.058,
+     "1:2"
+    ]
+   ],
+   "market_probs": {
+    "1": 0.4766,
+    "X": 0.2372,
+    "2": 0.2862,
+    "1X": 0.7138,
+    "X2": 0.5234,
+    "12": 0.7628,
+    "O2.5": 0.6924,
+    "U2.5": 0.3076
+   },
+   "odds_h": 2.019999999999999,
+   "odds_d": 3.915238095238095,
+   "odds_a": 3.2771428571428567,
+   "odds_o25": 1.3966666666666667,
+   "odds_u25": 2.92,
+   "max_h": 2.12,
+   "max_d": 4.11,
+   "max_a": 3.46,
+   "pin_h": 2.08,
+   "pin_d": 4.05,
+   "pin_a": 3.36,
+   "n_books": 21,
+   "absences": {
+    "home": [
+     {
+      "player": "Petar Ratkov",
+      "value": 11370104.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Doubtful"
+     },
+     {
+      "player": "Manuel Sánchez",
+      "value": 5934655.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Out for season"
+     },
+     {
+      "player": "Jeremy Toljan",
+      "value": 1339115.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Mid December 2026"
+     }
+    ],
+    "away": [
+     {
+      "player": "Andrés Martín",
+      "value": 7498070.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "About 1-2 weeks"
+     },
+     {
+      "player": "Maguette Gueye",
+      "value": 2093894.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Late December 2026"
+     },
+     {
+      "player": "Álvaro Mantilla",
+      "value": 1032040.0,
+      "weight": 1.0,
+      "src": "FotMob",
+      "reason": "kontuzja",
+      "until": "Out for season"
+     }
+    ]
+   },
+   "news": {
+    "home": [
+     {
+      "title": "Levante - Racing | Zabiri amenaza el Ciutat: previa, análisis, pronóstico y predicción",
+      "link": "https://www.marca.com/futbol/primera-division/2026/11/27/levante-racing-zabiri-amenaza-ciutat-previa-analisis-pronostico-prediccion.html",
+      "summary": "El delantero del Racing suma 11 goles en 13 partidos",
+      "published": "2026-11-26T23:56:56+00:00",
+      "source": "Primera División",
+      "injury": false
+     },
+     {
+      "title": "Luís Castro: \"No hay que parar solo a Zabiri, tenemos que parar al Racing\"",
+      "link": "https://www.marca.com/futbol/levante/2026/11/26/luis-castro-hay-parar-zabiri-parar-racing.html",
+      "summary": "El técnico portugués del Levante ha confirmado que Petar Ratkov no ha entrenado por molestias musculares",
+      "published": "2026-11-26T12:37:59+00:00",
+      "source": "Primera División",
+      "injury": false
+     }
+    ],
+    "away": []
+   },
+   "rest": {
+    "home": 4.0,
+    "away": 5.2
+   },
+   "source": "Dixon-Coles (gole + xG)",
+   "unknown": [],
+   "market_margin": 0.0556,
+   "options": [
+    {
+     "key": "1",
+     "label": "1 (gospodarz)",
+     "p": 0.4839,
+     "p_model": 0.5498,
+     "p_market": 0.4766,
+     "odds_market": 2.02,
+     "odds_estimated": false,
+     "odds_sts_est": 1.96,
+     "fair": 2.07,
+     "min_sts": 2.35,
+     "edge": -0.0518,
+     "ev_after_tax": -0.1656,
+     "disagreement": 0.0732,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X",
+     "label": "X (remis)",
+     "p": 0.2337,
+     "p_model": 0.202,
+     "p_market": 0.2372,
+     "odds_market": 3.92,
+     "odds_estimated": false,
+     "odds_sts_est": 3.8,
+     "fair": 4.28,
+     "min_sts": 4.86,
+     "edge": -0.1124,
+     "ev_after_tax": -0.2189,
+     "disagreement": -0.0352,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "2",
+     "label": "2 (gość)",
+     "p": 0.2824,
+     "p_model": 0.2482,
+     "p_market": 0.2862,
+     "odds_market": 3.28,
+     "odds_estimated": false,
+     "odds_sts_est": 3.18,
+     "fair": 3.54,
+     "min_sts": 4.02,
+     "edge": -0.1024,
+     "ev_after_tax": -0.2101,
+     "disagreement": -0.038,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "1X",
+     "label": "1X",
+     "p": 0.7176,
+     "p_model": 0.7518,
+     "p_market": 0.7138,
+     "odds_market": 1.33,
+     "odds_estimated": true,
+     "odds_sts_est": 1.29,
+     "fair": 1.39,
+     "min_sts": 1.58,
+     "edge": -0.0713,
+     "ev_after_tax": -0.1827,
+     "disagreement": 0.038,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "X2",
+     "label": "X2",
+     "p": 0.5161,
+     "p_model": 0.4502,
+     "p_market": 0.5234,
+     "odds_market": 1.82,
+     "odds_estimated": true,
+     "odds_sts_est": 1.76,
+     "fair": 1.94,
+     "min_sts": 2.2,
+     "edge": -0.0891,
+     "ev_after_tax": -0.1984,
+     "disagreement": -0.0732,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "12",
+     "label": "12",
+     "p": 0.7663,
+     "p_model": 0.798,
+     "p_market": 0.7628,
+     "odds_market": 1.25,
+     "odds_estimated": true,
+     "odds_sts_est": 1.21,
+     "fair": 1.31,
+     "min_sts": 1.48,
+     "edge": -0.0719,
+     "ev_after_tax": -0.1833,
+     "disagreement": 0.0352,
+     "verified": true,
+     "pickable": true,
+     "calibrating": false
+    },
+    {
+     "key": "O1.5",
+     "label": "Powyżej 1.5 gola",
+     "p": 0.9014,
+     "p_model": 0.9014,
+     "p_market": null,
+     "odds_market": 1.04,
+     "odds_estimated": true,
+     "odds_sts_est": 1.01,
+     "fair": 1.11,
+     "min_sts": 1.26,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U1.5",
+     "label": "Poniżej 1.5 gola",
+     "p": 0.0986,
+     "p_model": 0.0986,
+     "p_market": null,
+     "odds_market": 9.48,
+     "odds_estimated": true,
+     "odds_sts_est": 9.19,
+     "fair": 10.14,
+     "min_sts": 11.52,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O2.5",
+     "label": "Powyżej 2.5 gola",
+     "p": 0.6975,
+     "p_model": 0.7428,
+     "p_market": 0.6924,
+     "odds_market": 1.4,
+     "odds_estimated": false,
+     "odds_sts_est": 1.35,
+     "fair": 1.43,
+     "min_sts": 1.63,
+     "edge": -0.0551,
+     "ev_after_tax": -0.1685,
+     "disagreement": 0.0504,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U2.5",
+     "label": "Poniżej 2.5 gola",
+     "p": 0.3025,
+     "p_model": 0.2572,
+     "p_market": 0.3076,
+     "odds_market": 2.92,
+     "odds_estimated": false,
+     "odds_sts_est": 2.83,
+     "fair": 3.31,
+     "min_sts": 3.76,
+     "edge": -0.1431,
+     "ev_after_tax": -0.2459,
+     "disagreement": -0.0504,
+     "verified": true,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "O3.5",
+     "label": "Powyżej 3.5 gola",
+     "p": 0.5414,
+     "p_model": 0.5414,
+     "p_market": null,
+     "odds_market": 1.73,
+     "odds_estimated": true,
+     "odds_sts_est": 1.67,
+     "fair": 1.85,
+     "min_sts": 2.1,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "U3.5",
+     "label": "Poniżej 3.5 gola",
+     "p": 0.4586,
+     "p_model": 0.4586,
+     "p_market": null,
+     "odds_market": 2.04,
+     "odds_estimated": true,
+     "odds_sts_est": 1.98,
+     "fair": 2.18,
+     "min_sts": 2.48,
+     "edge": -0.0935,
+     "ev_after_tax": -0.2022,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS",
+     "label": "Obie strzelą: TAK",
+     "p": 0.7125,
+     "p_model": 0.7125,
+     "p_market": null,
+     "odds_market": 1.32,
+     "odds_estimated": true,
+     "odds_sts_est": 1.28,
+     "fair": 1.4,
+     "min_sts": 1.59,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    },
+    {
+     "key": "BTTS_NO",
+     "label": "Obie strzelą: NIE",
+     "p": 0.2875,
+     "p_model": 0.2875,
+     "p_market": null,
+     "odds_market": 3.28,
+     "odds_estimated": true,
+     "odds_sts_est": 3.18,
+     "fair": 3.48,
+     "min_sts": 3.95,
+     "edge": -0.0849,
+     "ev_after_tax": -0.1947,
+     "disagreement": null,
+     "verified": false,
+     "pickable": false,
+     "calibrating": true
+    }
+   ]
+  }
+ ],
+ "generated": "2026-11-27T12:25:19.589273+00:00",
  "models": {
   "EPL": {
    "n": 870,
@@ -586,7 +4586,7 @@
   }
  },
  "bridge_k": 0.0,
- "day": "2026-11-26",
+ "day": "2026-11-27",
  "kind": "daily",
- "message": "🎯 <b>Typy · czw 26.11</b>\nMecze w analizie: 0\nBrak meczów w tym okresie."
+ "message": "🎯 <b>Typy · pt 27.11</b>\nMecze w analizie: 8\n\n<b>SINGLE</b> (graj tylko, gdy kurs STS ≥ „opłaca się od”)\n<code>S1</code> pt 20:45 🇮🇹 Venezia – Bologna: <b>2 (gość)</b> (41%, ~2.34)\n     przewaga -4.4% · fair 2.44 · opłaca się od <b>2.78</b>\n<code>S2</code> pt 21:00 🇪🇸 Levante – Santander: <b>1 (gospodarz)</b> (48%, ~1.96)\n     przewaga -5.2% · fair 2.07 · opłaca się od <b>2.35</b>\n<code>S3</code> pt 20:45 🇫🇷 Brest – Paris FC: <b>1 (gospodarz)</b> (28%, ~3.32)\n     przewaga -6.4% · fair 3.54 · opłaca się od <b>4.03</b>\n<i>Dziś brak wyraźnej przewagi – to typy najbliżej wartości. Graj tylko, gdy STS da „opłaca się od”.</i>\n\n<b>KUPONY 2–3</b>\n<code>K1</code> kupon 2 · kurs ~2.17 · szansa 40% · wartość -23% (po podatku)\n   • 🇩🇪 Werder Bremen – M&#x27;gladbach: <b>1 (gospodarz)</b> (58%, ~1.62)\n   • 🇮🇹 Venezia – Bologna: <b>X2</b> (70%, ~1.34)\n<code>K2</code> kupon 3 · kurs ~2.9 · szansa 28% · wartość -29% (po podatku)\n   • 🇫🇷 Brest – Paris FC: <b>1X</b> (55%, ~1.69)\n   • 🇮🇹 Venezia – Bologna: <b>X2</b> (70%, ~1.34)\n   • 🏴 Nott&#x27;m Forest – Chelsea: <b>12</b> (72%, ~1.28)\n\n<b>DŁUGIE KUPONY za 2 zł</b> 🎰 (loteria – dla zabawy)\n<code>D1</code> dużo zdarzeń · 8 zdarzeń · kurs ~8 · wypłata ~13 zł · szansa 1 na 14 · średnio wraca 0.94 zł z 2 zł\n   • 🇵🇱 Gornik Zabrze – Wisla Plock: <b>1 (gospodarz)</b> (66%, ~1.38)\n   • 🇵🇱 Gornik Zabrze – Wisla Plock: <b>1 (gospodarz)</b> (66%, ~1.38)\n   • 🇮🇹 Venezia – Bologna: <b>X2</b> (70%, ~1.34)\n   • 🇪🇸 Levante – Santander: <b>1X</b> (72%, ~1.29)\n   • 🇫🇷 Brest – Paris FC: <b>12</b> (73%, ~1.27)\n   • 🏴 Nott&#x27;m Forest – Chelsea: <b>12</b> (72%, ~1.28)\n   • 🇩🇪 Werder Bremen – M&#x27;gladbach: <b>12</b> (78%, ~1.18)\n   • 🇵🇱 Rakow – Piast Gliwice: <b>1X</b> (77%, ~1.20)\n<code>D2</code> duży przelicznik · 6 zdarzeń · kurs ~98 · wypłata ~172 zł · szansa 1 na 145 · średnio wraca 1.18 zł z 2 zł\n   • 🇮🇹 Venezia – Bologna: <b>2 (gość)</b> (41%, ~2.34)\n   • 🇪🇸 Levante – Santander: <b>1 (gospodarz)</b> (48%, ~1.96)\n   • 🏴 Nott&#x27;m Forest – Chelsea: <b>1 (gospodarz)</b> (40%, ~2.32)\n   • 🇫🇷 Brest – Paris FC: <b>2 (gość)</b> (45%, ~2.05)\n   • 🇵🇱 Rakow – Piast Gliwice: <b>X2</b> (46%, ~2.03)\n   • 🇩🇪 Werder Bremen – M&#x27;gladbach: <b>X2</b> (42%, ~2.21)\n<code>D3</code> szalona: dziś nie ma – tylko 8 meczów z prawdziwymi kursami (potrzeba co najmniej 15).\n\n🔎 <b>Dlaczego (składy, zmęczenie):</b>\n• Rakow: ostatni skład bez 2 z „zwykłej jedenastki”: Kacper Trelowski (rotacja/decyzja trenera), Marko Bulat (rotacja/decyzja trenera) (+0.1 pkt proc.)\n• Piast Gliwice: ostatni skład bez 3 z „zwykłej jedenastki”: Samuel Ntamack (rotacja/decyzja trenera), Jakub Łabojko (rotacja/decyzja trenera), Jakub Czerwiński (rotacja/decyzja trenera) (-0.1 pkt proc.)\n• Werder Bremen: przewidywany skład bez 1 z „zwykłej jedenastki”: Marco Grüll (kontuzja, powrót: Doubtful) (+0.3 pkt proc.)\n• M&#x27;gladbach: przewidywany skład bez 3 z „zwykłej jedenastki”: Lukas Ullrich (kontuzja, powrót: Early December 2026), Moritz Nicolas (rotacja/decyzja trenera), Hugo Bolin (kontuzja, powrót: About 1-2 weeks) (-0.2 pkt proc.)\n• Gornik Zabrze: ostatni skład bez 3 z „zwykłej jedenastki”: Peter González (rotacja/decyzja trenera), Kacper Urbański (rotacja/decyzja trenera), Erik Janža (rotacja/decyzja trenera)\n• Wisla Plock: ostatni skład bez 3 z „zwykłej jedenastki”: Martin Haglind Sangré (rotacja/decyzja trenera), Łukasz Sekulski (rotacja/decyzja trenera), Patryk Kun (rotacja/decyzja trenera)\n\n🚑 <b>Ważne braki:</b> Raphaël Le Guen (Brest), Kamory Doumbia (Brest), Callum Hudson-Odoi (Nott&#x27;m Forest), Nicolò Savona (Nott&#x27;m Forest), João Pedro (Chelsea), Reece James (Chelsea)\n\nZapisz zagrany: /zagrane ID stawka kurs\n📊 <a href=\"https://mateuszpietruniewicz-arch.github.io/typy-bot/\">Pełna analiza meczów</a>"
 }
