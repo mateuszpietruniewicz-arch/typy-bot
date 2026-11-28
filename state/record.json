@@ -7974,7 +7974,9 @@
      "odds": 1.2,
      "fair": 1.27,
      "min_sts": 1.44,
-     "edge": -0.0499
+     "edge": -0.0499,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-28:real_madrid-alaves",
@@ -8008,7 +8010,8 @@
    "odds": 2.51,
    "p": 0.34515629169900003,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306728+00:00"
   },
   {
    "uid": "2026-11-26:WD1",
@@ -8028,7 +8031,9 @@
      "odds": 1.2,
      "fair": 1.27,
      "min_sts": 1.44,
-     "edge": -0.0499
+     "edge": -0.0499,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "SERIEA:2026-11-28:inter-genoa",
@@ -8056,7 +8061,9 @@
      "odds": 1.44,
      "fair": 1.53,
      "min_sts": 1.74,
-     "edge": -0.0612
+     "edge": -0.0612,
+     "result": "2:1",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-28:frosinone-parma",
@@ -8070,7 +8077,9 @@
      "odds": 1.43,
      "fair": 1.52,
      "min_sts": 1.73,
-     "edge": -0.0616
+     "edge": -0.0616,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "EPL:2026-11-28:leeds-coventry",
@@ -8084,7 +8093,9 @@
      "odds": 1.42,
      "fair": 1.52,
      "min_sts": 1.72,
-     "edge": -0.0644
+     "edge": -0.0644,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-28:betis-vallecano",
@@ -8098,7 +8109,9 @@
      "odds": 1.52,
      "fair": 1.63,
      "min_sts": 1.85,
-     "edge": -0.0659
+     "edge": -0.0659,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-29:la_coruna-barcelona",
@@ -8182,13 +8195,16 @@
      "odds": 1.4,
      "fair": 1.53,
      "min_sts": 1.74,
-     "edge": -0.0818
+     "edge": -0.0818,
+     "result": "2:3",
+     "won": true
     }
    ],
    "odds": 59.03,
    "p": 0.007456455993469794,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306746+00:00"
   },
   {
    "uid": "2026-11-26:WD2",
@@ -9098,13 +9114,16 @@
      "odds": 1.21,
      "fair": 1.27,
      "min_sts": 1.44,
-     "edge": -0.0449
+     "edge": -0.0449,
+     "result": "0:0",
+     "won": false
     }
    ],
    "odds": 1.21,
    "p": 0.7869,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306750+00:00"
   },
   {
    "uid": "2026-11-27:WS3",
@@ -9150,7 +9169,9 @@
      "odds": 1.21,
      "fair": 1.27,
      "min_sts": 1.44,
-     "edge": -0.0449
+     "edge": -0.0449,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-29:crystal_palace-hull",
@@ -9170,7 +9191,8 @@
    "odds": 2.3,
    "p": 0.4002173400000001,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306755+00:00"
   },
   {
    "uid": "2026-11-27:WK2",
@@ -9244,7 +9266,9 @@
      "odds": 1.21,
      "fair": 1.27,
      "min_sts": 1.44,
-     "edge": -0.0449
+     "edge": -0.0449,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "SERIEA:2026-11-28:inter-genoa",
@@ -9272,7 +9296,9 @@
      "odds": 1.42,
      "fair": 1.51,
      "min_sts": 1.72,
-     "edge": -0.0597
+     "edge": -0.0597,
+     "result": "2:1",
+     "won": true
     },
     {
      "match_id": "SERIEA:2026-11-28:frosinone-parma",
@@ -9286,7 +9312,9 @@
      "odds": 1.43,
      "fair": 1.52,
      "min_sts": 1.73,
-     "edge": -0.0606
+     "edge": -0.0606,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "EPL:2026-11-28:leeds-coventry",
@@ -9300,7 +9328,9 @@
      "odds": 1.43,
      "fair": 1.53,
      "min_sts": 1.73,
-     "edge": -0.0636
+     "edge": -0.0636,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-29:la_coruna-barcelona",
@@ -9342,7 +9372,9 @@
      "odds": 1.53,
      "fair": 1.64,
      "min_sts": 1.86,
-     "edge": -0.0688
+     "edge": -0.0688,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "EKSTRA:2026-11-29:legia-wieczysta_krakow",
@@ -9384,7 +9416,9 @@
      "odds": 1.41,
      "fair": 1.53,
      "min_sts": 1.74,
-     "edge": -0.0799
+     "edge": -0.0799,
+     "result": "2:3",
+     "won": true
     },
     {
      "match_id": "EKSTRA:2026-11-27:gornik_z-plock",
@@ -9404,7 +9438,8 @@
    "odds": 53.17,
    "p": 0.008309819360129434,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306761+00:00"
   },
   {
    "uid": "2026-11-27:WD2",
@@ -9850,13 +9885,16 @@
      "odds": 1.28,
      "fair": 1.34,
      "min_sts": 1.52,
-     "edge": -0.0438
+     "edge": -0.0438,
+     "result": "0:0",
+     "won": false
     }
    ],
    "odds": 1.28,
    "p": 0.747,
    "stake": 10,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306763+00:00"
   },
   {
    "uid": "2026-11-28:S2",
@@ -9902,13 +9940,16 @@
      "odds": 2.02,
      "fair": 2.15,
      "min_sts": 2.44,
-     "edge": -0.0562
+     "edge": -0.0562,
+     "result": "1:2",
+     "won": true
     }
    ],
    "odds": 2.02,
    "p": 0.4661,
    "stake": 10,
-   "status": "pending"
+   "status": "won",
+   "settled_at": "2026-11-28T20:29:06.306767+00:00"
   },
   {
    "uid": "2026-11-28:K1",
@@ -9928,7 +9969,9 @@
      "odds": 1.28,
      "fair": 1.34,
      "min_sts": 1.52,
-     "edge": -0.0438
+     "edge": -0.0438,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "SERIEA:2026-11-28:inter-genoa",
@@ -9948,7 +9991,8 @@
    "odds": 1.6,
    "p": 0.5657031,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306769+00:00"
   },
   {
    "uid": "2026-11-28:K2",
@@ -9968,7 +10012,9 @@
      "odds": 1.28,
      "fair": 1.34,
      "min_sts": 1.52,
-     "edge": -0.0438
+     "edge": -0.0438,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-28:real_madrid-alaves",
@@ -9996,13 +10042,16 @@
      "odds": 1.37,
      "fair": 1.45,
      "min_sts": 1.65,
-     "edge": -0.0568
+     "edge": -0.0568,
+     "result": "3:0",
+     "won": true
     }
    ],
    "odds": 1.95,
    "p": 0.43742022975000006,
    "stake": 5,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306772+00:00"
   },
   {
    "uid": "2026-11-28:D1",
@@ -10022,7 +10071,9 @@
      "odds": 1.28,
      "fair": 1.34,
      "min_sts": 1.52,
-     "edge": -0.0438
+     "edge": -0.0438,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "SERIEA:2026-11-28:inter-genoa",
@@ -10050,7 +10101,9 @@
      "odds": 1.37,
      "fair": 1.45,
      "min_sts": 1.65,
-     "edge": -0.0568
+     "edge": -0.0568,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-28:mainz-union_berlin",
@@ -10064,7 +10117,9 @@
      "odds": 1.41,
      "fair": 1.5,
      "min_sts": 1.71,
-     "edge": -0.0585
+     "edge": -0.0585,
+     "result": "2:1",
+     "won": true
     },
     {
      "match_id": "EPL:2026-11-28:leeds-coventry",
@@ -10078,7 +10133,9 @@
      "odds": 1.43,
      "fair": 1.52,
      "min_sts": 1.73,
-     "edge": -0.063
+     "edge": -0.063,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-28:betis-vallecano",
@@ -10092,7 +10149,9 @@
      "odds": 1.53,
      "fair": 1.65,
      "min_sts": 1.87,
-     "edge": -0.0684
+     "edge": -0.0684,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-28:elche-ath_madrid",
@@ -10106,7 +10165,9 @@
      "odds": 1.45,
      "fair": 1.57,
      "min_sts": 1.78,
-     "edge": -0.0783
+     "edge": -0.0783,
+     "result": "2:3",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-28:paderborn-schalke",
@@ -10120,7 +10181,9 @@
      "odds": 1.46,
      "fair": 1.55,
      "min_sts": 1.77,
-     "edge": -0.0582
+     "edge": -0.0582,
+     "result": "8:1",
+     "won": true
     },
     {
      "match_id": "EKSTRA:2026-11-28:wisla_krakow-motor_lublin",
@@ -10148,7 +10211,9 @@
      "odds": 1.27,
      "fair": 1.37,
      "min_sts": 1.55,
-     "edge": -0.0711
+     "edge": -0.0711,
+     "result": "1:2",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-28:le_havre-strasbourg",
@@ -10176,13 +10241,16 @@
      "odds": 1.23,
      "fair": 1.33,
      "min_sts": 1.51,
-     "edge": -0.0731
+     "edge": -0.0731,
+     "result": "2:2",
+     "won": true
     }
    ],
    "odds": 34.66,
    "p": 0.012914186117310282,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306778+00:00"
   },
   {
    "uid": "2026-11-28:D2",
@@ -10202,7 +10270,9 @@
      "odds": 2.02,
      "fair": 2.15,
      "min_sts": 2.44,
-     "edge": -0.0562
+     "edge": -0.0562,
+     "result": "1:2",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-28:stuttgart-ein_frankfurt",
@@ -10216,7 +10286,9 @@
      "odds": 1.73,
      "fair": 1.84,
      "min_sts": 2.09,
-     "edge": -0.0564
+     "edge": -0.0564,
+     "result": "2:2",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-28:ipswich-aston_villa",
@@ -10230,7 +10302,9 @@
      "odds": 1.97,
      "fair": 2.09,
      "min_sts": 2.38,
-     "edge": -0.0567
+     "edge": -0.0567,
+     "result": "2:2",
+     "won": false
     },
     {
      "match_id": "LALIGA:2026-11-28:elche-ath_madrid",
@@ -10244,7 +10318,9 @@
      "odds": 2.67,
      "fair": 2.76,
      "min_sts": 3.13,
-     "edge": -0.0309
+     "edge": -0.0309,
+     "result": "2:3",
+     "won": false
     },
     {
      "match_id": "LIGUE1:2026-11-28:le_havre-strasbourg",
@@ -10286,7 +10362,9 @@
      "odds": 2.53,
      "fair": 2.74,
      "min_sts": 3.11,
-     "edge": -0.0763
+     "edge": -0.0763,
+     "result": "8:1",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-28:le_mans-lille",
@@ -10306,7 +10384,8 @@
    "odds": 337.27,
    "p": 0.0017792786243827007,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306782+00:00"
   },
   {
    "uid": "2026-11-28:D3",
@@ -10326,7 +10405,9 @@
      "odds": 1.53,
      "fair": 1.65,
      "min_sts": 1.87,
-     "edge": -0.0684
+     "edge": -0.0684,
+     "result": "0:1",
+     "won": false
     },
     {
      "match_id": "EKSTRA:2026-11-28:widzew_lodz-zaglebie",
@@ -10354,7 +10435,9 @@
      "odds": 1.37,
      "fair": 1.45,
      "min_sts": 1.65,
-     "edge": -0.0568
+     "edge": -0.0568,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "BUNDES:2026-11-28:hamburg-bayern_munich",
@@ -10368,7 +10451,9 @@
      "odds": 1.28,
      "fair": 1.34,
      "min_sts": 1.52,
-     "edge": -0.0438
+     "edge": -0.0438,
+     "result": "0:0",
+     "won": false
     },
     {
      "match_id": "BUNDES:2026-11-28:koln-elversberg",
@@ -10382,7 +10467,9 @@
      "odds": 3.43,
      "fair": 3.63,
      "min_sts": 4.13,
-     "edge": -0.0555
+     "edge": -0.0555,
+     "result": "5:0",
+     "won": false
     },
     {
      "match_id": "BUNDES:2026-11-28:paderborn-schalke",
@@ -10396,7 +10483,9 @@
      "odds": 3.39,
      "fair": 3.6,
      "min_sts": 4.09,
-     "edge": -0.0578
+     "edge": -0.0578,
+     "result": "8:1",
+     "won": false
     },
     {
      "match_id": "EPL:2026-11-28:leeds-coventry",
@@ -10410,7 +10499,9 @@
      "odds": 1.43,
      "fair": 1.52,
      "min_sts": 1.73,
-     "edge": -0.063
+     "edge": -0.063,
+     "result": "3:0",
+     "won": true
     },
     {
      "match_id": "EPL:2026-11-28:man_united-brentford",
@@ -10424,7 +10515,9 @@
      "odds": 2.82,
      "fair": 3.04,
      "min_sts": 3.45,
-     "edge": -0.0712
+     "edge": -0.0712,
+     "result": "0:4",
+     "won": true
     },
     {
      "match_id": "LALIGA:2026-11-28:malaga-ath_bilbao",
@@ -10438,7 +10531,9 @@
      "odds": 1.67,
      "fair": 1.8,
      "min_sts": 2.05,
-     "edge": -0.073
+     "edge": -0.073,
+     "result": "3:4",
+     "won": true
     },
     {
      "match_id": "LIGUE1:2026-11-28:angers-lens",
@@ -10452,7 +10547,9 @@
      "odds": 1.63,
      "fair": 1.74,
      "min_sts": 1.98,
-     "edge": -0.0655
+     "edge": -0.0655,
+     "result": "2:5",
+     "won": true
     },
     {
      "match_id": "EKSTRA:2026-11-28:slask_wroclaw-katowice",
@@ -10480,7 +10577,9 @@
      "odds": 2.02,
      "fair": 2.15,
      "min_sts": 2.44,
-     "edge": -0.0562
+     "edge": -0.0562,
+     "result": "1:2",
+     "won": true
     },
     {
      "match_id": "EPL:2026-11-28:ipswich-aston_villa",
@@ -10494,7 +10593,9 @@
      "odds": 1.97,
      "fair": 2.09,
      "min_sts": 2.38,
-     "edge": -0.0567
+     "edge": -0.0567,
+     "result": "2:2",
+     "won": false
     },
     {
      "match_id": "BUNDES:2026-11-28:stuttgart-ein_frankfurt",
@@ -10508,7 +10609,9 @@
      "odds": 1.73,
      "fair": 1.84,
      "min_sts": 2.09,
-     "edge": -0.0564
+     "edge": -0.0564,
+     "result": "2:2",
+     "won": false
     },
     {
      "match_id": "EKSTRA:2026-11-28:wisla_krakow-motor_lublin",
@@ -10598,7 +10701,8 @@
    "odds": 88757.35,
    "p": 2.9322729351407134e-06,
    "stake": 2.0,
-   "status": "pending"
+   "status": "lost",
+   "settled_at": "2026-11-28T20:29:06.306791+00:00"
   }
  ],
  "predictions": [
@@ -14222,7 +14326,10 @@
     "O2.5": 0.6163,
     "U2.5": 0.3837
    },
-   "result": null
+   "result": [
+    0,
+    1
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-28:widzew_lodz-zaglebie",
@@ -14268,7 +14375,10 @@
     "O2.5": 0.7048,
     "U2.5": 0.2952
    },
-   "result": null
+   "result": [
+    3,
+    0
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-28:koln-elversberg",
@@ -14291,7 +14401,10 @@
     "O2.5": 0.6122,
     "U2.5": 0.3878
    },
-   "result": null
+   "result": [
+    5,
+    0
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-28:mainz-union_berlin",
@@ -14314,7 +14427,10 @@
     "O2.5": 0.6287,
     "U2.5": 0.3713
    },
-   "result": null
+   "result": [
+    2,
+    1
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-28:paderborn-schalke",
@@ -14337,7 +14453,10 @@
     "O2.5": 0.5441,
     "U2.5": 0.4559
    },
-   "result": null
+   "result": [
+    8,
+    1
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-28:hamburg-bayern_munich",
@@ -14360,7 +14479,10 @@
     "O2.5": 0.7484,
     "U2.5": 0.2516
    },
-   "result": null
+   "result": [
+    0,
+    0
+   ]
   },
   {
    "match_id": "EPL:2026-11-28:leeds-coventry",
@@ -14383,7 +14505,10 @@
     "O2.5": 0.5859,
     "U2.5": 0.4141
    },
-   "result": null
+   "result": [
+    3,
+    0
+   ]
   },
   {
    "match_id": "EPL:2026-11-28:man_united-brentford",
@@ -14406,7 +14531,10 @@
     "O2.5": 0.6116,
     "U2.5": 0.3884
    },
-   "result": null
+   "result": [
+    0,
+    4
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-28:malaga-ath_bilbao",
@@ -14429,7 +14557,10 @@
     "O2.5": 0.5133,
     "U2.5": 0.4867
    },
-   "result": null
+   "result": [
+    3,
+    4
+   ]
   },
   {
    "match_id": "LIGUE1:2026-11-28:angers-lens",
@@ -14452,7 +14583,10 @@
     "O2.5": 0.5885,
     "U2.5": 0.4115
    },
-   "result": null
+   "result": [
+    2,
+    5
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-28:slask_wroclaw-katowice",
@@ -14498,7 +14632,10 @@
     "O2.5": 0.5079,
     "U2.5": 0.4921
    },
-   "result": null
+   "result": [
+    1,
+    2
+   ]
   },
   {
    "match_id": "EPL:2026-11-28:ipswich-aston_villa",
@@ -14521,7 +14658,10 @@
     "O2.5": 0.6304,
     "U2.5": 0.3696
    },
-   "result": null
+   "result": [
+    2,
+    2
+   ]
   },
   {
    "match_id": "LALIGA:2026-11-28:elche-ath_madrid",
@@ -14544,7 +14684,10 @@
     "O2.5": 0.622,
     "U2.5": 0.378
    },
-   "result": null
+   "result": [
+    2,
+    3
+   ]
   },
   {
    "match_id": "BUNDES:2026-11-28:stuttgart-ein_frankfurt",
@@ -14567,7 +14710,10 @@
     "O2.5": 0.7727,
     "U2.5": 0.2273
    },
-   "result": null
+   "result": [
+    2,
+    2
+   ]
   },
   {
    "match_id": "EKSTRA:2026-11-28:wisla_krakow-motor_lublin",
