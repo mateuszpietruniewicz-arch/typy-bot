@@ -4,7 +4,7 @@
   "LALIGA:2026-11-22:santander-sociedad",
   "LIGUE1:2026-11-07:paris_sg-troyes"
  ],
- "daily_done": "2026-11-27",
+ "daily_done": "2026-11-28",
  "preview_done": "2026-11-27",
  "prematch_sent": [
   "BUNDES:2026-11-06:hamburg-mgladbach",
@@ -15,10 +15,15 @@
   "BUNDES:2026-11-21:mgladbach-dortmund",
   "BUNDES:2026-11-21:union_berlin-rb_leipzig",
   "BUNDES:2026-11-22:werder_bremen-hamburg",
+  "BUNDES:2026-11-28:hamburg-bayern_munich",
+  "BUNDES:2026-11-28:koln-elversberg",
+  "BUNDES:2026-11-28:mainz-union_berlin",
+  "BUNDES:2026-11-28:paderborn-schalke",
   "EKSTRA:2026-11-06:wisla_krakow-cracovia",
   "EKSTRA:2026-11-07:gornik_z-wieczysta_krakow",
   "EKSTRA:2026-11-21:cracovia-jagiellonia",
   "EKSTRA:2026-11-22:plock-legia",
+  "EKSTRA:2026-11-28:widzew_lodz-zaglebie",
   "EPL:2026-11-07:nottm_forest-man_city",
   "EPL:2026-11-22:liverpool-man_united",
   "LALIGA:2026-11-07:osasuna-ath_bilbao",
@@ -31,6 +36,7 @@
   "SERIEA:2026-11-08:napoli-lazio",
   "SERIEA:2026-11-21:como-cagliari",
   "SERIEA:2026-11-21:lazio-lecce",
+  "SERIEA:2026-11-28:frosinone-parma",
   "UCL:2026-11-24:fk_bod_glimt-lask_linz",
   "UCL:2026-11-24:galatasaray-aston_villa"
  ]
